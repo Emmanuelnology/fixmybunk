@@ -12,11 +12,7 @@ export class FunctionDemoComponent implements OnInit {
 
   constructor(private fns: AngularFireFunctions) {
     const callable = fns.httpsCallable('echo');
-    callable({ name: 'A name' }).toPromise()
-    .then((data) => {
-      console.log(data);
-    })
-    .catch((error) => { console.error(error); });
+    this.data$ = callable({ reference: 1 });
   }
 
   ngOnInit() {
