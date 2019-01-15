@@ -1,0 +1,15 @@
+@function is-number($value) {
+  @return type-of($value) == 'number';
+}
+
+@function is-integer($value) {
+  @return is-number($value) and round($value) == $value;
+}
+
+@function is-absolute-length($value) {
+  @return is-number($value) and index('cm' 'mm' 'in' 'px' 'pt' 'pc', unit($value)) != null;
+}
+
+@function is-percentage($value) {
+  @return is-number($value) and unit($value) == '%';
+}

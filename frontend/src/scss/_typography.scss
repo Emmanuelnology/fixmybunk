@@ -1,0 +1,101 @@
+// Typography styles
+.text_light, %text_light {
+  color: $colour-text_light;
+}
+
+// @deprecated
+.text_grey, %text_grey {
+  color: $colour-grey_2;
+}
+
+.text_dark, %text_dark {
+  color: #354052;
+}
+
+.text_colour_1, %text_colour_1 {
+  color: $colour-blue_2;
+}
+
+.text_colour_2, %text_colour_2 {
+  color: $colour-grey_2;
+}
+
+// %bold_{n} .b_{n} Bold 100 - 900
+@for $i from 1 through 9 {
+  $value: $i * 100;
+  %bold_#{$value},
+  .b_#{$value} {
+    font-weight: $value;
+  }
+}
+
+// Typography links
+.link {
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.link_1 {
+  @extend %bold_500;
+  color: $colour-grey_4;
+
+  &:hover {
+    color: $colour-grey_4;
+  }
+}
+
+.link_2 {
+  @extend %bold_300;
+  color: $colour-blue_2;
+
+  &:hover {
+    color: $colour-blue_1;
+  }
+}
+
+// Typography core
+.title_1, .title_2, .title_3, .title_4,
+.text_bold,
+.text-caption_bold,
+.text-tiny_bold {
+  @extend %bold_700;
+}
+
+.title_1, .subtitle_1 {
+  font-family: $font-family_primary;
+  font-size: 24px;
+}
+
+.title_2, .subtitle_2 {
+  font-family: $font-family_primary;
+  font-size: 22px;
+}
+
+.title_3, .subtitle_3 {
+  font-family: $font-family_primary;
+  font-size: 18px;
+}
+
+.title_4, .subtitle_4 {
+  font-family: $font-family_primary;
+  font-size: 15px;
+}
+
+.text, .text_bold {
+  font-family: $font-family_primary;
+  font-size: 14px;
+}
+
+.text-caption, .text-caption_bold {
+  font-family: $font-family_primary;
+  font-size: 12px;
+}
+
+.text-tiny, .text-tiny_bold {
+  font-family: $font-family_primary;
+  font-size: 10px;
+}

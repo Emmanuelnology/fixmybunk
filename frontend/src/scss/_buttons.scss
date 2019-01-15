@@ -1,0 +1,94 @@
+/*
+ * <div class="btn btn_blue"></div>
+ */
+
+.btn {
+  border: 0;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+}
+
+.btn_blue {
+  @extend %text_light;
+  background: $button-background_blue;
+
+  &:hover {
+    background: $button-background_blue_hover;
+  }
+
+  &:focus {
+    background: $button-background_blue_active;
+  }
+
+  &:disabled {
+    background: $button-background_disabled;
+  }
+}
+
+.btn_green {
+  @extend %text_light;
+
+  background: $button-background_green;
+
+  &:hover {
+    background: $button-background_green_hover;
+  }
+
+  &:focus {
+    background: $button-background_green_active;
+  }
+
+  &:disabled {
+    background: $button-background_disabled;
+  }
+}
+
+.btn_red {
+  border: 1px solid $button-border-color_red;
+  background: $button-background_red;
+  color: $button-border-color_red;
+
+  &:hover {
+    @extend %text_light;
+
+    background: $button-background_red_hover;
+  }
+
+  &:focus {
+    @extend %text_light;
+
+    background: $button-background_red_active;
+  }
+
+  &:disabled {
+    background: $button-background_disabled;
+  }
+}
+
+.btn_neutral {
+  background: $button-background_neutral;
+
+  &:hover {
+    background: $button-background_neutral_hover;
+  }
+
+  &:focus {
+    background: $button-background_neutral_active;
+  }
+
+  &:disabled {
+    background: $button-background_disabled;
+  }
+}

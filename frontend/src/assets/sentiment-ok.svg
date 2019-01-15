@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="46px" height="46px" viewBox="0 0 46 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51 (57462) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_sentiment_neutral_black_24px</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ic_sentiment_neutral_black_24px" fill="#686868" fill-rule="nonzero">
+            <polygon id="Shape" points="16.307377 27.4617486 29.692623 27.4617486 29.692623 30.8080601 16.307377 30.8080601"></polygon>
+            <circle id="Oval" cx="30.8080601" cy="17.4228142" r="3.34631148"></circle>
+            <circle id="Oval" cx="15.1919399" cy="17.4228142" r="3.34631148"></circle>
+            <path d="M22.9776913,0.691256831 C10.663265,0.691256831 0.691256831,10.6855738 0.691256831,23 C0.691256831,35.3144262 10.663265,45.3087432 22.9776913,45.3087432 C35.3144262,45.3087432 45.3087432,35.3144262 45.3087432,23 C45.3087432,10.6855738 35.3144262,0.691256831 22.9776913,0.691256831 Z M23,40.8469945 C13.1395355,40.8469945 5.15300546,32.8604645 5.15300546,23 C5.15300546,13.1395355 13.1395355,5.15300546 23,5.15300546 C32.8604645,5.15300546 40.8469945,13.1395355 40.8469945,23 C40.8469945,32.8604645 32.8604645,40.8469945 23,40.8469945 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>

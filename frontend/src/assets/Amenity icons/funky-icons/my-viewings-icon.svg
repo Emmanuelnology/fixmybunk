@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="56px" height="67px" viewBox="0 0 56 67" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51 (57462) - http://www.bohemiancoding.com/sketch -->
+    <title>viewing_nav_icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Tenant-Manage-Nav-Searching" transform="translate(-477.000000, -112.000000)">
+            <g id="Nav">
+                <g id="Group-12">
+                    <g id="Nav+Items">
+                        <g id="Group-4" transform="translate(413.000000, 108.000000)">
+                            <g id="viewing_nav_icon" transform="translate(64.000000, 4.000000)">
+                                <polygon id="Fill-1" fill="#B9BEC4" points="9.52057774 30.3906233 6 67 19.295344 64.6095763 21 28"></polygon>
+                                <polygon id="Fill-2" fill="#B9BEC4" points="31 30.3906233 31 67 43 64.6095763 40.9338565 28"></polygon>
+                                <polygon id="Fill-3" fill="#E4E4E4" points="43.0220409 64.6093767 56 67 52.7779037 30.3904237 41 28"></polygon>
+                                <polygon id="Fill-4" fill="#E4E4E4" points="19 64.6093767 31 67 31 30.3904237 20.699707 28"></polygon>
+                                <polygon id="Fill-5" fill="#00927B" points="19.3275517 63.7929674 8 66 11.4538613 32.2066315 21 30"></polygon>
+                                <polygon id="Fill-6" fill="#00927B" points="43 63.7929674 31 66 31 32.2066315 40.9336892 30"></polygon>
+                                <polygon id="Fill-7" fill="#56AA98" points="42.977479 63.7929674 54 66 50.8489126 32.2066315 41 30"></polygon>
+                                <polygon id="Fill-8" fill="#56AA98" points="19 63.7929674 31 66 31 32.2066315 20.699707 30"></polygon>
+                                <polygon id="Fill-9" fill="#2583AC" points="21 30 11.000587 32.2556376 10 41.8103731 20.3407873 43"></polygon>
+                                <polygon id="Fill-10" fill="#00927B" points="10.0195084 46 8 66 19.1881117 63.7937049 20 47.1908581"></polygon>
+                                <polygon id="Fill-11" fill="#2583AC" points="42 45 41.0561785 30 31 32.1708735 31 43.7597827"></polygon>
+                                <polygon id="Fill-12" fill="#00927B" points="33.3000993 48 31 52.2489626 31 65 43 62.8254275 42.1428427 49.0109144"></polygon>
+                                <polygon id="Fill-13" fill="#6DB9DF" points="53 46 51.570045 32.1405053 41 30 41.9575925 44.7901661"></polygon>
+                                <polygon id="Fill-14" fill="#56AA98" points="42 49 42.8311943 62.8239431 54 65 52.5862643 50.2484892"></polygon>
+                                <polygon id="Fill-15" fill="#56AA98" points="19.7907085 47 19 63.7987734 20.0217622 64 28 48.0176956"></polygon>
+                                <polygon id="Fill-16" fill="#56AA98" points="25 64.8384187 31 66 31 53"></polygon>
+                                <polygon id="Fill-17" fill="#6DB9DF" points="31 44 31 32.2087725 20.6431026 30 20 42.7299006"></polygon>
+                                <polygon id="Fill-18" fill="#E46A42" points="20 42.2400898 10.4396218 41 10 45.7306336 19.7858697 47"></polygon>
+                                <polygon id="Fill-19" fill="#E46A42" points="31 44 31 53 33.2706138 48.7218366 42 49.7398974 41.7267205 45.2506411"></polygon>
+                                <polygon id="Fill-20" fill="#EFC94B" points="42.2718427 49.6880909 53 51 52.5651311 46.2919625 42 45"></polygon>
+                                <polygon id="Fill-21" fill="#EFC94B" points="31 43.261638 20.2214017 42 20 46.4415561 28.5454677 47.441973 20.2405155 63.1529258 24.8055314 64 31 52.2819411"></polygon>
+                                <g id="Group-35">
+                                    <path d="M17.44766,31.5879039 C9.79646,31.5879039 3.57186,25.3146481 3.57186,17.6045395 C3.57186,9.89402791 9.79646,3.62117519 17.44766,3.62117519 C25.09866,3.62117519 31.32346,9.89402791 31.32346,17.6045395 C31.32346,25.3146481 25.09866,31.5879039 17.44766,31.5879039 M17.44766,0.0216868217 C7.81146,0.0216868217 6e-05,7.89364031 6e-05,17.6045395 C6e-05,27.3152372 17.44766,51.8009891 17.44766,51.8009891 C17.44766,51.8009891 34.89546,27.3152372 34.89546,17.6045395 C34.89546,7.89364031 27.08366,0.0216868217 17.44766,0.0216868217" id="Fill-22" fill="#0C2C48"></path>
+                                    <polygon id="Fill-24" fill="#B9BEC4" points="18.21 24.3972713 26.9116 24.3972713 26.9116 15.0854419 18.21 15.0854419"></polygon>
+                                    <polygon id="Fill-26" fill="#2583AC" points="28.09434 15.4217488 22.25454 8.18447752 13.15294 8.18447752 18.99314 15.4217488"></polygon>
+                                    <polygon id="Fill-27" fill="#E4E4E4" points="18.8942 24.3972713 26.9116 24.3972713 26.9116 16.2578605 18.8942 16.2578605"></polygon>
+                                    <polygon id="Fill-28" fill="#B9BEC4" points="13.1581 8.80817519 7.8491 15.085462 7.8491 24.3972915 18.4671 24.3972915 18.4671 15.085462"></polygon>
+                                    <polygon id="Fill-29" fill="#0C2C48" points="11.5452 24.3972713 14.7708 24.3972713 14.7708 19.7984961 11.5452 19.7984961"></polygon>
+                                    <path d="M7.13868,15.4217488 L8.14588,15.4217488 L13.16348,9.48931473 L18.18088,15.4217488 L19.28468,15.4217488 L13.16348,8.18447752 L7.03148,15.434245 C7.06448,15.4263845 7.10008,15.4217488 7.13868,15.4217488" id="Fill-30" fill="#0C2C48"></path>
+                                    <polygon id="Fill-31" fill="#2583AC" points="11.1084 18.009938 15.2076 18.009938 15.2076 13.8789612 11.1084 13.8789612"></polygon>
+                                    <polygon id="Fill-32" fill="#B9BEC4" points="12.9018 18.4652403 13.4142 18.4652403 13.4142 13.4238605 12.9018 13.4238605"></polygon>
+                                    <polygon id="Fill-33" fill="#B9BEC4" points="10.6568 16.2026357 15.6592 16.2026357 15.6592 15.686062 10.6568 15.686062"></polygon>
+                                    <polyline id="Fill-34" fill="#0C2C48" points="10.72636 18.8107178 10.72636 18.1105318 15.58976 18.1105318 15.58976 18.8107178"></polyline>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

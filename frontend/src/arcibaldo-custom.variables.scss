@@ -1,0 +1,6 @@
+$base-space-value: 2px;
+$breakpoints: (
+  sm: (start:0, end: 500px),
+  md: (start: 501px, end: 1080px)
+);
+$flex-fix-container-width: 1260px;

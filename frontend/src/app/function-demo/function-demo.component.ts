@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { AngularFireFunctions } from '@angular/fire/functions';
-import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-function-demo',
@@ -10,8 +9,8 @@ import { Observable } from 'rxjs';
 export class FunctionDemoComponent implements OnInit {
   private data$;
 
-  constructor(private fns: AngularFireFunctions) {
-    const callable = fns.httpsCallable('echo');
+  constructor(private functions: AngularFireFunctions) {
+    const callable = this.functions.httpsCallable('echo');
     this.data$ = callable({ reference: 1 });
   }
 

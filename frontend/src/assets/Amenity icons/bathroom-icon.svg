@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="18px" viewBox="0 0 14 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51 (57462) - http://www.bohemiancoding.com/sketch -->
+    <title>bathroom-icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="bathroom-icon" transform="translate(-1.000000, 1.000000)">
+            <g id="row3"></g>
+            <g id="row2" fill-rule="nonzero" stroke="#989DA3" stroke-width="0.8">
+                <path d="M13.8375,7.825 C13.8375,8.8 13.6375,9.5875 13.2,10.175 C12.7625,10.7625 12.0875,11.15 11.15,11.3625 C7.025,12.2875 9.725,14.8625 9.725,14.8625 L9.725,16 L3.5375,16 L3.5375,13.8625 L2.5,13.8625 L2.5,12.3 L3.5375,12.3 L3.5375,10.925 C2.7125,10.3125 2.1625,9.1625 2.1625,7.8375 L13.8375,7.8375 L13.8375,7.825 Z M13.8375,6.7125 L13.8375,7.225 L6.2875,7.225 L6.2875,6.7125 L13.8375,6.7125 Z M4.8375,0 L4.8375,0.525 L2.1625,0.525 L2.1625,0 L4.8375,0 Z M5.725,7.2125 L2.1625,7.2125 L2.1625,1.0625 L4.8375,1.0625 L5.725,7.2125 Z" id="Toilet_2_"></path>
+            </g>
+        </g>
+    </g>
+</svg>

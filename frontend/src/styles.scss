@@ -1,1 +1,340 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i|Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:600|Rubik:200,400,500,700,900');
+//Arcibaldo
+@import "~arcibaldo/scss/arcibaldo.variables";
+@import "arcibaldo-custom.variables";
+@import '~arcibaldo/scss/functions';
+@import '~arcibaldo/scss/mixins';
+@import '~arcibaldo/scss/theme/layout';
+@import '~arcibaldo/scss/theme/layout-flexbox';
+@import '~arcibaldo/scss/theme/spacing';
+@import '~arcibaldo/scss/theme/geometry';
+// ngx-toastr
+@import '~ngx-toastr/toastr.css';
+// Bunk
+@import "bunk.variables";
+@import "bunk.theme";
+
+html {
+  height: 100%;
+  min-width: 320px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+}
+
+header {
+  pointer-events: none;
+}
+
+header * {
+  pointer-events: auto;
+}
+
+.app-root {
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
+}
+
+// @todo:
+
+.lateral-navbar-direction {
+  flex-direction: row !important;
+}
+
+.displayNone {
+  display: none !important;
+}
+
+.modal-body {
+  padding: 0;
+}
+
+.modal_title {
+  font-size: 21px;
+  color: #344B67;
+  letter-spacing: -0.2px;
+  text-align: center;
+}
+
+.modal_information {
+  font-size: 16px;
+  color: #708094;
+  text-align: center;
+  line-height: 26px;
+  width: 35rem;
+  margin: 2rem auto 0 auto;
+}
+
+.navbar-lateral {
+  width: 0;
+  position: relative;
+  background: #fff;
+  z-index: 100;
+}
+
+.mat-button, .mat-fab, .mat-icon-button, .mat-mini-fab, .mat-raised-button {
+  color: white;
+}
+
+.mat-drawer-backdrop.mat-drawer-shown {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.main-container-with-lateral {
+  padding-left: 15rem;
+}
+
+main.content {
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
+  min-height: 90vh;
+}
+
+//a:not([href]):not([tabindex]) {
+//  color: white;
+//  text-align: center;
+//}
+
+/// NG-BOOTSTRAP - DATE-PICKER Customisation
+ngb-datepicker {
+  width: 236px;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+button.button.btn-link.ngb-dp-arrow-btn {
+  box-shadow: none;
+  color: $colour-grey_4;
+}
+
+ngb-datepicker-navigation {
+  height: 32px;
+  align-items: center;
+}
+
+.ngb-dp-month:first-child .ngb-dp-week {
+  justify-content: space-between;
+}
+
+.ngb-dp-week {
+  height: 24px;
+}
+
+div.ngb-dp-month.d-block {
+  width: 100%;
+}
+
+div.ngb-dp-week.ngb-dp-weekdays.bg-light,
+div.ngb-dp-header.bg-light {
+  background-color: white !important;
+}
+
+div.ngb-dp-week.ngb-dp-weekdays.bg-light {
+  border-bottom: 0;
+}
+
+div.ngb-dp-weekday.small.text-center.font-italic {
+  color: $colour-grey_4;
+  font-weight: 600;
+}
+
+div.btn-light.bg-primary.text-white {
+  background-color: $colour-blue_2 !important;
+
+}
+
+div.btn-light {
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+}
+
+/// NG-BOOTSTRAP - CAROUSEL Customisation
+carousel {
+  ngb-carousel {
+    .carousel-indicators li {
+      width: 12px;
+      height: 12px;
+      border-radius: 90px;
+    }
+  }
+}
+
+carousel.confirm_listing__carousel {
+  ngb-carousel {
+    .carousel-inner {
+      overflow: visible;
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+      cursor: pointer;
+    }
+
+    div.carousel-item {
+      position: relative;
+
+      img {
+        max-height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}
+
+carousel.property-card__carousel {
+  ngb-carousel {
+    .carousel-inner {
+      overflow: visible;
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+      display: none;
+    }
+
+    div.carousel-item {
+      position: relative;
+
+      img {
+        height: 250px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.mat-stepper-horizontal .mat-horizontal-content-container {
+  overflow: hidden;
+  padding: 0px;
+}
+
+.mat-step-header .mat-step-icon {
+  background-color: $colour-blue_2;
+}
+
+.mat-step-label {
+  font-family: 'Rubik', sans-serif;
+}
+
+.options.mat-option {
+  min-height: 150px;
+  overflow-y: scroll;
+  padding-top: 2rem;
+}
+
+.settings .mat-form-field-infix {
+  padding: 0 !important;
+  border-top: 0 !important;
+}
+
+.settings .mat-form-field-wrapper {
+  padding: 0 !important;
+}
+
+.select_image.mat-option img {
+  width: 48px;
+  height: 48px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 50%;
+}
+
+.select_image.mat-option {
+  z-index: 999;
+}
+
+.cdk-global-overlay-wrapper, .cdk-overlay-container {
+  z-index: 99999 !important;
+}
+
+.checkout-modal {
+  max-height: 94%;
+  overflow: scroll;
+  border-radius: 8px;
+}
+
+.strengthBar {
+  margin: 0;
+}
+
+small,
+.small {
+  color: $colour-grey_2;
+}
+
+.mat-select-panel::-webkit-scrollbar {
+  height: 0;
+  width: 4px;
+}
+
+.mat-select-panel::-webkit-scrollbar-track {
+  background: #d9d9d8;
+  width: 4px;
+}
+
+.mat-select-panel::-webkit-scrollbar-thumb {
+  background: $colour-blue_2;
+  border-radius: 10px;
+}
+
+mat-dialog-container.mat-dialog-container {
+  border-radius: 8px;
+}
+
+#outer-box {
+  display: block;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .main-container-with-lateral {
+    padding-left: 0;
+  }
+  .navbar__container {
+    padding: 8px 56px 8px 0 !important;
+  }
+
+}
+
+@media (max-width: 425px) {
+  .lateral-navbar-exist {
+    width: calc(100% - 180px) !important;
+    left: 180px !important;
+  }
+}
+
+@media (max-width: 375px) {
+  .navbar-tab {
+    margin: 5px !important;
+  }
+}
+
+@media (max-width: 320px) {
+  .navbar-tab {
+    margin: 0 !important;
+  }
+  .lateral-navbar-exist {
+    width: calc(100% - 150px) !important;
+    left: 150px !important;
+  }
+}
+
+@media (max-width: 770px) {
+  .lateral-navbar-direction {
+    flex-direction: column !important;
+  }
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="45px" height="45px" viewBox="0 0 45 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51 (57462) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_sentiment_satisfied_black_24px copy 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ic_sentiment_satisfied_black_24px-copy-2" fill-rule="nonzero">
+            <ellipse id="Oval" fill="#686868" cx="30.375" cy="17.25" rx="3.375" ry="1.5"></ellipse>
+            <ellipse id="Oval" fill="#686868" cx="14.625" cy="17.25" rx="3.375" ry="1.5"></ellipse>
+            <path d="M22.4775,0 C10.0575,0 0,10.08 0,22.5 C0,34.92 10.0575,45 22.4775,45 C34.92,45 45,34.92 45,22.5 C45,10.08 34.92,0 22.4775,0 Z M22.5,40.5 C12.555,40.5 4.5,32.445 4.5,22.5 C4.5,12.555 12.555,4.5 22.5,4.5 C32.445,4.5 40.5,12.555 40.5,22.5 C40.5,32.445 32.445,40.5 22.5,40.5 Z M22.77,30.375 C19.44,30.375 16.5825,32.1975 15.0075,34.875 L11.25,34.875 C13.05,30.2625 17.5275,27 22.77,27 C28.0125,27 32.49,30.2625 34.29,34.875 L30.5325,34.875 C28.9575,32.1975 26.1,30.375 22.77,30.375 Z" id="Shape" fill="#686868"></path>
+            <path d="M9.5,12.5 L17.5,15.5" id="Line-7" stroke="#686868" stroke-linecap="square"></path>
+            <path d="M26.5,12.5 L34.5,15.5" id="Line-7" stroke="#686868" stroke-linecap="square" transform="translate(30.500000, 14.000000) scale(-1, 1) translate(-30.500000, -14.000000) "></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,36 @@
+/*
+ * Shadows
+ */
+
+.shadow_x-light,
+.shadow_light,
+.shadow_base,
+.shadow_dark,
+.shadow_x-dark {
+  transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.shadow_x-light {
+  box-shadow: $shadow_x-light;
+}
+
+.shadow_light {
+  box-shadow: $shadow_light;
+}
+
+.shadow_base {
+  box-shadow: $shadow_base;
+}
+
+.shadow_dark {
+  box-shadow: $shadow_dark;
+}
+
+.shadow_x-dark {
+  box-shadow: $shadow_x-dark;
+}
+
+.shadow_hover:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.2s ease-out;
+}

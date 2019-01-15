@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51 (57462) - http://www.bohemiancoding.com/sketch -->
+    <title>green-tick copy 5</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="9" cy="9" r="9"></circle>
+        <filter x="-11.1%" y="-11.1%" width="122.2%" height="122.2%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.25427423 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="green-tick-copy-5">
+            <g id="close-button-copy">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Oval">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                    <use fill="#D4D2D2" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <g id="color/grey" mask="url(#mask-2)"></g>
+            </g>
+            <path d="M11.4715053,6.68504955 L7.85279036,10.310642 L6.53234437,8.97285653 C6.34755892,8.78672986 6.05113227,8.78672986 5.86634682,8.96897889 C5.68156138,9.15122792 5.68156138,9.45368376 5.86249713,9.63981043 L7.51401704,11.3149505 C7.60640977,11.4080138 7.72575037,11.4545455 7.84894066,11.4545455 C7.96828126,11.4545455 8.08762186,11.4080138 8.18001459,11.3149505 L12.1336532,7.35588109 C12.3184386,7.16975442 12.3184386,6.87117622 12.1375029,6.68504955 C11.9527174,6.49892288 11.6562908,6.49892288 11.4715053,6.68504955 Z" id="Shape" fill="#FFFFFF"></path>
+        </g>
+    </g>
+</svg>

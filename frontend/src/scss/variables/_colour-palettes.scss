@@ -1,0 +1,43 @@
+$colour-grey_0: #FEFEFE;
+$colour-grey_1: #D4D2D2;
+$colour-grey_2: #9B9B9B;
+$colour-grey_3: #666666;
+$colour-grey_4: #2B3045;
+$colour-grey_5: #354052;
+
+$colour-blue_0: #78DAF8;
+$colour-blue_1: #4BB7f1;
+$colour-blue_2: #26ADE6;
+$colour-blue_3: #439EE0;
+$colour-blue_4: #3B5998;
+
+$colour-yellow_0: #FFD728;
+$colour-yellow_1: #FAC917;
+
+$colour-orange_0: #FFAE00;
+$colour-orange_1: #F5A623;
+$colour-orange_2: #F77062;
+
+$colour-red_0: #FF0800;
+$colour-red_1: #F44336;
+
+$colour-green_0: #00CF6B;
+$colour-green_1: #43E279;
+$colour-green_2: #53D691;
+
+$colour-pink_0: #FE5196;
+
+// Colour text
+$colour-text_light: $colour-grey_0;
+$colour-text_base: $colour-grey_2;
+$colour-text_dark: $colour-grey_4;
+// Colour background
+$colour-background_light: #f9f9fc;
+$colour-background_base: #f9f9fc;
+$colour-background_dark: #2D333F;
+
+// Gradients
+$gradient-yellow_base: linear-gradient(to right, $colour-orange_0, $colour-yellow_0);
+$gradient-orange_base: linear-gradient(to right, $colour-orange_2, $colour-pink_0);
+$gradient-green_base: linear-gradient(to right, $colour-green_2, $colour-green_1);
+$gradient-blue_base: linear-gradient(to right, $colour-blue_3, $colour-blue_2);

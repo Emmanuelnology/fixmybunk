@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51 (57462) - http://www.bohemiancoding.com/sketch -->
+    <title>maintenance-yellow-tick</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#F2C94C" offset="0%"></stop>
+            <stop stop-color="#F2994A" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="maintenance-yellow-tick">
+            <circle id="Oval-3" fill="url(#linearGradient-1)" fill-rule="nonzero" cx="8" cy="8" r="8"></circle>
+            <path d="M10.1059845,6.12408445 L6.88934901,9.34683326 L5.71561923,8.15769065 C5.5513655,7.99224472 5.28787515,7.99224472 5.12362142,8.15424386 C4.95936769,8.316243 4.95936769,8.58509263 5.12019947,8.75053856 L6.58821717,10.2395519 C6.67034403,10.3222749 6.77642457,10.3636364 6.88592705,10.3636364 C6.99200759,10.3636364 7.09808812,10.3222749 7.18021499,10.2395519 L10.6945604,6.72037915 C10.8588141,6.55493322 10.8588141,6.28953037 10.6979824,6.12408445 C10.5337286,5.95863852 10.2702383,5.95863852 10.1059845,6.12408445 Z" id="Shape" fill="#FFFFFF"></path>
+        </g>
+    </g>
+</svg>

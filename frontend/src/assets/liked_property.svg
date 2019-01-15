@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="52px" height="46px" viewBox="0 0 52 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>liked_property</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="50%" x2="100%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#F77062" offset="0%"></stop>
+            <stop stop-color="#FE5196" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="liked_property">
+            <g id="path-2-link" fill="#000000" fill-rule="nonzero">
+                <path d="M26,46 L27.94915,43.876923 C31.23022,40.409231 36.49293,35.384615 43.57485,30.36 C56.27682,21.372308 54.32766,0 39.67654,0 C31.87994,0 27.98164,4.352308 26,7.713846 C24.01836,4.352308 20.12006,0 12.32346,0 C-2.32766,0 -4.27682,21.372308 8.42515,30.36 C15.50707,35.384615 20.76978,40.409231 24.05085,43.876923 L26,46 Z" id="path-2"></path>
+            </g>
+            <g id="path-2-link" fill="url(#linearGradient-1)">
+                <path d="M26,46 L27.94915,43.876923 C31.23022,40.409231 36.49293,35.384615 43.57485,30.36 C56.27682,21.372308 54.32766,0 39.67654,0 C31.87994,0 27.98164,4.352308 26,7.713846 C24.01836,4.352308 20.12006,0 12.32346,0 C-2.32766,0 -4.27682,21.372308 8.42515,30.36 C15.50707,35.384615 20.76978,40.409231 24.05085,43.876923 L26,46 Z" id="path-2"></path>
+            </g>
+        </g>
+    </g>
+</svg>

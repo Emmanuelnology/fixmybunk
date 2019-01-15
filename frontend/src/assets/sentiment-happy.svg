@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="45px" height="45px" viewBox="0 0 45 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51 (57462) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_sentiment_satisfied_black_24px</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ic_sentiment_satisfied_black_24px" fill="#686868" fill-rule="nonzero">
+            <circle id="Oval" cx="30.375" cy="16.875" r="3.375"></circle>
+            <circle id="Oval" cx="14.625" cy="16.875" r="3.375"></circle>
+            <path d="M22.4775,0 C10.0575,0 0,10.08 0,22.5 C0,34.92 10.0575,45 22.4775,45 C34.92,45 45,34.92 45,22.5 C45,10.08 34.92,0 22.4775,0 Z M22.5,40.5 C12.555,40.5 4.5,32.445 4.5,22.5 C4.5,12.555 12.555,4.5 22.5,4.5 C32.445,4.5 40.5,12.555 40.5,22.5 C40.5,32.445 32.445,40.5 22.5,40.5 Z M22.5,31.5 C19.17,31.5 16.3125,29.6775 14.7375,27 L10.98,27 C12.78,31.6125 17.2575,34.875 22.5,34.875 C27.7425,34.875 32.22,31.6125 34.02,27 L30.2625,27 C28.6875,29.6775 25.83,31.5 22.5,31.5 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>

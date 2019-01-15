@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="74px" height="74px" viewBox="0 0 74 74" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 4</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Profile--08-Copy-3" transform="translate(-473.000000, -623.000000)">
+            <g id="Group-4" transform="translate(475.000000, 625.000000)">
+                <circle id="Oval-2" stroke="#47DF7F" stroke-width="3" cx="35" cy="35" r="35"></circle>
+                <g id="Group-7" transform="translate(36.445436, 29.445436) rotate(-315.000000) translate(-36.445436, -29.445436) translate(26.945436, 11.445436)" fill="#47DF7F">
+                    <rect id="Rectangle-24" x="17" y="1.13686838e-13" width="2" height="35" rx="0.75"></rect>
+                    <rect id="Rectangle-24" transform="translate(9.500000, 35.000000) rotate(-270.000000) translate(-9.500000, -35.000000) " x="8.5" y="25.5" width="2" height="19" rx="0.75"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

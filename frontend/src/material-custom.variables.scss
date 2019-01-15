@@ -1,0 +1,75 @@
+@import '~@angular/material/theming';
+
+@include mat-core();
+
+$bunk-primary-palette: (
+  50 : #e5f5fc,
+  100 : #bee6f8,
+  200 : #93d6f3,
+  300 : #78DAF8,
+  400 : #26ade6,
+  500 : #439EE0,
+  600 : #22a6e3,
+  700 : #1c9cdf,
+  800 : #1793db,
+  900 : #0d83d5,
+  A100 : #ffffff,
+  A200 : #cee9ff,
+  A400 : #9bd2ff,
+  A700 : #81c7ff,
+  contrast: (
+    50 : #000000,
+    100 : #000000,
+    200 : #000000,
+    300 : #000000,
+    400 : #000000,
+    500 : #000000,
+    600 : #000000,
+    700 : #ffffff,
+    800 : #ffffff,
+    900 : #ffffff,
+    A100 : #000000,
+    A200 : #000000,
+    A400 : #000000,
+    A700 : #000000,
+  )
+);
+$bunk-accent-palette: (
+  50 : #eafaf2,
+  100 : #cbf3de,
+  200 : #a9ebc8,
+  300 : #87e2b2,
+  400 : #43E279,
+  500 : #53d691,
+  600 : #4cd189,
+  700 : #00CF6B,
+  800 : #39c674,
+  900 : #29bc62,
+  A100 : #fcfffd,
+  A200 : #c9ffdc,
+  A400 : #96ffbc,
+  A700 : #7cffab,
+  contrast: (
+    50 : #000000,
+    100 : #000000,
+    200 : #000000,
+    300 : #000000,
+    400 : #000000,
+    500 : #000000,
+    600 : #000000,
+    700 : #000000,
+    800 : #000000,
+    900 : #000000,
+    A100 : #000000,
+    A200 : #000000,
+    A400 : #000000,
+    A700 : #000000,
+  )
+);
+
+$bunk-mat-theme-primary: mat-palette($bunk-primary-palette);
+$bunk-mat-theme-accent: mat-palette($bunk-accent-palette);
+$bunk-mat-theme-warn: mat-palette($mat-red);
+$bunk-mat-theme: mat-light-theme($bunk-mat-theme-primary, $bunk-mat-theme-accent, $bunk-mat-theme-warn);
+
+@include angular-material-theme($bunk-mat-theme);

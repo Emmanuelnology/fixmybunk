@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="36px" viewBox="0 0 25 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape Copy 8</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="-6.33131206%" y1="50%" x2="156.417201%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#26ADE6" offset="0%"></stop>
+            <stop stop-color="#6F86D6" offset="100%"></stop>
+        </linearGradient>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="0" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Search/03" transform="translate(-985.000000, -527.000000)" fill="url(#linearGradient-1)">
+            <path d="M985,538.7 C985,545.18 997.5,563 997.5,563 C997.5,563 1010,545.18 1010,538.7 C1010,532.2425 1004.40909,527 997.5,527 C990.590909,527 985,532.2425 985,538.7 L985,538.7 Z M992.386364,538.848764 C992.386364,536.13861 994.984697,533.75 997.799557,533.75 C1000.61442,533.75 1003.18182,536.169234 1003.18182,538.864076 C1003.18182,541.57423 1000.59895,544.4375 997.768625,544.4375 C994.953764,544.4375 992.386364,541.558918 992.386364,538.848764 L992.386364,538.848764 Z" id="Shape-Copy-8" filter="url(#filter-2)"></path>
+        </g>
+    </g>
+</svg>

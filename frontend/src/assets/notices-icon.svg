@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="25px" viewBox="0 0 16 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51 (57462) - http://www.bohemiancoding.com/sketch -->
+    <title>Nav Icon / Notices</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="sideNav-/-SideNavManage" transform="translate(-27.000000, -456.000000)" fill="#ECF0F0">
+            <g id="Nav-Item" transform="translate(0.000000, 445.000000)">
+                <g id="Nav-Icon-/-Notices" transform="translate(27.000000, 11.000000)">
+                    <g id="Oval-48">
+                        <path d="M7,19 C3.13400675,19 0,15.8659932 0,12 C0,8.13400675 3.13400675,5 7,5 C10.8659932,5 14,8.13400675 14,12 C14,15.8659932 10.8659932,19 7,19 Z M8,11 L8,8 L6,8 L6,12 L6,13 L10,13 L10,11 L8,11 Z M15,11 L16,11 L16,13 L15,13 L15,11 Z M11,23.1387954 C11,23.6920299 10.5469637,24.1405151 10.0029699,24.1405151 L3.99703014,24.1405151 C3.4463856,24.1405151 3,23.6905636 3,23.1387954 L3,19.0702576 C4.17669347,19.750938 5.54285143,20.1405151 7,20.1405151 C8.45714857,20.1405151 9.82330653,19.750938 11,19.0702576 L11,23.1387954 Z M11,1.00171974 C11,0.448485202 10.5469637,0 10.0029699,0 L3.99703014,0 C3.4463856,0 3,0.449951535 3,1.00171974 L3,5.07025756 C4.17669347,4.38957714 5.54285143,4 7,4 C8.45714857,4 9.82330653,4.38957714 11,5.07025756 L11,1.00171974 Z"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

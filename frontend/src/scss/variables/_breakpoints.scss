@@ -1,0 +1,20 @@
+/* Breakpoints */
+
+@mixin breakpoint-to-md {
+  @media (max-width: map-deep-get($breakpoints, md, end)) {
+    @content;
+  }
+}
+
+/* Custom Mixins */
+
+// @include breakpoint($min: 640px, $max: 767px) { }
+@mixin breakpoint-custom($min, $max) {
+  @if (is-absolute-length($min) and is-absolute-length($max)) {
+    @media (min-width: $min) and (max-width: $max) {
+      @content;
+    }
+  } @else {
+    @error 'Bunk SCSS error: Breakpoint custom need to be a number and have an absolute lenght: $min: 640px, $max: 767px'
+  }
+}

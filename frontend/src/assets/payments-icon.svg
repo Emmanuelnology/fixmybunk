@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51 (57462) - http://www.bohemiancoding.com/sketch -->
+    <title>Nav Icon / Payments</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="sideNav-/-SideNavManage" transform="translate(-22.000000, -193.000000)">
+            <g id="Nav-Item" transform="translate(0.000000, 181.000000)">
+                <g id="Nav-Icon-/-Payments" transform="translate(23.000000, 12.000000)">
+                    <g id="Group">
+                        <polyline id="Path-3" stroke="#ECF0F0" stroke-width="0.834782609" points="0.13451087 1.52740385 0.13451087 0 0.13451087 23.820822 23.9722826 23.8153846"></polyline>
+                        <rect id="Rectangle-9" stroke="#ECF0F0" stroke-width="0.5" fill="#ECF0F0" x="4.42391304" y="18.3423077" width="3.67391304" height="3.74615385" rx="1.04347826"></rect>
+                        <rect id="Rectangle-9" stroke="#ECF0F0" stroke-width="0.5" fill="#ECF0F0" x="10.2673913" y="14.2807692" width="3.67391304" height="7.80769231" rx="1.04347826"></rect>
+                        <rect id="Rectangle-9" stroke="#D4D2D2" stroke-width="0.5" fill="#D4D2D2" x="16.1108696" y="7.63461538" width="3.67391304" height="14.4538462" rx="1.04347826"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
