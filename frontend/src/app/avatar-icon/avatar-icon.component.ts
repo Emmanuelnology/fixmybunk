@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-avatar-icon',
@@ -6,6 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./avatar-icon.component.scss']
 })
 export class AvatarIconComponent implements OnInit {
+  @Input() size: number;
+
+
+
 
   constructor() { }
 
