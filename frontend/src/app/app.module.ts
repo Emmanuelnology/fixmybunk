@@ -19,6 +19,8 @@ import { MembershipLevelComponent } from './out-of-app/membership-level/membersh
 import { AvatarIconComponent } from './avatar-icon/avatar-icon.component';
 import { LandingPageComponent  } from './out-of-app/landing-page/landing-page.component';
 import { ContractorJobsListComponent } from './contractor-jobs-list/contractor-jobs-list.component';
+import { ReportedByComponent } from './reported-by/reported-by.component';
+import { FeedbackSectionComponent } from './profile-page/feedback-section/feedback-section.component';
 
 const routes: Routes = [
   { path: 'function-demo', component: FunctionDemoComponent }, // THIS ROUTE IS FOR DEMOING ON AND PRACTICING ARCIBALDO
@@ -30,6 +32,7 @@ const routes: Routes = [
   { path: 'review', component: ReviewComponent },
   { path: 'contractor/quotes', component: ContractorJobsListComponent },
   { path: 'contractor/welcome-page', component: ContractorWelcomePageComponent },
+  { path: 'reported-by', component: ReportedByComponent},
   { path: 'membership-level', component: MembershipLevelComponent },
 ];
 
@@ -46,7 +49,9 @@ const routes: Routes = [
     MembershipLevelComponent,
     AvatarIconComponent,
     LandingPageComponent,
-    ContractorJobsListComponent
+    ContractorJobsListComponent,
+    ReportedByComponent,
+    FeedbackSectionComponent
   ],
   imports: [
     BrowserModule,
