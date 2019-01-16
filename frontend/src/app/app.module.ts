@@ -13,6 +13,7 @@ import { ReviewComponent } from './profile-page/review/review.component';
 import { JobDetailComponent } from './job-detail/job-detail.component';
 import { ContractorComponent } from './profile-page/contractor/contractor.component';
 import { ContractorWelcomePageComponent } from './out-of-app/contractor-welcome-page/contractor-welcome-page.component';
+import { AvatarIconComponent } from './avatar-icon/avatar-icon.component';
 
 const routes: Routes = [
   { path: 'function-demo', component: FunctionDemoComponent }, // THIS ROUTE IS FOR DEMOING ON AND PRACTICING ARCIBALDO
@@ -29,7 +30,8 @@ const routes: Routes = [
     ReviewComponent,
     JobDetailComponent,
     ContractorComponent,
-    ContractorWelcomePageComponent
+    ContractorWelcomePageComponent,
+    AvatarIconComponent
   ],
   imports: [
     BrowserModule,
