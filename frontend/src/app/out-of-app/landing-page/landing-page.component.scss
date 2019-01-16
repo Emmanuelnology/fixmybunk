@@ -36,6 +36,20 @@ img {
 
 }
 
+.contractors-say {
+    width:50%
+}
+
+.icon-left {
+    width:40%;
+}
+
+
+
+// .contractors-say div {
+//     width: 50%;
+// }
+
 
 .product-page{
     height:78vh;
@@ -59,15 +73,16 @@ img {
 
 .third-landing {
     height:100vh;
-    align-items: center
+    align-items: center;
 }
 
-.fourth-landing {
-    justify-content: center;
-}
+// .fourth-landing {
+//     justify-content: center;
+// }
 
 .membership-page{
     height:78vh;
+    align-items: center;
 
 }
 
@@ -76,4 +91,13 @@ img {
     background-color: rgb(81,83,86);
     display: flex;
     flex-direction: row;
+}
+
+.footer-container {
+    width: 50%
+}
+
+.small {
+    height: 40px;
+    width:200px;
 }
