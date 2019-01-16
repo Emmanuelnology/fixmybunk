@@ -10,7 +10,6 @@ export class ContractorJobsListComponent implements OnInit {
 
 
   jobsList = [
-    // WHEN CREATING DUMMY DATA HAVE 4 COMBINATIONS FOR 'Completed' and 'Quoted' --> T/F T/T, F/T, F/F
     {Name: 'Patty Massy',     Location: 'Kingswood, Bristol',       Date: '23-Aug-2019', Job_Type: 'Broken Lightswitch',    Completed: false, Quoted: false,  Latest_Quote: 90},
     {Name: 'Andrew Smith',    Location: 'Redlands, Bristol',        Date: '14-Oct-2019', Job_Type: 'Rewire Property',       Completed: false, Quoted: false,  Latest_Quote: 4500},
     {Name: 'Mark Johnson',    Location: 'Keynsham, Avon',           Date: '09-Nov-2019', Job_Type: 'Underfloor Heating',    Completed: false, Quoted: false,  Latest_Quote: 2000},
