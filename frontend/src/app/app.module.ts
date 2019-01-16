@@ -14,6 +14,9 @@ import { ReviewComponent } from './profile-page/review/review.component';
 import { JobDetailComponent } from './job-detail/job-detail.component';
 import { ContractorComponent } from './profile-page/contractor/contractor.component';
 import { ContractorWelcomePageComponent } from './out-of-app/contractor-welcome-page/contractor-welcome-page.component';
+import { OutAppLayoutComponent } from './out-of-app/out-app-layout/out-app-layout.component';
+import { MembershipLevelComponent } from './out-of-app/membership-level/membership-level.component';
+import { AvatarIconComponent } from './avatar-icon/avatar-icon.component';
 import { LandingPageComponent  } from './out-of-app/landing-page/landing-page.component';
 import { ContractorJobsListComponent } from './contractor-jobs-list/contractor-jobs-list.component';
 
@@ -26,7 +29,8 @@ const routes: Routes = [
   { path:  'landing', component: LandingPageComponent },
   { path: 'review', component: ReviewComponent },
   { path: 'contractor/quotes', component: ContractorJobsListComponent },
-  { path: 'contractor/welcome-page', component: ContractorWelcomePageComponent }
+  { path: 'contractor/welcome-page', component: ContractorWelcomePageComponent },
+  { path: 'membership-level', component: MembershipLevelComponent },
 ];
 
 @NgModule({
@@ -38,6 +42,9 @@ const routes: Routes = [
     JobDetailComponent,
     ContractorComponent,
     ContractorWelcomePageComponent,
+    OutAppLayoutComponent,
+    MembershipLevelComponent,
+    AvatarIconComponent,
     LandingPageComponent,
     ContractorJobsListComponent
   ],
