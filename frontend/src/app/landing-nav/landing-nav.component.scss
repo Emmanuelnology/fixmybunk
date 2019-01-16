@@ -1,0 +1,44 @@
+@import '../../bunk.variables.scss';
+
+.text_center{
+  display: flex;
+  align-items: center;
+  justify-content:center; 
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 7vh;
+  position: fixed;
+  width:100vw;
+  text-transform: uppercase;
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    li {
+      margin: 0 15px;
+    }
+
+  }
+
+  .image {
+    display: flex;
+    align-items: center;
+    margin: 5px 15px;
+  }
+    .logo {
+      width: 10rem;
+      height: auto;
+    }
+  }
+
+  .btn_sub {
+    background-color: $button-background_neutral;
+  }
