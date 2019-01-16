@@ -12,6 +12,7 @@ import { FunctionDemoComponent } from './function-demo/function-demo.component';
 import { ReviewComponent } from './profile-page/review/review.component';
 import { JobDetailComponent } from './job-detail/job-detail.component';
 import { ContractorComponent } from './profile-page/contractor/contractor.component';
+import { ContractorWelcomePageComponent } from './out-of-app/contractor-welcome-page/contractor-welcome-page.component';
 
 const routes: Routes = [
   { path: 'job-detail', component:  JobDetailComponent }
@@ -23,8 +24,9 @@ const routes: Routes = [
     FunctionDemoComponent,
     ReviewComponent,
     JobDetailComponent,
-    ContractorComponent
-,  ],
+    ContractorComponent,
+    ContractorWelcomePageComponent
+  ],
   imports: [
     BrowserModule,
     AngularFireModule.initializeApp(environment.firebase),
