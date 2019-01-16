@@ -16,8 +16,11 @@ import { ContractorWelcomePageComponent } from './out-of-app/contractor-welcome-
 import { ContractorJobsListComponent } from './contractor-jobs-list/contractor-jobs-list.component';
 
 const routes: Routes = [
+  { path: 'function-demo', component: FunctionDemoComponent }, // THIS ROUTE IS FOR DEMOING ON AND PRACTICING ARCIBALDO
   { path: 'job-detail', component:  JobDetailComponent },
-  { path: 'directory/contractor/id', component: ContractorComponent }
+  { path: 'directory/contractor/id', component: ContractorComponent },
+  { path: 'review', component: ReviewComponent }
+
 ];
 
 @NgModule({
