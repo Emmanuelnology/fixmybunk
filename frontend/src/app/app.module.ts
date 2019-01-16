@@ -9,6 +9,7 @@ import { environment } from '../environments/environment';
 
 import { AppComponent } from './app.component';
 import { FunctionDemoComponent } from './function-demo/function-demo.component';
+import { LandingNavComponent } from './landing-nav/landing-nav.component';
 import { ReviewComponent } from './profile-page/review/review.component';
 import { JobDetailComponent } from './job-detail/job-detail.component';
 import { ContractorComponent } from './profile-page/contractor/contractor.component';
@@ -20,6 +21,8 @@ const routes: Routes = [
   { path: 'function-demo', component: FunctionDemoComponent }, // THIS ROUTE IS FOR DEMOING ON AND PRACTICING ARCIBALDO
   { path: 'job-detail', component:  JobDetailComponent },
   { path: 'profile', component: ContractorComponent },
+  { path: 'review', component: ReviewComponent },
+  { path: 'nav', component: LandingNavComponent},
   { path:  'landing', component: LandingPageComponent },
   { path: 'review', component: ReviewComponent },
   { path: 'contractor/quotes', component: ContractorJobsListComponent },
@@ -30,6 +33,7 @@ const routes: Routes = [
   declarations: [
     AppComponent,
     FunctionDemoComponent,
+    LandingNavComponent,
     ReviewComponent,
     JobDetailComponent,
     ContractorComponent,
