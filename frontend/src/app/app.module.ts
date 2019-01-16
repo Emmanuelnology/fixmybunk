@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { RouterModule } from "@angular/router";
+import { RouterModule } from '@angular/router';
 
 // Firebase
 import { AngularFireModule } from '@angular/fire';
@@ -29,7 +29,7 @@ import { ContractorWelcomePageComponent } from './out-of-app/contractor-welcome-
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireFunctionsModule,
     RouterModule.forRoot([
-      { path: "job-detail", component:  JobDetailComponent },
+      { path: 'job-detail', component:  JobDetailComponent },
     ]),
   ],
   providers: [],
