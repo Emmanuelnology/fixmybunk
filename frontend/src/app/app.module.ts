@@ -19,14 +19,11 @@ import { ContractorWelcomePageComponent } from './contractor-welcome-page/contra
     AppComponent,
     FunctionDemoComponent,
     ReviewComponent,
-<<<<<<< HEAD
     JobDetailComponent
-    ContractorComponent
-=======
+    ContractorComponent,
     ContractorComponent,
     ContractorWelcomePageComponent
->>>>>>> d8cf3c5e8b087ef78aee9b32bfdf407d2352f31a
-  ],
+,  ],
   imports: [
     BrowserModule,
     AngularFireModule.initializeApp(environment.firebase),
