@@ -1,39 +1,41 @@
-<h2>Jobs List</h2>
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Location</th>
-    <th>Date</th>
-    <th>Job Type</th>
-    <th>Completed</th>
-    <th>Quoted</th>
-    <th>Button</th>
-    <th>Latest Quote</th>
-  </tr>
-  <tr *ngFor="let job of jobsList">
-    <td>{{job.Name}}</td>
-    <td>{{job.Location}}</td>
-    <td>{{job.Date}}</td>
-    <td>{{job.Job_Type}}</td>
-    <td>{{job.Completed}}</td>
-    <td>{{job.Quoted}}</td>
-    <td>
-      <button [ngClass]="job.Completed ? 'completed' : job.Quoted ? 'incompleteQuoted' :'incompleteUnquoted'">
-        <p *ngIf="job.Completed">Completed</p>
-        <p *ngIf="!job.Completed && job.Quoted">Quoted</p>
-        <p *ngIf="!job.Completed && !job.Quoted">Quote</p>
-      </button>
-    </td>
-    <td>£{{job.Latest_Quote}}</td>
-  </tr>
-</table>
-
-
-
-<div id="footer">
-	<p><strong>InVision</strong>/Prototyping, Collaboration & Workflow for Designers.</p>
-	<div id="blackBox">
-    <p>14 of 30</p>
+<div id="jobs_list_container" class="text text_2">
+  
+  <h2>Jobs List</h2>
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Location</th>
+      <th>Date</th>
+      <th>Job Type</th>
+      <th>Status</th>
+      <th>Latest Quote</th>
+    </tr>
+    <tr *ngFor="let job of jobsList">
+      <td>
+        <img class="profilePicture" src="../../assets/user.png">
+        {{job.Name}}
+      </td>
+      <td>{{job.Location}}</td>
+      <td>{{job.Date}}</td>
+      <td>{{job.Job_Type}}</td>
+      <td>
+        <button [ngClass]="job.Completed ? 'completed' : job.Quoted ? 'incompleteQuoted' :'incompleteUnquoted'">
+          <p *ngIf="job.Completed">Completed</p>
+          <p *ngIf="!job.Completed && job.Quoted">Quoted</p>
+          <p *ngIf="!job.Completed && !job.Quoted">Quote</p>
+        </button>
+      </td>
+      <td>£{{job.Latest_Quote}}</td>
+    </tr>
+  </table>
+  
+  
+  
+  <div id="footer">
+  	<p><strong>InVision</strong>/Prototyping, Collaboration & Workflow for Designers.</p>
+  	<div id="blackBox">
+      <p>14 of 30</p>
+    </div>
+  	<p id="exported">Exported on 01/05/2019 at 11:06am</p>
   </div>
-	<p id="exported">Exported on 01/05/2019 at 11:06am</p>
 </div>
