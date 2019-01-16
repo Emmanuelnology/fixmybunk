@@ -10,8 +10,6 @@
     background-image: url('../../../assets/property-main.jpg');
     height: 100vh;
     background-size: cover;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -20,54 +18,57 @@ h1 {
     color: white;
 }
 
-p {
-    color: rgb(161, 161, 161)
+.text-center {
+    text-align: center;
 }
 
-.second-landing {
-    // background-color: red;
-    // height: 100vh;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    // justify-content: center;
-    // align-items: center;
+p {
+    color: rgb(161, 161, 161);
 }
+
+li {
+    list-style-type: none;
+}
+
+img {
+    height:600px;
+    width:30%
+
+}
+
 
 .product-page{
-    height:83vh;
+    height:78vh;
+    align-items: center;
+    width: 100%
 }
 
-.image-for-second {
-    background-image: url('../../../assets/skewed-pages.jpg');
-    height:auto;
-    width:auto;
+.left {
+    width: 40%
 }
 
 .orange-text {
     background-color: rgb(255,96,8);
     width:100vw;
-//     display: flex;
-//     flex-direction: row;
-    height:10vh;
-//     justify-content: space-around;
+    height:15vh;
+}
+
+.orange-text p {
+    color: rgba(255,255,255, 0.5)
 }
 
 .third-landing {
-    background-color: blue;
-    height:100vh
+    height:100vh;
+    align-items: center
 }
 
 .fourth-landing {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
     justify-content: center;
 }
 
 .membership-page{
-    height:83vh;
-    background-color: green;
+    height:78vh;
+
 }
 
 .footer {
