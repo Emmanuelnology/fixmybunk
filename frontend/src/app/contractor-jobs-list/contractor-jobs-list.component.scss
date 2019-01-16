@@ -1,0 +1,56 @@
+table{
+    width: 100%;
+}
+
+tr,
+th,
+td{
+    padding: 20px;
+}
+
+#footer{
+    width: 100%;
+}
+
+#footer p,
+#footer div
+ {
+    display: inline-block;
+}
+
+#exported {
+    float: right;
+    padding-right: 10px;
+}
+
+#blackBox {
+    background-color: black;
+    color: white;
+    padding: 5px;
+    float: right;
+}
+
+.hidden{
+    display: none;
+}
+
+button{
+    border-radius: 20px;
+    width: 100px;
+}
+
+.incompleteUnquoted{
+    background-color: orange;
+    color: white;
+    border: 1px solid black;
+}
+
+.incompleteQuoted{
+    background-color: gray;
+    border: 1px solid black;
+}
+
+.completed{
+    color: gray;
+    border: 1px solid gray;
+}
