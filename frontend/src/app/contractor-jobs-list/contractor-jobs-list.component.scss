@@ -1,3 +1,5 @@
+@import '../../../src/scss/variables/breakpoints';
+
 #jobs_list_container{
     padding: 0 15px;
 }
@@ -5,6 +7,7 @@
 table{
     width: 100%;
     border-spacing: 0;
+    table-layout: fixed;
 }
 
 td {
@@ -15,6 +18,10 @@ td {
 
 th{
     text-align: left;
+}
+
+app-avatar-icon{
+    padding-right: 5px;
 }
 
 button{
@@ -44,35 +51,42 @@ button p{
     border: 1px solid #8c8a89;
 }
 
-
-
-
-#footer{
+.table_rows_small_screens{
     width: 100%;
+    border-bottom: 1px solid black;
 }
 
-#footer p,
-#footer div
- {
-    display: inline-block;
+@media only screen and (max-width: 768px) {
+    #table_tablet_and_higher{
+        display: none;
+    }
+
+    #table_tablet_and_smaller{
+        display: block;
+    }
+
+    td{
+        border-bottom: none;
+        min-width: 33vw;
+    }
 }
 
-#footer p {
-    margin: 0;
+@include breakpoint-custom($min: 0px, $max: 767px) {
+      #table_tablet_and_higher{
+        display: none;
+    }
+    
+    #table_tablet_and_smaller{
+        display: block;
+    }
 }
 
-#exported {
-    float: right;
-    padding-right: 10px;
-}
-
-#blackBox {
-    background-color: black;
-    color: white;
-    float: right;
-}
-
-#blackBox p {
-    padding: 0;
-    margin: 0;
+@include breakpoint-custom($min: 768px, $max: 2000px) {
+    #table_tablet_and_higher{
+        display: block;
+    }
+    
+    #table_tablet_and_smaller{
+        display: none;
+    }
 }
