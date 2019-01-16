@@ -63,5 +63,11 @@ p {
 .membership-page{
     height:83vh;
     background-color: green;
+}
 
+.footer {
+    width: 100vw;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
 }
