@@ -13,26 +13,38 @@
                 <app-avatar-icon size="139"></app-avatar-icon>
             </div>
             <div class="ml_2">
-                <div class="title_1 capitalize m-vertical_1">
-                    {{name}} <app-star-rating></app-star-rating><span class="text_3">4.8 (71)</span>
+                <div class="m-vertical_1">
+                    <span class="title_1 capitalize">
+                        {{name}}
+                    </span>
+                    <app-star-rating></app-star-rating>
+                    <span class="text_3">
+                        4.8 (71)
+                    </span>
                 </div>
-                <div class="title_3 m-vertical_1">
-                    {{description}} <i class="fas fa-edit"></i>
+                <div class="m-vertical_1">
+                    <span class="title_3">
+                        {{description}}
+                    </span>
+                    <i class="fas fa-edit text_2"></i>
                 </div>
                 <div class="text_2 mb_1">
                     <div>
                         {{phone}}
+                        <i class="fas fa-edit text_2"></i>
                     </div>
                     <div>
                         {{email}} / {{website}}
+                        <i class="fas fa-edit text_2"></i>
                     </div>
                     <div>
                         {{numberOfStaff}} people work for {{name}}
+                        <i class="fas fa-edit text_2"></i>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="text_3 mr_10">
+        <div id="detailed-description" class="text_3 mr_10">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at leo et arcu dictum venenatis nec eu orci.
               Nam vel tortor at libero volutpat eleifend. Duis in dolor sed felis imperdiet efficitur quis vel justo.
               Aenean iaculis varius eros quis rutrum. Donec tempus mauris vel tristique consectetur.

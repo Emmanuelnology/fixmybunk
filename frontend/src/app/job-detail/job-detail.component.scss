@@ -1,0 +1,43 @@
+@import '../../bunk.variables.scss';
+@import '../../bunk.theme.scss';
+@import '../../arcibaldo-custom.variables.scss';
+
+.cc {
+    flex-wrap: wrap;
+}
+
+/** Job Images with flex and space between */
+.photo {
+    flex: 1;
+}
+
+img.job-image {
+    width: 130px;
+    height: 110px;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+/** Arrow Button rotated */
+.click-left {
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    opacity: 0.50;
+    color: white;
+    transform: rotate(90deg);
+}
+
+.click-right {
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    opacity: 0.50;
+    color: white;
+    transform: rotate(-90deg);
+}
+
+img.job-click {
+    width: 30px;
+    height: 20px;
+}
