@@ -1,10 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-<<<<<<< HEAD
-import { RouterModule } from '@angular/router';
-=======
 import { RouterModule, Routes } from '@angular/router';
->>>>>>> 79a358cb5ff367db51a786dfbc8b007c82035d5a
 
 // Firebase
 import { AngularFireModule } from '@angular/fire';
@@ -35,13 +31,9 @@ const routes: Routes = [
     BrowserModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireFunctionsModule,
-<<<<<<< HEAD
     RouterModule.forRoot([
       { path: 'job-detail', component:  JobDetailComponent },
     ]),
-=======
-    RouterModule.forRoot(routes)
->>>>>>> 79a358cb5ff367db51a786dfbc8b007c82035d5a
   ],
   providers: [],
   bootstrap: [AppComponent]
