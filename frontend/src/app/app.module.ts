@@ -19,7 +19,7 @@ import { ContractorJobsListComponent } from './contractor-jobs-list/contractor-j
 const routes: Routes = [
   { path: 'function-demo', component: FunctionDemoComponent }, // THIS ROUTE IS FOR DEMOING ON AND PRACTICING ARCIBALDO
   { path: 'job-detail', component:  JobDetailComponent },
-  { path: 'directory/contractor/id', component: ContractorComponent },
+  { path: 'profile', component: ContractorComponent },
   { path:  'landing', component: LandingPageComponent },
   { path: 'review', component: ReviewComponent },
   { path: 'contractor/quotes', component: ContractorJobsListComponent },
