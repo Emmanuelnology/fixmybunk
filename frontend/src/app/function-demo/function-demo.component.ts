@@ -8,7 +8,13 @@ import { AngularFireFunctions } from '@angular/fire/functions';
 })
 export class FunctionDemoComponent implements OnInit {
   private data$;
-
+  private showQuoteGrid = false;
+  // quotes = [
+  //   {
+  //     contractor: "Bob Bobington",
+  //     favouriteFood: "Spam"
+  //   }
+  // ]
   constructor(private functions: AngularFireFunctions) {
     const callable = this.functions.httpsCallable('echo');
     this.data$ = callable({ reference: 1 });
