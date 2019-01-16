@@ -21,12 +21,14 @@ import { LandingPageComponent  } from './out-of-app/landing-page/landing-page.co
 import { ContractorJobsListComponent } from './contractor-jobs-list/contractor-jobs-list.component';
 import { ReportedByComponent } from './reported-by/reported-by.component';
 import { StarRatingComponent } from './star-rating/star-rating.component';
+import { FeedbackSectionComponent } from './profile-page/feedback-section/feedback-section.component';
 
 const routes: Routes = [
   { path: 'function-demo', component: FunctionDemoComponent }, // THIS ROUTE IS FOR DEMOING ON AND PRACTICING ARCIBALDO
   { path: 'job-detail', component:  JobDetailComponent },
   { path: 'profile', component: ContractorComponent },
   { path: 'review', component: ReviewComponent },
+  { path: 'feedback', component: FeedbackSectionComponent },
   { path: 'nav', component: LandingNavComponent},
   { path:  'landing', component: LandingPageComponent },
   { path: 'review', component: ReviewComponent },
@@ -51,7 +53,8 @@ const routes: Routes = [
     LandingPageComponent,
     ContractorJobsListComponent,
     ReportedByComponent,
-    StarRatingComponent
+    StarRatingComponent,
+    FeedbackSectionComponent
   ],
   imports: [
     BrowserModule,

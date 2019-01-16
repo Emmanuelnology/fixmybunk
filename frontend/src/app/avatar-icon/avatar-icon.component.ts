@@ -6,8 +6,8 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./avatar-icon.component.scss']
 })
 export class AvatarIconComponent implements OnInit {
-  @Input() width: number;
-  @Input() height: number;
+  @Input() size: number;
+
 
 
 
