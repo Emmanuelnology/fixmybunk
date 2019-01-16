@@ -1,15 +1,40 @@
 // nav
 .nav {
   border: 1px black solid;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 
-  ul{
-      list-style-type: none;
-      padding: 0;
-      display: flex;
-      flex-direction: row;
+  ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 
-      li{
-          padding: 0 5px;
-      }
+    li {
+      margin: 0 15px;
+      font-family: 'Rubik'
+    }
+
+    .sub{
+        color: black;
+        // display: flex;
+        // align-items: center;
+        // justify-content:center; 
+    }
+  }
+
+  .image {
+    display: flex;
+    align-items: center;
+    margin: 0 15px;
+
+    img {
+      width: auto;
+      height: 1.5em;
+    }
   }
 }
