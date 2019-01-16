@@ -5,7 +5,22 @@
   font-family: $font-family-primary;
 }
 
+.fas {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 100;
+  color: $colour-grey_2;
+}
+
+
 .btn-orange {
   background-color: $colour-orange_1;
   color: white;
+}
+
+app-star-rating {
+  display: inline;
+}
+
+#detailed-description {
+  color: $colour-grey_2;
 }
