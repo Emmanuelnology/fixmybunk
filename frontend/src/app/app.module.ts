@@ -22,8 +22,8 @@ const routes: Routes = [
   { path: 'directory/contractor/id', component: ContractorComponent },
   { path:  'landing', component: LandingPageComponent },
   { path: 'review', component: ReviewComponent },
-  { path: 'contractor/quotes', component: ContractorJobsListComponent }
-
+  { path: 'contractor/quotes', component: ContractorJobsListComponent },
+  { path: 'contractor/welcome-page', component: ContractorWelcomePageComponent }
 ];
 
 @NgModule({
