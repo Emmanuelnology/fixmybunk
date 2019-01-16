@@ -12,27 +12,26 @@ export class StarRatingComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-  }
-
   // ratingCalc(ratingVariable, noOfStars) {
   //   console.log(ratingVariable/noOfStars);
   //   const rating = ((ratingVariable/noOfStars) * 10)
   // }
 
-  starList: boolean[] = [true,true,true,true,true];
-  rating:number;  
+  starList: boolean[] = [true, true, true, true, true];
+  rating: number;
 
-  setStar(data:any){
-        this.rating = data+1;                               
-        for(var i=0; i<=4; i++){  
-          if(i<=data){  
-            this.starList[i]=false;  
-          }  
-          else{  
-            this.starList[i]=true;  
-          }  
-       }  
-   }  
+  ngOnInit() {
+  }
+
+  setStar(data: any) {
+        this.rating = data + 1;
+        for (let i = 0; i <= 4; i++) {
+          if (i <= data) {
+            this.starList[i] = false;
+          } else {
+            this.starList[i] = true;
+          }
+       }
+   }
 
 }
