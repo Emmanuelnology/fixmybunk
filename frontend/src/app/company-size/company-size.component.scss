@@ -1,0 +1,25 @@
+.text_center {
+  text-align: center;
+}
+
+.avatar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.avatar_center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  p{
+    margin: 0;
+  }
+}
+
+.title_1,
+.title_3 {
+  text-transform: capitalize;
+}
