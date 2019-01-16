@@ -15,6 +15,7 @@ import { ContractorComponent } from './profile-page/contractor/contractor.compon
 import { ContractorWelcomePageComponent } from './out-of-app/contractor-welcome-page/contractor-welcome-page.component';
 
 const routes: Routes = [
+  { path: 'function-demo', component: FunctionDemoComponent }, // THIS ROUTE IS FOR DEMOING ON AND PRACTICING ARCIBALDO
   { path: 'job-detail', component:  JobDetailComponent },
   { path: 'directory/contractor/id', component: ContractorComponent },
   { path: 'review', component: ReviewComponent }
