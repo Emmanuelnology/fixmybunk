@@ -47,6 +47,10 @@ img.job-click {
     height: 15px;
 }
 
+p {
+    color: $colour-grey_2;
+}
+
 @include breakpoint-custom($min: 870px, $max: 2000px) {
 // @media only screen and (min-width: 870px) {
     /** Job images size */
