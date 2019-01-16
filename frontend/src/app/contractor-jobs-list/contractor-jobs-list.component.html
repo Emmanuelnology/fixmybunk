@@ -5,12 +5,12 @@
 <div id="table_tablet_and_higher">
   <table>
     <tr>
-      <th>Name</th>
-      <th>Location</th>
-      <th>Date</th>
-      <th>Job Type</th>
-      <th>Status</th>
-      <th>Latest Quote</th>
+      <td><p>NAME<i class="fas fa-arrows-alt-v"></i></p></td>
+      <td><p>LOCATION<i class="fas fa-search"></i></p></td>
+      <td><p>DATE</p></td>
+      <td><p>JOB TYPE<i class="fas fa-search"></i></p></td>
+      <td><p>STATUS</p></td>
+      <td><p>LATEST QUOTES</p></td>
     </tr>
     <tr *ngFor="let job of jobsList">
       <td>
@@ -37,14 +37,14 @@
   <table>
     <div class="table_rows_small_screens">
       <tr>
-        <td><strong>Name</strong></td>
-        <td><strong>Location</strong></td>
-        <td><strong>Date</strong></td>
+        <td><p>NAME<i class="fas fa-arrows-alt-v"></i></p></td>
+        <td><p>LOCATION<i class="fas fa-search"></i></p></td>
+        <td><p>DATE</p></td>
       </tr>
       <tr>
-        <td><strong>Job Type</strong></td>
-        <td><strong>Status</strong></td>
-        <td><strong>Latest Quotes</strong></td>
+        <td><p>JOB TYPE<i class="fas fa-search"></i></p></td>
+        <td><p>STATUS</p></td>
+        <td><p>LATEST QUOTES</p></td>
       </tr>
     </div>
     <div *ngFor="let job of jobsList" class="table_rows_small_screens">

@@ -10,11 +10,19 @@ table{
     table-layout: fixed;
 }
 
+i {
+    padding-left: 5px;
+   }
+
 td {
     border-bottom: 1px solid lightgray;
     text-align: left;
     padding: 10px;
 }
+
+// td p{
+//     font-weight: bold;
+// }
 
 th{
     text-align: left;
@@ -22,6 +30,7 @@ th{
 
 app-avatar-icon{
     padding-right: 5px;
+    font-weight: normal;
 }
 
 button{
