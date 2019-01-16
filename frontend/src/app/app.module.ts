@@ -19,6 +19,7 @@ import { MembershipLevelComponent } from './out-of-app/membership-level/membersh
 import { AvatarIconComponent } from './avatar-icon/avatar-icon.component';
 import { LandingPageComponent  } from './out-of-app/landing-page/landing-page.component';
 import { ContractorJobsListComponent } from './contractor-jobs-list/contractor-jobs-list.component';
+import { MembershipLevelOptionsComponent } from './out-of-app/membership-level-options/membership-level-options.component';
 
 const routes: Routes = [
   { path: 'function-demo', component: FunctionDemoComponent }, // THIS ROUTE IS FOR DEMOING ON AND PRACTICING ARCIBALDO
@@ -46,7 +47,8 @@ const routes: Routes = [
     MembershipLevelComponent,
     AvatarIconComponent,
     LandingPageComponent,
-    ContractorJobsListComponent
+    ContractorJobsListComponent,
+    MembershipLevelOptionsComponent
   ],
   imports: [
     BrowserModule,
