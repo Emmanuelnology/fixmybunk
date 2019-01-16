@@ -1,0 +1,24 @@
+$x: 300px;
+$y: 200px;
+$aspectRatio: $x / $y;
+$offsetY: $x / $aspectRatio / 9;
+$offsetXLeft: $y / $aspectRatio / 7;
+$offsetXRight: $y / $aspectRatio / 13;
+.skew {    
+    display:inline-block;
+    width:$x;
+    height:$y;
+    position: relative;
+    background:url(http://placekitten.com/300/200);
+    left: $offsetXLeft;
+    margin-right: -$offsetXRight;
+    // border: 1px solid orange;
+    // transform: rotate3d(0,0,, 20deg);
+    -webkit-transform: perspective($x) rotateY(20deg);
+  }
+  
+  .container {
+      display:inline-block;
+     margin-top: $offsetY;
+     margin-bottom: $offsetY;
+  }

@@ -22,6 +22,8 @@ import { ContractorJobsListComponent } from './contractor-jobs-list/contractor-j
 import { ReportedByComponent } from './reported-by/reported-by.component';
 import { StarRatingComponent } from './star-rating/star-rating.component';
 import { FeedbackSectionComponent } from './profile-page/feedback-section/feedback-section.component';
+import { ImageStackComponent } from './image-stack/image-stack.component';
+import { SkewImageComponent } from './skew-image/skew-image.component';
 
 const routes: Routes = [
   { path: 'function-demo', component: FunctionDemoComponent }, // THIS ROUTE IS FOR DEMOING ON AND PRACTICING ARCIBALDO
@@ -36,6 +38,7 @@ const routes: Routes = [
   { path: 'contractor/welcome-page', component: ContractorWelcomePageComponent },
   { path: 'reported-by', component: ReportedByComponent},
   { path: 'membership-level', component: MembershipLevelComponent },
+  { path: 'imagestack', component: ImageStackComponent },
 ];
 
 @NgModule({
@@ -54,7 +57,9 @@ const routes: Routes = [
     ContractorJobsListComponent,
     ReportedByComponent,
     StarRatingComponent,
-    FeedbackSectionComponent
+    FeedbackSectionComponent,
+    ImageStackComponent,
+    SkewImageComponent
   ],
   imports: [
     BrowserModule,
