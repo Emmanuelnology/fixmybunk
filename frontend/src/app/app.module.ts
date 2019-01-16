@@ -13,10 +13,15 @@ import { ReviewComponent } from './profile-page/review/review.component';
 import { JobDetailComponent } from './job-detail/job-detail.component';
 import { ContractorComponent } from './profile-page/contractor/contractor.component';
 import { ContractorWelcomePageComponent } from './out-of-app/contractor-welcome-page/contractor-welcome-page.component';
+import { ContractorJobsListComponent } from './contractor-jobs-list/contractor-jobs-list.component';
 
 const routes: Routes = [
+  { path: 'function-demo', component: FunctionDemoComponent }, // THIS ROUTE IS FOR DEMOING ON AND PRACTICING ARCIBALDO
   { path: 'job-detail', component:  JobDetailComponent },
-  { path: 'directory/contractor/id', component: ContractorComponent }
+  { path: 'directory/contractor/id', component: ContractorComponent },
+  { path: 'review', component: ReviewComponent },
+  { path: 'contractor/quotes', component: ContractorJobsListComponent }
+
 ];
 
 @NgModule({
@@ -26,7 +31,8 @@ const routes: Routes = [
     ReviewComponent,
     JobDetailComponent,
     ContractorComponent,
-    ContractorWelcomePageComponent
+    ContractorWelcomePageComponent,
+    ContractorJobsListComponent
   ],
   imports: [
     BrowserModule,
