@@ -2,11 +2,24 @@
 
 .text_center {
   text-align: center;
-  height: 50vh;
   display: flex;
   flex-direction: column;
   align-content: center;
-  
+  width: auto;
+
+  div {
+    display: flex;
+    justify-content: center;
+  }
+
+}
+
+.subtitle_1 {
+  text-transform: capitalize;
+}
+
+.text_width_30 {
+  width: 30%
 }
 
 .heading_1 {
@@ -14,25 +27,21 @@
   text-transform: capitalize;
 }
 
-.subtitle_1 {
-  font-weight: 500;
-}
-
-.avatar{
+.avatar {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;  
-
+  justify-content: center;
 }
 
 .avatar_center {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   border-radius: 5%;
-  
-  p{
+  min-width: 120px;
+  margin: 0 25px;
+
+  p {
     margin: 0;
   }
 
@@ -40,14 +49,16 @@
     margin-top: 10px;
     text-transform: uppercase;
   }
-    
+
   &:hover {
     background-color: $colour-grey_1;
     cursor: pointer;
   }
 }
 
-.title_1,
-.title_3 {
-  text-transform: capitalize;
+.test {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }

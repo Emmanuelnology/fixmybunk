@@ -9,6 +9,12 @@ export class CompanySizeComponent implements OnInit {
 
   constructor() { }
 
+companySize = [
+  { title: 'single tradesman', subtitle: 'just you' },
+  { title: 'small company', subtitle: '2-10 people'},
+  { title: 'big company', subtitle: 'more than 10 people'}
+];
+
   ngOnInit() {
   }
 
