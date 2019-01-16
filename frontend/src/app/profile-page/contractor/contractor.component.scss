@@ -1,9 +1,13 @@
 @import '../../../scss/variables/colour-palettes';
 @import '../../../scss/variables/typography';
 
-// * {
-//   font-family: $font-family-primary;
-// }
+* {
+  font-family: $font-family-primary;
+}
+
+i {
+  font-family: "Font Awesome 5 Free";
+}
 
 
 .btn-orange {
