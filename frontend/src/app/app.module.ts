@@ -14,11 +14,7 @@ import { ReviewComponent } from './profile-page/review/review.component';
 import { JobDetailComponent } from './job-detail/job-detail.component';
 import { ContractorComponent } from './profile-page/contractor/contractor.component';
 import { ContractorWelcomePageComponent } from './out-of-app/contractor-welcome-page/contractor-welcome-page.component';
-<<<<<<< HEAD
-import { LandingPageComponent  } from './landing-page/landing-page.component';
-=======
 import { LandingPageComponent  } from './out-of-app/landing-page/landing-page.component'
->>>>>>> 764f7881fad1896aaa14e542eef2a3d16580b289
 import { ContractorJobsListComponent } from './contractor-jobs-list/contractor-jobs-list.component';
 
 const routes: Routes = [
