@@ -47,13 +47,19 @@ img.job-click {
     height: 15px;
 }
 
-.text_3 {
-    width: 100%;
-}
-
 @include breakpoint-custom($min: 870px, $max: 2000px) {
 // @media only screen and (min-width: 870px) {
     /** Job images size */
+    h1, h2 {
+        font-family: $font-family_primary;
+        font-size: 24px;
+    }
+
+    p {
+        font-family: $font-family_primary;
+        font-size: 18px;
+    }
+
     img.job-image {
     width: 180px;
     height: 160px;
@@ -75,6 +81,16 @@ img.job-click {
 @include breakpoint-custom($min: 450px, $max: 870px) {
 // @media only screen and (min-width: 450px) and (max-width: 870px) {
     /** Job images size */
+    h1, h2 {
+        font-family: $font-family_primary;
+        font-size: 22px;
+    }
+
+    p {
+        font-family: $font-family_primary;
+        font-size: 18px;
+    }
+
     img.job-image {
     width: 80px;
     height: 60px;
