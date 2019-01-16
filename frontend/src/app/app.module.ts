@@ -11,6 +11,7 @@ import { AppComponent } from './app.component';
 import { FunctionDemoComponent } from './function-demo/function-demo.component';
 import { ReviewComponent } from './profile-page/review/review.component';
 import { JobDetailComponent } from './job-detail/job-detail.component';
+import { ContractorComponent } from './profile-page/contractor/contractor.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { JobDetailComponent } from './job-detail/job-detail.component';
     FunctionDemoComponent,
     ReviewComponent,
     JobDetailComponent
+    ContractorComponent
   ],
   imports: [
     BrowserModule,
