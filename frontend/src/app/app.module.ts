@@ -15,10 +15,17 @@ import { ContractorComponent } from './profile-page/contractor/contractor.compon
 import { ContractorWelcomePageComponent } from './out-of-app/contractor-welcome-page/contractor-welcome-page.component';
 import { OutAppLayoutComponent } from './out-of-app/out-app-layout/out-app-layout.component';
 import { MembershipLevelComponent } from './out-of-app/membership-level/membership-level.component';
+import { LandingPageComponent  } from './landing-page/landing-page.component'
+import { ContractorJobsListComponent } from './contractor-jobs-list/contractor-jobs-list.component';
 
 const routes: Routes = [
+  { path: 'function-demo', component: FunctionDemoComponent }, // THIS ROUTE IS FOR DEMOING ON AND PRACTICING ARCIBALDO
   { path: 'job-detail', component:  JobDetailComponent },
-  { path: 'directory/contractor/id', component: ContractorComponent }
+  { path: 'directory/contractor/id', component: ContractorComponent },
+  { path:  'landing', component: LandingPageComponent },
+  { path: 'review', component: ReviewComponent },
+  { path: 'contractor/quotes', component: ContractorJobsListComponent },
+  { path: 'contractor/welcome-page', component: ContractorWelcomePageComponent }
 ];
 
 @NgModule({
@@ -30,7 +37,9 @@ const routes: Routes = [
     ContractorComponent,
     ContractorWelcomePageComponent,
     OutAppLayoutComponent,
-    MembershipLevelComponent
+    MembershipLevelComponent,
+    LandingPageComponent,
+    ContractorJobsListComponent
   ],
   imports: [
     BrowserModule,
