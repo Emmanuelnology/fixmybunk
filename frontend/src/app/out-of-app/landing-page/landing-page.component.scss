@@ -18,29 +18,48 @@ h1 {
     color: white;
 }
 
+.text-center {
+    text-align: center;
+}
+
 p {
-    color: rgb(161, 161, 161)
+    color: rgb(161, 161, 161);
 }
 
 li {
     list-style-type: none;
 }
 
+img {
+    height:600px;
+    width:30%
+
+}
 
 
 .product-page{
-    height:83vh;
+    height:78vh;
+    align-items: center;
+    width: 100%
+}
+
+.left {
+    width: 40%
 }
 
 .orange-text {
     background-color: rgb(255,96,8);
     width:100vw;
-    height:10vh;
+    height:15vh;
+}
+
+.orange-text p {
+    color: rgba(255,255,255, 0.5)
 }
 
 .third-landing {
-    background-color: blue;
-    height:100vh
+    height:100vh;
+    align-items: center
 }
 
 .fourth-landing {
@@ -48,8 +67,8 @@ li {
 }
 
 .membership-page{
-    height:83vh;
-    background-color: green;
+    height:78vh;
+
 }
 
 .footer {
