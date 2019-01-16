@@ -13,7 +13,7 @@ import { ReviewComponent } from './profile-page/review/review.component';
 import { JobDetailComponent } from './job-detail/job-detail.component';
 import { ContractorComponent } from './profile-page/contractor/contractor.component';
 import { ContractorWelcomePageComponent } from './out-of-app/contractor-welcome-page/contractor-welcome-page.component';
-import { LandingPageComponent  } from './landing-page/landing-page.component'
+import { LandingPageComponent  } from './landing-page/landing-page.component';
 import { ContractorJobsListComponent } from './contractor-jobs-list/contractor-jobs-list.component';
 
 const routes: Routes = [
