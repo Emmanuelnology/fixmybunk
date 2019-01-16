@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { IImage, JobDetailService } from './job-detail.service';
 
 @Component({
   selector: 'app-job-detail',
@@ -7,10 +7,10 @@ import { Router } from '@angular/router';
   styleUrls: ['./job-detail.component.scss']
 })
 export class JobDetailComponent implements OnInit {
-
-  constructor(private router: Router) { }
-
-  ngOnInit() {
+  images: IImage[];
+  constructor(private jobDeet: JobDetailService) {
+    this.images = this.jobDeet.getImages();
   }
-
+  ngOnInit () {
+  }
 }
