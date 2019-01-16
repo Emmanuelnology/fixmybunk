@@ -1,12 +1,51 @@
-table{
-    width: 100%;
+#jobs_list_container{
+    padding: 0 15px;
 }
 
-tr,
-th,
-td{
-    padding: 20px;
+table{
+    width: 100%;
+    border-spacing: 0;
 }
+
+td {
+    border-bottom: 1px solid lightgray;
+    text-align: left;
+    padding: 10px;
+}
+
+th{
+    text-align: left;
+}
+
+button{
+    border-radius: 20px;
+    width: 100px;
+    cursor: pointer;
+}
+
+button p{
+    margin: 5px;
+}
+
+.incompleteUnquoted{
+    background-color: #f2661a;
+    color: white;
+    border: 1px solid black;
+}
+
+.incompleteQuoted{
+    background-color: #afadac;
+    border: 1px solid black;
+}
+
+.completed{
+    color: #8c8a89;
+    background-color: white;
+    border: 1px solid #8c8a89;
+}
+
+
+
 
 #footer{
     width: 100%;
@@ -18,6 +57,10 @@ td{
     display: inline-block;
 }
 
+#footer p {
+    margin: 0;
+}
+
 #exported {
     float: right;
     padding-right: 10px;
@@ -26,31 +69,10 @@ td{
 #blackBox {
     background-color: black;
     color: white;
-    padding: 5px;
     float: right;
 }
 
-.hidden{
-    display: none;
-}
-
-button{
-    border-radius: 20px;
-    width: 100px;
-}
-
-.incompleteUnquoted{
-    background-color: orange;
-    color: white;
-    border: 1px solid black;
-}
-
-.incompleteQuoted{
-    background-color: gray;
-    border: 1px solid black;
-}
-
-.completed{
-    color: gray;
-    border: 1px solid gray;
+#blackBox p {
+    padding: 0;
+    margin: 0;
 }

@@ -6,21 +6,26 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./feedback-section.component.scss']
 })
 export class FeedbackSectionComponent implements OnInit {
+
+  title = "What The Landlords Say"
+
   reviews = [
     {
       name: 'Georgina',
-      description: 'They fitted my boiler perfectly, she was on time and finished the job quickly with no mess.I would use her again.'
+      description: 'It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.'
     },
     {
       name: 'Craig',
-      description: 'He came all the way to Canada to fix my boiler in my chalet. '
+      description: 'It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.'
     },
     {
-      name: 'Caitlin'
+      name: 'Caitlin',
+      description: 'It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.'
     },
     {
-      name: 'Keiran'
-    }
+      name: 'Keiran',
+      description: 'It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.'
+    },
   ]
   constructor() { }
 

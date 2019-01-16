@@ -1,6 +1,12 @@
-<div class="fix-container rc" >
-	<div *ngFor="let review of reviews" class="w_30">
+<div class="title_2">{{title}}</div>
+<div class="rc" >
+	<div *ngFor="let review of reviews" class="w_40 m-all_2">
 	  <app-review [review]="review"></app-review>
-	</div>
-
+  </div>
 </div>
+
+<div class="rc" >
+    <div *ngFor="let review of reviews" class="w_40 m-all_2">
+      <app-review [review]="review"></app-review>
+    </div>
+  </div>

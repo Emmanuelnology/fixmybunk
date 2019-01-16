@@ -1,0 +1,38 @@
+@import '../../bunk.variables.scss';
+@import '../../bunk.theme.scss';
+@import '../../arcibaldo-custom.variables.scss';
+// @import '../../material-custom.variables.scss';
+
+.rc {
+    width: 100%;
+}
+
+/** Job images size */
+img.job-image {
+    width: 130px;
+    height: 110px;
+}
+
+/** Arrow button rotated and grey with light blue hover */
+button {	
+	cursor: pointer;
+    outline: inherit;
+}
+
+button :hover {
+    background-color: #e5f5fc;
+}
+
+.click {
+    height: 70px;
+    width: 40px;
+    text-align: center;
+    background-color: transparent;
+    text-decoration: none;
+    border: none;  
+}
+
+img.job-click {
+    width: 30px;
+    height: 20px;
+}

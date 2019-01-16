@@ -1,0 +1,53 @@
+@import '../../bunk.variables';
+
+.text_center {
+  text-align: center;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  
+}
+
+.heading_1 {
+  font-size: 40px;
+  text-transform: capitalize;
+}
+
+.subtitle_1 {
+  font-weight: 500;
+}
+
+.avatar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;  
+
+}
+
+.avatar_center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5%;
+  
+  p{
+    margin: 0;
+  }
+
+  .text-caption_bold {
+    margin-top: 10px;
+    text-transform: uppercase;
+  }
+    
+  &:hover {
+    background-color: $colour-grey_1;
+    cursor: pointer;
+  }
+}
+
+.title_1,
+.title_3 {
+  text-transform: capitalize;
+}
