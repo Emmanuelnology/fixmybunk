@@ -27,6 +27,7 @@ const routes: Routes = [
   { path: 'job-detail', component:  JobDetailComponent },
   { path: 'profile', component: ContractorComponent },
   { path: 'review', component: ReviewComponent },
+  { path: 'feedback', component: FeedbackSectionComponent },
   { path: 'nav', component: LandingNavComponent},
   { path:  'landing', component: LandingPageComponent },
   { path: 'review', component: ReviewComponent },
