@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./feedback-section.component.scss']
 })
 export class FeedbackSectionComponent implements OnInit {
+
+  title = "What The Landlord Say"
+
   reviews = [
     {
       name: 'Georgina',
