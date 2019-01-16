@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
 
 // Firebase
 import { AngularFireModule } from '@angular/fire';
@@ -11,6 +12,8 @@ import { FunctionDemoComponent } from './function-demo/function-demo.component';
 import { ReviewComponent } from './profile-page/review/review.component';
 import { ContractorComponent } from './profile-page/contractor/contractor.component';
 
+const routes: Routes = [];
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +24,8 @@ import { ContractorComponent } from './profile-page/contractor/contractor.compon
   imports: [
     BrowserModule,
     AngularFireModule.initializeApp(environment.firebase),
-    AngularFireFunctionsModule
+    AngularFireFunctionsModule,
+    RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]
