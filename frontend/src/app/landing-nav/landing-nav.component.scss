@@ -1,74 +1,53 @@
 @import '../../bunk.variables.scss';
+
 .w-navbar {
   display: none
- }
+}
 
- .m-navbar {
+.m-navbar {
   height: 10vh;
   position: fixed;
-  width:100vw;
+  width: 100vw;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
- }
 
- .menu_icon {
-   div{
-     width: 35px;
-     height: 5px;
-     background-color: white;
-     margin: 6px 5px;
-     border-radius: 10%;
-   }
- }
+  .menu_icon {
+    margin: auto 10px;
 
-
-  @media only screen and (min-width: 768px) {
-    .m-navbar {
-      display: none;
+    div {
+      width: 30px;
+      height: 3px;
+      background-color: white;
+      margin: 5px 0;
+      border-radius: 10%;
     }
-
-     .text_center{
-      display: flex;
-      align-items: center;
-      justify-content:center; 
-    }
-    
-    .w-navbar {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      height: 7vh;
-      position: fixed;
-      width:100vw;
-      text-transform: uppercase;
-      z-index: 10;
-    
-      ul {
-        list-style-type: none;
-        padding: 0;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    
-        li {
-          margin: 0 15px;
-        }
-    
-      }
-    
-      .image {
-        display: flex;
-        align-items: center;
-        margin: 5px 15px;
-      }
-        .logo {
-          width: 10rem;
-          height: auto;
-        }
-      }
-    
-      .btn_sub {
-        background-color: $button-background_neutral;
-      }
   }
+
+  .avatar {
+    margin: auto 10px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+  }
+
+}
+
+@media only screen and (min-width: 768px) {
+  .m-navbar {
+    display: none;
+  }
+
+  .w-navbar {
+    z-index: 10;
+    display: flex !important;
+
+    ul {
+      list-style-type: none;
+    }
+  }
+
+  .btn_white {
+    background-color: $button-background_neutral;
+  }
+}
