@@ -22,6 +22,7 @@ import { ContractorJobsListComponent } from './contractor-jobs-list/contractor-j
 import { ReportedByComponent } from './reported-by/reported-by.component';
 import { StarRatingComponent } from './star-rating/star-rating.component';
 import { FeedbackSectionComponent } from './profile-page/feedback-section/feedback-section.component';
+import { CompanySizeComponent } from './company-size/company-size.component';
 
 const routes: Routes = [
   { path: 'function-demo', component: FunctionDemoComponent }, // THIS ROUTE IS FOR DEMOING ON AND PRACTICING ARCIBALDO
@@ -30,12 +31,13 @@ const routes: Routes = [
   { path: 'review', component: ReviewComponent },
   { path: 'feedback', component: FeedbackSectionComponent },
   { path: 'nav', component: LandingNavComponent},
-  { path:  'landing', component: LandingPageComponent },
+  { path: 'landing', component: LandingPageComponent },
   { path: 'review', component: ReviewComponent },
   { path: 'contractor/quotes', component: ContractorJobsListComponent },
   { path: 'contractor/welcome-page', component: ContractorWelcomePageComponent },
   { path: 'reported-by', component: ReportedByComponent},
   { path: 'membership-level', component: MembershipLevelComponent },
+  { path: 'size', component: CompanySizeComponent}
 ];
 
 @NgModule({
@@ -54,7 +56,8 @@ const routes: Routes = [
     ContractorJobsListComponent,
     ReportedByComponent,
     StarRatingComponent,
-    FeedbackSectionComponent
+    FeedbackSectionComponent,
+    CompanySizeComponent
   ],
   imports: [
     BrowserModule,
