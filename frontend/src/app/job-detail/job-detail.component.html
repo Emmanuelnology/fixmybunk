@@ -1,33 +1,36 @@
 <!-- <h1> {{ job.name }} </h1>
 <h2> {{ county.name }}, {{ city.name}} </h2> -->
 <!-- <ngb-datepicker-navigation></ngb-datepicker-navigation> -->
-<div>
-  <h1 class="title_1">Broken Door</h1>
-  <h2 class="title_1">Almondsbury, Bristol</h2>
-  <p class="text_3">24 hours ago</p>
-</div>
-
-<div class="rc">
-  <button class="click mt_4">
-    <img class="job-click" src="assets/arrow-left-sign-to-navigate.png">
-  </button>
-
-  <div class="photo" *ngFor="let image of images">
-    <p>{{ images.id }} </p>
-    <img class="job-image ml_1 mr_1" src="{{ image.url }}" alt="problem{{id}}">
+<div class="job-page">
+  <div>
+    <h1 class="title_1">Broken Door</h1>
+    <h2 class="title_1 mb_0  p-all_0">Almondsbury, Bristol</h2>
+    <p class="text_3 mt_1  p-all_0 time">24 hours ago</p>
   </div>
 
-  <button class="click mt_4">
-    <img class="job-click" src="assets/arrow-right-sign-to-navigate.png">
-  </button>
-</div>
+  <div class="rc jc_c">
+    <button class="click">
+      <img class="job-click" src="assets/arrow-left-sign-to-navigate.png">
+    </button>
 
-<div>
-  <p class="text_3">Lorem ipsum dolor sit amet, cum solet elaboraret id. 
-    Ut cum quod clita delectus. 
-    Ad illum maluisset dissentias nam. 
-    Solum noluisse nam ea, vix commodo sapientem ad. 
-    An nam eius quaeque explicari, cu nec nusquam scaevola, no sed sensibus voluptaria. 
-    Utamur apeirian ius an, te vis impetus imperdiet, eros repudiare intellegebat ei sea.
-  </p>
+    <div class="photo p-all_0" *ngFor="let image of images">
+      <p>{{ images.id }} </p>
+      <img class="job-image ml_1 mr_1" src="{{ image.url }}" alt="problem{{id}}">
+    </div>
+
+    <button class="click">
+      <img class="job-click" src="assets/arrow-right-sign-to-navigate.png">
+    </button>
+  </div>
+
+  <div>
+    <p class="text_3">
+      Lorem ipsum dolor sit amet, cum solet elaboraret id. 
+      Ut cum quod clita delectus. 
+      Ad illum maluisset dissentias nam. 
+      Solum noluisse nam ea, vix commodo sapientem ad. 
+      An nam eius quaeque explicari, cu nec nusquam scaevola, no sed sensibus voluptaria. 
+      Utamur apeirian ius an, te vis impetus imperdiet, eros repudiare intellegebat ei sea.
+    </p>
+  </div>
 </div>
