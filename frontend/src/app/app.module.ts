@@ -15,7 +15,8 @@ import { ContractorComponent } from './profile-page/contractor/contractor.compon
 import { ContractorWelcomePageComponent } from './out-of-app/contractor-welcome-page/contractor-welcome-page.component';
 
 const routes: Routes = [
-  { path: 'job-detail', component:  JobDetailComponent }
+  { path: 'job-detail', component:  JobDetailComponent },
+  { path: 'directory/contractor/id', component: ContractorComponent }
 ];
 
 @NgModule({
@@ -31,9 +32,7 @@ const routes: Routes = [
     BrowserModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireFunctionsModule,
-    RouterModule.forRoot([
-      { path: 'job-detail', component:  JobDetailComponent },
-    ]),
+    RouterModule.forRoot(routes),
   ],
   providers: [],
   bootstrap: [AppComponent]
