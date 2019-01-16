@@ -32,9 +32,7 @@ const routes: Routes = [
     BrowserModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireFunctionsModule,
-    RouterModule.forRoot([
-      { path: 'job-detail', component:  JobDetailComponent },
-    ]),
+    RouterModule.forRoot(routes),
   ],
   providers: [],
   bootstrap: [AppComponent]
