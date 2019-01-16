@@ -25,7 +25,8 @@ const routes: Routes = [
   { path:  'landing', component: LandingPageComponent },
   { path: 'review', component: ReviewComponent },
   { path: 'contractor/quotes', component: ContractorJobsListComponent },
-  { path: 'contractor/welcome-page', component: ContractorWelcomePageComponent }
+  { path: 'contractor/welcome-page', component: ContractorWelcomePageComponent },
+  { path: 'membership-level', component: MembershipLevelComponent },
 ];
 
 @NgModule({
