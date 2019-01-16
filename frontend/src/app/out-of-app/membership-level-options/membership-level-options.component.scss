@@ -1,17 +1,28 @@
-@import '../../../styles.scss';
 @import '../../../bunk.variables.scss';
-@import '../../../arcibaldo-custom.variables.scss';
-@import '../../../scss/typography';
-
 @import '../../../bunk.theme.scss';
-@import '../../../bunk.variables.scss';
+@import '../../../arcibaldo-custom.variables.scss';
 
 .each-option {
-  border: 1px solid $colour-grey_2;
-  width: 100px;
+  border: 2px solid $colour-background_light;
   text-align: center;
+  width: 150px;
 }
 
-.each-option-title {
-  background: $colour-grey_2;
+// .each-option-title {
+//   background: $colour-grey_2;
+// }
+
+// div {
+//   $base-space-value: 1px;
+// }
+
+.price {
+  margin:0;
+  font-size: 200%;
+  padding:0;
+}
+
+p {
+  margin: 0;
+  margin: 1px;
 }
