@@ -20,6 +20,7 @@ import { AvatarIconComponent } from './avatar-icon/avatar-icon.component';
 import { LandingPageComponent  } from './out-of-app/landing-page/landing-page.component';
 import { ContractorJobsListComponent } from './contractor-jobs-list/contractor-jobs-list.component';
 import { ReportedByComponent } from './reported-by/reported-by.component';
+import { StarRatingComponent } from './star-rating/star-rating.component';
 import { FeedbackSectionComponent } from './profile-page/feedback-section/feedback-section.component';
 
 const routes: Routes = [
@@ -52,6 +53,7 @@ const routes: Routes = [
     LandingPageComponent,
     ContractorJobsListComponent,
     ReportedByComponent,
+    StarRatingComponent,
     FeedbackSectionComponent
   ],
   imports: [

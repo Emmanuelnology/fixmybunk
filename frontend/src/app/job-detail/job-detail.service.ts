@@ -10,7 +10,6 @@ export interface IImage {
 })
 export class JobDetailService {
   constructor() { }
-  
   public getImages(): IImage[] {
     return [
       {

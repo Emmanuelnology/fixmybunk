@@ -1,0 +1,11 @@
+@import '../../../scss/variables/colour-palettes';
+@import '../../../scss/variables/typography';
+
+* {
+  font-family: $font-family-primary;
+}
+
+.btn-orange {
+  background-color: $colour-orange_1;
+  color: white;
+}

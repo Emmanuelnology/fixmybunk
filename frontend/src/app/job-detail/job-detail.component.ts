@@ -11,7 +11,6 @@ export class JobDetailComponent implements OnInit {
   constructor(private jobDeet: JobDetailService) {
     this.images = this.jobDeet.getImages();
   }
-  
   ngOnInit () {
   }
 }

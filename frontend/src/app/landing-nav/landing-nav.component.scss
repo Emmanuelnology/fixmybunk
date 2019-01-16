@@ -10,6 +10,9 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  height: 7vh;
+  position: fixed;
+  width:100vw;
   text-transform: uppercase;
 
   ul {
