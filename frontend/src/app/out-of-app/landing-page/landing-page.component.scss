@@ -1,3 +1,11 @@
+@import '../../../styles.scss';
+@import '../../../bunk.variables.scss';
+@import '../../../arcibaldo-custom.variables.scss';
+@import '../../../scss/typography';
+
+@import '../../../bunk.theme.scss';
+@import '../../../bunk.variables.scss';
+
 .initial-landing {
     background-image: url('../../../assets/property-main.jpg');
     height: 100vh;
@@ -17,8 +25,32 @@ p {
 }
 
 .second-landing {
-    background-color: red;
-    height: 100vh
+    // background-color: red;
+    // height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    // justify-content: center;
+    // align-items: center;
+}
+
+.product-page{
+    height:83vh;
+}
+
+.image-for-second {
+    background-image: url('../../../assets/skewed-pages.jpg');
+    height:auto;
+    width:auto;
+}
+
+.orange-text {
+    background-color: rgb(255,96,8);
+    width:100vw;
+//     display: flex;
+//     flex-direction: row;
+    height:10vh;
+//     justify-content: space-around;
 }
 
 .third-landing {
@@ -27,6 +59,20 @@ p {
 }
 
 .fourth-landing {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.membership-page{
+    height:83vh;
     background-color: green;
-    height:100vh
+}
+
+.footer {
+    width: 100vw;
+    background-color: rgb(81,83,86);
+    display: flex;
+    flex-direction: row;
 }
