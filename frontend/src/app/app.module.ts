@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
 
 // Firebase
 import { AngularFireModule } from '@angular/fire';
@@ -8,18 +9,33 @@ import { environment } from '../environments/environment';
 
 import { AppComponent } from './app.component';
 import { FunctionDemoComponent } from './function-demo/function-demo.component';
-import { LandingPageComponent } from './landing-page/landing-page.component';
+import { ReviewComponent } from './profile-page/review/review.component';
+import { JobDetailComponent } from './job-detail/job-detail.component';
+import { ContractorComponent } from './profile-page/contractor/contractor.component';
+import { ContractorWelcomePageComponent } from './out-of-app/contractor-welcome-page/contractor-welcome-page.component';
+import { LandingPageComponent  } from './landing-page/landing-page.component'
+
+const routes: Routes = [
+  { path: 'job-detail', component:  JobDetailComponent },
+  { path: 'directory/contractor/id', component: ContractorComponent },
+  { path:  'landing', component: LandingPageComponent }
+];
 
 @NgModule({
   declarations: [
     AppComponent,
     FunctionDemoComponent,
+    ReviewComponent,
+    JobDetailComponent,
+    ContractorComponent,
+    ContractorWelcomePageComponent,
     LandingPageComponent
   ],
   imports: [
     BrowserModule,
     AngularFireModule.initializeApp(environment.firebase),
-    AngularFireFunctionsModule
+    AngularFireFunctionsModule,
+    RouterModule.forRoot(routes),
   ],
   providers: [],
   bootstrap: [AppComponent]
