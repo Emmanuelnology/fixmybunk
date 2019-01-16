@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FeedbackSectionComponent implements OnInit {
 
-  title = "What The Landlord Say"
+  title = "What The Landlords Say"
 
   reviews = [
     {
