@@ -31,7 +31,7 @@ const routes: Routes = [
   { path: 'review', component: ReviewComponent },
   { path: 'contractor/quotes', component: ContractorJobsListComponent },
   { path: 'contractor/welcome-page', component: ContractorWelcomePageComponent },
-  { path: 'reported-by', component: ReportedByComponent}
+  { path: 'reported-by', component: ReportedByComponent},
   { path: 'membership-level', component: MembershipLevelComponent },
 ];
 
