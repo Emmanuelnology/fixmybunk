@@ -20,14 +20,14 @@ export class JobDetailService {
         id: 2,
         url: 'https://i.imgur.com/2WGi01r.jpg'
         },
-      {
-        id: 3,
-        url: 'https://media-cdn.tripadvisor.com/media/photo-s/02/19/f3/f2/bedroom-lock.jpg'
-      },
-      {
-        id: 4,
-        url: 'http://www.policestateusa.com/wp-content/uploads/2014/06/Kari-Edwards-damage-8.jpg'
-        },
+      // {
+      //   id: 3,
+      //   url: 'https://media-cdn.tripadvisor.com/media/photo-s/02/19/f3/f2/bedroom-lock.jpg'
+      // },
+      // {
+      //   id: 4,
+      //   url: 'http://www.policestateusa.com/wp-content/uploads/2014/06/Kari-Edwards-damage-8.jpg'
+      //   },
     ];
   }
 }
