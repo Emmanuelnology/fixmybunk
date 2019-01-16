@@ -1,15 +1,13 @@
 <div>
-  <p class="text"> <img class="star" src="assets/starIcon.svg">
-    <img src="assets/starIcon.svg">
-    <img src="assets/starIcon.svg">
-    <img src="assets/starIcon.svg">
-    <img src="assets/starIcon.svg">
-    (22)
-  </p>
+  <p class="text">(22)</p>
+
+  <app-star isActive=true></app-star>
+  <app-star isActive=true></app-star>
+  <app-star></app-star>
+  <app-star></app-star>
+  <app-star></app-star>
+
 </div>
-
-<!-- <p>{{ rating }}</p> -->
-
 
 <a *ngFor="let item of starList; let i=index " (click)="setStar(i)">  
   <img *ngIf="item" src="assets/unliked.png">
@@ -19,5 +17,3 @@
 <div>
   Rating : {{ rating }} stars
 </div>  
-
-<div></div>
