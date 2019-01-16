@@ -16,6 +16,7 @@ import { ContractorComponent } from './profile-page/contractor/contractor.compon
 import { ContractorWelcomePageComponent } from './out-of-app/contractor-welcome-page/contractor-welcome-page.component';
 import { LandingPageComponent  } from './out-of-app/landing-page/landing-page.component'
 import { ContractorJobsListComponent } from './contractor-jobs-list/contractor-jobs-list.component';
+import { ReportedByComponent } from './reported-by/reported-by.component';
 
 const routes: Routes = [
   { path: 'function-demo', component: FunctionDemoComponent }, // THIS ROUTE IS FOR DEMOING ON AND PRACTICING ARCIBALDO
@@ -26,7 +27,8 @@ const routes: Routes = [
   { path:  'landing', component: LandingPageComponent },
   { path: 'review', component: ReviewComponent },
   { path: 'contractor/quotes', component: ContractorJobsListComponent },
-  { path: 'contractor/welcome-page', component: ContractorWelcomePageComponent }
+  { path: 'contractor/welcome-page', component: ContractorWelcomePageComponent },
+  { path: 'reported-by', component: ReportedByComponent}
 ];
 
 @NgModule({
@@ -39,7 +41,8 @@ const routes: Routes = [
     ContractorComponent,
     ContractorWelcomePageComponent,
     LandingPageComponent,
-    ContractorJobsListComponent
+    ContractorJobsListComponent,
+    ReportedByComponent
   ],
   imports: [
     BrowserModule,
