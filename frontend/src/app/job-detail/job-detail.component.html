@@ -1,15 +1,29 @@
 <!-- <h1> {{ job.name }} </h1>
 <h2> {{ county.name }}, {{ city.name}} </h2> -->
 <!-- <ngb-datepicker-navigation></ngb-datepicker-navigation> -->
-<h1>Broken Door</h1>
-<h2>Almondsbury, Bristol</h2>
-<p>24 hours ago</p>
-<div *ngFor="let image of images">
-  <p>{{ images.id }} </p>
-  <img src="{{ image.url }}" alt="problem">
-</div>
 <div>
-  <p>Lorem ipsum dolor sit amet, cum solet elaboraret id. 
+  <h1 class="title_1">Broken Door</h1>
+  <h2 class="title_1">Almondsbury, Bristol</h2>
+  <p class="text_3">24 hours ago</p>
+</div>
+
+<div>
+  <button>
+    <img src="assets/arrow-down-sign-to-navigate.png">
+  </button>
+
+  <div *ngFor="let image of images">
+    <p>{{ images.id }} </p>
+    <img src="{{ image.url }}" alt="problem{{id}}">
+  </div>
+  
+  <button>
+    <img src="assets/arrow-down-sign-to-navigate.png">
+  </button>
+</div>
+
+<div>
+  <p class="text_3">Lorem ipsum dolor sit amet, cum solet elaboraret id. 
     Ut cum quod clita delectus. 
     Ad illum maluisset dissentias nam. 
     Solum noluisse nam ea, vix commodo sapientem ad. 
