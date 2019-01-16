@@ -20,8 +20,8 @@ const routes: Routes = [
   { path: 'job-detail', component:  JobDetailComponent },
   { path: 'directory/contractor/id', component: ContractorComponent },
   { path: 'review', component: ReviewComponent },
-  { path: 'contractor/quotes', component: ContractorJobsListComponent }
-
+  { path: 'contractor/quotes', component: ContractorJobsListComponent },
+  { path: 'contractor/welcome-page', component: ContractorWelcomePageComponent }
 ];
 
 @NgModule({
