@@ -8,11 +8,13 @@ import { environment } from '../environments/environment';
 
 import { AppComponent } from './app.component';
 import { FunctionDemoComponent } from './function-demo/function-demo.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FunctionDemoComponent
+    FunctionDemoComponent,
+    LandingPageComponent
   ],
   imports: [
     BrowserModule,
