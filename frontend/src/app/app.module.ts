@@ -12,14 +12,20 @@ import { FunctionDemoComponent } from './function-demo/function-demo.component';
 import { ReviewComponent } from './profile-page/review/review.component';
 import { JobDetailComponent } from './job-detail/job-detail.component';
 import { ContractorComponent } from './profile-page/contractor/contractor.component';
+import { ContractorWelcomePageComponent } from './contractor-welcome-page/contractor-welcome-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FunctionDemoComponent,
     ReviewComponent,
+<<<<<<< HEAD
     JobDetailComponent
     ContractorComponent
+=======
+    ContractorComponent,
+    ContractorWelcomePageComponent
+>>>>>>> d8cf3c5e8b087ef78aee9b32bfdf407d2352f31a
   ],
   imports: [
     BrowserModule,
