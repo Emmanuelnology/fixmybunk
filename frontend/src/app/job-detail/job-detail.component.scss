@@ -50,9 +50,14 @@ img.job-click {
 @include breakpoint-custom($min: 870px, $max: 2000px) {
 // @media only screen and (min-width: 870px) {
     /** Job images size */
-    h1, h2 {
+    h1 {
         font-family: $font-family_primary;
         font-size: 24px;
+    }
+
+    h2 {
+        font-family: $font-family_primary;
+        font-size: 22px;
     }
 
     p {
@@ -81,14 +86,19 @@ img.job-click {
 @include breakpoint-custom($min: 450px, $max: 870px) {
 // @media only screen and (min-width: 450px) and (max-width: 870px) {
     /** Job images size */
-    h1, h2 {
+    h1 {
         font-family: $font-family_primary;
         font-size: 22px;
     }
 
-    p {
+    h2 {
         font-family: $font-family_primary;
         font-size: 18px;
+    }
+
+    p {
+        font-family: $font-family_primary;
+        font-size: 15px;
     }
 
     img.job-image {
