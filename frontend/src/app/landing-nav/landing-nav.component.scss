@@ -1,4 +1,4 @@
-// nav
+@import '../../bunk.variables.scss';
 
 .text_center{
   display: flex;
@@ -6,7 +6,7 @@
   justify-content:center; 
 }
 
-.nav {
+.navbar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -28,11 +28,14 @@
   .image {
     display: flex;
     align-items: center;
-    margin: 0 15px;
-
-    img {
-      width: auto;
-      height: 1.5em;
+    margin: 5px 15px;
+  }
+    .logo {
+      width: 10rem;
+      height: auto;
     }
   }
-}
+
+  .btn_sub {
+    background-color: $button-background_neutral;
+  }
