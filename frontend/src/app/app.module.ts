@@ -19,6 +19,7 @@ import { MembershipLevelComponent } from './out-of-app/membership-level/membersh
 import { AvatarIconComponent } from './avatar-icon/avatar-icon.component';
 import { LandingPageComponent  } from './out-of-app/landing-page/landing-page.component';
 import { ContractorJobsListComponent } from './contractor-jobs-list/contractor-jobs-list.component';
+import { MembershipLevelOptionsComponent } from './out-of-app/membership-level-options/membership-level-options.component';
 import { ReportedByComponent } from './reported-by/reported-by.component';
 import { StarRatingComponent } from './star-rating/star-rating.component';
 import { FeedbackSectionComponent } from './profile-page/feedback-section/feedback-section.component';
@@ -54,6 +55,8 @@ const routes: Routes = [
     AvatarIconComponent,
     LandingPageComponent,
     ContractorJobsListComponent,
+    MembershipLevelOptionsComponent,
+    ReportedByComponent,
     ReportedByComponent,
     StarRatingComponent,
     FeedbackSectionComponent,

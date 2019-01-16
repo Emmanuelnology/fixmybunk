@@ -7,18 +7,18 @@
   <p class="text_3">24 hours ago</p>
 </div>
 
-<div>
-  <button>
-    <img src="assets/arrow-down-sign-to-navigate.png">
+<div class="rc">
+  <button class="click-left mt_4">
+    <img class="job-click" src="assets/arrow-down-sign-to-navigate.png">
   </button>
 
-  <div *ngFor="let image of images">
+  <div class="photo" *ngFor="let image of images">
     <p>{{ images.id }} </p>
-    <img src="{{ image.url }}" alt="problem{{id}}">
+    <img class="job-image ml_1 mr_1" src="{{ image.url }}" alt="problem{{id}}">
   </div>
-  
-  <button>
-    <img src="assets/arrow-down-sign-to-navigate.png">
+
+  <button class="click-right mt_4">
+    <img class="job-click" src="assets/arrow-down-sign-to-navigate.png">
   </button>
 </div>
 
