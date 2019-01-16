@@ -13,6 +13,8 @@ import { ReviewComponent } from './profile-page/review/review.component';
 import { JobDetailComponent } from './job-detail/job-detail.component';
 import { ContractorComponent } from './profile-page/contractor/contractor.component';
 import { ContractorWelcomePageComponent } from './out-of-app/contractor-welcome-page/contractor-welcome-page.component';
+import { OutAppLayoutComponent } from './out-of-app/out-app-layout/out-app-layout.component';
+import { MembershipLevelComponent } from './out-of-app/membership-level/membership-level.component';
 
 const routes: Routes = [
   { path: 'job-detail', component:  JobDetailComponent },
@@ -26,7 +28,9 @@ const routes: Routes = [
     ReviewComponent,
     JobDetailComponent,
     ContractorComponent,
-    ContractorWelcomePageComponent
+    ContractorWelcomePageComponent,
+    OutAppLayoutComponent,
+    MembershipLevelComponent
   ],
   imports: [
     BrowserModule,
