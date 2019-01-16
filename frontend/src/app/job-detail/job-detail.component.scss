@@ -1,26 +1,35 @@
 @import '../../bunk.variables.scss';
 @import '../../bunk.theme.scss';
 @import '../../arcibaldo-custom.variables.scss';
-// @import '../../material-custom.variables.scss';
 
-.rc {
-    width: 100%;
+.job-page {
+    overflow: hidden;
 }
+
+/** Job image+details size */
+// .rc {
+//     display: flex;
+// }
 
 /** Job images size */
 img.job-image {
-    width: 130px;
-    height: 110px;
+    width: 45px;
+    height: 35px;
+    // flex: 1;
 }
 
-/** Arrow button rotated and grey with light blue hover */
+/** Arrow button rotated and grey with light gray hover */
 button {	
 	cursor: pointer;
     outline: inherit;
+    // flex: 1;   
+    margin: 0;
+    height:auto;
+    width: auto;
 }
 
 button :hover {
-    background-color: #e5f5fc;
+    background-color: $colour-background_base;
 }
 
 .click {
@@ -33,6 +42,47 @@ button :hover {
 }
 
 img.job-click {
-    width: 30px;
-    height: 20px;
+    width: 20px;
+    height: 15px;
+}
+
+.text_3 {
+    width: 100%;
+}
+
+@media only screen and (min-width: 870px) {
+    /** Job images size */
+    img.job-image {
+    width: 180px;
+    height: 160px;
+    }
+
+    button {
+        margin-top: 5em;
+        margin-left: 0;
+        padding-left: 0;
+        width: 3em;
+    }
+
+    img.job-click {
+        width: 50px;
+        height: 40px;
+    }
+}
+
+@media only screen and (min-width: 450px) and (max-width: 870px) {
+    /** Job images size */
+    img.job-image {
+    width: 80px;
+    height: 60px;
+    }
+
+    button {
+        margin-top: 2em;
+    }
+
+    img.job-click {
+        width: 35px;
+        height: 25px;
+    }
 }
