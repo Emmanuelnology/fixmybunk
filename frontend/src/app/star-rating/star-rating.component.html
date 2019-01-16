@@ -1,8 +1,23 @@
 <div>
-  <img class="star" src="assets/starIcon.svg">
-  <img src="assets/starIcon.svg">
-  <img src="assets/starIcon.svg">
-  <img src="assets/starIcon.svg">
-  <img src="assets/starIcon.svg">
-  (22)
+  <p class="text"> <img class="star" src="assets/starIcon.svg">
+    <img src="assets/starIcon.svg">
+    <img src="assets/starIcon.svg">
+    <img src="assets/starIcon.svg">
+    <img src="assets/starIcon.svg">
+    (22)
+  </p>
 </div>
+
+<!-- <p>{{ rating }}</p> -->
+
+
+<a *ngFor="let item of starList; let i=index " (click)="setStar(i)">  
+  <img *ngIf="item" src="assets/unliked.png">
+  <img *ngIf="!item" src="assets/like.png">
+</a>
+
+<div>
+  Rating : {{ rating }} stars
+</div>  
+
+<div></div>

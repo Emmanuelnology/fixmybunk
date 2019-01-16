@@ -5,6 +5,7 @@
 table{
     width: 100%;
     border-spacing: 0;
+    table-layout: fixed;
 }
 
 td {
@@ -15,13 +16,6 @@ td {
 
 th{
     text-align: left;
-}
-
-.profilePicture{
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    vertical-align: middle;
 }
 
 button{
@@ -51,6 +45,36 @@ button p{
     border: 1px solid #8c8a89;
 }
 
+#table_rows_small_screens{
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+
+@media only screen and (max-width: 768px) {
+    #table_tablet_and_higher{
+        display: none;
+    }
+
+    #table_tablet_and_smaller{
+        display: block;
+    }
+
+    td{
+        border-bottom: none;
+        width: 33vw;
+
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #table_tablet_and_higher{
+        display: block;
+    }
+    
+    #table_tablet_and_smaller{
+        display: none;
+    }
+}
 
 
 
