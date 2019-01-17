@@ -33,6 +33,7 @@ import { QuoteComponent } from './quote/quote.component';
 import { ContractorLoginComponent } from './out-of-app/contractor-login/contractor-login.component';
 import { ModalComponent } from './modal/modal.component';
 import { JobImageComponent } from './job-image/job-image.component';
+import { QuoteModalComponent } from './quote-modal/quote-modal.component';
 import { QuoteSubmittedModalComponent } from './quote-submitted-modal/quote-submitted-modal.component';
 
 const routes: Routes = [
@@ -51,6 +52,7 @@ const routes: Routes = [
   { path: 'reported-by', component: ReportedByComponent},
   { path: 'membership-level', component: MembershipLevelComponent },
   { path: 'size', component: CompanySizeComponent},
+  { path: 'quote', component: QuoteModalComponent}
   { path: 'timeline', component: QuoteTimelineComponent},
   { path: 'imagestack', component: ImageStackComponent },
   { path: 'size', component: CompanySizeComponent}
@@ -80,6 +82,8 @@ const routes: Routes = [
     CompanySizeComponent,
     ContractorRegTitleComponent,
     StarComponent,
+    JobImageComponent,
+    QuoteModalComponent,
     QuoteComponent,
     ContractorLoginComponent,
     JobImageComponent,
