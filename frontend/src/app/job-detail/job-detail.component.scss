@@ -7,23 +7,20 @@
     overflow: hidden;
 }
 
-/** Job image+details size */
-// .rc {
-//     display: flex;
-// }
+.photo {
+    vertical-align: center;
+}
 
 /** Job images size */
 img.job-image {
-    width: 45px;
-    height: 35px;
-    // flex: 1;
+    width: 90px;
+    height: 80px;
 }
 
 /** Arrow button rotated and grey with light gray hover */
 button {	
 	cursor: pointer;
-    outline: inherit;
-    // flex: 1;   
+    outline: inherit;   
     margin: 0;
     height:auto;
     width: auto;
@@ -87,7 +84,7 @@ p {
     }
 }
 
-@include breakpoint-custom($min: 450px, $max: 870px) {
+@include breakpoint-custom($min: 555px, $max: 870px) {
 // @media only screen and (min-width: 450px) and (max-width: 870px) {
     /** Job images size */
     h1 {
@@ -106,16 +103,30 @@ p {
     }
 
     img.job-image {
-    width: 80px;
-    height: 60px;
+        width: 105px;
+        height: 85px;
     }
 
     button {
-        margin-top: 2em;
+        margin-top: 1.5em;
     }
 
     img.job-click {
-        width: 35px;
-        height: 25px;
+        width: 30px;
+        height: 20px;
+    }
+}
+
+@include breakpoint-custom($min: 485px, $max: 555px) {
+    button {
+        padding-top: 2.2em;
+    }
+}
+
+@include breakpoint-custom($min: 0px, $max: 485px) {
+    /** Job images size */
+    img.job-image {
+        width: 50px;
+        height: 40px;
     }
 }
