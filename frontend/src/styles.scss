@@ -29,7 +29,15 @@ body {
   flex-direction: column;
   height: 100%;
   margin: 0;
+
 }
+
+body.blur { //used for modal component
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  // overflow:hidden;
+}
+
 
 header {
   pointer-events: none;

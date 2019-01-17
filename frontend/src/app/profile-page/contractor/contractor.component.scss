@@ -4,16 +4,14 @@
 .fas {
   font-weight: 100;
   color: $colour-grey_2;
+  &:hover {
+    cursor: pointer;
+  }
 }
-
 
 .btn-orange {
   background-color: $colour-orange_1;
   color: white;
-}
-
-app-star-rating {
-  display: inline;
 }
 
 #detailed-description {
