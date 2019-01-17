@@ -1,0 +1,27 @@
+$imageCount:3;
+$offset:100px;
+
+.image-stack {
+    display:inline-block;
+    width: 300 + ($offset * ($imageCount - 1));
+}
+
+@mixin stack {
+    @for $i from 0 through $imageCount - 1 {
+        &:nth-child(#{$i}) {
+            z-index:$i + 1;
+            left:$i*$offset;
+        }
+    }
+}
+
+.image {
+    position:absolute;
+    left:0;
+    z-index:1;
+    @include stack;
+}
+
+.image:first-child {
+    position:relative;
+}
