@@ -1,17 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i|Open+Sans');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:600|Rubik:200,400,500,700,900');
 //Arcibaldo
-// Arcibaldo variables
-@import '~arcibaldo/scss/arcibaldo.variables';
-
-// Custom variables: will overwrite Arcibaldo default variables
+@import "~arcibaldo/scss/arcibaldo.variables";
 $base-space-value: 10px;
-
-// Required
+// @import "arcibaldo-custom.variables";
 @import '~arcibaldo/scss/functions';
 @import '~arcibaldo/scss/mixins';
-
-// Optional
 @import '~arcibaldo/scss/theme/layout';
 @import '~arcibaldo/scss/theme/layout-flexbox';
 @import '~arcibaldo/scss/theme/spacing';
@@ -29,7 +23,6 @@ html {
   height: 100%;
   min-width: 320px;
 }
-
 
 body {
   display: flex;
