@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { IImage, JobDetailService } from '../job-detail/job-detail.service';
 
 @Component({
   selector: 'app-job-image',
@@ -6,10 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./job-image.component.scss']
 })
 export class JobImageComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
+  images: IImage[];
+  constructor(private jobDeet: JobDetailService) {
+    this.images = this.jobDeet.getImages();
   }
-
+  ngOnInit () {
+  }
 }
