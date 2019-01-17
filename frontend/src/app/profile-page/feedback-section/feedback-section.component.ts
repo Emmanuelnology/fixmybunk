@@ -11,21 +11,38 @@ export class FeedbackSectionComponent implements OnInit {
 
   reviews = [
     {
-      name: 'Georgina',
-      description: 'It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.'
+      name: 'GEORGINA',
+      description: 'Lorem ipsum dolor sit amet, duo decore minimum assueverit id, veritus quaerendum his in.'
     },
     {
-      name: 'Craig',
-      description: 'It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.'
+      name: 'CRAIG',
+      description: 'Lorem ipsum dolor sit amet, duo decore minimum assueverit id, veritus quaerendum his in.'
     },
     {
-      name: 'Caitlin',
-      description: 'It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.'
+      name: 'CAITLIN',
+      description: 'Lorem ipsum dolor sit amet, duo decore minimum assueverit id, veritus quaerendum his in.'
     },
     {
-      name: 'Keiran',
-      description: 'It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.'
+      name: 'KIERAN',
+      description: 'Lorem ipsum dolor sit amet, duo decore minimum assueverit id, veritus quaerendum his in.'
     },
+    {
+      name: 'SATYAM',
+      description: 'Lorem ipsum dolor sit amet, duo decore minimum assueverit id, veritus quaerendum his in.'
+    },
+    {
+      name: 'SHEA',
+      description: 'Lorem ipsum dolor sit amet, duo decore minimum assueverit id, veritus quaerendum his in.'
+    },
+    {
+      name: 'JOSH',
+      description: 'Lorem ipsum dolor sit amet, duo decore minimum assueverit id, veritus quaerendum his in.'
+    },
+    {
+      name: 'GEORGE',
+      description: 'Lorem ipsum dolor sit amet, duo decore minimum assueverit id, veritus quaerendum his in.'
+    },
+
   ];
   constructor() { }
 

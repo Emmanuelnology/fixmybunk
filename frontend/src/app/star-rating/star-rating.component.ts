@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-star-rating',
@@ -7,31 +7,33 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StarRatingComponent implements OnInit {
 
-  // private ratingVariable = 4;
-  // private noOfStars = 5;
+  // ratingVariable: number;
+  // noOfGreyStars: number ;
+
+  stars: boolean[] = [true, true, true, false, false];
+
+  // starList: boolean[] = [true, true, true, true, true];
+  // rating: number;
+
+  // @Input() isRequired = true;
 
   constructor() { }
 
-  // ratingCalc(ratingVariable, noOfStars) {
-  //   console.log(ratingVariable/noOfStars);
-  //   const rating = ((ratingVariable/noOfStars) * 10)
+  // setStar(data: any) {
+  //   this.rating = data + 1;
+  //   for (let i = 0; i <= 4; i++) {
+  //     if (i <= data) {
+  //       this.starList[i] = false;
+  //     } else {
+  //       this.starList[i] = true;
+  //     }
+  //   }
   // }
 
-  starList: boolean[] = [true, true, true, true, true];
-  rating: number;
-
   ngOnInit() {
+    // this.ratingVariable = 3;
+    // this.noOfGreyStars = 5 - this.ratingVariable;
+    // console.log(this.ratingVariable + this.noOfGreyStars);
   }
-
-  setStar(data: any) {
-        this.rating = data + 1;
-        for (let i = 0; i <= 4; i++) {
-          if (i <= data) {
-            this.starList[i] = false;
-          } else {
-            this.starList[i] = true;
-          }
-       }
-   }
 
 }
