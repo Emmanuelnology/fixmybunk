@@ -7,26 +7,14 @@
     <h2 class="title_4 mb_0">Almondsbury, Bristol</h2>
     <div class="rc jc_sb">
       <p class="text-tiny mt_1 pt-all_0">24 hours ago</p>
-      <div class="quoting mr_25">
+      <div class="quoting">
         <p class="small-quote">You Quoted</p>
         <p class="quote-number">£280</p>
       </div>
     </div>
   </div>
 
-  <div class="rc jc_c">
-    <button class="click pb_1 pr_0">
-      <img class="job-click" src="assets/arrow-left-sign-to-navigate.png">
-    </button>
-
-    <div class="pt_1" *ngFor="let image of images">
-      <img class="job-image ml_1 mr_1" src="{{ image.url }}" alt="problem{{id}}">
-    </div>
-
-    <button class="click pb_1">
-      <img class="job-click" src="assets/arrow-right-sign-to-navigate.png">
-    </button>
-  </div>
+  <app-job-image></app-job-image>
 
   <div>
     <p class="text-tiny">

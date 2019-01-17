@@ -5,6 +5,7 @@
 
 .job-page {
     overflow: hidden;
+    background-color: $colour-blue_0;
 }
 
 /** Titles and paragraphes font family */
@@ -40,39 +41,6 @@ p {
     font-size: 4px;
 }
 
-/** Job images size */
-img.job-image {
-    width: 105px;
-    height: 95px;
-}
-
-/** Arrow button rotated and grey with light gray hover */
-button {	
-	cursor: pointer;
-    outline: inherit;   
-    margin: 0;
-    height:auto;
-    width: auto;
-}
-
-button :hover {
-    background-color: $colour-background_base;
-}
-
-.click {
-    height: 70px;
-    width: 40px;
-    text-align: center;
-    background-color: transparent;
-    text-decoration: none;
-    border: none;  
-}
-
-img.job-click {
-    width: 20px;
-    height: 15px;
-}
-
 @include breakpoint-custom($min: 870px, $max: 2000px) {
 // @media only screen and (min-width: 870px) {
     /** Job images size */
@@ -89,7 +57,7 @@ img.job-click {
     }
 
     .quoting {
-        width: 120px;
+        width: 140px;
     }
 
     .small-quote {
@@ -98,23 +66,6 @@ img.job-click {
     
     .quote-number {
         font-size: 14px;
-    }
-
-    img.job-image {
-        width: 180px;
-        height: 160px;
-    }
-
-    button {
-        margin-top: 5em;
-        margin-left: 0;
-        padding-left: 0;
-        width: 3em;
-    }
-
-    img.job-click {
-        width: 50px;
-        height: 40px;
     }
 }
 
@@ -132,39 +83,15 @@ img.job-click {
     p {
         font-size: 10px;
     }
-
-    img.job-image {
-        width: 105px;
-        height: 85px;
-    }
-
-    button {
-        margin-top: 1.5em;
-    }
-
-    img.job-click {
-        width: 30px;
-        height: 20px;
-    }
 }
 
 @include breakpoint-custom($min: 485px, $max: 550px) {
-    button {
-        padding-top: 2.2em;
-    }
-
     .text-tiny {
         font-size: 8px;
     }
 }
 
 @include breakpoint-custom($min: 0px, $max: 485px) {
-    /** Job images size */
-    img.job-image {
-        width: 50px;
-        height: 40px;
-    }
-
     .text-tiny {
         font-size: 6px;
     }
