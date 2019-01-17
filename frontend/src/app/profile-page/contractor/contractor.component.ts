@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { ModalComponent } from 'src/app/modal/modal.component';
 
 @Component({
   selector: 'app-contractor',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contractor.component.scss']
 })
 export class ContractorComponent implements OnInit {
+  @ViewChild(ModalComponent) modal;
 
   name = 'CS Gas Fitting';
   description = 'Gas Fitter in Bristol and Bath';
@@ -13,10 +15,14 @@ export class ContractorComponent implements OnInit {
   email = 'hello@gsgasfitting.com';
   website = 'www.gsgasfitting.com';
   numberOfStaff = 3;
-
+  
   constructor() { }
 
   ngOnInit() {
+  }
+
+  openModal() {
+    this.modal.open();
   }
 
 }

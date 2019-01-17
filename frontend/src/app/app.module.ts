@@ -84,8 +84,6 @@ const routes: Routes = [
     ContractorLoginComponent,
     JobImageComponent,
     QuoteTimelineComponent,
-    ModalComponent,
-    QuoteSubmittedModalComponent,
     ModalComponent
   ],
   imports: [
