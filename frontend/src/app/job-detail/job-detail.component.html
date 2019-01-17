@@ -4,10 +4,10 @@
 <div class="job-page">
   <div>
     <h1 class="title_3">Broken Door</h1>
-    <h2 class="title_4 mb_0  p-all_0">Almondsbury, Bristol</h2>
-    <div class="time-quoting">
-      <p class="text-tiny mt_1  p-all_0">24 hours ago</p>
-      <div class="quoting pr_3 pl_3">
+    <h2 class="title_4 mb_0">Almondsbury, Bristol</h2>
+    <div class="rc jc_sb">
+      <p class="text-tiny mt_1 pt-all_0">24 hours ago</p>
+      <div class="quoting mr_25">
         <p class="small-quote">You Quoted</p>
         <p class="quote-number">£280</p>
       </div>
@@ -19,7 +19,7 @@
       <img class="job-click" src="assets/arrow-left-sign-to-navigate.png">
     </button>
 
-    <div class="photo pt_1" *ngFor="let image of images">
+    <div class="pt_1" *ngFor="let image of images">
       <img class="job-image ml_1 mr_1" src="{{ image.url }}" alt="problem{{id}}">
     </div>
 

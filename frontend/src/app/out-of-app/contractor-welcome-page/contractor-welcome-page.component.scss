@@ -1,12 +1,9 @@
-h1 {
-    text-align: center;
+@import '../../../bunk.variables.scss';
+
+.welcome-title {
+    font-size: 2.5em;
 }
 
-.image, .welcome {
-    background-color: antiquewhite;
-    //vertical-align: middle;
-}
-
-.container > div {
-    margin: 10%;
+.component {
+    min-width: 260px;
 }
