@@ -54,6 +54,12 @@ header * {
 
 // @todo:
 
+.fa,
+.fas,
+.far {
+  font-family: "Font Awesome 5 Free";
+}
+
 .lateral-navbar-direction {
   flex-direction: row !important;
 }
