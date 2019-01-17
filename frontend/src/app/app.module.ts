@@ -52,7 +52,7 @@ const routes: Routes = [
   { path: 'reported-by', component: ReportedByComponent},
   { path: 'membership-level', component: MembershipLevelComponent },
   { path: 'size', component: CompanySizeComponent},
-  { path: 'quote', component: QuoteModalComponent}
+  { path: 'quote', component: QuoteModalComponent},
   { path: 'timeline', component: QuoteTimelineComponent},
   { path: 'imagestack', component: ImageStackComponent },
   { path: 'size', component: CompanySizeComponent}
