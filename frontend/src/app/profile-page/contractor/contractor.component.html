@@ -1,4 +1,3 @@
-<app-landing-nav></app-landing-nav>
 <app-modal></app-modal>
 <div class="m-all_1">
     <div class="rc jc_sb m-horizontal_1">
@@ -22,24 +21,42 @@
                         4.8 (71)
                     </span>
                 </div>
-                <div class="m-vertical_1">
+                <div class="m-vertical_1" *ngIf="!descriptionBeingEdited">
                     <span class="title_3">
                         {{description}} 
                     </span>
-                    <i class="fas fa-edit text_3"></i>
+                    <i class="fas fa-edit text_3" (click)="swapDescription()"></i>
+                </div>
+                <div class="m-vertical_1" *ngIf="descriptionBeingEdited">
+                    <span class="title_3">
+                        {{description}} 
+                    </span>
+                    <i class="fas fa-check-circle text_3" (click)="swapDescription()"></i>
                 </div>
                 <div class="text_2 mb_1">
-                    <div>
+                    <div *ngIf="!phoneBeingEdited">
                         <span class="text">{{phone}} </span>
-                        <i class="fas fa-edit text_3"></i>
+                        <i class="fas fa-edit text_3" (click)="swapPhone()"></i>
                     </div>
-                    <div>
+                    <div *ngIf="phoneBeingEdited">
+                        <span class="text">{{phone}} </span>
+                        <i class="fas fa-check-circle text_3" (click)="swapPhone()"></i>
+                    </div>
+                    <div *ngIf="!emailWebsiteBeingEdited">
                         <span class="text">{{email}} / {{website}} </span>
-                        <i class="fas fa-edit text_3"></i>
+                        <i class="fas fa-edit text_3" (click)="swapEmailWebsite()"></i>
                     </div>
-                    <div>
+                    <div *ngIf="emailWebsiteBeingEdited">
+                        <span class="text">{{email}} / {{website}} </span>
+                        <i class="fas fa-check-circle text_3" (click)="swapEmailWebsite()"></i>
+                    </div>
+                    <div *ngIf="!numberOfStaffBeingEdited">
                         <span class="text">{{numberOfStaff}} people work for {{name}} </span>
-                        <i class="fas fa-edit text_3"></i>
+                        <i class="fas fa-edit text_3" (click)="swapNumberOfStaff()"></i>
+                    </div>
+                    <div *ngIf="numberOfStaffBeingEdited">
+                        <span class="text">{{numberOfStaff}} people work for {{name}} </span>
+                        <i class="fas fa-check-circle text_3" (click)="swapNumberOfStaff()"></i>
                     </div>
                 </div>
             </div>
