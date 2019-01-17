@@ -9,16 +9,15 @@
   </div>
 
   <div class="rc jc_c">
-    <button class="click">
+    <button class="click pb_1 pr_0">
       <img class="job-click" src="assets/arrow-left-sign-to-navigate.png">
     </button>
 
-    <div class="photo p-all_0" *ngFor="let image of images">
-      <p>{{ images.id }} </p>
+    <div class="photo pt_1" *ngFor="let image of images">
       <img class="job-image ml_1 mr_1" src="{{ image.url }}" alt="problem{{id}}">
     </div>
 
-    <button class="click">
+    <button class="click pb_1">
       <img class="job-click" src="assets/arrow-right-sign-to-navigate.png">
     </button>
   </div>
