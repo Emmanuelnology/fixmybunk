@@ -1,8 +1,10 @@
 
-<div class=" w_30 fix-container">
+<div class=" w_30 fix-container jc_c flex_wrap">
   <app-avatar-icon size="90"></app-avatar-icon>
     
     <div class="subtitle_4">{{review.name}}</div>
-    <app-star-rating></app-star-rating>  
+    <div class="star-rating jc_c rc">
+      <app-star-rating></app-star-rating> 
+    </div> 
     <div class="text text_3 pt_auto">{{review.description}}</div>
 </div>
