@@ -32,6 +32,7 @@ import { QuoteSubmittedModalComponent } from './quote-submitted-modal/quote-subm
 const routes: Routes = [
   { path: 'function-demo', component: FunctionDemoComponent }, // THIS ROUTE IS FOR DEMOING ON AND PRACTICING ARCIBALDO
   { path: 'job-detail', component:  JobDetailComponent },
+  { path: 'job-image', component:  JobImageComponent },
   { path: 'profile', component: ContractorComponent },
   { path: 'review', component: ReviewComponent },
   { path: 'feedback', component: FeedbackSectionComponent },
