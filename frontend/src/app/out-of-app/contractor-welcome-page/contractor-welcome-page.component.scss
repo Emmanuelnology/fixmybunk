@@ -1,50 +1,9 @@
-h1 {
-    text-align: center;
-    font-size: 2em;
-}
+@import '../../../bunk.variables.scss';
 
 .welcome-title {
     font-size: 2.5em;
 }
 
-svg {
-    width: 60%;
-    display: block;
-    margin: auto;
+.component {
+    min-width: 260px;
 }
-
-.welcome-sentence {
-    color: gray;
-    text-align: justify;
-}
-
-// button {
-//     display: block;
-//     width: 48%;
-// }
-
-// .find-job-btn {
-//     margin-right: 2%;
-// }
-
-// .take-tour-btn {
-//     margin-left: 2%;
-// }
-
-// button {
-//     font-size: 0.4em;
-//     border-radius: 10%;
-//     border: solid orangered 1px;
-//     display: block;
-//     margin: 0 auto;
-//     border-radius: 50px;
-//     width: 48%;
-//     height: 20px;
-//     background-color: white;
-//     color: orangered;
-// }
-
-// button:hover {
-//     background-color: orangered;
-//     color: white;
-// }
