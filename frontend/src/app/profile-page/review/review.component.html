@@ -1,13 +1,8 @@
 
 <div class=" w_30 fix-container">
-  <app-avatar-icon size="100"></app-avatar-icon>
-  
-  <div class="subtitle_2">LANDLORD</div>
-  <div class="subtitle_2">5</div>
-  
-  <div class="text_2">orem Ipsum is simply dummy text of the printing and typesetting industry. 
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-    when an unknown printer took a galley of type and scrambled it to make a type 
-    specimen book.
-  </div>
+  <app-avatar-icon size="90"></app-avatar-icon>
+    
+    <div class="subtitle_4">{{review.name}}</div>
+    <app-star-rating></app-star-rating>  
+    <div class="text text_3 pt_auto">{{review.description}}</div>
 </div>

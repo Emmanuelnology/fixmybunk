@@ -1,0 +1,14 @@
+@import '../../scss/variables/colour-palettes';
+
+svg {
+    height:1em;
+    display:inline-block;
+}
+
+.active {
+    fill: $colour-text_dark;
+}
+
+.default {
+    fill: $colour-text_base;
+}

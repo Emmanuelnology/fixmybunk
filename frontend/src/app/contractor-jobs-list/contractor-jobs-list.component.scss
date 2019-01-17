@@ -1,0 +1,101 @@
+@import '../../../src/scss/variables/breakpoints';
+
+#jobs_list_container{
+    padding: 0 15px;
+}
+
+table{
+    width: 100%;
+    border-spacing: 0;
+    table-layout: fixed;
+}
+
+i {
+    padding-left: 5px;
+   }
+
+td {
+    border-bottom: 1px solid lightgray;
+    text-align: left;
+    padding: 10px;
+}
+
+// td p{
+//     font-weight: bold;
+// }
+
+th{
+    text-align: left;
+}
+
+app-avatar-icon{
+    padding-right: 5px;
+    font-weight: normal;
+}
+
+button{
+    border-radius: 20px;
+    width: 100px;
+    cursor: pointer;
+}
+
+button p{
+    margin: 5px;
+}
+
+.incompleteUnquoted{
+    background-color: #f2661a;
+    color: white;
+    border: 1px solid black;
+}
+
+.incompleteQuoted{
+    background-color: #afadac;
+    border: 1px solid black;
+}
+
+.completed{
+    color: #8c8a89;
+    background-color: white;
+    border: 1px solid #8c8a89;
+}
+
+.table_rows_small_screens{
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+
+@media only screen and (max-width: 768px) {
+    #table_tablet_and_higher{
+        display: none;
+    }
+
+    #table_tablet_and_smaller{
+        display: block;
+    }
+
+    td{
+        border-bottom: none;
+        min-width: 33vw;
+    }
+}
+
+@include breakpoint-custom($min: 0px, $max: 767px) {
+      #table_tablet_and_higher{
+        display: none;
+    }
+    
+    #table_tablet_and_smaller{
+        display: block;
+    }
+}
+
+@include breakpoint-custom($min: 768px, $max: 2000px) {
+    #table_tablet_and_higher{
+        display: block;
+    }
+    
+    #table_tablet_and_smaller{
+        display: none;
+    }
+}
