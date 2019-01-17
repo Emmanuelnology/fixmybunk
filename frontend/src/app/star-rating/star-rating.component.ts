@@ -11,7 +11,7 @@ export class StarRatingComponent implements OnInit {
   // noOfGreyStars: number ;
 
   stars: boolean[] = [true, true, true, false, false];
-  
+
   // starList: boolean[] = [true, true, true, true, true];
   // rating: number;
 
@@ -28,12 +28,12 @@ export class StarRatingComponent implements OnInit {
   //       this.starList[i] = true;
   //     }
   //   }
-  // }  
+  // }
 
   ngOnInit() {
     // this.ratingVariable = 3;
     // this.noOfGreyStars = 5 - this.ratingVariable;
     // console.log(this.ratingVariable + this.noOfGreyStars);
   }
-  
+
 }
