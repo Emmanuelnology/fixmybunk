@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LandingNavComponent implements OnInit {
 
+  menuIsHidden = true;
+
   constructor() { }
 
   ngOnInit() {
