@@ -7,9 +7,32 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MembershipLevelOptionsComponent implements OnInit {
 
-  constructor() { }
+    options = [
+      {
+        title: 'BASIC',
+        prices: '5'
+      },
+      {
+        title: 'BRONZE',
+        prices: '10'
+      },
+      {
+        title: 'SILVER',
+        prices: '15'
+      },
+      {
+        title: 'GOLD',
+        prices: '20'
+      }
+    ];
+
+  constructor() {
+
+  }
 
   ngOnInit() {
   }
+
+
 
 }

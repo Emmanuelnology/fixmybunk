@@ -1,0 +1,29 @@
+@import '../../scss/variables/colour-palettes';
+
+.line {
+    color:   $colour-grey_2;
+    height: 100px;
+    width: 100vw;
+}
+
+h5 {
+    color: $colour-orange_1;
+}
+
+.w_10 {
+    text-align: center;
+}
+
+.circle {
+    position: absolute;
+    bottom: 90%;
+    left: 45%;
+    height: 10%;
+    width: 10%;
+    border: solid 1px $colour-grey_2;
+}
+
+.info {
+    border: solid 1px white;
+    position: relative;
+}
