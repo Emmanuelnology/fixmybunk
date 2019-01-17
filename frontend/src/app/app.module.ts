@@ -23,13 +23,22 @@ import { MembershipLevelOptionsComponent } from './out-of-app/membership-level-o
 import { ReportedByComponent } from './reported-by/reported-by.component';
 import { StarRatingComponent } from './star-rating/star-rating.component';
 import { FeedbackSectionComponent } from './profile-page/feedback-section/feedback-section.component';
+import { ImageStackComponent } from './image-stack/image-stack.component';
+import { SkewImageComponent } from './skew-image/skew-image.component';
 import { CompanySizeComponent } from './company-size/company-size.component';
 import { ContractorRegTitleComponent } from './out-of-app/contractor-reg-title/contractor-reg-title.component';
 import { StarComponent } from './star/star.component';
+import { QuoteTimelineComponent } from './quote-timeline/quote-timeline.component';
+import { QuoteComponent } from './quote/quote.component';
+import { ContractorLoginComponent } from './out-of-app/contractor-login/contractor-login.component';
+import { ModalComponent } from './modal/modal.component';
+import { JobImageComponent } from './job-image/job-image.component';
+import { QuoteSubmittedModalComponent } from './quote-submitted-modal/quote-submitted-modal.component';
 
 const routes: Routes = [
   { path: 'function-demo', component: FunctionDemoComponent }, // THIS ROUTE IS FOR DEMOING ON AND PRACTICING ARCIBALDO
   { path: 'job-detail', component:  JobDetailComponent },
+  { path: 'job-image', component:  JobImageComponent },
   { path: 'profile', component: ContractorComponent },
   { path: 'review', component: ReviewComponent },
   { path: 'feedback', component: FeedbackSectionComponent },
@@ -38,8 +47,12 @@ const routes: Routes = [
   { path: 'review', component: ReviewComponent },
   { path: 'contractor/quotes', component: ContractorJobsListComponent },
   { path: 'contractor/welcome', component: ContractorWelcomePageComponent },
+  { path: 'contractor/login', component: ContractorLoginComponent },
   { path: 'reported-by', component: ReportedByComponent},
   { path: 'membership-level', component: MembershipLevelComponent },
+  { path: 'size', component: CompanySizeComponent},
+  { path: 'timeline', component: QuoteTimelineComponent},
+  { path: 'imagestack', component: ImageStackComponent },
   { path: 'size', component: CompanySizeComponent}
 ];
 
@@ -62,9 +75,18 @@ const routes: Routes = [
     ReportedByComponent,
     StarRatingComponent,
     FeedbackSectionComponent,
+    ImageStackComponent,
+    SkewImageComponent,
     CompanySizeComponent,
     ContractorRegTitleComponent,
-    StarComponent
+    StarComponent,
+    QuoteComponent,
+    ContractorLoginComponent,
+    JobImageComponent,
+    QuoteTimelineComponent,
+    ModalComponent,
+    QuoteSubmittedModalComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,
