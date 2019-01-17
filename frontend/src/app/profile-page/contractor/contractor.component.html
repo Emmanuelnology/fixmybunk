@@ -5,7 +5,7 @@
         <div (click)="openModal()">
             Breadcrumbs go here
         </div>
-        <div class="text_3">
+        <div class="text text_3">
             <button class="btn btn_flat btn-orange">See public view</button>
         </div>
     </div>
@@ -15,38 +15,36 @@
                 <app-avatar-icon size="139"></app-avatar-icon>
             </div>
             <div class="ml_2">
-                <div class="m-vertical_1">
-                    <span class="title_1 capitalize">
-                        {{name}}
-                    </span>
-                    <!-- <app-star-rating></app-star-rating> -->
-                    <span class="text_3">
+                <div class="m-vertical_1 rc ai_baseline title_1 capitalize">
+                    {{name}}
+                    <span class="text text_3 rc ai_c">
+                        <img src='../../assets/star.svg' height="12px">
                         4.8 (71)
                     </span>
                 </div>
                 <div class="m-vertical_1">
                     <span class="title_3">
-                        {{description}}
+                        {{description}} 
                     </span>
-                    <i class="fas fa-edit text_2"></i>
+                    <i class="fas fa-edit text_3"></i>
                 </div>
                 <div class="text_2 mb_1">
                     <div>
-                        {{phone}}
-                        <i class="fas fa-edit text_2"></i>
+                        <span class="text">{{phone}} </span>
+                        <i class="fas fa-edit text_3"></i>
                     </div>
                     <div>
-                        {{email}} / {{website}}
-                        <i class="fas fa-edit text_2"></i>
+                        <span class="text">{{email}} / {{website}} </span>
+                        <i class="fas fa-edit text_3"></i>
                     </div>
                     <div>
-                        {{numberOfStaff}} people work for {{name}}
-                        <i class="fas fa-edit text_2"></i>
+                        <span class="text">{{numberOfStaff}} people work for {{name}} </span>
+                        <i class="fas fa-edit text_3"></i>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="detailed-description" class="text_3 mr_10">
+        <div id="detailed-description" class="text text_3 mr_10">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at leo et arcu dictum venenatis nec eu orci.
               Nam vel tortor at libero volutpat eleifend. Duis in dolor sed felis imperdiet efficitur quis vel justo.
               Aenean iaculis varius eros quis rutrum. Donec tempus mauris vel tristique consectetur.
