@@ -2,9 +2,7 @@
     <div class="line bg_grey h_1 m_auto"></div>
 </div>
 <div class="mt_2 rc jc_sb">
-    <app-quote></app-quote>
-    <app-quote></app-quote>
-    <app-quote></app-quote>
-    <app-quote></app-quote>
-    <app-quote></app-quote>
+    <div *ngFor="let quote of quotes">
+        <app-quote [quote]="quote"></app-quote>
+    </div>
 </div>
