@@ -8,8 +8,14 @@
   z-index: 10;
 }
 
+
+
 .top-navbar {
   min-height: 40px;
+}
+
+.text {
+  color: $colour-grey_0;
 }
 
 .fas {
@@ -22,15 +28,21 @@
   color: $colour-grey_0;
 }
 
-.div {
-  background-color: blue;
+@media only screen and (max-width: 500px) {
+  .none {
+    display: none;
+  }
 }
 
-@media only screen and (min-width: 768px) {
+
+@media only screen and (min-width: 769px) {
   .m-navbar {
     display: none;
   }
-
+  
+  .h_40 {
+    max-width: 120px;
+  }
     
     .w-navbar {
       z-index: 10;

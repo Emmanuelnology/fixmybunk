@@ -3,8 +3,11 @@
 @import '../../arcibaldo-custom.variables.scss';
 @import '../../../src/scss/variables/breakpoints';
 
-.all-image {
+.rc {
     overflow: hidden;
+    margin-right: 0;
+    margin-left: 0;
+    padding: 0;
 }
 
 /** Job images size */
@@ -40,28 +43,28 @@ img.job-click {
     height: 15px;
 }
 
-@include breakpoint-custom($min: 870px, $max: 2000px) {
+@include breakpoint-custom($min: 1000px, $max: 2000px) {
 // @media only screen and (min-width: 870px) {
     /** Job images size */
     img.job-image {
-        width: 180px;
-        height: 160px;
+        width: 250px;
+        height: 230px;
     }
 
     button {
-        margin-top: 5em;
+        margin-top: 7em;
         margin-left: 0;
         padding-left: 0;
         width: 3em;
     }
 
     img.job-click {
-        width: 50px;
-        height: 40px;
+        width: 40px;
+        height: 30px;
     }
 }
 
-@include breakpoint-custom($min: 550px, $max: 870px) {
+@include breakpoint-custom($min: 565px, $max: 1000px) {
 // @media only screen and (min-width: 450px) and (max-width: 870px) {
     /** Job images size */
     img.job-image {
@@ -79,16 +82,16 @@ img.job-click {
     }
 }
 
-@include breakpoint-custom($min: 485px, $max: 550px) {
+@include breakpoint-custom($min: 485px, $max: 565px) {
     button {
         padding-top: 2.2em;
     }
 }
 
-@include breakpoint-custom($min: 0px, $max: 485px) {
+@include breakpoint-custom($min: 0px, $max: 565px) {
     /** Job images size */
     img.job-image {
-        width: 50px;
-        height: 40px;
+        width: 40px;
+        height: 30px;
     }
 }
