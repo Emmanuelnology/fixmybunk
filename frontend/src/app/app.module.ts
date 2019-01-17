@@ -78,9 +78,10 @@ const routes: Routes = [
     CompanySizeComponent,
     ContractorRegTitleComponent,
     StarComponent,
-    QuoteTimelineComponent,
     QuoteComponent,
     JobImageComponent,
+    QuoteTimelineComponent,
+    ModalComponent,
     QuoteSubmittedModalComponent
   ],
   imports: [
