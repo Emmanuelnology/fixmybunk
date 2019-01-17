@@ -1,0 +1,22 @@
+$x: 300px;
+$y: 200px;
+$aspectRatio: $x / $y;
+$offsetY: $x / $aspectRatio / 9;
+$offsetXLeft: $y / $aspectRatio / 7;
+$offsetXRight: $y / $aspectRatio / 13;
+
+.skew {    
+    display:inline-block;
+    width:$x * 0.8;
+    height:$y;
+    position: relative;
+    left: $offsetXLeft;
+    margin-right: -$offsetXRight;
+    -webkit-transform: perspective($x) rotateY(20deg);
+}
+
+.container {
+    display:inline-block;
+    margin-top: $offsetY;
+    margin-bottom: $offsetY;
+}
