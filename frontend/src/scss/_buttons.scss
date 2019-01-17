@@ -92,3 +92,25 @@
     background: $button-background_disabled;
   }
 }
+
+.btn_orange {
+  border: 1px solid $button-border-color_orange;
+  background: $button-background_orange;
+  color: $button-border-color_orange;
+
+  &:hover {
+    @extend %text_light;
+
+    background: $button-background_orange_hover;
+  }
+
+  &:focus {
+    @extend %text_light;
+
+    background: $button-background_orange_active;
+  }
+
+  &:disabled {
+    background: $button-background_disabled;
+  }
+}
