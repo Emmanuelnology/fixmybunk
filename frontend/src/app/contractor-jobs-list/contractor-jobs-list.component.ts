@@ -7,9 +7,9 @@ import { removeDebugNodeFromIndex } from '@angular/core/src/debug/debug_node';
   styleUrls: ['./contractor-jobs-list.component.scss']
 })
 export class ContractorJobsListComponent implements OnInit {
-
-  jobsList = [
-    {
+   count = 0;
+   jobsList = [
+   {
       Name: 'Patty Massy',
       Location: 'Kingswood, Bristol',
       Date: '23-Aug-2019',
@@ -137,11 +137,20 @@ export class ContractorJobsListComponent implements OnInit {
    }
   ];
 
-
-
-
   constructor() { }
 
   ngOnInit() {
   }
+
+   changeColourRow(passedInLocation){
+      document.getElementById("p"+passedInLocation).style.display = "inline-block";
+      document.getElementById("pp"+passedInLocation).style.display = "inline-block";
+      document.getElementById("pp"+passedInLocation).style.textAlign = "left";
+   }
+
+   changeColourRowBack(passedInLocation){
+      document.getElementById("p"+passedInLocation).style.display= "none";
+      document.getElementById("pp"+passedInLocation).style.display= "none";
+   }
+
 }
