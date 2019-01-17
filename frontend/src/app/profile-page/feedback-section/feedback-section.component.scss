@@ -4,15 +4,6 @@
 
 @import '../../../scss/variables/breakpoints';
 
-.fix-container{
-    display: flex;
-    flex-direction: column;
-    flex:1;
-    @include breakpoint-custom($min: 870px, $max: 2000px) {
-        flex-direction: row;
-    }
-}
-
 .w_20{
     min-width: 200PX;
 }
