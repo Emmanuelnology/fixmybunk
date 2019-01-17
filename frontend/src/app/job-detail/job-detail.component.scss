@@ -83,6 +83,14 @@ p {
     p {
         font-size: 10px;
     }
+
+    .small-quote {
+        font-size: 8px;
+    }
+    
+    .quote-number {
+        font-size: 6px;
+    }
 }
 
 @include breakpoint-custom($min: 485px, $max: 550px) {
