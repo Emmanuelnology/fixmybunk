@@ -1,12 +1,50 @@
 h1 {
     text-align: center;
+    font-size: 2em;
 }
 
-.image, .welcome {
-    background-color: antiquewhite;
-    //vertical-align: middle;
+.welcome-title {
+    font-size: 2.5em;
 }
 
-.container > div {
-    margin: 10%;
+svg {
+    width: 60%;
+    display: block;
+    margin: auto;
 }
+
+.welcome-sentence {
+    color: gray;
+    margin: 20px 0;
+}
+
+button {
+    display: block;
+    width: 48%;
+}
+
+.find-job-btn {
+    margin-right: 2%;
+}
+
+.take-tour-btn {
+    margin-left: 2%;
+}
+
+// button {
+//     font-size: 0.4em;
+//     border-radius: 10%;
+//     border: solid orangered 1px;
+//     display: block;
+//     margin: 0 auto;
+//     border-radius: 50px;
+//     width: 48%;
+//     height: 20px;
+//     background-color: white;
+//     color: orangered;
+// }
+
+// button:hover {
+//     background-color: orangered;
+//     color: white;
+// }
