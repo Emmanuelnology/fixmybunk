@@ -20,30 +20,24 @@ p {
     font-family: $font-family_primary;
 }
 
-/** Quoting box and time flex */
-.time-quoting {
-    display: inline-flex;
-}
-
 /** Quoting box font and background images */
 .quoting {
     background-color: black;
     border: 1px;
-    width: 30px;
-    margin-left: 160px;
+    width: 50px;
     text-align: center;
 }
 
 .small-quote {
     color: $colour-grey_1;
     font-family: $font-family_primary;
-    font-size: 8px;
+    font-size: 6px;
 }
 
 .quote-number {
     color: white;
     font-family: $font-family_primary;
-    font-size: 8px;
+    font-size: 4px;
 }
 
 /** Job images size */
@@ -95,21 +89,20 @@ img.job-click {
     }
 
     .quoting {
-        width: 100px;
-        margin-left: 810px;
+        width: 120px;
     }
 
     .small-quote {
-        font-size: 14px;
+        font-size: 12px;
     }
     
     .quote-number {
-        font-size: 18px;
+        font-size: 14px;
     }
 
     img.job-image {
-    width: 180px;
-    height: 160px;
+        width: 180px;
+        height: 160px;
     }
 
     button {
@@ -125,7 +118,7 @@ img.job-click {
     }
 }
 
-@include breakpoint-custom($min: 540px, $max: 870px) {
+@include breakpoint-custom($min: 550px, $max: 870px) {
 // @media only screen and (min-width: 450px) and (max-width: 870px) {
     /** Job images size */
     h1 {
@@ -138,10 +131,6 @@ img.job-click {
 
     p {
         font-size: 10px;
-    }
-
-    .quoting {
-        float: right;
     }
 
     img.job-image {
@@ -159,14 +148,9 @@ img.job-click {
     }
 }
 
-@include breakpoint-custom($min: 485px, $max: 540px) {
+@include breakpoint-custom($min: 485px, $max: 550px) {
     button {
         padding-top: 2.2em;
-    }
-
-    .quoting {
-        float: right;
-        margin-left: 340px;
     }
 
     .text-tiny {
@@ -179,10 +163,6 @@ img.job-click {
     img.job-image {
         width: 50px;
         height: 40px;
-    }
-
-    .quoting {
-        float: right;
     }
 
     .text-tiny {
