@@ -27,6 +27,7 @@ import { CompanySizeComponent } from './company-size/company-size.component';
 import { ContractorRegTitleComponent } from './out-of-app/contractor-reg-title/contractor-reg-title.component';
 import { StarComponent } from './star/star.component';
 import { JobImageComponent } from './job-image/job-image.component';
+import { QuoteSubmittedModalComponent } from './quote-submitted-modal/quote-submitted-modal.component';
 
 const routes: Routes = [
   { path: 'function-demo', component: FunctionDemoComponent }, // THIS ROUTE IS FOR DEMOING ON AND PRACTICING ARCIBALDO
@@ -66,7 +67,8 @@ const routes: Routes = [
     CompanySizeComponent,
     ContractorRegTitleComponent,
     StarComponent,
-    JobImageComponent
+    JobImageComponent,
+    QuoteSubmittedModalComponent
   ],
   imports: [
     BrowserModule,
