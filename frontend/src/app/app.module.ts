@@ -75,7 +75,8 @@ const routes: Routes = [
     ContractorRegTitleComponent,
     StarComponent,
     JobImageComponent,
-    QuoteSubmittedModalComponent
+    QuoteSubmittedModalComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,
