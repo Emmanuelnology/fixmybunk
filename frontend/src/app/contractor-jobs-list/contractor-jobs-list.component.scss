@@ -20,6 +20,22 @@ th{
     text-align: left;
 }
 
+tr{
+    background-color: green;
+}
+
+.table_rows_small_screens,
+.table_tablet_and_higher {
+    width: 100%;
+    border-bottom: 1px solid black;
+    background-color: red;
+}
+
+
+.table_rows_small_screens :hover{
+    background-color: red;
+}
+
 app-avatar-icon{
     padding-right: 5px;
 }
@@ -51,13 +67,9 @@ button p{
     border: 1px solid #8c8a89;
 }
 
-.table_rows_small_screens{
-    width: 100%;
-    border-bottom: 1px solid black;
-}
 
 @media only screen and (max-width: 768px) {
-    #table_tablet_and_higher{
+    .table_tablet_and_higher{
         display: none;
     }
 
@@ -72,7 +84,7 @@ button p{
 }
 
 @include breakpoint-custom($min: 0px, $max: 767px) {
-      #table_tablet_and_higher{
+      .table_tablet_and_higher{
         display: none;
     }
     
@@ -82,11 +94,16 @@ button p{
 }
 
 @include breakpoint-custom($min: 768px, $max: 2000px) {
-    #table_tablet_and_higher{
+    .table_tablet_and_higher{
         display: block;
     }
     
     #table_tablet_and_smaller{
         display: none;
+    }
+
+    td{
+        border-bottom: none;
+        min-width: 14vw;
     }
 }

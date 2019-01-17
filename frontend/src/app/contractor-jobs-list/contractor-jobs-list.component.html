@@ -2,7 +2,7 @@
 
 <h2>Jobs List</h2>
   
-<div id="table_tablet_and_higher">
+<div class="table_tablet_and_higher">
   <table>
     <tr>
       <th>Name</th>
@@ -12,23 +12,25 @@
       <th>Status</th>
       <th>Latest Quote</th>
     </tr>
-    <tr *ngFor="let job of jobsList">
-      <td>
-        <app-avatar-icon size="20"></app-avatar-icon>
-        {{job.Name}}
-      </td>
-      <td>{{job.Location}}</td>
-      <td>{{job.Date}}</td>
-      <td>{{job.Job_Type}}</td>
-      <td>
-        <button [ngClass]="job.Completed ? 'completed' : job.Quoted ? 'incompleteQuoted' :'incompleteUnquoted'" class="btn btn-raised">
-          <p *ngIf="job.Completed">Completed</p>
-          <p *ngIf="!job.Completed && job.Quoted">Quoted</p>
-          <p *ngIf="!job.Completed && !job.Quoted">Quote</p>
-        </button>
-      </td>
-      <td>£{{job.Latest_Quote}}</td>
-    </tr>
+    <div  *ngFor="let job of jobsList" class="table_tablet_and_higher">
+      <tr>
+        <td>
+          <app-avatar-icon size="20"></app-avatar-icon>
+          {{job.Name}}
+        </td>
+        <td>{{job.Location}}</td>
+        <td>{{job.Date}}</td>
+        <td>{{job.Job_Type}}</td>
+        <td>
+          <button [ngClass]="job.Completed ? 'completed' : job.Quoted ? 'incompleteQuoted' :'incompleteUnquoted'" class="btn btn-raised">
+            <p *ngIf="job.Completed">Completed</p>
+            <p *ngIf="!job.Completed && job.Quoted">Quoted</p>
+            <p *ngIf="!job.Completed && !job.Quoted">Quote</p>
+          </button>
+        </td>
+        <td>£{{job.Latest_Quote}}</td>
+      </tr>
+    </div>
   </table>
 </div>
 
