@@ -24,7 +24,7 @@ export class MembershipLevelOptionsComponent implements OnInit {
         title: 'GOLD',
         prices: '20'
       }
-    ]
+    ];
 
   constructor() {
 
