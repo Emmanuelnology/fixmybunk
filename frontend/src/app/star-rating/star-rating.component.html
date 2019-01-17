@@ -1,9 +1,17 @@
-<p>
-  star-rating works!
-</p>
-<img src="assets/starIcon.svg">
-<img src="assets/starIcon.svg">
-<img src="assets/starIcon.svg">
-<img src="assets/starIcon.svg">
-<img src="assets/starIcon.svg">
-<p>(22)</p>
+<div class="text">
+  <app-star isActive=true></app-star>
+  <app-star isActive=true></app-star>
+  <app-star isActive=true></app-star>
+  <app-star></app-star>
+  <app-star></app-star>
+  (22)
+</div>
+
+<a *ngFor="let item of starList; let i=index " (click)="setStar(i)">  
+  <img *ngIf="item" src="assets/unliked.png">
+  <img *ngIf="!item" src="assets/like.png">
+</a>
+
+<div>
+  Rating : {{ rating }} stars
+</div>  

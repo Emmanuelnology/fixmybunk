@@ -1,0 +1,121 @@
+@import '../../bunk.variables.scss';
+@import '../../bunk.theme.scss';
+@import '../../arcibaldo-custom.variables.scss';
+@import '../../../src/scss/variables/breakpoints';
+
+.job-page {
+    overflow: hidden;
+}
+
+/** Job image+details size */
+// .rc {
+//     display: flex;
+// }
+
+/** Job images size */
+img.job-image {
+    width: 45px;
+    height: 35px;
+    // flex: 1;
+}
+
+/** Arrow button rotated and grey with light gray hover */
+button {	
+	cursor: pointer;
+    outline: inherit;
+    // flex: 1;   
+    margin: 0;
+    height:auto;
+    width: auto;
+}
+
+button :hover {
+    background-color: $colour-background_base;
+}
+
+.click {
+    height: 70px;
+    width: 40px;
+    text-align: center;
+    background-color: transparent;
+    text-decoration: none;
+    border: none;  
+}
+
+img.job-click {
+    width: 20px;
+    height: 15px;
+}
+
+p {
+    color: $colour-grey_2;
+}
+
+@include breakpoint-custom($min: 870px, $max: 2000px) {
+// @media only screen and (min-width: 870px) {
+    /** Job images size */
+    h1 {
+        font-family: $font-family_primary;
+        font-size: 24px;
+    }
+
+    h2 {
+        font-family: $font-family_primary;
+        font-size: 22px;
+    }
+
+    p {
+        font-family: $font-family_primary;
+        font-size: 14px;
+    }
+
+    img.job-image {
+    width: 180px;
+    height: 160px;
+    }
+
+    button {
+        margin-top: 5em;
+        margin-left: 0;
+        padding-left: 0;
+        width: 3em;
+    }
+
+    img.job-click {
+        width: 50px;
+        height: 40px;
+    }
+}
+
+@include breakpoint-custom($min: 450px, $max: 870px) {
+// @media only screen and (min-width: 450px) and (max-width: 870px) {
+    /** Job images size */
+    h1 {
+        font-family: $font-family_primary;
+        font-size: 22px;
+    }
+
+    h2 {
+        font-family: $font-family_primary;
+        font-size: 18px;
+    }
+
+    p {
+        font-family: $font-family_primary;
+        font-size: 12px;
+    }
+
+    img.job-image {
+    width: 80px;
+    height: 60px;
+    }
+
+    button {
+        margin-top: 2em;
+    }
+
+    img.job-click {
+        width: 35px;
+        height: 25px;
+    }
+}

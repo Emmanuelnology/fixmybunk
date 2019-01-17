@@ -1,0 +1,20 @@
+@import '../../../bunk.variables.scss';
+@import '../../../bunk.theme.scss';
+@import '../../../arcibaldo-custom.variables.scss';
+
+.each-option {
+  border: 2px solid $colour-background_light;
+  text-align: center;
+  width: 150px;
+}
+
+.price {
+  margin:0;
+  font-size: 200%;
+  padding:0;
+}
+
+p {
+  margin: 0;
+  margin: 1px;
+}

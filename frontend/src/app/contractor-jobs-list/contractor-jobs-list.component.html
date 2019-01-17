@@ -1,3 +1,72 @@
-<p>
-  contractor-jobs-list works!
-</p>
+<div id="jobs_list_container" class="text text_2">
+
+<h2>Jobs List</h2>
+  
+<div id="table_tablet_and_higher">
+  <table>
+    <tr>
+      <td><p>NAME<i class="fas fa-arrows-alt-v"></i></p></td>
+      <td><p>LOCATION<i class="fas fa-search"></i></p></td>
+      <td><p>DATE</p></td>
+      <td><p>JOB TYPE<i class="fas fa-search"></i></p></td>
+      <td><p>STATUS</p></td>
+      <td><p>LATEST QUOTES</p></td>
+    </tr>
+    <tr *ngFor="let job of jobsList">
+      <td>
+        <app-avatar-icon size="20"></app-avatar-icon>
+        {{job.Name}}
+      </td>
+      <td>{{job.Location}}</td>
+      <td>{{job.Date}}</td>
+      <td>{{job.Job_Type}}</td>
+      <td>
+        <button [ngClass]="job.Completed ? 'completed' : job.Quoted ? 'incompleteQuoted' :'incompleteUnquoted'" class="btn btn-raised">
+          <p *ngIf="job.Completed">Completed</p>
+          <p *ngIf="!job.Completed && job.Quoted">Quoted</p>
+          <p *ngIf="!job.Completed && !job.Quoted">Quote</p>
+        </button>
+      </td>
+      <td>£{{job.Latest_Quote}}</td>
+    </tr>
+  </table>
+</div>
+
+
+<div id="table_tablet_and_smaller">
+  <table>
+    <div class="table_rows_small_screens">
+      <tr>
+        <td><p>NAME<i class="fas fa-arrows-alt-v"></i></p></td>
+        <td><p>LOCATION<i class="fas fa-search"></i></p></td>
+        <td><p>DATE</p></td>
+      </tr>
+      <tr>
+        <td><p>JOB TYPE<i class="fas fa-search"></i></p></td>
+        <td><p>STATUS</p></td>
+        <td><p>LATEST QUOTES</p></td>
+      </tr>
+    </div>
+    <div *ngFor="let job of jobsList" class="table_rows_small_screens">
+      <tr>
+        <td>
+          <app-avatar-icon size="20"></app-avatar-icon>
+          {{job.Name}}
+        </td>
+        <td>{{job.Location}}</td>
+        <td>{{job.Date}}</td>
+      </tr>
+      <tr>
+        <td>{{job.Job_Type}}</td>
+        <td>
+          <button [ngClass]="job.Completed ? 'completed' : job.Quoted ? 'incompleteQuoted' :'incompleteUnquoted'" class="btn btn-raised">
+            <p *ngIf="job.Completed">Completed</p>
+            <p *ngIf="!job.Completed && job.Quoted">Quoted</p>
+            <p *ngIf="!job.Completed && !job.Quoted">Quote</p>
+          </button>
+        </td>
+        <td>£{{job.Latest_Quote}}</td>
+      </tr>
+    </div>
+  </table>
+</div>
