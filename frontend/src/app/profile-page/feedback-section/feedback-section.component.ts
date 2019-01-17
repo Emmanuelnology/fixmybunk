@@ -12,37 +12,37 @@ export class FeedbackSectionComponent implements OnInit {
   reviews = [
     {
       name: 'GEORGINA',
-      description: 'Lorem ipsum dolor sit amet, duo decore minimum assueverit id, veritus quaerendum his in. In fastidii aliquando complectitur eos, an vim unum dicam. Sed an nisl numquam iudicabit, eam no illum vivendo mediocritatem.'
+      description: 'Lorem ipsum dolor sit amet, duo decore minimum assueverit id, veritus quaerendum his in.'
     },
     {
       name: 'CRAIG',
-      description: 'Lorem ipsum dolor sit amet, duo decore minimum assueverit id, veritus quaerendum his in. In fastidii aliquando complectitur eos, an vim unum dicam. Sed an nisl numquam iudicabit, eam no illum vivendo mediocritatem.'
+      description: 'Lorem ipsum dolor sit amet, duo decore minimum assueverit id, veritus quaerendum his in.'
     },
     {
       name: 'CAITLIN',
-      description: 'Lorem ipsum dolor sit amet, duo decore minimum assueverit id, veritus quaerendum his in. In fastidii aliquando complectitur eos, an vim unum dicam. Sed an nisl numquam iudicabit, eam no illum vivendo mediocritatem.'
+      description: 'Lorem ipsum dolor sit amet, duo decore minimum assueverit id, veritus quaerendum his in.'
     },
     {
       name: 'KIERAN',
-      description: 'Lorem ipsum dolor sit amet, duo decore minimum assueverit id, veritus quaerendum his in. In fastidii aliquando complectitur eos, an vim unum dicam. Sed an nisl numquam iudicabit, eam no illum vivendo mediocritatem.'
+      description: 'Lorem ipsum dolor sit amet, duo decore minimum assueverit id, veritus quaerendum his in.'
     },
     {
       name: 'SATYAM',
-      description: 'Lorem ipsum dolor sit amet, duo decore minimum assueverit id, veritus quaerendum his in. In fastidii aliquando complectitur eos, an vim unum dicam. Sed an nisl numquam iudicabit, eam no illum vivendo mediocritatem.'
+      description: 'Lorem ipsum dolor sit amet, duo decore minimum assueverit id, veritus quaerendum his in.'
     },
     {
       name: 'SHEA',
-      description: 'Lorem ipsum dolor sit amet, duo decore minimum assueverit id, veritus quaerendum his in. In fastidii aliquando complectitur eos, an vim unum dicam. Sed an nisl numquam iudicabit, eam no illum vivendo mediocritatem.'
+      description: 'Lorem ipsum dolor sit amet, duo decore minimum assueverit id, veritus quaerendum his in.'
     },
     {
       name: 'JOSH',
-      description: 'Lorem ipsum dolor sit amet, duo decore minimum assueverit id, veritus quaerendum his in. In fastidii aliquando complectitur eos, an vim unum dicam. Sed an nisl numquam iudicabit, eam no illum vivendo mediocritatem.'
+      description: 'Lorem ipsum dolor sit amet, duo decore minimum assueverit id, veritus quaerendum his in.'
     },
     {
       name: 'GEORGE',
-      description: 'Lorem ipsum dolor sit amet, duo decore minimum assueverit id, veritus quaerendum his in. In fastidii aliquando complectitur eos, an vim unum dicam. Sed an nisl numquam iudicabit, eam no illum vivendo mediocritatem.'
+      description: 'Lorem ipsum dolor sit amet, duo decore minimum assueverit id, veritus quaerendum his in.'
     },
-  
+
   ];
   constructor() { }
 
