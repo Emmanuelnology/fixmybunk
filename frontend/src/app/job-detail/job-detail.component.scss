@@ -5,6 +5,7 @@
 
 .job-page {
     overflow: hidden;
+    background-color: $colour-blue_0;
 }
 
 /** Titles and paragraphes font family */
@@ -20,63 +21,24 @@ p {
     font-family: $font-family_primary;
 }
 
-/** Quoting box and time flex */
-.time-quoting {
-    display: inline-flex;
-}
-
 /** Quoting box font and background images */
 .quoting {
     background-color: black;
     border: 1px;
-    width: 30px;
-    margin-left: 160px;
+    width: 50px;
     text-align: center;
 }
 
 .small-quote {
     color: $colour-grey_1;
     font-family: $font-family_primary;
-    font-size: 8px;
+    font-size: 6px;
 }
 
 .quote-number {
     color: white;
     font-family: $font-family_primary;
-    font-size: 8px;
-}
-
-/** Job images size */
-img.job-image {
-    width: 105px;
-    height: 95px;
-}
-
-/** Arrow button rotated and grey with light gray hover */
-button {	
-	cursor: pointer;
-    outline: inherit;   
-    margin: 0;
-    height:auto;
-    width: auto;
-}
-
-button :hover {
-    background-color: $colour-background_base;
-}
-
-.click {
-    height: 70px;
-    width: 40px;
-    text-align: center;
-    background-color: transparent;
-    text-decoration: none;
-    border: none;  
-}
-
-img.job-click {
-    width: 20px;
-    height: 15px;
+    font-size: 4px;
 }
 
 @include breakpoint-custom($min: 870px, $max: 2000px) {
@@ -95,37 +57,19 @@ img.job-click {
     }
 
     .quoting {
-        width: 100px;
-        margin-left: 810px;
+        width: 140px;
     }
 
     .small-quote {
-        font-size: 14px;
+        font-size: 12px;
     }
     
     .quote-number {
-        font-size: 18px;
-    }
-
-    img.job-image {
-    width: 180px;
-    height: 160px;
-    }
-
-    button {
-        margin-top: 5em;
-        margin-left: 0;
-        padding-left: 0;
-        width: 3em;
-    }
-
-    img.job-click {
-        width: 50px;
-        height: 40px;
+        font-size: 14px;
     }
 }
 
-@include breakpoint-custom($min: 540px, $max: 870px) {
+@include breakpoint-custom($min: 550px, $max: 870px) {
 // @media only screen and (min-width: 450px) and (max-width: 870px) {
     /** Job images size */
     h1 {
@@ -139,52 +83,15 @@ img.job-click {
     p {
         font-size: 10px;
     }
-
-    .quoting {
-        float: right;
-    }
-
-    img.job-image {
-        width: 105px;
-        height: 85px;
-    }
-
-    button {
-        margin-top: 1.5em;
-    }
-
-    img.job-click {
-        width: 30px;
-        height: 20px;
-    }
 }
 
-@include breakpoint-custom($min: 485px, $max: 540px) {
-    button {
-        padding-top: 2.2em;
-    }
-
-    .quoting {
-        float: right;
-        margin-left: 340px;
-    }
-
+@include breakpoint-custom($min: 485px, $max: 550px) {
     .text-tiny {
         font-size: 8px;
     }
 }
 
 @include breakpoint-custom($min: 0px, $max: 485px) {
-    /** Job images size */
-    img.job-image {
-        width: 50px;
-        height: 40px;
-    }
-
-    .quoting {
-        float: right;
-    }
-
     .text-tiny {
         font-size: 6px;
     }
