@@ -142,15 +142,15 @@ export class ContractorJobsListComponent implements OnInit {
   ngOnInit() {
   }
 
-   changeColourRow(passedInLocation){
-      document.getElementById("p"+passedInLocation).style.display = "inline-block";
-      document.getElementById("pp"+passedInLocation).style.display = "inline-block";
-      document.getElementById("pp"+passedInLocation).style.textAlign = "left";
+   changeColourRow(passedInLocation) {
+      document.getElementById('p' + passedInLocation).style.display = 'inline-block';
+      document.getElementById('pp' + passedInLocation).style.display = 'inline-block';
+      document.getElementById('pp' + passedInLocation).style.textAlign = 'left';
    }
 
-   changeColourRowBack(passedInLocation){
-      document.getElementById("p"+passedInLocation).style.display= "none";
-      document.getElementById("pp"+passedInLocation).style.display= "none";
+   changeColourRowBack(passedInLocation) {
+      document.getElementById('p' + passedInLocation).style.display = 'none';
+      document.getElementById('pp' + passedInLocation).style.display = 'none';
    }
 
 }
