@@ -13,7 +13,7 @@ interface IReview {
 })
 export class ReviewComponent implements OnInit {
   @Input() review: IReview;
-  
+
   constructor() { }
 
   ngOnInit() {

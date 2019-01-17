@@ -1,9 +1,15 @@
+@import '../../../styles.scss';
+@import '../../../bunk.variables.scss';
+@import '../../../arcibaldo-custom.variables.scss';
+@import '../../../scss/typography';
+
+@import '../../../bunk.theme.scss';
+@import '../../../bunk.variables.scss';
+
 .initial-landing {
     background-image: url('../../../assets/property-main.jpg');
     height: 100vh;
     background-size: cover;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -12,21 +18,86 @@ h1 {
     color: white;
 }
 
-p {
-    color: rgb(161, 161, 161)
+.text-center {
+    text-align: center;
 }
 
-.second-landing {
-    background-color: red;
-    height: 100vh
+p {
+    color: rgb(161, 161, 161);
+}
+
+li {
+    list-style-type: none;
+}
+
+img {
+    height:600px;
+    width:30%
+
+}
+
+.contractors-say {
+    width:50%
+}
+
+.icon-left {
+    width:40%;
+}
+
+
+
+// .contractors-say div {
+//     width: 50%;
+// }
+
+
+.product-page{
+    height:78vh;
+    align-items: center;
+    width: 100%
+}
+
+.left {
+    width: 40%
+}
+
+.orange-text {
+    background-color: rgb(255,96,8);
+    width:100vw;
+    height:15vh;
+}
+
+.orange-text p {
+    color: rgba(255,255,255, 0.5)
 }
 
 .third-landing {
-    background-color: blue;
-    height:100vh
+    height:100vh;
+    align-items: center;
 }
 
-.fourth-landing {
-    background-color: green;
-    height:100vh
+// .fourth-landing {
+//     justify-content: center;
+// }
+
+.membership-page{
+    height:78vh;
+    align-items: center;
+
+}
+
+.footer {
+    width: 100vw;
+    background-color: rgb(81,83,86);
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-container {
+    width: 50%
+}
+
+.small {
+    height: 40px;
+    width:200px;
 }
