@@ -1,36 +1,25 @@
 @import '../../bunk.variables.scss';
 
 .w-navbar {
-  display: none
+  display: none;
 }
 
 .m-navbar {
-  height: 10vh;
-  position: fixed;
-  width: 100vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  z-index: 10;
+}
 
-  .menu_icon {
-    margin: auto 10px;
+.fas {
+  font-family: "Font Awesome 5 Free";
+  color: $colour-grey_0;
+  font-size: 1.6rem;
+}
 
-    div {
-      width: 30px;
-      height: 3px;
-      background-color: white;
-      margin: 5px 0;
-      border-radius: 10%;
-    }
-  }
+.avatar {
+  color: $colour-grey_0;
+}
 
-  .avatar {
-    margin: auto 10px;
-    color: white;
-    display: flex;
-    flex-direction: row;
-  }
-
+.div {
+  background-color: blue;
 }
 
 @media only screen and (min-width: 768px) {
@@ -38,16 +27,18 @@
     display: none;
   }
 
-  .w-navbar {
-    z-index: 10;
-    display: flex !important;
-
-    ul {
-      list-style-type: none;
+    
+    .w-navbar {
+      z-index: 10;
+      display: flex !important;
+      
+      ul {
+        list-style-type: none;
+      }
+    }
+    
+    .btn_white {
+      background-color: $button-background_neutral;
     }
   }
-
-  .btn_white {
-    background-color: $button-background_neutral;
-  }
-}
+  
