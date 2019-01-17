@@ -1,17 +1,29 @@
-<div class="text">
-  <app-star isActive=true></app-star>
-  <app-star isActive=true></app-star>
-  <app-star isActive=true></app-star>
-  <app-star></app-star>
-  <app-star></app-star>
+<div class="text full-rating">
+  <div class="star-rating">
+    <div *ngFor="let star of stars">
+      <div *ngIf="star == true">
+        <app-star isActive=true></app-star>
+      </div>
+      <div *ngIf="star == false">
+        <app-star disabled=true></app-star>
+      </div>
+    </div>
+  </div>
   (22)
+  <!-- <app-star [ngClass]="isRequired ? 'hide':'show'" isActive=true></app-star>
+  <app-star isActive=true></app-star>
+  <app-star isActive=true></app-star>
+  <app-star disabled=true></app-star>
+  <app-star disabled=true></app-star>
+  <app-star disabled=true></app-star> -->
 </div>
 
-<a *ngFor="let item of starList; let i=index " (click)="setStar(i)">  
+<!-- <a *ngFor="let item of starList; let i=index " (click)="setStar(i)">  
   <img *ngIf="item" src="assets/unliked.png">
   <img *ngIf="!item" src="assets/like.png">
 </a>
-
+  
 <div>
   Rating : {{ rating }} stars
-</div>  
+</div>     -->
+  

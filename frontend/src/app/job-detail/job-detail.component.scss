@@ -5,117 +5,94 @@
 
 .job-page {
     overflow: hidden;
+    background-color: $colour-blue_0;
 }
 
-/** Job image+details size */
-// .rc {
-//     display: flex;
-// }
-
-/** Job images size */
-img.job-image {
-    width: 45px;
-    height: 35px;
-    // flex: 1;
+/** Titles and paragraphes font family */
+h1 {
+    font-family: $font-family_primary;
 }
 
-/** Arrow button rotated and grey with light gray hover */
-button {	
-	cursor: pointer;
-    outline: inherit;
-    // flex: 1;   
-    margin: 0;
-    height:auto;
-    width: auto;
-}
-
-button :hover {
-    background-color: $colour-background_base;
-}
-
-.click {
-    height: 70px;
-    width: 40px;
-    text-align: center;
-    background-color: transparent;
-    text-decoration: none;
-    border: none;  
-}
-
-img.job-click {
-    width: 20px;
-    height: 15px;
+h2 {
+    font-family: $font-family_primary;
 }
 
 p {
-    color: $colour-grey_2;
+    font-family: $font-family_primary;
+}
+
+/** Quoting box font and background images */
+.quoting {
+    background-color: black;
+    border: 1px;
+    width: 50px;
+    text-align: center;
+}
+
+.small-quote {
+    color: $colour-grey_1;
+    font-family: $font-family_primary;
+    font-size: 6px;
+}
+
+.quote-number {
+    color: white;
+    font-family: $font-family_primary;
+    font-size: 4px;
 }
 
 @include breakpoint-custom($min: 870px, $max: 2000px) {
 // @media only screen and (min-width: 870px) {
     /** Job images size */
     h1 {
-        font-family: $font-family_primary;
         font-size: 24px;
     }
 
     h2 {
-        font-family: $font-family_primary;
         font-size: 22px;
     }
 
     p {
-        font-family: $font-family_primary;
+        font-size: 10px;
+    }
+
+    .quoting {
+        width: 140px;
+    }
+
+    .small-quote {
+        font-size: 12px;
+    }
+    
+    .quote-number {
         font-size: 14px;
-    }
-
-    img.job-image {
-    width: 180px;
-    height: 160px;
-    }
-
-    button {
-        margin-top: 5em;
-        margin-left: 0;
-        padding-left: 0;
-        width: 3em;
-    }
-
-    img.job-click {
-        width: 50px;
-        height: 40px;
     }
 }
 
-@include breakpoint-custom($min: 450px, $max: 870px) {
+@include breakpoint-custom($min: 550px, $max: 870px) {
 // @media only screen and (min-width: 450px) and (max-width: 870px) {
     /** Job images size */
     h1 {
-        font-family: $font-family_primary;
         font-size: 22px;
     }
 
     h2 {
-        font-family: $font-family_primary;
         font-size: 18px;
     }
 
     p {
-        font-family: $font-family_primary;
-        font-size: 12px;
+        font-size: 10px;
     }
+}
 
-    img.job-image {
-    width: 80px;
-    height: 60px;
+@include breakpoint-custom($min: 485px, $max: 550px) {
+    .text-tiny {
+        font-size: 8px;
     }
+}
 
-    button {
-        margin-top: 2em;
-    }
-
-    img.job-click {
-        width: 35px;
-        height: 25px;
+@include breakpoint-custom($min: 0px, $max: 485px) {
+    .text-tiny {
+        font-size: 6px;
     }
 }
