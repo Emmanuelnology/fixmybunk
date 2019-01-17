@@ -26,6 +26,7 @@ import { FeedbackSectionComponent } from './profile-page/feedback-section/feedba
 import { CompanySizeComponent } from './company-size/company-size.component';
 import { ContractorRegTitleComponent } from './out-of-app/contractor-reg-title/contractor-reg-title.component';
 import { StarComponent } from './star/star.component';
+import { ContractorLoginComponent } from './out-of-app/contractor-login/contractor-login.component';
 
 const routes: Routes = [
   { path: 'function-demo', component: FunctionDemoComponent }, // THIS ROUTE IS FOR DEMOING ON AND PRACTICING ARCIBALDO
@@ -38,6 +39,7 @@ const routes: Routes = [
   { path: 'review', component: ReviewComponent },
   { path: 'contractor/quotes', component: ContractorJobsListComponent },
   { path: 'contractor/welcome', component: ContractorWelcomePageComponent },
+  { path: 'contractor/login', component: ContractorLoginComponent },
   { path: 'reported-by', component: ReportedByComponent},
   { path: 'membership-level', component: MembershipLevelComponent },
   { path: 'size', component: CompanySizeComponent}
@@ -64,7 +66,8 @@ const routes: Routes = [
     FeedbackSectionComponent,
     CompanySizeComponent,
     ContractorRegTitleComponent,
-    StarComponent
+    StarComponent,
+    ContractorLoginComponent
   ],
   imports: [
     BrowserModule,
