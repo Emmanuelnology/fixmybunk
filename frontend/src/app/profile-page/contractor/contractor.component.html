@@ -1,10 +1,11 @@
+<app-modal></app-modal>
 <div class="m-all_1">
     <div class="rc jc_sb m-horizontal_1">
-        <div>
+        <div (click)="openModal()">
             Breadcrumbs go here
         </div>
         <div class="text text_3">
-            <button class="btn btn_flat btn-orange">See public view</button>
+            <button class="btn_orange">See public view</button>
         </div>
     </div>
     <div class="m-all_1">
@@ -20,33 +21,77 @@
                         4.8 (71)
                     </span>
                 </div>
-                <div class="m-vertical_1">
+                <div class="m-vertical_1" *ngIf="!descriptionBeingEdited">
                     <span class="title_3">
                         {{description}} 
                     </span>
-                    <i class="fas fa-edit text_3"></i>
+                    <i class="fas fa-edit text_3" (click)="swapDescription()"></i>
+                </div>
+                <div class="m-vertical_1" *ngIf="descriptionBeingEdited">
+                    <span class="title_3">
+                        <input
+                            ngModel
+                            type="string"
+                            [(ngModel)]="description"
+                        >
+                    </span>
+                    <i class="fas fa-check-circle text_3" (click)="swapDescription()"></i>
                 </div>
                 <div class="text_2 mb_1">
-                    <div>
+                    <div *ngIf="!phoneBeingEdited">
                         <span class="text">{{phone}} </span>
-                        <i class="fas fa-edit text_3"></i>
+                        <i class="fas fa-edit text_3" (click)="swapPhone()"></i>
                     </div>
-                    <div>
+                    <div *ngIf="phoneBeingEdited">
+                        <span class="text">
+                            <input
+                                ngModel
+                                type="string"
+                                [(ngModel)]="phone"
+                            >
+                        </span>
+                        <i class="fas fa-check-circle text_3" (click)="swapPhone()"></i>
+                    </div>
+                    <div *ngIf="!emailWebsiteBeingEdited">
                         <span class="text">{{email}} / {{website}} </span>
-                        <i class="fas fa-edit text_3"></i>
+                        <i class="fas fa-edit text_3" (click)="swapEmailWebsite()"></i>
                     </div>
-                    <div>
+                    <div *ngIf="emailWebsiteBeingEdited">
+                        <span class="text">
+                            <input
+                                ngModel
+                                type="string"
+                                [(ngModel)]="email"
+                            >
+                            /
+                            <input
+                                ngModel
+                                type="string"
+                                [(ngModel)]="website"
+                            >
+                        </span>
+                        <i class="fas fa-check-circle text_3" (click)="swapEmailWebsite()"></i>
+                    </div>
+                    <div *ngIf="!numberOfStaffBeingEdited">
                         <span class="text">{{numberOfStaff}} people work for {{name}} </span>
-                        <i class="fas fa-edit text_3"></i>
+                        <i class="fas fa-edit text_3" (click)="swapNumberOfStaff()"></i>
+                    </div>
+                    <div *ngIf="numberOfStaffBeingEdited">
+                        <span class="text">
+                            <input
+                                ngModel
+                                type="number"
+                                [(ngModel)]="numberOfStaff"
+                            >
+                            people work for {{name}}
+                        </span>
+                        <i class="fas fa-check-circle text_3" (click)="swapNumberOfStaff()"></i>
                     </div>
                 </div>
             </div>
         </div>
         <div id="detailed-description" class="text text_3 mr_10">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at leo et arcu dictum venenatis nec eu orci.
-              Nam vel tortor at libero volutpat eleifend. Duis in dolor sed felis imperdiet efficitur quis vel justo.
-              Aenean iaculis varius eros quis rutrum. Donec tempus mauris vel tristique consectetur.
-              Cras est felis, consequat id dui nec, faucibus finibus magna. Nam venenatis vitae purus a fermentum.
+            {{detailedDescription}}
         </div>
     </div>
     <div class="m-all_1">    

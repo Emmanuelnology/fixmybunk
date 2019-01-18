@@ -1,15 +1,13 @@
-<div class="all-image">
-  <div class="rc jc_c">
-    <button class="click pb_1 pr_0">
-      <img class="job-click" src="assets/arrow-left-sign-to-navigate.png">
-    </button>
+<div class="rc h_100 w_100">
+  <button class="click pb_1">
+    <img class="job-click" src="assets/arrow-left-sign-to-navigate.png">
+  </button>
 
-    <div class="pt_1" *ngFor="let image of images">
-      <img class="job-image ml_1 mr_1" src="{{ image.url }}" alt="problem{{id}}">
-    </div>
-
-    <button class="click pb_1">
-      <img class="job-click" src="assets/arrow-right-sign-to-navigate.png">
-    </button>
+  <div class="pt_1 flex_4" *ngFor="let image of images">
+    <img class="job-image ml_1 mr_1" src="{{ image.url }}" alt="problem{{id}}">
   </div>
+
+  <button class="click pb_1">
+    <img class="job-click" src="assets/arrow-right-sign-to-navigate.png">
+  </button>
 </div>

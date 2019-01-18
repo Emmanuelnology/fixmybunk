@@ -3,17 +3,17 @@
 
 .fas {
   font-weight: 100;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.fa-edit {
   color: $colour-grey_2;
 }
 
-
-.btn-orange {
-  background-color: $colour-orange_1;
-  color: white;
-}
-
-app-star-rating {
-  display: inline;
+.fa-check-circle {
+  color: $colour-green_1;
 }
 
 #detailed-description {

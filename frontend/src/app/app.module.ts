@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 // Firebase
 import { AngularFireModule } from '@angular/fire';
@@ -33,7 +34,9 @@ import { QuoteComponent } from './quote/quote.component';
 import { ContractorLoginComponent } from './out-of-app/contractor-login/contractor-login.component';
 import { ModalComponent } from './modal/modal.component';
 import { JobImageComponent } from './job-image/job-image.component';
+import { QuoteModalComponent } from './quote-modal/quote-modal.component';
 import { QuoteSubmittedModalComponent } from './quote-submitted-modal/quote-submitted-modal.component';
+import { AcceptedQuoteComponent } from './accepted-quote/accepted-quote.component';
 
 const routes: Routes = [
   { path: 'function-demo', component: FunctionDemoComponent }, // THIS ROUTE IS FOR DEMOING ON AND PRACTICING ARCIBALDO
@@ -51,9 +54,11 @@ const routes: Routes = [
   { path: 'reported-by', component: ReportedByComponent},
   { path: 'membership-level', component: MembershipLevelComponent },
   { path: 'size', component: CompanySizeComponent},
+  { path: 'quote', component: QuoteModalComponent},
   { path: 'timeline', component: QuoteTimelineComponent},
   { path: 'imagestack', component: ImageStackComponent },
-  { path: 'size', component: CompanySizeComponent}
+  { path: 'size', component: CompanySizeComponent},
+  { path: 'accepted-quote', component: AcceptedQuoteComponent }
 ];
 
 @NgModule({
@@ -80,16 +85,19 @@ const routes: Routes = [
     CompanySizeComponent,
     ContractorRegTitleComponent,
     StarComponent,
+    JobImageComponent,
+    QuoteModalComponent,
     QuoteComponent,
     ContractorLoginComponent,
     JobImageComponent,
     QuoteTimelineComponent,
     ModalComponent,
-    QuoteSubmittedModalComponent,
-    ModalComponent
+    AcceptedQuoteComponent,
+    QuoteSubmittedModalComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireFunctionsModule,
     RouterModule.forRoot(routes),
