@@ -11,9 +11,9 @@ export class MaintenanceRequestPageComponent implements OnInit {
     role: 'landlord'
   };
 
-  public showQuotes = false;
+  public showQuotes = true;
   public quoteView = 'timeline';
-  public quoteAccepted = true;
+  public quoteAccepted = false;
 
   constructor() { }
 
