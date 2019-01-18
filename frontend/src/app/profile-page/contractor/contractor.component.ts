@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ModalComponent } from 'src/app/modal/modal.component';
+import { element } from '@angular/core/src/render3/instructions';
 
 @Component({
   selector: 'app-contractor',

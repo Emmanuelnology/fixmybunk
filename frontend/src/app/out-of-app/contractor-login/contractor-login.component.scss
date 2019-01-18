@@ -3,19 +3,15 @@
 // }
 
 .twoone {
-    // background-color: orangered;
-    border-right: solid rgb(236, 235, 235) 1px;
     display: flex;
     align-items: center;
 }
 
 .twotwo {
-    // background-color: orange;
     min-width: 320px;
 }
 
 .three {
-    // background-color: yellow;
     align-items: center;
 }
 
@@ -33,15 +29,15 @@ h1 {
 input{
     border: none;
     padding: 10px;
-    width: 185px;
+    width: 180px;
 }
 
 .small-select {
-    width: 205px;
+    width: 200px; //input width + 20px
 }
 
 .large-select {
-    width: 420px
+    width: 410px; //small-select width x2 then + 10px
 }
 
 select {
@@ -51,4 +47,10 @@ select {
 
 button {
     width: 185px;
+}
+
+// break point (min screen 900px)
+
+.twoone {
+    border-right: solid rgb(236, 235, 235) 1px;
 }
