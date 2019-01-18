@@ -67,3 +67,63 @@ $base-space-value: 10px;
 .far {
   font-family: "Font Awesome 5 Free";
 }
+
+.large-header {
+  font-size: 2.75rem;
+  font-family:  $font-family_primary
+}
+
+.btn_rounded_blue {
+  border: 1px solid $button-background_blue;
+  background: $button-background_blue;
+  color: $button-background_neutral;
+  height: 20px;
+  border-radius: 20px;
+
+  &:hover {
+    // @extend %text_light;
+
+    background: $button-background_neutral;
+    color: $button-background_blue;
+  }
+
+  &:focus {
+    // @extend %text_light;
+
+    background: $button-background_blue_active;
+    color: $button-background_blue;
+  }
+
+
+  &:disabled {
+    background: $button-background_disabled;
+  }
+}
+
+  .btn_rounded_white {
+    border: 1px solid $button-background_neutral;
+    background: $button-background_neutral;
+    color: $button-background_orange;
+    height: 20px;
+    border-radius: 20px;
+  
+    &:hover {
+      // @extend %text_light;
+  
+      background: $button-background_orange;
+      color: $button-background_neutral;
+    }
+  
+    &:focus {
+      // @extend %text_light;
+  
+      background: $button-background_orange_active;
+      color: $button-background_neutral;
+    }
+  
+    &:disabled {
+      background: $button-background_disabled;
+    }
+  }
+  
+
