@@ -1,4 +1,4 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, ViewChild, Input } from '@angular/core';
 import { ContractorJobsListComponent } from '../contractor-jobs-list/contractor-jobs-list.component';
 
 @Component({
@@ -7,6 +7,7 @@ import { ContractorJobsListComponent } from '../contractor-jobs-list/contractor-
   styleUrls: ['./modal.component.scss']
 })
 export class ModalComponent {
+
     // showModal = false;
 
   // ngOnChanges() {
@@ -37,7 +38,7 @@ export class ModalComponent {
   // closeModal(){
   //   document.getElementById('modalSelector').classList.add('hidden');
 
-    
+
   // }
 
 
