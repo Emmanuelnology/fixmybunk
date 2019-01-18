@@ -1,17 +1,21 @@
-.one {
-    background-color: red;
-}
+// .one {
+//     background-color: red;
+// }
 
 .twoone {
-    background-color: orangered;
+    // background-color: orangered;
+    border-right: solid black 1px;
+    display: flex;
+    align-items: center;
 }
 
-.twotwo {
-    background-color: orange;
-}
+// .twotwo {
+//     background-color: orange;
+// }
 
 .three {
-    background-color: yellow;
+    // background-color: yellow;
+    align-items: center;
 }
 
 
@@ -21,6 +25,6 @@ h1 {
     text-align: center;
 }
 
-.create {
-    text-align: center;
+input, select {
+    border: none;
 }
