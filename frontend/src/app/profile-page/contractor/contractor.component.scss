@@ -19,3 +19,12 @@
 #detailed-description {
   color: $colour-grey_2;
 }
+
+input {
+  border: none;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  &:focus {
+    outline: none;
+  }
+}
