@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 // Firebase
 import { AngularFireModule } from '@angular/fire';
@@ -36,6 +37,10 @@ import { JobImageComponent } from './job-image/job-image.component';
 import { QuoteModalComponent } from './quote-modal/quote-modal.component';
 import { QuoteSubmittedModalComponent } from './quote-submitted-modal/quote-submitted-modal.component';
 import { QuoteGridComponent } from './quote-grid/quote-grid.component';
+import { AcceptedQuoteComponent } from './accepted-quote/accepted-quote.component';
+import { LandlordMiniProfileComponent } from './landlord-mini-profile/landlord-mini-profile.component';
+import { JobDetailsPageComponent } from './job-details-page/job-details-page.component';
+import { MaintenanceRequestPageComponent } from './maintenance-request-page/maintenance-request-page.component';
 
 const routes: Routes = [
   { path: 'function-demo', component: FunctionDemoComponent }, // THIS ROUTE IS FOR DEMOING ON AND PRACTICING ARCIBALDO
@@ -57,7 +62,9 @@ const routes: Routes = [
   { path: 'timeline', component: QuoteTimelineComponent},
   { path: 'imagestack', component: ImageStackComponent },
   { path: 'size', component: CompanySizeComponent},
-  { path: 'quote-grid', component: QuoteGridComponent}
+  { path: 'quote-grid', component: QuoteGridComponent},
+  { path: 'accepted-quote', component: AcceptedQuoteComponent },
+  { path: 'landlord-mini', component: LandlordMiniProfileComponent }
 ];
 
 @NgModule({
@@ -91,10 +98,16 @@ const routes: Routes = [
     JobImageComponent,
     QuoteTimelineComponent,
     ModalComponent,
-    QuoteGridComponent
+    QuoteGridComponent,
+    AcceptedQuoteComponent,
+    QuoteSubmittedModalComponent,
+    LandlordMiniProfileComponent,
+    JobDetailsPageComponent,
+    MaintenanceRequestPageComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireFunctionsModule,
     RouterModule.forRoot(routes),

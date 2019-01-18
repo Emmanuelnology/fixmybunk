@@ -1,0 +1,22 @@
+@import '../../bunk.variables.scss';
+@import '../../bunk.theme.scss';
+@import '../../arcibaldo-custom.variables.scss';
+@import '../../../src/scss/variables/breakpoints';
+
+.title_3 {
+    margin-bottom: 0;
+}
+
+.title_2 {
+    margin-top: 12px;
+    margin-bottom: 0;
+}
+
+.star {
+    padding-top: 2.7em;
+    padding-left: 0.5em;
+}
+
+button {
+    margin-top: 10px;
+}

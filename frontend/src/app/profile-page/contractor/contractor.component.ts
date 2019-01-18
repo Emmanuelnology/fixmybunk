@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ModalComponent } from 'src/app/modal/modal.component';
+import { element } from '@angular/core/src/render3/instructions';
 
 @Component({
   selector: 'app-contractor',
@@ -19,6 +20,10 @@ export class ContractorComponent implements OnInit {
   phoneBeingEdited = false;
   emailWebsiteBeingEdited = false;
   numberOfStaffBeingEdited = false;
+  detailedDescription = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at leo et arcu dictum venenatis nec eu orci.\
+                        Nam vel tortor at libero volutpat eleifend. Duis in dolor sed felis imperdiet efficitur quis vel justo.\
+                        Aenean iaculis varius eros quis rutrum. Donec tempus mauris vel tristique consectetur.\
+                        Cras est felis, consequat id dui nec, faucibus finibus magna. Nam venenatis vitae purus a fermentum.';
 
   constructor() { }
 

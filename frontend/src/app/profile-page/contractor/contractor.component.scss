@@ -1,19 +1,31 @@
 @import '../../../scss/variables/colour-palettes';
-@import '../../../scss/variables/typography';
 
 .fas {
   font-weight: 100;
-  color: $colour-grey_2;
   &:hover {
     cursor: pointer;
   }
 }
 
-.btn-orange {
-  background-color: $colour-orange_1;
-  color: white;
+.fa-edit {
+  color: $colour-grey_2;
+}
+
+.fa-check-circle {
+  color: $colour-green_1;
 }
 
 #detailed-description {
   color: $colour-grey_2;
 }
+
+input {
+  border: none;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  &:focus {
+    outline: none;
+  }
+}
+
+// @media only screen and (min-width = )
