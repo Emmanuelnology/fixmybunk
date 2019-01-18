@@ -62,7 +62,9 @@ const routes: Routes = [
   { path: 'imagestack', component: ImageStackComponent },
   { path: 'size', component: CompanySizeComponent},
   { path: 'accepted-quote', component: AcceptedQuoteComponent },
-  { path: 'landlord-mini', component: LandlordMiniProfileComponent }
+  { path: 'landlord-mini', component: LandlordMiniProfileComponent },
+  { path: 'job-details', component: JobDetailsPageComponent },
+  { path: 'maintenance-request', component: MaintenanceRequestPageComponent }
 ];
 
 @NgModule({
