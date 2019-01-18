@@ -68,8 +68,7 @@ const routes: Routes = [
   { path: 'landlord-mini', component: LandlordMiniProfileComponent },
   { path: 'inAppNav', component: InAppNavComponent},
   { path: 'quote-grid', component: QuoteGridComponent},
-  { path: 'job-details', component: JobDetailsPageComponent },
-  { path: 'maintenance-request', component: MaintenanceRequestPageComponent }
+  { path: 'job-details', component: JobDetailsPageComponent }
 ];
 
 @NgModule({
@@ -109,7 +108,6 @@ const routes: Routes = [
     QuoteSubmittedModalComponent,
     LandlordMiniProfileComponent,
     JobDetailsPageComponent,
-    MaintenanceRequestPageComponent,
     InAppNavComponent,
     MapComponent
   ],
