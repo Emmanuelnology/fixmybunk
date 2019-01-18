@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MaintenanceRequestPageComponent implements OnInit {
 
+  public user = {
+    role: 'landlord'
+  };
+
   public quoteView = 'timeline';
 
   constructor() { }
