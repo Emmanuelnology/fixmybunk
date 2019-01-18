@@ -35,8 +35,13 @@
 }
 
 @media only screen and (max-width: 680px) {
-  .none {
-    display: none;
+
+  .fd-c {
+    margin: 0;
+    width: 100%;
+    border: 1px white solid;
+    flex-direction: column;
+    justify-content: center; 
   }
 }
 
