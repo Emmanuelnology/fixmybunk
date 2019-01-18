@@ -16,7 +16,6 @@ export class JobDetailComponent implements OnInit {
   public isAccepted = true;
   constructor() {
   }
-
   // public accept () {
   //   if (this.isQuoted) {
   //     const quote: IQuote = {
