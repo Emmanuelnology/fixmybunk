@@ -1,11 +1,4 @@
-<div class="w_95 rc jc_fe icons ml_2 mt_4">
-  <i class="fas fa-th-large mr_2" (click)="setQuoteView('timeline')"></i>
-  <i class="fas fa-list-ul" (click)="setQuoteView('list')"></i>
-</div>
-<div *ngIf="quoteView === 'timeline'">
-  <app-quote-timeline></app-quote-timeline>
-</div>
-<div *ngIf="quoteView === 'list'" class="w_100 jc_c">
+<div class="w_100 jc_c">
   <div *ngFor="let quote of quotes" class="rc jc_sb ai_c w_95 p-all_1">
     <div class="rc ai_c w_10">
       <app-avatar-icon size="45"></app-avatar-icon>

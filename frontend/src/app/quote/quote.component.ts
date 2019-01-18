@@ -14,6 +14,11 @@ interface IQuote {
 export class QuoteComponent implements OnInit {
   @Input() quote: IQuote;
 
+  public user =  {
+    // role: 'contractor',
+    role: 'landlord'
+  };
+
   constructor() { }
 
   ngOnInit() {
