@@ -92,3 +92,31 @@ button p{
         min-width: 14vw;
     }
 }
+
+
+.blur {
+    width:100%;
+    height:100%;
+    position: absolute;
+    background-size:cover;
+    -webkit-filter: blur(4px);
+    -moz-filter: blur(4px);
+    -ms-filter: blur(4px);
+    -o-filter: blur(4px);
+    filter: blur(4px);
+}
+
+.modalyContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.modaly {
+    background-color: rgb(255, 0, 255);
+    z-index: 1;
+    width: 500px;
+    height: 300px;
+}
