@@ -34,10 +34,25 @@ body {
 
 }
 
-body.blur { //used for modal component
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
-  // overflow:hidden;
+// .blur { //used for modal component
+//   filter: blur(8px);
+//   -webkit-filter: blur(8px);
+//   // overflow:hidden;
+// }
+
+.blur {
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  position: absolute;
+  background-size:cover;
+  -webkit-filter: blur(4px);
+  -moz-filter: blur(4px);
+  -ms-filter: blur(4px);
+  -o-filter: blur(4px);
+  filter: blur(4px);
+  overflow:hidden;
 }
 
 
