@@ -36,6 +36,7 @@ import { ModalComponent } from './modal/modal.component';
 import { JobImageComponent } from './job-image/job-image.component';
 import { QuoteModalComponent } from './quote-modal/quote-modal.component';
 import { QuoteSubmittedModalComponent } from './quote-submitted-modal/quote-submitted-modal.component';
+import { AcceptedQuoteComponent } from './accepted-quote/accepted-quote.component';
 
 const routes: Routes = [
   { path: 'function-demo', component: FunctionDemoComponent }, // THIS ROUTE IS FOR DEMOING ON AND PRACTICING ARCIBALDO
@@ -56,7 +57,8 @@ const routes: Routes = [
   { path: 'quote', component: QuoteModalComponent},
   { path: 'timeline', component: QuoteTimelineComponent},
   { path: 'imagestack', component: ImageStackComponent },
-  { path: 'size', component: CompanySizeComponent}
+  { path: 'size', component: CompanySizeComponent},
+  { path: 'accepted-quote', component: AcceptedQuoteComponent }
 ];
 
 @NgModule({
@@ -90,6 +92,7 @@ const routes: Routes = [
     JobImageComponent,
     QuoteTimelineComponent,
     ModalComponent,
+    AcceptedQuoteComponent,
     QuoteSubmittedModalComponent
   ],
   imports: [
