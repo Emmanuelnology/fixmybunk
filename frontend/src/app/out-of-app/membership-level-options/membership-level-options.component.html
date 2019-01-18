@@ -16,7 +16,7 @@
     <p>month</p>
     </div>
     </div>
-    <button class="btn btn_raised btn_orange">CHOOSE</button>
+    <button *ngIf="option.isHidden != true" class="btn btn_raised btn_orange mb_1" (click)="updatePaymentOption(option)" routerLink="/payment">CHOOSE</button>
   </div>
 </div>
 
