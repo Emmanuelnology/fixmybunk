@@ -9,14 +9,14 @@ i {
 }
 
 .side {
-  border-top: 1px solid white;
+  border-top: 1px solid $colour-grey_0;
 }
 
 .navicon {
 
   &:hover,
   &:active {
-    background-color: grey;
+    background-color: $colour-grey_3;
 
     p {
       text-decoration: underline;
