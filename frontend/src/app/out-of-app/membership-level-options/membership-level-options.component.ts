@@ -16,7 +16,7 @@ export class MembershipLevelOptionsComponent implements OnInit {
         title: 'SILVER',
         prices: '15'
       }
-    ]
+    ];
 
     options = [
       {
@@ -39,14 +39,12 @@ export class MembershipLevelOptionsComponent implements OnInit {
 
   constructor(
     private router: Router
-  ) {
-    console.log(this.router.url);
-    if(this.router.url == '/payment') {
-      this.pageOption = this.selectedOption;
-    }
-    else {
-      this.pageOption = this.options;
-    }
+    ) { console.log(this.router.url);
+      if (this.router.url === '/payment') {
+        this.pageOption = this.selectedOption;
+      } else {
+        this.pageOption = this.options;
+      }
   }
 
   ngOnInit() {
