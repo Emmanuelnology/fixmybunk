@@ -39,13 +39,11 @@ export class JobDetailComponent implements OnInit {
       price: '£280',
     },
   ];
-
   // public getUser () {
   //   const isLandlord = true;
   //   // const isLandlord = false;
   //   return isLandlord;
   // }
-
   ngOnInit () {
     // console.log(this.role)
   }
