@@ -36,6 +36,7 @@ import { ModalComponent } from './modal/modal.component';
 import { JobImageComponent } from './job-image/job-image.component';
 import { QuoteModalComponent } from './quote-modal/quote-modal.component';
 import { QuoteSubmittedModalComponent } from './quote-submitted-modal/quote-submitted-modal.component';
+import { PaymentDetailsComponent } from './out-of-app/payment-details/payment-details.component';
 import { QuoteGridComponent } from './quote-grid/quote-grid.component';
 import { AcceptedQuoteComponent } from './accepted-quote/accepted-quote.component';
 import { LandlordMiniProfileComponent } from './landlord-mini-profile/landlord-mini-profile.component';
@@ -62,6 +63,8 @@ const routes: Routes = [
   { path: 'timeline', component: QuoteTimelineComponent},
   { path: 'imagestack', component: ImageStackComponent },
   { path: 'size', component: CompanySizeComponent},
+  { path: 'payment', component: PaymentDetailsComponent },
+  { path: 'accepted-quote', component: AcceptedQuoteComponent }
   { path: 'quote-grid', component: QuoteGridComponent},
   { path: 'accepted-quote', component: AcceptedQuoteComponent },
   { path: 'landlord-mini', component: LandlordMiniProfileComponent },
@@ -100,6 +103,7 @@ const routes: Routes = [
     JobImageComponent,
     QuoteTimelineComponent,
     ModalComponent,
+    PaymentDetailsComponent,
     QuoteGridComponent,
     AcceptedQuoteComponent,
     QuoteSubmittedModalComponent,
