@@ -19,7 +19,7 @@ td {
     border-bottom: 1px solid lightgray;
     text-align: left;
     padding: 10px;
-}
+    }
 
 th{
     text-align: left;
@@ -90,7 +90,8 @@ button p{
 
     td{
         border-bottom: none;
-        min-width: 14vw;
+        min-width: 16vw;
+        padding-left: 0;
     }
 }
 
