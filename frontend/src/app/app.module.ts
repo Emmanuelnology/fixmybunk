@@ -70,7 +70,8 @@ const routes: Routes = [
   { path: 'inAppNav', component: InAppNavComponent},
   { path: 'quote-grid', component: QuoteGridComponent},
   { path: 'job-details', component: JobDetailsPageComponent },
-  { path: 'maintenance-request', component: MaintenanceRequestPageComponent }
+  { path: 'maintenance-request', component: MaintenanceRequestPageComponent },
+  { path: 'map', component: MapComponent }
 ];
 
 @NgModule({
