@@ -1,21 +1,24 @@
-@import '../../../../src/scss/variables/breakpoints';
+// @import '../../../../src/scss/variables/breakpoints';
 
-// .one {
-//     background-color: red;
-// }
+.one {
+    background-color: red;
+}
 
 .twoone {
-    display: flex;
+    // display: flex;
     align-items: center;
+    background-color: orangered;
 }
 
 .twotwo {
-    min-width: 320px;
-    justify-content: center;
+    // min-width: 320px;
+    align-items: center;
+    background-color: orange;
 }
 
 .three {
     align-items: center;
+    background-color: yellow;
 }
 
 
@@ -31,47 +34,47 @@ h1 {
 
 input{
     border: none;
-    width: 180px;
+    width: 140px;
 }
 
 .small-select {
-    width: 200px; //input width + 20px
+    width: 160px; //input width + 20px
 }
 
 .large-select {
-    width: 410px; //small-select width x2 then + 10px
+    width: 340px; //small-select width x2 then + 20px
 }
 
-select {
-    border: none;
-    padding: 10px;
-}
+// select {
+//     border: none;
+//     padding: 10px;
+// }
 
 button, .image-text {
     width: 185px;
 }
 
-//break point (min screen 900px)
-@include breakpoint-custom($min: 600px, $max: 700px) {
-    .twotwo {
-        width: 80%;
-        background-color: red;
-    }
-}
+// //break point (min screen 900px)
+// @include breakpoint-custom($min: 600px, $max: 700px) {
+//     .twotwo {
+//         width: 80%;
+//         background-color: red;
+//     }
+// }
 
-@include breakpoint-custom($min: 0px, $max: 550px) {
-    .twotwo {
-        width: 100%;
-    }
+// @include breakpoint-custom($min: 0px, $max: 550px) {
+//     .twotwo {
+//         width: 100%;
+//     }
 
-    .large-select {
-        width: 200px; //same as small-select
-    }
+//     .large-select {
+//         width: 200px; //same as small-select
+//     }
 
-    input {
-        margin-left: 0;
-        margin-right: 0;
-    }
-}
+//     input {
+//         margin-left: 0;
+//         margin-right: 0;
+//     }
+// }
 
 
