@@ -26,13 +26,13 @@ export class ContractorComponent implements OnInit {
   }
 
   swapDescription = () => this.descriptionBeingEdited = !this.descriptionBeingEdited;
-  
+
   swapPhone = () => this.phoneBeingEdited = !this.phoneBeingEdited;
-  
+
   swapEmailWebsite = () => this.emailWebsiteBeingEdited = !this.emailWebsiteBeingEdited;
-  
+
   swapNumberOfStaff = () => this.numberOfStaffBeingEdited = !this.numberOfStaffBeingEdited;
-  
+
   openModal() {
     this.modal.open();
   }

@@ -8,14 +8,14 @@ import { Component, OnInit, OnDestroy, OnChanges, Input } from '@angular/core';
 export class ModalComponent implements OnDestroy, OnChanges {
 
   showModal = false;
- 
+
   ngOnChanges() {
     this.showModal ? this.open() : this.close();
   }
 
 
   open() {
-    console.log("Open");
+    console.log('Open');
     document.body.classList.add('blur');
     this.showModal = true;
   }
