@@ -161,9 +161,11 @@ export class ContractorJobsListComponent implements OnInit {
    }
 
    closeModal(){
-      this.ModalViewChild.closeModal();
-      // document.getElementById('blurSelector').classList.remove('blur');
-      // document.getElementById('modalSelector').classList.add('hidden');
+      console.log('hi');
+      // this.ModalViewChild.closeModal();
+      document.getElementById('blurSelector').classList.remove('blur');
+      document.getElementById('modalSelector').classList.add('hidden');
+      
    }
 
    

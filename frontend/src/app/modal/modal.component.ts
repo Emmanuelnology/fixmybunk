@@ -34,11 +34,11 @@ export class ModalComponent {
   //   this.someEvent.next('somePhone');
   // }
 
-  closeModal(){
-    document.getElementById('modalSelector').classList.add('hidden');
+  // closeModal(){
+  //   document.getElementById('modalSelector').classList.add('hidden');
 
     
-  }
+  // }
 
 
 
