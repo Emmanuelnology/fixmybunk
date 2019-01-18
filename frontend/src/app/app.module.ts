@@ -36,11 +36,13 @@ import { ModalComponent } from './modal/modal.component';
 import { JobImageComponent } from './job-image/job-image.component';
 import { QuoteModalComponent } from './quote-modal/quote-modal.component';
 import { QuoteSubmittedModalComponent } from './quote-submitted-modal/quote-submitted-modal.component';
+import { PaymentDetailsComponent } from './out-of-app/payment-details/payment-details.component';
 import { QuoteGridComponent } from './quote-grid/quote-grid.component';
 import { AcceptedQuoteComponent } from './accepted-quote/accepted-quote.component';
 import { LandlordMiniProfileComponent } from './landlord-mini-profile/landlord-mini-profile.component';
 import { JobDetailsPageComponent } from './job-details-page/job-details-page.component';
 import { MaintenanceRequestPageComponent } from './maintenance-request-page/maintenance-request-page.component';
+import { InAppNavComponent } from './in-app-nav/in-app-nav.component';
 
 const routes: Routes = [
   { path: 'function-demo', component: FunctionDemoComponent }, // THIS ROUTE IS FOR DEMOING ON AND PRACTICING ARCIBALDO
@@ -61,10 +63,11 @@ const routes: Routes = [
   { path: 'quote', component: QuoteModalComponent},
   { path: 'timeline', component: QuoteTimelineComponent},
   { path: 'imagestack', component: ImageStackComponent },
-  { path: 'size', component: CompanySizeComponent},
-  { path: 'quote-grid', component: QuoteGridComponent},
+  { path: 'payment', component: PaymentDetailsComponent },
   { path: 'accepted-quote', component: AcceptedQuoteComponent },
   { path: 'landlord-mini', component: LandlordMiniProfileComponent },
+  { path: 'inAppNav', component: InAppNavComponent},
+  { path: 'quote-grid', component: QuoteGridComponent},
   { path: 'job-details', component: JobDetailsPageComponent },
   { path: 'maintenance-request', component: MaintenanceRequestPageComponent }
 ];
@@ -100,12 +103,14 @@ const routes: Routes = [
     JobImageComponent,
     QuoteTimelineComponent,
     ModalComponent,
+    PaymentDetailsComponent,
     QuoteGridComponent,
     AcceptedQuoteComponent,
     QuoteSubmittedModalComponent,
     LandlordMiniProfileComponent,
     JobDetailsPageComponent,
-    MaintenanceRequestPageComponent
+    MaintenanceRequestPageComponent,
+    InAppNavComponent
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, RouterLinkActive } from '@angular/router';
 
 @Component({
   selector: 'app-membership-level-options',
@@ -6,6 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./membership-level-options.component.scss']
 })
 export class MembershipLevelOptionsComponent implements OnInit {
+
+    pageOption;
+
+
+    selectedOption = [
+      {
+        title: 'SILVER',
+        prices: '15'
+      }
+    ]
 
     options = [
       {
@@ -26,8 +37,16 @@ export class MembershipLevelOptionsComponent implements OnInit {
       }
     ];
 
-  constructor() {
-
+  constructor(
+    private router: Router
+  ) {
+    console.log(this.router.url);
+    if(this.router.url == '/payment') {
+      this.pageOption = this.selectedOption;
+    }
+    else {
+      this.pageOption = this.options;
+    }
   }
 
   ngOnInit() {

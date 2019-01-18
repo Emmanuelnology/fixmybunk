@@ -36,6 +36,7 @@ $base-space-value: 10px;
   border-radius: 20px;
   text-transform: uppercase;
   @extend .text-tiny;
+  @extend .p-horizontal_2;
 
   &:hover {
     @extend %text_light;
