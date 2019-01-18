@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 // Firebase
 import { AngularFireModule } from '@angular/fire';
@@ -88,10 +89,12 @@ const routes: Routes = [
     ContractorLoginComponent,
     JobImageComponent,
     QuoteTimelineComponent,
-    ModalComponent
+    ModalComponent,
+    QuoteSubmittedModalComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireFunctionsModule,
     RouterModule.forRoot(routes),
