@@ -3,10 +3,17 @@
 
 .fas {
   font-weight: 100;
-  color: $colour-grey_2;
   &:hover {
     cursor: pointer;
   }
+}
+
+.fa-edit {
+  color: $colour-grey_2;
+}
+
+.fa-check-circle {
+  color: $colour-green_1;
 }
 
 .btn-orange {
