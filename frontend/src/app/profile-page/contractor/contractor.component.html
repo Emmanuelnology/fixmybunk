@@ -30,6 +30,7 @@
                 <div class="m-vertical_1" *ngIf="descriptionBeingEdited">
                     <span>
                         <input
+                            [ngStyle]="{'width.px': (description.length)*12}"
                             class="title_3"
                             ngModel
                             type="string"
