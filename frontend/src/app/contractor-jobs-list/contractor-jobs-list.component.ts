@@ -158,10 +158,4 @@ export class ContractorJobsListComponent implements OnInit {
    openModal() {
       this.modal.open();
    }
-
- 
-
-
-
-
 }
