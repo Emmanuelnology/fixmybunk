@@ -1,3 +1,5 @@
+@import '../../../../src/scss/variables/breakpoints';
+
 // .one {
 //     background-color: red;
 // }
@@ -9,6 +11,7 @@
 
 .twotwo {
     min-width: 320px;
+    justify-content: center;
 }
 
 .three {
@@ -28,7 +31,6 @@ h1 {
 
 input{
     border: none;
-    padding: 10px;
     width: 180px;
 }
 
@@ -45,12 +47,30 @@ select {
     padding: 10px;
 }
 
-button {
+button, .image-text {
     width: 185px;
 }
 
 // break point (min screen 900px)
-
-.twoone {
-    border-right: solid rgb(236, 235, 235) 1px;
+@include breakpoint-custom($min: 600px, $max: 700px) {
+    .twotwo {
+        width: 80%;
+    }
 }
+
+@include breakpoint-custom($min: 0px, $max: 550px) {
+    .twotwo {
+        width: 100%;
+    }
+
+    .large-select {
+        width: 200px; //same as small-select
+    }
+
+    input {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+
