@@ -41,8 +41,6 @@ import { QuoteGridComponent } from './quote-grid/quote-grid.component';
 import { AcceptedQuoteComponent } from './accepted-quote/accepted-quote.component';
 import { LandlordMiniProfileComponent } from './landlord-mini-profile/landlord-mini-profile.component';
 import { JobDetailsPageComponent } from './job-details-page/job-details-page.component';
-import { MaintenanceRequestPageComponent } from './maintenance-request-page/maintenance-request-page.component';
-import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
 import { InAppNavComponent } from './in-app-nav/in-app-nav.component';
 
 const routes: Routes = [
@@ -111,7 +109,6 @@ const routes: Routes = [
     LandlordMiniProfileComponent,
     JobDetailsPageComponent,
     MaintenanceRequestPageComponent,
-    BreadcrumbComponent,
     InAppNavComponent
   ],
   imports: [

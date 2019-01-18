@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ModalComponent } from 'src/app/modal/modal.component';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-contractor',
@@ -26,8 +27,7 @@ export class ContractorComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() { }
 
   swapDescription = () => this.descriptionBeingEdited = !this.descriptionBeingEdited;
 
