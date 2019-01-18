@@ -39,6 +39,12 @@ export class JobDetailComponent implements OnInit {
     },
   ];
 
+  public getUser () {
+    const isLandlord = true;
+    // const isLandlord = false;
+    return isLandlord;
+  }
+
   ngOnInit () {
   }
 }
