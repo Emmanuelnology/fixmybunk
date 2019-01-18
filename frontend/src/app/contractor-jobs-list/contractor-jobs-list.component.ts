@@ -154,7 +154,7 @@ export class ContractorJobsListComponent implements OnInit {
       document.getElementById('pp' + passedInLocation).style.display = 'none';
    }
 
-   toggleModal(){
+   toggleModal() {
       document.getElementById('blurSelector').classList.toggle('blur');
       document.getElementById('modalSelector').classList.toggle('hidden');
    }
