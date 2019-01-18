@@ -1,7 +1,7 @@
 <app-in-app-nav>
     <div class="p-all_2">
-        <app-job-detail></app-job-detail>
-        <app-reported-by></app-reported-by>
+        <app-job-detail [role]="user.role"></app-job-detail>
+        <app-reported-by *ngIf="user.role === 'landlord'"></app-reported-by>
         <div class="rc">
             <h3 class="mt_5 w_90">Current quotes</h3>
             <div class="w_95 rc jc_fe ml_2 mt_4">
@@ -10,7 +10,7 @@
             </div>
         </div>
         <div *ngIf="quoteView === 'timeline'">
-            <app-quote-timeline></app-quote-timeline>
+            <app-quote-timeline [role]="user.role"></app-quote-timeline>
         </div>
         <div *ngIf="quoteView === 'list'">
             <app-quote-grid></app-quote-grid>

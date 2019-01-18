@@ -1,33 +1,35 @@
-<!-- <h1> {{ job.name }} </h1>
-<h2> {{ county.name }}, {{ city.name}} </h2> -->
-<!-- <ngb-datepicker-navigation></ngb-datepicker-navigation> -->
-<div class="job-page">
+<div class="job-page text">
   <div>
     <h1 class="title_3">Broken Door</h1>
     <h2 class="title_4 mb_0 pb_0">Almondsbury, Bristol</h2>
     <div class="rc jc_sb">
       <p class="text-tiny">24 hours ago</p>
-      <div [hidden]='getUser()' class="quoting jc_fe">
-        <p class="small-quote">{{ Quotes[0].text }}
-        <span class="quote-number">{{ Quotes[0].price}}</span>
+      <div *ngIf="role === 'contractor' && isQuoted" class="quoting jc_fe">
+        <p *ngIf="isAccepted === false" class="small-quote">You Quoted
+          <span class="quote-number">£280</span>
+        </p>
+        <p *ngIf="isAccepted" class="small-quote">The LandLord has Accepted Your Quote
+          <span class="quote-number">£280</span>
         </p>
       </div>
     </div>
   </div>
 
   <app-job-image></app-job-image>
-
+  
   <div>
     <p class="text-tiny mr_15">
-      Nullam nominavi instructior duo ex, unum meis adhuc id pro. 
-      Assum possim oportere mel ex, at vel justo oblique, ne mel torquatos dissentias. 
-      Et verear persius has, modus etiam ne vim. 
-      Inani tincidunt eos ex. In fugit nominavi pertinax eum, est et vocent equidem, legere maiestatis eum ex. Vim ex erant ullamcorper. 
-      Eu cum atomorum expetenda assentior, id propriae definitionem eum. Est et amet esse officiis, mei magna dicat ne. 
-      Pro option legendos te, tale invidunt an nec, in esse pertinacia vix. 
-      Eirmod deterruisset mei ex. 
-      In facer recteque constituto has, eu cum lobortis pertinacia. 
-      Et feugiat commune pro. Pri ei aeque ridens, justo admodum cu pro. Quem animal ne mei. Duo nostrum pertinax no, quas inani reprimique ea ius.
+      Nullam nominavi instructior duo ex, unum meis adhuc id pro.
+      Assum possim oportere mel ex, at vel justo oblique, ne mel torquatos dissentias.
+      Et verear persius has, modus etiam ne vim.
+      Inani tincidunt eos ex. In fugit nominavi pertinax eum, est et vocent equidem, legere maiestatis eum ex. Vim ex
+      erant ullamcorper.
+      Eu cum atomorum expetenda assentior, id propriae definitionem eum. Est et amet esse officiis, mei magna dicat ne.
+      Pro option legendos te, tale invidunt an nec, in esse pertinacia vix.
+      Eirmod deterruisset mei ex.
+      In facer recteque constituto has, eu cum lobortis pertinacia.
+      Et feugiat commune pro. Pri ei aeque ridens, justo admodum cu pro. Quem animal ne mei. Duo nostrum pertinax no,
+      quas inani reprimique ea ius.
     </p>
   </div>
 </div>
