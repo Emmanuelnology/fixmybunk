@@ -47,15 +47,20 @@ img.job-click {
 // @media only screen and (min-width: 870px) {
     /** Job images size */
     img.job-image {
-        width: 245px;
-        height: 225px;
+        width: 180px;
+        height: 150px;
+        padding-right: 0;
     }
 
     button {
-        margin-top: 7em;
+        margin-top: 4.5em;
         margin-left: 0;
         padding-left: 0;
         width: 3em;
+    }
+
+    .button1 {
+        padding-right: 7em;
     }
 
     img.job-click {

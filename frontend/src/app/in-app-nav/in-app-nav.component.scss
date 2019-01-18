@@ -1,0 +1,30 @@
+.top {
+  height: 60px;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+
+  img {
+    height: 50px;
+  }
+
+  .t_left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    margin: auto 0;
+    i {
+      font-size: 1.6em;
+      width: 40px;
+      color: white;
+    }
+  }
+}
+
+.side {
+  min-height: 100vh;
+  width: 5%;
+  background-color: blue;
+}
