@@ -5,11 +5,11 @@
             Breadcrumbs go here
         </div>
         <div class="text text_3">
-            <button class="btn btn_flat btn-orange">See public view</button>
+            <button class="btn_orange">See public view</button>
         </div>
     </div>
     <div class="m-all_1">
-        <div class="rc ai-c">
+        <div class="rc ai-c flex_wrap">
             <div>
                 <app-avatar-icon size="139"></app-avatar-icon>
             </div>
@@ -28,8 +28,14 @@
                     <i class="fas fa-edit text_3" (click)="swapDescription()"></i>
                 </div>
                 <div class="m-vertical_1" *ngIf="descriptionBeingEdited">
-                    <span class="title_3">
-                        {{description}}
+                    <span>
+                        <input
+                            [ngStyle]="{'width.px': (description.length)*12}"
+                            class="title_3"
+                            ngModel
+                            type="string"
+                            [(ngModel)]="description"
+                        >
                     </span>
                     <i class="fas fa-check-circle text_3" (click)="swapDescription()"></i>
                 </div>
@@ -39,7 +45,14 @@
                         <i class="fas fa-edit text_3" (click)="swapPhone()"></i>
                     </div>
                     <div *ngIf="phoneBeingEdited">
-                        <span class="text">{{phone}} </span>
+                        <span>
+                            <input
+                                class="text"
+                                ngModel
+                                type="string"
+                                [(ngModel)]="phone"
+                            >
+                        </span>
                         <i class="fas fa-check-circle text_3" (click)="swapPhone()"></i>
                     </div>
                     <div *ngIf="!emailWebsiteBeingEdited">
@@ -47,7 +60,21 @@
                         <i class="fas fa-edit text_3" (click)="swapEmailWebsite()"></i>
                     </div>
                     <div *ngIf="emailWebsiteBeingEdited">
-                        <span class="text">{{email}} / {{website}} </span>
+                        <span class="text">
+                            <input
+                                class="text"
+                                ngModel
+                                type="string"
+                                [(ngModel)]="email"
+                            >
+                            /
+                            <input
+                                class="text"
+                                ngModel
+                                type="string"
+                                [(ngModel)]="website"
+                            >
+                        </span>
                         <i class="fas fa-check-circle text_3" (click)="swapEmailWebsite()"></i>
                     </div>
                     <div *ngIf="!numberOfStaffBeingEdited">
@@ -55,17 +82,22 @@
                         <i class="fas fa-edit text_3" (click)="swapNumberOfStaff()"></i>
                     </div>
                     <div *ngIf="numberOfStaffBeingEdited">
-                        <span class="text">{{numberOfStaff}} people work for {{name}} </span>
+                        <span class="text">
+                            <input
+                                class="text"
+                                ngModel
+                                type="number"
+                                [(ngModel)]="numberOfStaff"
+                            >
+                            people work for {{name}}
+                        </span>
                         <i class="fas fa-check-circle text_3" (click)="swapNumberOfStaff()"></i>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="detailed-description" class="text text_3 mr_10">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at leo et arcu dictum venenatis nec eu orci.
-              Nam vel tortor at libero volutpat eleifend. Duis in dolor sed felis imperdiet efficitur quis vel justo.
-              Aenean iaculis varius eros quis rutrum. Donec tempus mauris vel tristique consectetur.
-              Cras est felis, consequat id dui nec, faucibus finibus magna. Nam venenatis vitae purus a fermentum.
+        <div id="detailed-description" class="text text-tiny mr_10">
+            {{detailedDescription}}
         </div>
     </div>
     <div class="m-all_1">    

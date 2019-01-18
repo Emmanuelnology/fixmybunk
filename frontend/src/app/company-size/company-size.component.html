@@ -1,24 +1,22 @@
 <app-out-app-layout>
-  <div class="test">
-    <div class="text_center">
-      <p class="heading_1 text_bold">
-        contractor registration
-      </p>
-      <p class="subtitle_1">
+  <div class="h_80 cc jc_c">
+    <div class="cc ai_c ta_c">
+      <app-contractor-reg-title class="rc jc_c"></app-contractor-reg-title>
+      <p class="capitalize">
         your company size
       </p>
-      <div class="text_centered">
-        <p class="text_grey text_width_30">
+      <div class="cc jc_c ta_c">
+        <p class="text_grey W_30">
           We welcome businesses of all sizes, so whether you're a solo tradesman or
           a big company you can still get all the great benefits of Bunk Contractors
         </p>
       </div>
     </div>
 
-    <div class="avatar">
-      <div *ngFor="let company of companySize" class="avatar_center">
+    <div class="rc jc_c flex_wrap ">
+      <div *ngFor="let company of companySize" class="avatar cc ai_c ml_2 mr_2">
         <app-avatar-icon size="75"></app-avatar-icon>
-        <p class="text-caption_bold text_dark">{{company.title}}</p>
+        <p class="text-caption_bold text_dark uppercase mt_1">{{company.title}}</p>
         <p class="text-tiny text_grey">{{company.subtitle}}</p>
       </div>
     </div>

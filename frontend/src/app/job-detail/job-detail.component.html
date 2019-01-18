@@ -7,9 +7,10 @@
     <h2 class="title_4 mb_0 pb_0">Almondsbury, Bristol</h2>
     <div class="rc jc_sb">
       <p class="text-tiny">24 hours ago</p>
-      <div class="quoting jc_fe mr_8">
-        <p class="small-quote">You Quoted</p>
-        <p class="quote-number">£280</p>
+      <div [hidden]='getUser()' class="quoting jc_fe">
+        <p class="small-quote">{{ Quotes[0].text }}
+        <span class="quote-number">{{ Quotes[0].price}}</span>
+        </p>
       </div>
     </div>
   </div>
@@ -17,7 +18,7 @@
   <app-job-image></app-job-image>
 
   <div>
-    <p class="text-tiny mr_15">
+    <p class="text-tiny ml_1 mr_15">
       Nullam nominavi instructior duo ex, unum meis adhuc id pro. 
       Assum possim oportere mel ex, at vel justo oblique, ne mel torquatos dissentias. 
       Et verear persius has, modus etiam ne vim. 
