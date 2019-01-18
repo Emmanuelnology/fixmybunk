@@ -39,6 +39,7 @@ import { QuoteSubmittedModalComponent } from './quote-submitted-modal/quote-subm
 import { AcceptedQuoteComponent } from './accepted-quote/accepted-quote.component';
 import { LandlordMiniProfileComponent } from './landlord-mini-profile/landlord-mini-profile.component';
 import { JobDetailsPageComponent } from './job-details-page/job-details-page.component';
+import { MaintenanceRequestPageComponent } from './maintenance-request-page/maintenance-request-page.component';
 
 const routes: Routes = [
   { path: 'function-demo', component: FunctionDemoComponent }, // THIS ROUTE IS FOR DEMOING ON AND PRACTICING ARCIBALDO
@@ -98,7 +99,8 @@ const routes: Routes = [
     AcceptedQuoteComponent,
     QuoteSubmittedModalComponent,
     LandlordMiniProfileComponent,
-    JobDetailsPageComponent
+    JobDetailsPageComponent,
+    MaintenanceRequestPageComponent
   ],
   imports: [
     BrowserModule,
