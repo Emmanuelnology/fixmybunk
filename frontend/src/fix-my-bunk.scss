@@ -36,6 +36,7 @@ $base-space-value: 10px;
   border-radius: 20px;
   text-transform: uppercase;
   @extend .text-tiny;
+  @extend .p-horizontal_2;
 
   &:hover {
     @extend %text_light;
@@ -68,11 +69,6 @@ $base-space-value: 10px;
 .fas,
 .far {
   font-family: "Font Awesome 5 Free";
-}
-
-.large-header {
-  font-size: 2.75rem;
-  font-family:  $font-family_primary
 }
 
 .btn_rounded_blue {
@@ -126,6 +122,18 @@ $base-space-value: 10px;
     &:disabled {
       background: $button-background_disabled;
     }
+  }
+
+  .large-header {
+    font-size: 2.75rem;
+    font-family:  $font-family_primary
+  }
+
+  .medium-header {
+    font-size: 1.15rem;
+    font-family:  $font-family_primary;
+    color: white;
+
   }
   
 

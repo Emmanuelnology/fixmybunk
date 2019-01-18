@@ -42,6 +42,7 @@ import { AcceptedQuoteComponent } from './accepted-quote/accepted-quote.componen
 import { LandlordMiniProfileComponent } from './landlord-mini-profile/landlord-mini-profile.component';
 import { JobDetailsPageComponent } from './job-details-page/job-details-page.component';
 import { MaintenanceRequestPageComponent } from './maintenance-request-page/maintenance-request-page.component';
+import { InAppNavComponent } from './in-app-nav/in-app-nav.component';
 
 const routes: Routes = [
   { path: 'function-demo', component: FunctionDemoComponent }, // THIS ROUTE IS FOR DEMOING ON AND PRACTICING ARCIBALDO
@@ -62,12 +63,11 @@ const routes: Routes = [
   { path: 'quote', component: QuoteModalComponent},
   { path: 'timeline', component: QuoteTimelineComponent},
   { path: 'imagestack', component: ImageStackComponent },
-  { path: 'size', component: CompanySizeComponent},
   { path: 'payment', component: PaymentDetailsComponent },
-  { path: 'accepted-quote', component: AcceptedQuoteComponent }
-  { path: 'quote-grid', component: QuoteGridComponent},
   { path: 'accepted-quote', component: AcceptedQuoteComponent },
   { path: 'landlord-mini', component: LandlordMiniProfileComponent },
+  { path: 'inAppNav', component: InAppNavComponent},
+  { path: 'quote-grid', component: QuoteGridComponent},
   { path: 'job-details', component: JobDetailsPageComponent },
   { path: 'maintenance-request', component: MaintenanceRequestPageComponent }
 ];
@@ -109,7 +109,8 @@ const routes: Routes = [
     QuoteSubmittedModalComponent,
     LandlordMiniProfileComponent,
     JobDetailsPageComponent,
-    MaintenanceRequestPageComponent
+    MaintenanceRequestPageComponent,
+    InAppNavComponent
   ],
   imports: [
     BrowserModule,
