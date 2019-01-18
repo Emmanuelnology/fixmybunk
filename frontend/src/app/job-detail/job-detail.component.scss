@@ -56,19 +56,19 @@ p {
 
     .quoting {
         width: 150px;
-        margin-right: 15em;
+        margin-right: 15.7em;
     }
 
     .small-quote {
-        font-size: 16px;
+        font-size: 14px;
     }
     
     .quote-number {
-        font-size: 16px;
+        font-size: 14px;
     }    
 }
 
-@include breakpoint-custom($min: 870px, $max: 2000px) {
+@include breakpoint-custom($min: 870px, $max: 1500px) {
 // @media only screen and (min-width: 870px) {
     /** Job images size */
     h1 {
