@@ -51,10 +51,11 @@ button, .image-text {
     width: 185px;
 }
 
-// break point (min screen 900px)
+//break point (min screen 900px)
 @include breakpoint-custom($min: 600px, $max: 700px) {
     .twotwo {
         width: 80%;
+        background-color: red;
     }
 }
 
