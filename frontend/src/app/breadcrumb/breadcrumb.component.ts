@@ -20,11 +20,11 @@ export class BreadcrumbComponent implements OnInit {
   constructor(private router: Router, private activatedRoute: ActivatedRoute) { }
 
   ngOnInit() {
-    this.breadcrumbs = this.router.events.pipe(
-      filter((event) => event instanceof NavigationEnd),
-      distinctUntilChanged(),
-      map(() => this.buildBreadCrumb(this.activatedRoute.root, '', []))
-      );
+    // this.breadcrumbs = this.router.events.pipe(
+    //   filter((event) => event instanceof NavigationEnd),
+    //   distinctUntilChanged(),
+    //   map(() => this.buildBreadCrumb(this.activatedRoute.root, '', []))
+    //   );
   }
 
   buildBreadCrumb(route: ActivatedRoute, url: string, breadcrumbs: IBreadcrumb[]) {
