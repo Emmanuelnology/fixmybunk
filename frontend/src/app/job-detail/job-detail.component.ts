@@ -11,12 +11,12 @@ export interface IQuote {
   styleUrls: ['./job-detail.component.scss']
 })
 export class JobDetailComponent implements OnInit {
-  public isQuoteAccepted = true;
+  public isQuoted = true;
   constructor() {
   }
 
   public accept () {
-    if (this.isQuoteAccepted) {
+    if (this.isQuoted) {
       const quote: IQuote = {
         text: 'The LandLord has Accepted Your Quote',
         price: '£280',
