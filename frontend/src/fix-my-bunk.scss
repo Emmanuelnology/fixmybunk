@@ -29,20 +29,24 @@ $base-space-value: 10px;
 
 // button orange created
 .btn_orange {
-  border: 1px solid $button-border-color_orange;
+  border: 1px solid $button-background_orange;
   background: $button-background_orange;
   color: $button-border-color_orange;
+  height: 20px;
+  border-radius: 20px;
 
   &:hover {
     @extend %text_light;
 
-    background: $button-background_orange_hover;
+    background: $button-background_neutral;
+    color: $button-background_orange;
   }
 
   &:focus {
     @extend %text_light;
 
     background: $button-background_orange_active;
+    color: $button-border-color_orange;
   }
 
   &:disabled {
