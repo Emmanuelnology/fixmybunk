@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { removeDebugNodeFromIndex } from '@angular/core/src/debug/debug_node';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { ModalComponent } from '../modal/modal.component';
 
 @Component({
   selector: 'app-contractor-jobs-list',
@@ -7,8 +7,9 @@ import { removeDebugNodeFromIndex } from '@angular/core/src/debug/debug_node';
   styleUrls: ['./contractor-jobs-list.component.scss']
 })
 export class ContractorJobsListComponent implements OnInit {
+   @ViewChild(ModalComponent)ModalViewChild;
+
    count = 0;
-   hidden;
    jobsList = [
    {
       Name: 'Patty Massy',
@@ -154,9 +155,18 @@ export class ContractorJobsListComponent implements OnInit {
       document.getElementById('pp' + passedInLocation).style.display = 'none';
    }
 
-   toggleModal(){
-      document.getElementById('blurSelector').classList.toggle('blur');
-      document.getElementById('modalSelector').classList.toggle('hidden');
+   openModal(){
+      document.getElementById('blurSelector').classList.add('blur');
+      document.getElementById('modalSelector').classList.remove('hidden');
    }
+
+   closeModal(){
+      this.ModalViewChild.closeModal();
+      // document.getElementById('blurSelector').classList.remove('blur');
+      // document.getElementById('modalSelector').classList.add('hidden');
+   }
+
+   
+
 
 }
