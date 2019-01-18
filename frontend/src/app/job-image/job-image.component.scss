@@ -43,7 +43,33 @@ img.job-click {
     height: 15px;
 }
 
-@include breakpoint-custom($min: 1000px, $max: 2000px) {
+@include breakpoint-custom($min: 1500px, $max: 2000px) {
+    img.job-image {
+        width: 225px;
+        height: 195px;
+        padding-right: 0;
+    }
+
+    button {
+        margin-top: 5em;
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    .button1 {
+        padding-right: 7em;
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    img.job-click {
+        width: 45px;
+        height: 35px;
+        margin-left: 0;
+    }
+}
+
+@include breakpoint-custom($min: 1000px, $max: 1500px) {
 // @media only screen and (min-width: 870px) {
     /** Job images size */
     img.job-image {
@@ -66,6 +92,7 @@ img.job-click {
     img.job-click {
         width: 40px;
         height: 30px;
+        margin-left: 0;
     }
 }
 
