@@ -9,12 +9,18 @@ import { ContractorJobsListComponent } from '../contractor-jobs-list/contractor-
 export class ModalComponent {
   showModal = false;
   open() {
-    document.getElementById('blurSelector').classList.add('blur');
+    let list = document.getElementsByClassName('blurSelector');
+    for(let i =0; i < list.length; i++){
+      list[i].classList.add('blur');
+    }
     this.showModal=true;
   }
 
   close() {
-    document.getElementById('blurSelector').classList.remove('blur');
+    let list = document.getElementsByClassName('blurSelector');
+    for(let i =0; i < list.length; i++){
+      list[i].classList.remove('blur');
+    }
     this.showModal=false;
  }
 
