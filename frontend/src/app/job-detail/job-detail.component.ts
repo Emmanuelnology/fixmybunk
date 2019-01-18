@@ -11,23 +11,34 @@ export interface IQuote {
   styleUrls: ['./job-detail.component.scss']
 })
 export class JobDetailComponent implements OnInit {
-  public isQuoteAccepted = true;
+  public isQuoted = true;
   constructor() {
   }
 
-  public accept () {
-    if (this.isQuoteAccepted) {
-      const quote: IQuote = {
-        text: 'The LandLord has Accepted Your Quote',
-        price: '£280',
-      };
-    } else {
-      const quote: IQuote = {
+  // public accept () {
+  //   if (this.isQuoted) {
+  //     const quote: IQuote = {
+  //       text: 'The LandLord has Accepted Your Quote',
+  //       price: '£280',
+  //     };
+  //   } else {
+  //     const quote: IQuote = {
+  //     text: 'You Quoted',
+  //     price: '£280',
+  //     };
+  //   }
+  // }
+  public Quotes = [
+    {
+      text: 'The LandLord has Accepted Your Quote',
+      price: '£280',
+    },
+    {
       text: 'You Quoted',
       price: '£280',
-    };
-  }
-  }
+    },
+  ];
+
   ngOnInit () {
   }
 }

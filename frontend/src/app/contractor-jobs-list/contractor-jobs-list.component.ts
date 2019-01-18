@@ -8,6 +8,7 @@ import { removeDebugNodeFromIndex } from '@angular/core/src/debug/debug_node';
 })
 export class ContractorJobsListComponent implements OnInit {
    count = 0;
+   hidden;
    jobsList = [
    {
       Name: 'Patty Massy',
@@ -151,6 +152,11 @@ export class ContractorJobsListComponent implements OnInit {
    changeColourRowBack(passedInLocation) {
       document.getElementById('p' + passedInLocation).style.display = 'none';
       document.getElementById('pp' + passedInLocation).style.display = 'none';
+   }
+
+   toggleModal(){
+      document.getElementById('blurSelector').classList.toggle('blur');
+      document.getElementById('modalSelector').classList.toggle('hidden');
    }
 
 }

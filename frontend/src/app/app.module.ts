@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 // Firebase
 import { AngularFireModule } from '@angular/fire';
@@ -36,6 +37,7 @@ import { JobImageComponent } from './job-image/job-image.component';
 import { QuoteModalComponent } from './quote-modal/quote-modal.component';
 import { QuoteSubmittedModalComponent } from './quote-submitted-modal/quote-submitted-modal.component';
 import { PaymentDetailsComponent } from './out-of-app/payment-details/payment-details.component';
+import { AcceptedQuoteComponent } from './accepted-quote/accepted-quote.component';
 
 const routes: Routes = [
   { path: 'function-demo', component: FunctionDemoComponent }, // THIS ROUTE IS FOR DEMOING ON AND PRACTICING ARCIBALDO
@@ -58,6 +60,7 @@ const routes: Routes = [
   { path: 'imagestack', component: ImageStackComponent },
   { path: 'size', component: CompanySizeComponent},
   { path: 'payment', component: PaymentDetailsComponent },
+  { path: 'accepted-quote', component: AcceptedQuoteComponent }
 ];
 
 @NgModule({
@@ -91,10 +94,13 @@ const routes: Routes = [
     JobImageComponent,
     QuoteTimelineComponent,
     ModalComponent,
-    PaymentDetailsComponent
+    PaymentDetailsComponent,
+    AcceptedQuoteComponent,
+    QuoteSubmittedModalComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireFunctionsModule,
     RouterModule.forRoot(routes),
