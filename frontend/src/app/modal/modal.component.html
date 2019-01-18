@@ -8,11 +8,12 @@
 
   <!-- content goes here -->
 
-
-<div class="modalContainer hidden" id="modalSelector">
+  <div class="blocker {{showModal ? '':'hidden'}}" (click)="cancel()" >
+    </div>
+<div class="modalContainer {{showModal ? '':'hidden'}}" id="modalSelector">
+  
   <div class="modal">
-    <p id="welcome">
-      Hi, I'm a modal!
-    </p>
+      <button class="closeButton" (click)="save()">Close</button>
+      <ng-content></ng-content>
   </div>
 </div>
