@@ -8,6 +8,7 @@ import { removeDebugNodeFromIndex } from '@angular/core/src/debug/debug_node';
 })
 export class ContractorJobsListComponent implements OnInit {
    count = 0;
+   hidden;
    jobsList = [
    {
       Name: 'Patty Massy',
@@ -153,8 +154,9 @@ export class ContractorJobsListComponent implements OnInit {
       document.getElementById('pp' + passedInLocation).style.display = 'none';
    }
 
-   toggleModal(){
+   toggleModal() {
       document.getElementById('blurSelector').classList.toggle('blur');
+      document.getElementById('modalSelector').classList.toggle('hidden');
    }
 
 }

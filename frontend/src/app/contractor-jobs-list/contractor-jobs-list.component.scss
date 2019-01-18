@@ -2,6 +2,7 @@
 
 #jobs_list_container{
     padding: 0 15px;
+    margin-top: 100px;
 }
 
 table{
@@ -106,7 +107,7 @@ button p{
     filter: blur(4px);
 }
 
-.modalyContainer{
+.modalContainer{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -114,9 +115,13 @@ button p{
     height: 100vh;
 }
 
-.modaly {
+.modal {
     background-color: rgb(255, 0, 255);
     z-index: 1;
     width: 500px;
     height: 300px;
+}
+
+.hidden {
+    display: none;
 }
