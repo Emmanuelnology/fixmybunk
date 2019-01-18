@@ -41,6 +41,33 @@ p {
     font-size: 4px;
 }
 
+@include breakpoint-custom($min: 1500px, $max: 2000px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .quoting {
+        width: 150px;
+        margin-right: 15em;
+    }
+
+    .small-quote {
+        font-size: 16px;
+    }
+    
+    .quote-number {
+        font-size: 16px;
+    }    
+}
+
 @include breakpoint-custom($min: 870px, $max: 2000px) {
 // @media only screen and (min-width: 870px) {
     /** Job images size */
