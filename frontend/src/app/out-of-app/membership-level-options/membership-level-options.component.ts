@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, RouterLinkActive } from '@angular/router';
 
+
+
 @Component({
   selector: 'app-membership-level-options',
   templateUrl: './membership-level-options.component.html',
@@ -11,12 +13,14 @@ export class MembershipLevelOptionsComponent implements OnInit {
     pageOption;
 
 
-    selectedOption = [
+    selectedOption =
+    [
       {
         title: 'SILVER',
-        prices: '15'
+        prices: '15',
+        isHidden: true
       }
-    ]
+    ];
 
     options = [
       {
@@ -39,17 +43,34 @@ export class MembershipLevelOptionsComponent implements OnInit {
 
   constructor(
     private router: Router
-  ) {
-    console.log(this.router.url);
-    if(this.router.url == '/payment') {
-      this.pageOption = this.selectedOption;
-    }
-    else {
-      this.pageOption = this.options;
-    }
+    ) {
+      console.log('constructor');
+      if (this.router.url === '/payment') {
+        this.pageOption = this.pageOption;
+      } else {
+        this.pageOption = this.options;
+      }
+    console.log(this.pageOption);
+  }
+
+  updatePaymentOption(option) {
+      console.log('update clicked');
+    const pagesOption = [
+      {
+        title: option.title,
+        prices: option.prices,
+        isHidden: true
+      }
+    ];
+
+    // return this.pageOption = pagesOption;
+
   }
 
   ngOnInit() {
+
+
+
   }
 
 

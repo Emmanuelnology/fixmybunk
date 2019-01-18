@@ -71,11 +71,6 @@ $base-space-value: 10px;
   font-family: "Font Awesome 5 Free";
 }
 
-.large-header {
-  font-size: 2.75rem;
-  font-family:  $font-family_primary
-}
-
 .btn_rounded_blue {
   border: 1px solid $button-background_blue;
   background: $button-background_blue;
@@ -127,6 +122,18 @@ $base-space-value: 10px;
     &:disabled {
       background: $button-background_disabled;
     }
+  }
+
+  .large-header {
+    font-size: 2.75rem;
+    font-family:  $font-family_primary
+  }
+
+  .medium-header {
+    font-size: 1.15rem;
+    font-family:  $font-family_primary;
+    color: white;
+
   }
   
 

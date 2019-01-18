@@ -1,13 +1,13 @@
-// @import '../../../fixMyBunk.scss';
-// @import "~arcibaldo/scss/arcibaldo.variables";
-// @import '../../../bunk.theme.scss';
-// @import '../../../bunk.variables.scss';
+@import '../../../scss/variables/colour-palettes';
+
+
 
 .reg-input {
   outline: none;
   border: 0;
 }
 
-// .fas {
-//   color: $button-background_orange;
-// }
+.fas {
+  color: $colour-orange_2;
+  vertical-align: center;
+}
