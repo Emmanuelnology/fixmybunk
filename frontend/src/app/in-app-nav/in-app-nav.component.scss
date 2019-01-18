@@ -17,6 +17,7 @@ i {
   &:hover,
   &:active {
     background-color: $colour-grey_3;
+    cursor: pointer;
 
     p {
       text-decoration: underline;
