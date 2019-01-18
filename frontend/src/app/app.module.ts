@@ -36,6 +36,8 @@ import { ModalComponent } from './modal/modal.component';
 import { JobImageComponent } from './job-image/job-image.component';
 import { QuoteModalComponent } from './quote-modal/quote-modal.component';
 import { QuoteSubmittedModalComponent } from './quote-submitted-modal/quote-submitted-modal.component';
+import { PaymentDetailsComponent } from './out-of-app/payment-details/payment-details.component';
+import { QuoteGridComponent } from './quote-grid/quote-grid.component';
 import { AcceptedQuoteComponent } from './accepted-quote/accepted-quote.component';
 import { LandlordMiniProfileComponent } from './landlord-mini-profile/landlord-mini-profile.component';
 import { JobDetailsPageComponent } from './job-details-page/job-details-page.component';
@@ -61,10 +63,13 @@ const routes: Routes = [
   { path: 'quote', component: QuoteModalComponent},
   { path: 'timeline', component: QuoteTimelineComponent},
   { path: 'imagestack', component: ImageStackComponent },
-  { path: 'size', component: CompanySizeComponent},
+  { path: 'payment', component: PaymentDetailsComponent },
   { path: 'accepted-quote', component: AcceptedQuoteComponent },
   { path: 'landlord-mini', component: LandlordMiniProfileComponent },
-  { path: 'inAppNav', component: InAppNavComponent}
+  { path: 'inAppNav', component: InAppNavComponent},
+  { path: 'quote-grid', component: QuoteGridComponent},
+  { path: 'job-details', component: JobDetailsPageComponent },
+  { path: 'maintenance-request', component: MaintenanceRequestPageComponent }
 ];
 
 @NgModule({
@@ -98,6 +103,8 @@ const routes: Routes = [
     JobImageComponent,
     QuoteTimelineComponent,
     ModalComponent,
+    PaymentDetailsComponent,
+    QuoteGridComponent,
     AcceptedQuoteComponent,
     QuoteSubmittedModalComponent,
     LandlordMiniProfileComponent,

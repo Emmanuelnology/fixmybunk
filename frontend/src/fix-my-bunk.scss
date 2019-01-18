@@ -34,6 +34,9 @@ $base-space-value: 10px;
   color: $button-border-color_orange;
   height: 20px;
   border-radius: 20px;
+  text-transform: uppercase;
+  @extend .text-tiny;
+  @extend .p-horizontal_2;
 
   &:hover {
     @extend %text_light;
