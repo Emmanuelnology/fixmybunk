@@ -1,6 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ModalComponent } from 'src/app/modal/modal.component';
-import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-contractor',
