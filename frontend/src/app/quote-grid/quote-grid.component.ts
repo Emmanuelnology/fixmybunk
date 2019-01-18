@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QuoteGridComponent implements OnInit {
 
+  public quoteView = 'timeline';
+
   quotes = [
     {
       contractor: 'CS Gas Fitters',
@@ -46,6 +48,12 @@ export class QuoteGridComponent implements OnInit {
   ];
 
   constructor() { }
+
+  setQuoteView(view) {
+    this.quoteView = view;
+    console.log(view);
+    console.log(this.quoteView);
+  }
 
   ngOnInit() {
   }

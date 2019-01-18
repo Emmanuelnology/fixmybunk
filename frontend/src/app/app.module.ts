@@ -56,7 +56,8 @@ const routes: Routes = [
   { path: 'quote', component: QuoteModalComponent},
   { path: 'timeline', component: QuoteTimelineComponent},
   { path: 'imagestack', component: ImageStackComponent },
-  { path: 'size', component: CompanySizeComponent}
+  { path: 'size', component: CompanySizeComponent},
+  { path: 'quote-grid', component: QuoteGridComponent}
 ];
 
 @NgModule({
