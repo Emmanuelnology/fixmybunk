@@ -18,6 +18,8 @@ $base-space-value: 10px;
 // Bunk
 @import "bunk.variables";
 @import "bunk.theme";
+//fixMyBunk extensions
+@import "fixMyBunk";
 
 html {
   height: 100%;
