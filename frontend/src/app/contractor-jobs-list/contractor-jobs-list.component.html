@@ -1,7 +1,9 @@
-<div class="blur">
+<div id="blurSelector">
 	<app-landing-nav></app-landing-nav>
 	<div id="jobs_list_container" class="text text_2">
-	  <h2>Jobs List</h2>
+    <h2>Jobs List</h2>
+    <p>space</p>
+	  <h2 (click)="toggleModal()">Click to open modal</h2>
 	
 	<div class="table_tablet_and_higher">
 	  <table>
@@ -97,5 +99,6 @@
 <div class="modalyContainer">
   <div class="modaly">
     Hi, I'm a modal!
+    <p (click)="toggleModal()">click me to close</p>
   </div>
 </div>
