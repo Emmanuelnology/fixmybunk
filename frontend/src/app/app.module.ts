@@ -42,20 +42,21 @@ import { AcceptedQuoteComponent } from './accepted-quote/accepted-quote.componen
 import { LandlordMiniProfileComponent } from './landlord-mini-profile/landlord-mini-profile.component';
 import { JobDetailsPageComponent } from './job-details-page/job-details-page.component';
 import { MaintenanceRequestPageComponent } from './maintenance-request-page/maintenance-request-page.component';
+import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
 
 const routes: Routes = [
   { path: 'function-demo', component: FunctionDemoComponent }, // THIS ROUTE IS FOR DEMOING ON AND PRACTICING ARCIBALDO
   { path: 'job-detail', component:  JobDetailComponent },
   { path: 'job-image', component:  JobImageComponent },
-  { path: 'profile', component: ContractorComponent },
+  { path: 'profile', component: ContractorComponent, data: {breadcrumb: 'Profile'} },
   { path: 'review', component: ReviewComponent },
   { path: 'feedback', component: FeedbackSectionComponent },
   { path: 'nav', component: LandingNavComponent},
   { path: 'landing', component: LandingPageComponent },
   { path: 'review', component: ReviewComponent },
-  { path: 'contractor/quotes', component: ContractorJobsListComponent },
+  { path: 'contractor/quotes', component: ContractorJobsListComponent},
   { path: 'contractor/welcome', component: ContractorWelcomePageComponent },
-  { path: 'contractor/login', component: ContractorLoginComponent },
+  { path: 'contractor/login', component: ContractorLoginComponent, data: {breadcrumb: 'Login'} },
   { path: 'reported-by', component: ReportedByComponent},
   { path: 'membership-level', component: MembershipLevelComponent },
   { path: 'size', component: CompanySizeComponent},
@@ -109,7 +110,8 @@ const routes: Routes = [
     QuoteSubmittedModalComponent,
     LandlordMiniProfileComponent,
     JobDetailsPageComponent,
-    MaintenanceRequestPageComponent
+    MaintenanceRequestPageComponent,
+    BreadcrumbComponent
   ],
   imports: [
     BrowserModule,
