@@ -3,6 +3,10 @@
 @import '../../arcibaldo-custom.variables.scss';
 @import '../../../src/scss/variables/breakpoints';
 
+.text {
+    color: $colour-grey_3;
+}
+
 .title_3 {
     margin-bottom: 0;
 }
