@@ -35,6 +35,7 @@ import { ModalComponent } from './modal/modal.component';
 import { JobImageComponent } from './job-image/job-image.component';
 import { QuoteModalComponent } from './quote-modal/quote-modal.component';
 import { QuoteSubmittedModalComponent } from './quote-submitted-modal/quote-submitted-modal.component';
+import { QuoteGridComponent } from './quote-grid/quote-grid.component';
 
 const routes: Routes = [
   { path: 'function-demo', component: FunctionDemoComponent }, // THIS ROUTE IS FOR DEMOING ON AND PRACTICING ARCIBALDO
@@ -88,7 +89,8 @@ const routes: Routes = [
     ContractorLoginComponent,
     JobImageComponent,
     QuoteTimelineComponent,
-    ModalComponent
+    ModalComponent,
+    QuoteGridComponent
   ],
   imports: [
     BrowserModule,
