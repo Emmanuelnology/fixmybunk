@@ -34,12 +34,23 @@
   }
 }
 
+@media only screen and (max-width: 680px) {
+
+  .fd-c {
+    margin: 0;
+    width: 100%;
+    border: 1px white solid;
+    flex-direction: column;
+    justify-content: center; 
+  }
+}
+
 
 @media only screen and (min-width: 769px) {
   .m-navbar {
     display: none;
   }
-  
+    
   .h_40 {
     max-width: 120px;
   }
