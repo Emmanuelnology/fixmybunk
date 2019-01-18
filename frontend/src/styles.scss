@@ -19,7 +19,7 @@ $base-space-value: 10px;
 @import "bunk.variables";
 @import "bunk.theme";
 //fixMyBunk extensions
-@import "fixMyBunk";
+@import "fix-my-bunk";
 
 html {
   height: 100%;
@@ -56,12 +56,6 @@ header * {
 }
 
 // @todo:
-
-.fa,
-.fas,
-.far {
-  font-family: "Font Awesome 5 Free";
-}
 
 .lateral-navbar-direction {
   flex-direction: row !important;
