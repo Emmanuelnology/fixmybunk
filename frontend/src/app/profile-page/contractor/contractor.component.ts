@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ModalComponent } from 'src/app/modal/modal.component';
-import { ActivatedRoute } from '@angular/router';
+import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-contractor',
@@ -25,7 +25,7 @@ export class ContractorComponent implements OnInit {
                         Aenean iaculis varius eros quis rutrum. Donec tempus mauris vel tristique consectetur.\
                         Cras est felis, consequat id dui nec, faucibus finibus magna. Nam venenatis vitae purus a fermentum.';
 
-  constructor() { }
+constructor () {}
 
   ngOnInit() { }
 

@@ -4,6 +4,7 @@
         <div (click)="openModal()">
             Modal
         </div>
+        <a *ngFor="let bc of breadcrumbs" routerLink="{{ bc }}" routerLinkActive="active">-{{bc}}</a>
         <div class="text text_3">
             <button class="btn_orange">See public view</button>
         </div>
