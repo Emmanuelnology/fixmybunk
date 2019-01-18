@@ -155,20 +155,20 @@ export class ContractorJobsListComponent implements OnInit {
       document.getElementById('pp' + passedInLocation).style.display = 'none';
    }
 
-   openModal(){
+   openModal() {
       document.getElementById('blurSelector').classList.add('blur');
       document.getElementById('modalSelector').classList.remove('hidden');
    }
 
-   closeModal(){
+   closeModal() {
       console.log('hi');
       // this.ModalViewChild.closeModal();
       document.getElementById('blurSelector').classList.remove('blur');
       document.getElementById('modalSelector').classList.add('hidden');
-      
+
    }
 
-   
+
 
 
 }
