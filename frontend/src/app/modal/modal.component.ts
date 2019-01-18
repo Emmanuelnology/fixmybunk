@@ -9,19 +9,19 @@ import { ContractorJobsListComponent } from '../contractor-jobs-list/contractor-
 export class ModalComponent {
   showModal = false;
   open() {
-    let list = document.getElementsByClassName('blurSelector');
-    for(let i =0; i < list.length; i++){
+    const list = document.getElementsByClassName('blurSelector');
+    for (let i = 0; i < list.length; i++) {
       list[i].classList.add('blur');
     }
-    this.showModal=true;
+    this.showModal = true;
   }
 
   close() {
-    let list = document.getElementsByClassName('blurSelector');
-    for(let i =0; i < list.length; i++){
+    const list = document.getElementsByClassName('blurSelector');
+    for (let i = 0; i < list.length; i++) {
       list[i].classList.remove('blur');
     }
-    this.showModal=false;
+    this.showModal = false;
  }
 
  cancel() {
@@ -29,7 +29,7 @@ export class ModalComponent {
  }
 
  save() {
-   //save
+   // save
    this.close();
  }
     // showModal = false;

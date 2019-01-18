@@ -17,9 +17,9 @@ export class MaintenanceRequestPageComponent implements OnInit {
 
   constructor() { }
 
-  showHideQuotes() {
-    this.showQuotes != this.showQuotes;
-  }
+  // showHideQuotes() {
+  //   this.showQuotes = !this.showQuotes;
+  // }
 
   setQuoteView(view) {
     this.quoteView = view;
