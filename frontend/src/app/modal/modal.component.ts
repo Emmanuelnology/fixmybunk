@@ -38,7 +38,7 @@ export class ModalComponent {
   // closeModal(){
   //   document.getElementById('modalSelector').classList.add('hidden');
 
-    
+
   // }
 
 
