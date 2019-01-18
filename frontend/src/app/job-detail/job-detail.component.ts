@@ -38,7 +38,7 @@ export class JobDetailComponent implements OnInit {
       price: '£280',
     },
   ];
-  
+
   ngOnInit () {
   }
 }
