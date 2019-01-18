@@ -4,14 +4,15 @@
 
 .twoone {
     // background-color: orangered;
-    border-right: solid black 1px;
+    border-right: solid rgb(236, 235, 235) 1px;
     display: flex;
     align-items: center;
 }
 
-// .twotwo {
-//     background-color: orange;
-// }
+.twotwo {
+    // background-color: orange;
+    min-width: 320px;
+}
 
 .three {
     // background-color: yellow;
@@ -25,6 +26,29 @@ h1 {
     text-align: center;
 }
 
-input, select {
+.centre-text {
+    text-align: center;
+}
+
+input{
     border: none;
+    padding: 10px;
+    width: 185px;
+}
+
+.small-select {
+    width: 205px;
+}
+
+.large-select {
+    width: 420px
+}
+
+select {
+    border: none;
+    padding: 10px;
+}
+
+button {
+    width: 185px;
 }
