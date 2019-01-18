@@ -1,5 +1,4 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { userInfo } from 'os';
 
 export interface IQuote {
   text: string;
@@ -16,8 +15,7 @@ export class JobDetailComponent implements OnInit {
   public isQuoted = true;
   public isAccepted = true;
   constructor() {
-  }
-
+  } 
   // public accept () {
   //   if (this.isQuoted) {
   //     const quote: IQuote = {

@@ -5,10 +5,12 @@
     <div class="rc jc_sb">
       <p class="text-tiny">24 hours ago</p>
       <div *ngIf="role === 'contractor' && isQuoted" class="quoting jc_fe">
-        <p *ngIf="isAccepted === false" class="small-quote">You Quoted
+        <p *ngIf="isAccepted === false" class="small-quote cc">
+          You Quoted
           <span class="quote-number">£280</span>
         </p>
-        <p *ngIf="isAccepted" class="small-quote">The LandLord has Accepted Your Quote
+        <p *ngIf="isAccepted" class="small-quote">
+          The LandLord has Accepted Your Quote
           <span class="quote-number">£280</span>
         </p>
       </div>
