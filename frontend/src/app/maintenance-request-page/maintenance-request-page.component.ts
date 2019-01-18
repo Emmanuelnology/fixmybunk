@@ -7,7 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MaintenanceRequestPageComponent implements OnInit {
 
+  public quoteView = 'timeline';
+
   constructor() { }
+
+  setQuoteView(view) {
+    this.quoteView = view;
+    console.log(view);
+    console.log(this.quoteView);
+  }
 
   ngOnInit() {
   }

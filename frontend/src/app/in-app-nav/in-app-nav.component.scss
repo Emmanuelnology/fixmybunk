@@ -15,6 +15,8 @@
     align-items: center;
     height: 100%;
     margin: auto 0;
+    padding-right: 10px;
+
     i {
       font-size: 1.6em;
       width: 40px;
@@ -23,8 +25,33 @@
   }
 }
 
+.container {
+  height: 94vh;
+}
 .side {
-  min-height: 100vh;
-  width: 5%;
-  background-color: blue;
+  border-top: 1px solid white;
+  height: 100%;
+  width: 80px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  p {
+    color: white;
+  }
+
+  i {
+    font-size: 1.6em;
+    width: 40px;
+    color: white;
+  }
+  div {
+    div {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+    }
+  }
 }
