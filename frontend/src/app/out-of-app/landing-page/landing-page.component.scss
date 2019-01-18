@@ -38,28 +38,38 @@ img {
 }
 
 .contractors-say {
-    width:40%
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.contractors-say-center {
+    width: 45%;
 }
 
 .icon-left {
-    width:40%;
+    width:30%;
+}
+
+.icon-text{
+    width: 70%
 }
 
 
 
-// .contractors-say div {
-//     width: 50%;
-// }
+
+.second-landing{
+align-items: center;
+}
 
 
 .product-page{
     height:78vh;
-    align-items: center;
-    width: 100%
+    width: 100%;
 }
 
 .left {
-    width: 40%
+    width: 40%;
 }
 
 .orange-text {
@@ -73,7 +83,7 @@ img {
 }
 
 .third-landing {
-    height:100vh;
+    height:93vh;
     align-items: center;
 }
 
@@ -87,18 +97,16 @@ img {
 
 }
 
-.footer {
-    width: 100vw;
-    background-color: rgb(81,83,86);
-    display: flex;
-    flex-direction: row;
-}
-
 .footer-container {
-    width: 50%
+    background-color: rgb(81,83,86);
 }
 
 .small {
     height: 40px;
     width:200px;
+}
+
+.border-left {
+    border-left: 1px solid rgba(255,255,255, 0.5);
+
 }
