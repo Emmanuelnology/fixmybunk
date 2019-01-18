@@ -7,7 +7,7 @@ import { ModalComponent } from '../modal/modal.component';
   styleUrls: ['./contractor-jobs-list.component.scss']
 })
 export class ContractorJobsListComponent implements OnInit {
-   @ViewChild(ModalComponent)ModalViewChild;
+   @ViewChild(ModalComponent) modal;
 
    count = 0;
    jobsList = [
@@ -156,17 +156,10 @@ export class ContractorJobsListComponent implements OnInit {
    }
 
    openModal() {
-      document.getElementById('blurSelector').classList.add('blur');
-      document.getElementById('modalSelector').classList.remove('hidden');
+      this.modal.open();
    }
 
-   closeModal() {
-      console.log('hi');
-      // this.ModalViewChild.closeModal();
-      document.getElementById('blurSelector').classList.remove('blur');
-      document.getElementById('modalSelector').classList.add('hidden');
-
-   }
+ 
 
 
 
