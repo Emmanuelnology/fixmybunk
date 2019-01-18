@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ModalComponent } from 'src/app/modal/modal.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-contractor',
@@ -9,6 +10,8 @@ import { ModalComponent } from 'src/app/modal/modal.component';
 export class ContractorComponent implements OnInit {
   @ViewChild(ModalComponent) modal;
 
+  route: string;
+  breadcrumbs;
   name = 'CS Gas Fitting';
   description = 'Gas Fitter in Bristol and Bath';
   phone = '01179 901 281';
@@ -27,6 +30,7 @@ export class ContractorComponent implements OnInit {
 constructor () {}
 
   ngOnInit() { }
+
 
   swapDescription = () => this.descriptionBeingEdited = !this.descriptionBeingEdited;
 

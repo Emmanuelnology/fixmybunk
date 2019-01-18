@@ -48,7 +48,7 @@ const routes: Routes = [
   { path: 'function-demo', component: FunctionDemoComponent }, // THIS ROUTE IS FOR DEMOING ON AND PRACTICING ARCIBALDO
   { path: 'job-detail', component:  JobDetailComponent },
   { path: 'job-image', component:  JobImageComponent },
-  { path: 'profile', component: ContractorComponent, data: {breadcrumb: 'Profile'} },
+  { path: 'profile', component: ContractorComponent },
   { path: 'review', component: ReviewComponent },
   { path: 'feedback', component: FeedbackSectionComponent },
   { path: 'nav', component: LandingNavComponent},
@@ -56,7 +56,7 @@ const routes: Routes = [
   { path: 'review', component: ReviewComponent },
   { path: 'contractor/quotes', component: ContractorJobsListComponent},
   { path: 'contractor/welcome', component: ContractorWelcomePageComponent },
-  { path: 'contractor/login', component: ContractorLoginComponent, data: {breadcrumb: 'Login'} },
+  { path: 'contractor/login', component: ContractorLoginComponent },
   { path: 'reported-by', component: ReportedByComponent},
   { path: 'membership-level', component: MembershipLevelComponent },
   { path: 'size', component: CompanySizeComponent},
