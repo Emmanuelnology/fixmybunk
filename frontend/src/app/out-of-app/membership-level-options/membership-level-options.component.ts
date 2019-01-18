@@ -1,11 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, RouterLinkActive } from '@angular/router';
 
-export interface selectedOption {
-    title: string,
-    prices: string,
-    isHidden: boolean
-}
+
 
 @Component({
   selector: 'app-membership-level-options',
@@ -48,17 +44,17 @@ export class MembershipLevelOptionsComponent implements OnInit {
   constructor(
     private router: Router
     ) {
-      console.log("constructor")
+      console.log('constructor');
       if (this.router.url === '/payment') {
         this.pageOption = this.pageOption;
       } else {
         this.pageOption = this.options;
       }
-    console.log(this.pageOption)
+    console.log(this.pageOption);
   }
 
   updatePaymentOption(option) {
-      console.log("update clicked")
+      console.log('update clicked');
     const pagesOption = [
       {
         title: option.title,
