@@ -35,7 +35,7 @@
 						
 						<button button [ngClass]="job.Completed ? 'completed' : job.Quoted ? 'incompleteQuoted' :'incompleteUnquoted'" class="btn btn-raised" *ngIf="job.Completed"> Completed</button>
 						<button button [ngClass]="job.Completed ? 'completed' : job.Quoted ? 'incompleteQuoted' :'incompleteUnquoted'" class="btn btn-raised" *ngIf="!job.Completed && job.Quoted"> Quoted</button>
-						<button button [ngClass]="job.Completed ? 'completed' : job.Quoted ? 'incompleteQuoted' :'incompleteUnquoted'" class="btn btn-raised" *ngIf="!job.Completed && !job.Quoted" (click)="toggleModal()"> Quote</button>
+						<button button [ngClass]="job.Completed ? 'completed' : job.Quoted ? 'incompleteQuoted' :'incompleteUnquoted'" class="btn btn-raised" *ngIf="!job.Completed && !job.Quoted" (click)="toggleModal()"> QUOTE</button>
 					</td>
 					<td>£{{job.Latest_Quote}}
 						<p id="p{{count}}" style="display: none; float: right; margin: 0"><i class="fas fa-ellipsis-v"></i></p>

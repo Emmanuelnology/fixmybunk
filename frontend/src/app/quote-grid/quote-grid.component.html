@@ -1,0 +1,22 @@
+<div class="w_95 rc jc_fe icons ml_2 mt_4">
+  <i class="fas fa-th-large mr_2" (click)="setQuoteView('timeline')"></i>
+  <i class="fas fa-list-ul" (click)="setQuoteView('list')"></i>
+</div>
+<div *ngIf="quoteView === 'timeline'">
+  <app-quote-timeline></app-quote-timeline>
+</div>
+<div *ngIf="quoteView === 'list'" class="w_100 jc_c">
+  <div *ngFor="let quote of quotes" class="rc jc_sb ai_c w_95 p-all_1">
+    <div class="rc ai_c w_10">
+      <app-avatar-icon size="45"></app-avatar-icon>
+      <h5 class="ml_1">{{quote.contractor}}</h5>
+    </div>
+    <div class="text_9 rc jc_sb w_5">
+      <img src='../../assets/star.svg' height="10px">
+      {{quote.rating}} ({{quote.numberOfRatings}})
+    </div>
+    <div class="text_3 w_50 rc jc_c">{{quote.timePosted}} minutes ago</div>
+    <h3 class="subtitle_4">£{{quote.estimate}}</h3>
+    <button class="btn btn_raised btn_green">Accept quote</button>
+  </div>
+</div>
