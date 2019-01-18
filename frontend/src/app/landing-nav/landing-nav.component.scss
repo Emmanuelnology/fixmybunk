@@ -8,8 +8,6 @@
   z-index: 10;
 }
 
-
-
 .top-navbar {
   min-height: 40px;
 }
@@ -19,7 +17,6 @@
 }
 
 .fas {
-  font-family: "Font Awesome 5 Free";
   color: $colour-grey_0;
   font-size: 1.6rem;
 }
@@ -28,40 +25,42 @@
   color: $colour-grey_0;
 }
 
-@media only screen and (max-width: 500px) {
+@include breakpoint-custom($min: 0px, $max: 565px) {
+
+  //hides text
   .none {
     display: none;
   }
 }
 
-@media only screen and (max-width: 680px) {
+@include breakpoint-custom($min: 0px, $max: 680px) {
 
+  //moves icon and text from next to eachother to icon above text 
   .fd-c {
-    margin: 0;
+    margin: auto 0;
     width: 100%;
-    border: 1px white solid;
     flex-direction: column;
-    justify-content: center; 
+    justify-content: space-evenly;
   }
+
 }
 
-
-@media only screen and (min-width: 769px) {
+@include breakpoint-custom($min: 769px, $max: 2000px) {
   .m-navbar {
     display: none;
   }
-    
+
   .h_40 {
-    max-width: 120px;
+    max-width: 180px;
+    width:auto;
   }
-    
-    .w-navbar {
-      z-index: 10;
-      display: flex !important;
-      
-      ul {
-        list-style-type: none;
-      }
+
+  .w-navbar {
+    z-index: 10;
+    display: flex !important;
+
+    ul {
+      list-style-type: none;
     }
   }
-  
+}
