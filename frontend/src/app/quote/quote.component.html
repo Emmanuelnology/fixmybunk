@@ -1,11 +1,11 @@
 <div class="w_10 square info">
     <div class="circle bg_grey m-vertical_3"></div>
     <h5 class="m-vertical_1">{{quote.contractor}}</h5>
-    <div *ngIf="user.role === 'landlord'" class="text_9">
+    <div *ngIf="role === 'landlord'" class="text_9">
       <img src='../../assets/star.svg' height="10px">
        {{quote.rating}} ({{quote.numberOfRatings}})
     </div>
     <div class="m-vertical_1 text_3">{{quote.timePosted}} minutes ago</div>
     <h3 class="m-vertical_1  subtitle_2">£{{quote.estimate}}</h3>
-    <button *ngIf="user.role === 'landlord'" class="btn btn_raised btn_green">Accept quote</button>
+    <button *ngIf="role === 'landlord'" class="btn btn_raised btn_green">Accept quote</button>
   </div>

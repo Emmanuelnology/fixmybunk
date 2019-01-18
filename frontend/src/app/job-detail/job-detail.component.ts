@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 export interface IQuote {
   text: string;
@@ -11,10 +11,11 @@ export interface IQuote {
   styleUrls: ['./job-detail.component.scss']
 })
 export class JobDetailComponent implements OnInit {
+  @Input() role;
   public isQuoted = true;
+  public isAccepted = true;
   constructor() {
   }
-
   // public accept () {
   //   if (this.isQuoted) {
   //     const quote: IQuote = {
@@ -39,12 +40,13 @@ export class JobDetailComponent implements OnInit {
     },
   ];
 
-  public getUser () {
-    const isLandlord = true;
-    // const isLandlord = false;
-    return isLandlord;
-  }
+  // public getUser () {
+  //   const isLandlord = true;
+  //   // const isLandlord = false;
+  //   return isLandlord;
+  // }
 
   ngOnInit () {
+    // console.log(this.role)
   }
 }
