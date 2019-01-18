@@ -64,7 +64,7 @@ const routes: Routes = [
   { path: 'imagestack', component: ImageStackComponent },
   { path: 'size', component: CompanySizeComponent},
   { path: 'payment', component: PaymentDetailsComponent },
-  { path: 'accepted-quote', component: AcceptedQuoteComponent }
+  { path: 'accepted-quote', component: AcceptedQuoteComponent },
   { path: 'quote-grid', component: QuoteGridComponent},
   { path: 'accepted-quote', component: AcceptedQuoteComponent },
   { path: 'landlord-mini', component: LandlordMiniProfileComponent },
