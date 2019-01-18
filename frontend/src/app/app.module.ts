@@ -71,7 +71,7 @@ const routes: Routes = [
   { path: 'quote-grid', component: QuoteGridComponent},
   { path: 'job-details', component: JobDetailsPageComponent },
   { path: 'maintenance-request', component: MaintenanceRequestPageComponent },
-  { path: 'map', component:  MapComponent },
+  { path: 'map', component:  MapComponent }
 ];
 
 @NgModule({
