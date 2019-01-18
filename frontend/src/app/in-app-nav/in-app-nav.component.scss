@@ -1,57 +1,43 @@
-.top {
-  height: 60px;
-  width: 100%;
-  background-color: black;
-  display: flex;
-  justify-content: space-between;
+@import '../../bunk.variables.scss';
 
-  img {
-    height: 50px;
-  }
-
-  .t_left {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    height: 100%;
-    margin: auto 0;
-    padding-right: 10px;
-
-    i {
-      font-size: 1.6em;
-      width: 40px;
-      color: white;
-    }
-  }
+i {
+  font-size: 2em;
 }
 
 .container {
   height: 94vh;
 }
+
 .side {
-  border-top: 1px solid white;
-  height: 100%;
-  width: 5%;
-  background-color: black;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  border-top: 1px solid $colour-grey_0;
+}
 
-  p {
-    color: white;
-  }
+.navicon {
 
-  i {
-    font-size: 1.6em;
-    width: 40px;
-    color: white;
-  }
-  div {
-    div {
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      align-items: center;
+  &:hover,
+  &:active {
+    background-color: $colour-grey_3;
+
+    p {
+      text-decoration: underline;
     }
+  }
+}
+
+@include breakpoint-custom($min:768px, $max: 1200px) {
+  .w_5 {
+    width: 8%;
+  }
+}
+
+@include breakpoint-custom($min:501px, $max: 767px) {
+  .w_5 {
+    width: 15%;
+  }
+}
+
+@include breakpoint-custom($min:320px, $max: 500px) {
+  .w_5 {
+    width: 20%;
   }
 }
