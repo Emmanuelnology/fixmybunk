@@ -13,7 +13,23 @@
 <div class="modalContainer {{showModal ? '':'hidden'}}" id="modalSelector">
   
   <div class="modal">
-      <button class="closeButton" (click)="save()">Close</button>
+    <div class="header">
+        <button class="closeButton" (click)="save()">X</button>
+      <h1>Add A Quote</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, aliquid blanditiis temporibus maxime dolore natus qui corrupti minus iste eius delectus hic atque, voluptatibus quo officia! Nulla eum cum optio!</p>
+    </div>
+    <div class="body">
+      <form>
+        <input />
+        <input />  
+        <textarea></textarea>  
+      </form>
+      <button class="submit">SUBMIT</button>
+        
+
+    </div>
+
+
       <ng-content></ng-content>
   </div>
 </div>
