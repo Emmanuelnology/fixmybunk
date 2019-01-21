@@ -11,9 +11,15 @@ export class MaintenanceRequestPageComponent implements OnInit {
     role: 'contractor'
   };
 
+  public showQuotes = true;
   public quoteView = 'timeline';
+  public quoteAccepted = false;
 
   constructor() { }
+
+  // showHideQuotes() {
+  //   this.showQuotes = !this.showQuotes;
+  // }
 
   setQuoteView(view) {
     this.quoteView = view;

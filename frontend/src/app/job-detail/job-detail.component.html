@@ -1,9 +1,11 @@
 <div class="job-page text">
-  <div>
-    <h1 class="title_3">Broken Door</h1>
-    <h2 class="title_4 mb_0 pb_0">Almondsbury, Bristol</h2>
-    <div class="rc jc_sb">
+  <div class="rc jc_sb">
+    <div>
+      <h1 class="title_2">Broken Door</h1>
+      <h2 class="title_3 mb_0 pb_0">Almondsbury, Bristol</h2>
       <p class="text-tiny">24 hours ago</p>
+    </div>
+    <div class="rc jc_sb ai_c">
       <div *ngIf="role === 'contractor' && isQuoted" class="quoting jc_fe">
         <p *ngIf="isAccepted === false" class="small-quote cc">
           You Quoted
@@ -18,7 +20,7 @@
   </div>
 
   <app-job-image></app-job-image>
-  
+
   <div>
     <p class="text-tiny mr_15">
       Nullam nominavi instructior duo ex, unum meis adhuc id pro.
