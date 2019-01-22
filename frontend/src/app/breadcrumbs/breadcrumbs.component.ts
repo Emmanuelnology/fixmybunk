@@ -37,9 +37,9 @@ export class BreadcrumbsComponent implements OnInit {
     //   this.breadcrumbs.push({label: title, url: currentUrl});
     // }
     // this.breadcrumbs[path.length - 1].last = true;
-      // const title = this.activatedRoute.routeConfig.data.title;
-      // const currentUrl = this.activatedRoute.outlet;
-      // this.breadcrumbs.push({label: title, url: currentUrl, last: true});
+      const title = this.activatedRoute.routeConfig.data.title;
+      const currentUrl = this.activatedRoute.routeConfig.path;
+      this.breadcrumbs.push({label: title, url: currentUrl, last: true});
   }
 
 }
