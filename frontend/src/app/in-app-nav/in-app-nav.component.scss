@@ -5,7 +5,7 @@ i {
 }
 
 .container {
-  height: 94vh;
+  height: 100vh;
 }
 
 .side {
@@ -25,7 +25,7 @@ i {
   }
 }
 
-@include breakpoint-custom($min:768px, $max: 1200px) {
+@include breakpoint-custom($min:768px, $max: 2000px) {
   .w_5 {
     width: 8%;
   }
