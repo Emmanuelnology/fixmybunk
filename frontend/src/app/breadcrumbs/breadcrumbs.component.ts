@@ -3,7 +3,7 @@ import { ActivatedRoute, ActivatedRouteSnapshot } from '@angular/router';
 
 interface IBreadcrumb {
   label: string;
-  url?: string;
+  url: string;
   last?: boolean;
 }
 
@@ -15,7 +15,8 @@ interface IBreadcrumb {
 export class BreadcrumbsComponent implements OnInit {
 
   breadcrumbs: IBreadcrumb[] = [
-    {label: 'Home', url: '/'}
+    {label: 'Home', url: '/'},
+    {label: 'Another Page', url: '/'}
   ];
   path;
   url;
@@ -24,16 +25,21 @@ export class BreadcrumbsComponent implements OnInit {
   constructor(private activatedRoute: ActivatedRoute) { }
 
   ngOnInit() {
-    this.path = this.activatedRoute.pathFromRoot;
-    this.url = this.activatedRoute.pathFromRoot[0].outlet;
-    this.title = this.activatedRoute.pathFromRoot[1].routeConfig.data.title;
-    const path = this.activatedRoute.pathFromRoot;
-    for (let i = 1; i  < path.length; i++) {
-      const currentUrl = this.path[i].outlet;
-      const title = this.path[i].routeConfig.data.title;
-      this.breadcrumbs.push({label: title, url: currentUrl});
-    }
-    this.breadcrumbs[path.length - 1].last = true;
+    // this.path = this.activatedRoute.pathFromRoot;
+    // this.url = this.activatedRoute.pathFromRoot[1].snapshot.url;
+    // // this.title = this.activatedRoute.pathFromRoot[1].snapshot.data.title;
+    // const path = this.activatedRoute.pathFromRoot;
+    // for (let i = 0; i  < path.length; i++) {
+    //   const currentUrl = '/';
+    //   // const currentUrl = path[i].snapshot.url;
+    //   const title = 'Hi';
+    // //   const title = this.path[i].routeConfig.data.title;
+    //   this.breadcrumbs.push({label: title, url: currentUrl});
+    // }
+    // this.breadcrumbs[path.length - 1].last = true;
+      // const title = this.activatedRoute.routeConfig.data.title;
+      // const currentUrl = this.activatedRoute.outlet;
+      // this.breadcrumbs.push({label: title, url: currentUrl, last: true});
   }
 
 }
