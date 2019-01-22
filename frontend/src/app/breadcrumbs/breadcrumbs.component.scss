@@ -1,6 +1,8 @@
+@import '../../scss/variables/colour-palettes';
+
 span {
   margin: 0 3px;
-  color: grey;
+  color: $colour-grey_2;
 }
 
 .active {
