@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ModalComponent } from '../modal/modal.component';
+import {ModalSmallComponent} from '../modal-small/modal-small.component';
 
 @Component({
   selector: 'app-contractor-jobs-list',
@@ -8,6 +9,7 @@ import { ModalComponent } from '../modal/modal.component';
 })
 export class ContractorJobsListComponent implements OnInit {
    @ViewChild(ModalComponent) modal;
+   @ViewChild(ModalSmallComponent) smallModal;
 
    count = 0;
    jobsList = [
@@ -157,5 +159,9 @@ export class ContractorJobsListComponent implements OnInit {
 
    openModal() {
       this.modal.open();
+   }
+
+   openSmallModal() {
+     this.smallModal.open();
    }
 }
