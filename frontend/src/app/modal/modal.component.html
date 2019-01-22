@@ -6,30 +6,44 @@
   </div>
 </div> -->
 
-  <!-- content goes here -->
+<!-- content goes here -->
 
-  <div class="blocker {{showModal ? '':'hidden'}}" (click)="cancel()" >
-    </div>
+<div class="blocker {{showModal ? '':'hidden'}}" (click)="cancel()" >
+</div>
 <div class="modalContainer {{showModal ? '':'hidden'}}" id="modalSelector">
   
-  <div class="modal">
-    <div class="header">
-        <button class="closeButton" (click)="save()">X</button>
-      <h1>Add A Quote</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, aliquid blanditiis temporibus maxime dolore natus qui corrupti minus iste eius delectus hic atque, voluptatibus quo officia! Nulla eum cum optio!</p>
-    </div>
-    <div class="body">
-      <form>
-        <input />
-        <input />  
-        <textarea></textarea>  
-      </form>
-      <button class="submit">SUBMIT</button>
+  <div class="modal w_50 h_70">
+    <button class="closeButton" (click)="save()">X</button>
+    
+    <div class="header h_40 cc flex_wrap jc_c ai_c">
+      <div class="modal-title title_1">Add A Quote</div>
+      <div class="sub-heading text text_2 w_80">Lorem ipsum dolor sit amet, consectetur 
+        adipisicing elit. Veritatis, aliquid blanditiis temporibus maxime
+        dolore natus qui corrupti minus iste eius delectus hic atque!</div>
+      </div>
+      
+      <div class="bottom">
+        <form class="w_100">
+          
+          <div class= "red rc flex_wrap ai_c">
+            <div>
+              <input
+              placeholder="CS Gas Fitter">
+            </div>
+            <div>
+              <input
+              placeholder="Amount"> 
+            </div> 
+          </div>
+          
+          <textarea></textarea>  
+          <button class="btn_orange">SUBMIT</button>
+        </form>
         
-
-    </div>
-
-
+      </div>
+      
+      
       <ng-content></ng-content>
+    </div>
   </div>
-</div>
+  

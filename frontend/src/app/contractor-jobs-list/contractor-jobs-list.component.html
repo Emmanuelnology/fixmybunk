@@ -32,7 +32,7 @@
 							<p *ngIf="!job.Completed && !job.Quoted">Quote</p>
 						</button> --> 
 						
-						<button button [ngClass]="job.Completed ? 'completed' : job.Quoted ? 'incompleteQuoted' :'incompleteUnquoted'" class="btn btn-raised" *ngIf="job.Completed"> Completed</button>
+						<button button [ngClass]="job.Completed ? 'completed' : job.Quoted ? 'incompleteQuoted' :'incompleteUnquoted'" class="btn btn-raised" *ngIf="job.Completed" (click)="openSmallModal()"> Completed</button>
 						<button button [ngClass]="job.Completed ? 'completed' : job.Quoted ? 'incompleteQuoted' :'incompleteUnquoted'" class="btn btn-raised" *ngIf="!job.Completed && job.Quoted"> Quoted</button>
 						<button button [ngClass]="job.Completed ? 'completed' : job.Quoted ? 'incompleteQuoted' :'incompleteUnquoted'" class="btn btn-raised" *ngIf="!job.Completed && !job.Quoted" (click)="openModal()"> QUOTE</button>
 					</td>
@@ -71,7 +71,7 @@
 						<td>{{job.Job_Type}}</td>
 						<td>
 							<button [ngClass]="job.Completed ? 'completed' : job.Quoted ? 'incompleteQuoted' :'incompleteUnquoted'" class="btn btn-raised">
-								<p *ngIf="job.Completed">Completed</p>
+								<p *ngIf="job.Completed" (click)="openSmallModal()">Completed</p>
 								<p *ngIf="!job.Completed && job.Quoted">Quoted</p>
 								<p *ngIf="!job.Completed && !job.Quoted" (click)="openModal()">Quote</p>
 							</button>
@@ -102,8 +102,9 @@
 		</div>
 	</div>
 	<app-modal>
-		This is a test
 	</app-modal>
+
+	<app-modal-small></app-modal-small>
 
 </app-in-app-nav>
 
