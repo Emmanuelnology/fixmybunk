@@ -58,7 +58,7 @@ export class MembershipLevelOptionsComponent implements OnInit {
         title: option.title,
         prices: option.prices,
         isHidden: false
-      }]
+      }];
 
   }
 
