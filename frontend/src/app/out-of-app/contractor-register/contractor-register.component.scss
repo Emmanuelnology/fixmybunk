@@ -4,31 +4,23 @@
 //     // background-color: red;
 // }
 
-.twoone {
-    // display: flex;
-    align-items: center;
-    // background-color: orangered;
+.display-photo-div {
+    // align-items: center;
     min-width: 185px;
 }
 
-.twotwo {
-    align-items: center;
-    // background-color: orange;
+.input-div {
+    // align-items: center;
     min-width: 365px;
 }
 
-.three {
-    align-items: center;
-    // background-color: yellow;
-}
+// .submit-div {
+//     align-items: center;
+// }
 
-
-
-
-
-.centre-text {
-    text-align: center;
-}
+// .centre-text {
+//     text-align: center;
+// }
 
 input{
     width: 136px;
@@ -62,20 +54,3 @@ button, .privacy-policy {
         width: 560px;
     }
 }
-
-// @include breakpoint-custom($min: 0px, $max: 550px) {
-//     .twotwo {
-//         width: 100%;
-//     }
-
-//     .large-select {
-//         width: 200px; //same as small-select
-//     }
-
-//     input {
-//         margin-left: 0;
-//         margin-right: 0;
-//     }
-// }
-
-
