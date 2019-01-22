@@ -1,0 +1,6 @@
+<div class="rc">
+  <div class="text text-tiny" *ngFor="let breadcrumb of breadcrumbs">
+      <span [ngClass]="{'active': breadcrumb.last}">{{breadcrumb.label}}</span>
+      <span *ngIf="!breadcrumb.last">></span>
+  </div>
+</div>
