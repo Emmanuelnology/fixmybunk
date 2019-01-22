@@ -6,10 +6,22 @@ i {
 
 .container {
   height: 100vh;
+  max-width: 100vw;
+}
+
+.content {
+max-width: 100vw;
+padding: 5%,
 }
 
 .side {
   border-top: 1px solid $colour-grey_0;
+  min-width: 80px;
+  min-height: 100%;
+}
+
+.top {
+  z-index: 10;
 }
 
 .navicon {
@@ -25,7 +37,7 @@ i {
   }
 }
 
-@include breakpoint-custom($min:768px, $max: 2000px) {
+@include breakpoint-custom($min:768px, $max: 1200px) {
   .w_5 {
     width: 8%;
   }

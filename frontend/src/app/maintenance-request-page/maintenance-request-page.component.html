@@ -1,8 +1,21 @@
 <app-in-app-nav>
-    <div class="p-all_2 text">
+    <div class="p-all_2 text w_100 page-wrap rc_c ai_jc">
+        <div>
+            <div>
+                <button class="btn btn_raised btn_orange">Outsource Maintenance</button>
+                <button class="btn btn_raised btn_orange">View contractor directory</button>
+                <button class="btn btn_raised btn_orange">Cancel outsourcing</button>
+                <button class="btn btn_raised btn_orange">Mark as completed</button>
+            </div>
+            <div>
+                <button class="btn btn_raised btn_orange">Add as done</button>
+                <button class="btn btn_raised btn_orange">Mark as done</button>
+                <button class="btn btn_raised btn_orange">Update your quote</button>
+            </div>
+        </div>
         <app-job-detail [role]="user.role"></app-job-detail>
         <app-reported-by *ngIf="user.role === 'landlord'"></app-reported-by>
-        <div *ngIf="showQuotes">
+        <div *ngIf="showQuotes && quoteAccepted != true">
             <div class="rc">
                 <h3 class="mt_5 w_90">Current quotes</h3>
                 <div *ngIf="user.role === 'landlord'" class="w_95 rc jc_fe ml_2 mt_4">
@@ -17,7 +30,7 @@
                 <app-quote-grid></app-quote-grid>
             </div>
         </div>
-        <div *ngIf="quoteAccepted">
+        <div *ngIf="quoteAccepted" class="mt_4">
             <app-accepted-quote></app-accepted-quote>
         </div>
     </div>

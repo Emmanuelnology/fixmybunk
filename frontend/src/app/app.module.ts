@@ -31,7 +31,7 @@ import { ContractorRegTitleComponent } from './out-of-app/contractor-reg-title/c
 import { StarComponent } from './star/star.component';
 import { QuoteTimelineComponent } from './quote-timeline/quote-timeline.component';
 import { QuoteComponent } from './quote/quote.component';
-import { ContractorLoginComponent } from './out-of-app/contractor-login/contractor-login.component';
+import { ContractorRegisterComponent } from './out-of-app/contractor-register/contractor-register.component';
 import { ModalComponent } from './modal/modal.component';
 import { JobImageComponent } from './job-image/job-image.component';
 import { QuoteSubmittedModalComponent } from './quote-submitted-modal/quote-submitted-modal.component';
@@ -40,9 +40,10 @@ import { QuoteGridComponent } from './quote-grid/quote-grid.component';
 import { AcceptedQuoteComponent } from './accepted-quote/accepted-quote.component';
 import { LandlordMiniProfileComponent } from './landlord-mini-profile/landlord-mini-profile.component';
 import { JobDetailsPageComponent } from './job-details-page/job-details-page.component';
-import { MaintenanceRequestPageComponent } from './maintenance-request-page/maintenance-request-page.component';
 import { InAppNavComponent } from './in-app-nav/in-app-nav.component';
 import { MapComponent } from './map/map.component';
+import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
+import { MaintenanceRequestPageComponent } from './maintenance-request-page/maintenance-request-page.component';
 
 const routes: Routes = [
   { path: 'function-demo', component: FunctionDemoComponent }, // THIS ROUTE IS FOR DEMOING ON AND PRACTICING ARCIBALDO
@@ -56,7 +57,7 @@ const routes: Routes = [
   { path: 'review', component: ReviewComponent },
   { path: 'contractor/quotes', component: ContractorJobsListComponent },
   { path: 'contractor/welcome', component: ContractorWelcomePageComponent },
-  { path: 'contractor/login', component: ContractorLoginComponent },
+  { path: 'contractor/register', component: ContractorRegisterComponent },
   { path: 'reported-by', component: ReportedByComponent},
   { path: 'membership-level', component: MembershipLevelComponent },
   { path: 'size', component: CompanySizeComponent},
@@ -70,6 +71,98 @@ const routes: Routes = [
   { path: 'job-details', component: JobDetailsPageComponent },
   { path: 'maintenance-request', component: MaintenanceRequestPageComponent },
   { path: 'map', component: MapComponent },
+  { path: 'job-detail',
+    component:  JobDetailComponent,
+    data: {title: 'Job Detail'}
+  },
+  { path: 'job-image',
+    component:  JobImageComponent,
+    data: {title: 'Job Image'}
+  },
+  { path: 'profile',
+    component: ContractorComponent,
+    data: {title: 'Profile'}
+  },
+  { path: 'review',
+    component: ReviewComponent,
+    data: {title: 'Review'}
+  },
+  { path: 'feedback',
+    component: FeedbackSectionComponent,
+    data: {title: 'Feedback'}
+  },
+  { path: 'nav',
+    component: LandingNavComponent,
+    data: {title: 'Landing Nav'}
+  },
+  { path: 'landing',
+    component: LandingPageComponent,
+    data: {title: 'Landing Page'}
+  },
+  { path: 'contractor/quotes',
+    component: ContractorJobsListComponent,
+    data: {title: 'Quotes'}
+  },
+  { path: 'contractor/welcome',
+    component: ContractorWelcomePageComponent,
+    data: {title: 'Welcome'}
+  },
+  { path: 'contractor/register',
+    component: ContractorRegisterComponent,
+    data: {title: 'Register'}
+  },
+  { path: 'reported-by',
+    component: ReportedByComponent,
+    data: {title: 'Reported By'}
+  },
+  { path: 'membership-level',
+    component: MembershipLevelComponent,
+    data: {title: 'Membership Level'}
+  },
+  { path: 'size',
+    component: CompanySizeComponent,
+    data: {title: 'Size'}
+  },
+  { path: 'timeline',
+    component: QuoteTimelineComponent,
+    data: {title: 'Timeline'}
+  },
+  { path: 'payment',
+    component: PaymentDetailsComponent,
+    data: {title: 'Payment Details'}
+  },
+  { path: 'accepted-quote',
+    component: AcceptedQuoteComponent,
+    data: {title: 'Accepted Quote'}
+  },
+  { path: 'landlord-mini',
+    component: LandlordMiniProfileComponent,
+    data: {title: 'Landlord'}
+  },
+  { path: 'inAppNav',
+    component: InAppNavComponent,
+    data: {title: 'In App Nav'}
+  },
+  { path: 'quote-grid',
+    component: QuoteGridComponent,
+    data: {title: 'Quote Grid'}
+  },
+  { path: 'job-details',
+    component: JobDetailsPageComponent,
+    data: {title: 'Job Details'}
+  },
+  { path: 'map',
+    component: MapComponent,
+    data: {title: 'Map'}
+  },
+  { path: 'maintenance',
+    component: MaintenanceRequestPageComponent,
+    data: {title: 'Maintenance Request'}
+  },
+  { path: 'modal',
+    component: ModalComponent,
+    data: {title: 'Modal Page'}
+  },
 ];
 
 @NgModule({
@@ -98,7 +191,7 @@ const routes: Routes = [
     StarComponent,
     JobImageComponent,
     QuoteComponent,
-    ContractorLoginComponent,
+    ContractorRegisterComponent,
     JobImageComponent,
     QuoteTimelineComponent,
     ModalComponent,
@@ -108,9 +201,10 @@ const routes: Routes = [
     QuoteSubmittedModalComponent,
     LandlordMiniProfileComponent,
     JobDetailsPageComponent,
-    MaintenanceRequestPageComponent,
     InAppNavComponent,
-    MapComponent
+    MapComponent,
+    BreadcrumbsComponent,
+    MaintenanceRequestPageComponent
   ],
   imports: [
     BrowserModule,
