@@ -14,70 +14,83 @@
       <form>
         <div class="two m-vertical_2 flex_wrap rc jc_c">
           
-          <div class="twoone w_35 m-horizontal_2 cc flex_wrap jc_c">
+          <div class="twoone w_25 cc flex_wrap jc_c p-all_1">
             <app-avatar-icon size="100" class="mb_2"></app-avatar-icon>
             <button class="btn btn_raised btn_orange">UPLOAD USER IMAGE</button>
-            <div class="text text_3 mt_1 text_grey image-text centre-text">Upload a picture or logo which will help landlords identify you</div>
+            <div class="text text-tiny mt_1 text_grey image-text centre-text">Upload a picture or logo which will help landlords identify you</div>
           </div>
   
 
-          <div class="text twotwo w_50 m-horizontal_2 jc_c">
-            <input 
-              class="text text_3 text_grey bg_light p-all_1 w_40 mt_1 mr_1"
-              type="text" 
-              placeholder="First Name"
-            >
-            <input 
-              class="text text_3 text_grey bg_light p-all_1 w_40 mt_1"
-              type="text" 
-              placeholder="Last Name"
-            >
-            <input 
-              class="text text_3 text_grey bg_light p-all_1 w_40 mt_1 mr_1"
-              type="password" 
-              placeholder="Password"
-            >
-            <input 
-              class="text text_3 text_grey bg_light p-all_1 w_40 mt_1"
-              type="email" 
-              placeholder="Email Address"
-            >
-            <input 
-              class="text text_3 text_grey bg_light p-all_1 w_40 mt_1 mr_1"
-              type="text" 
-              placeholder="Business Number"
-            >
-            <input 
-              class="text text_3 text_grey bg_light p-all_1 w_40 mt_1"
-              type="text" 
-              placeholder="Business Website"
-            >
+          <div class="text twotwo w_45 flex_wrap cc jc_c p-all_1">
+            
+            <div>
+              <input 
+                class="text text-tiny text_grey bg_light p-all_1 mt_1 m-horizontal_1"
+                type="text" 
+                placeholder="First Name"
+              >
+              <input 
+                class="text text-tiny text_grey bg_light p-all_1 mt_1 m-horizontal_1"
+                type="text" 
+                placeholder="Last Name"
+              >
+            </div>
 
-            <select class="text text_3 text_grey bg_light p-all_1 mt_1 large-select">
-              <option value="placeholder" disabled>Contractor type</option>
-              <option value="option 1">Option 1</option>
-              <option value="option 1">Option 1</option>
-            </select>
+            <div>
+              <input 
+                class="text text-tiny text_grey bg_light p-all_1 mt_1 m-horizontal_1"
+                type="password" 
+                placeholder="Password"
+              >
+              <input 
+                class="text text-tiny text_grey bg_light p-all_1 mt_1 m-horizontal_1"
+                type="email" 
+                placeholder="Email Address"
+              >
+            </div>
 
-            <input 
-              class="text text_3 text_grey bg_light p-all_1 w_40 mt_1 mr_1" 
-              type="text"
-              placeholder="Postcode"
-            >
+            <div>
+              <input 
+                class="text text-tiny text_grey bg_light p-all_1 mt_1 m-horizontal_1"
+                type="text" 
+                placeholder="Business Number"
+              >
+              <input 
+                class="text text-tiny text_grey bg_light p-all_1 mt_1 m-horizontal_1"
+                type="text" 
+                placeholder="Business Website"
+              >
+            </div>
 
-            <select class="text text_3 text_grey bg_light p-all_1 mt_1 small-select">
-              <option value="placeholder" disabled>Distance willing to travel</option>
-              <option value="option 1">Option 1</option>
-              <option value="option 2">Option 2</option>
-            </select>
+            <div>
+              <select class="text text-tiny text_grey bg_light p-all_1 mt_1 large-select m-horizontal_1">
+                <option value="placeholder" disabled>Contractor type</option>
+                <option value="option 1">Option 1</option>
+                <option value="option 1">Option 1</option>
+              </select>
+            </div>
+
+            <div>
+              <input 
+                class="text text-tiny text_grey bg_light p-all_1 mt_1 m-horizontal_1" 
+                type="text"
+                placeholder="Postcode"
+              >
+              <select class="text text-tiny text_grey bg_light p-all_1 mt_1 m-horizontal_1 small-select">
+                <option value="placeholder" disabled>Distance willing to travel</option>
+                <option value="option 1">Option 1</option>
+                <option value="option 2">Option 2</option>
+              </select>
+            </div>
+
           </div>
   
         </div>
   
         <div class="create three flex_wrap cc jc_c">
           <button type="submit" (click)="createAccount()" class="btn btn_raised btn_orange w_20">CREATE ACCOUNT</button>
-          <div class="text text_3 centre-text text_grey w_25 mt_1">By clicking Register, you indicate that you have read and understood our 
-            <a class="text_bold text_3">Privacy Policy and Terms of Use</a>
+          <div class="text text-tiny centre-text text_grey w_25 mt_1">By clicking Register, you indicate that you have read and understood our 
+            <a class="text_bold text-tiny">Privacy Policy and Terms of Use</a>
           </div>
         </div>
       </form>

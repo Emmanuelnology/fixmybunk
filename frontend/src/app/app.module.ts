@@ -43,6 +43,7 @@ import { LandlordMiniProfileComponent } from './landlord-mini-profile/landlord-m
 import { JobDetailsPageComponent } from './job-details-page/job-details-page.component';
 import { MaintenanceRequestPageComponent } from './maintenance-request-page/maintenance-request-page.component';
 import { InAppNavComponent } from './in-app-nav/in-app-nav.component';
+import { MapComponent } from './map/map.component';
 
 const routes: Routes = [
   { path: 'function-demo', component: FunctionDemoComponent }, // THIS ROUTE IS FOR DEMOING ON AND PRACTICING ARCIBALDO
@@ -69,7 +70,8 @@ const routes: Routes = [
   { path: 'inAppNav', component: InAppNavComponent},
   { path: 'quote-grid', component: QuoteGridComponent},
   { path: 'job-details', component: JobDetailsPageComponent },
-  { path: 'maintenance-request', component: MaintenanceRequestPageComponent }
+  { path: 'maintenance-request', component: MaintenanceRequestPageComponent },
+  { path: 'map', component: MapComponent }
 ];
 
 @NgModule({
@@ -110,7 +112,8 @@ const routes: Routes = [
     LandlordMiniProfileComponent,
     JobDetailsPageComponent,
     MaintenanceRequestPageComponent,
-    InAppNavComponent
+    InAppNavComponent,
+    MapComponent
   ],
   imports: [
     BrowserModule,
