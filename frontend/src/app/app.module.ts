@@ -51,30 +51,102 @@ const routes: Routes = [
     component: FunctionDemoComponent,
     data: {title: 'Function Demo'}
   }, // THIS ROUTE IS FOR DEMOING ON AND PRACTICING ARCIBALDO
-  { path: 'job-detail', component:  JobDetailComponent, data: {title: 'Job Detail'}},
-  { path: 'job-image', component:  JobImageComponent, data: {title: 'Job Image'}},
-  { path: 'profile', component: ContractorComponent, data: {title: 'Profile'}},
-  { path: 'review', component: ReviewComponent, data: {title: 'Review'}},
-  { path: 'feedback', component: FeedbackSectionComponent, data: {title: 'Feedback'}},
-  { path: 'nav', component: LandingNavComponent, data: {title: 'Landing Nav'}},
-  { path: 'landing', component: LandingPageComponent, data: {title: 'Landing Page'}},
-  { path: 'contractor/quotes', component: ContractorJobsListComponent, data: {title: 'Quotes'}},
-  { path: 'contractor/welcome', component: ContractorWelcomePageComponent, data: {title: 'Welcome'}},
-  { path: 'contractor/register', component: ContractorRegisterComponent, data: {title: 'Register'}},
-  { path: 'reported-by', component: ReportedByComponent, data: {title: 'Reported By'}},
-  { path: 'membership-level', component: MembershipLevelComponent, data: {title: 'Membership Level'}},
-  { path: 'size', component: CompanySizeComponent, data: {title: 'Size'}},
-  { path: 'quote', component: QuoteModalComponent, data: {title: 'Quote'}},
-  { path: 'timeline', component: QuoteTimelineComponent, data: {title: 'Timeline'}},
-  { path: 'imagestack', component: ImageStackComponent, data: {title: 'Image Stack'}},
-  { path: 'payment', component: PaymentDetailsComponent, data: {title: 'Payment Details'}},
-  { path: 'accepted-quote', component: AcceptedQuoteComponent, data: {title: 'Accepted Quote'}},
-  { path: 'landlord-mini', component: LandlordMiniProfileComponent, data: {title: 'Landlord'}},
-  { path: 'inAppNav', component: InAppNavComponent, data: {title: 'In App Nav'}},
-  { path: 'quote-grid', component: QuoteGridComponent, data: {title: 'Quote Grid'}},
-  { path: 'job-details', component: JobDetailsPageComponent, data: {title: 'Job Details'}},
-  { path: 'map', component: MapComponent, data: {title: 'Map'}},
-  { path: 'maintenance', component: MaintenanceRequestPageComponent, data: {title: 'Maintenance Request'}}
+  { path: 'job-detail',
+    component:  JobDetailComponent,
+    data: {title: 'Job Detail'}
+  },
+  { path: 'job-image',
+    component:  JobImageComponent,
+    data: {title: 'Job Image'}
+  },
+  { path: 'profile',
+    component: ContractorComponent,
+    data: {title: 'Profile'}
+  },
+  { path: 'review',
+    component: ReviewComponent,
+    data: {title: 'Review'}
+  },
+  { path: 'feedback',
+    component: FeedbackSectionComponent,
+    data: {title: 'Feedback'}
+  },
+  { path: 'nav',
+    component: LandingNavComponent,
+    data: {title: 'Landing Nav'}
+  },
+  { path: 'landing',
+    component: LandingPageComponent,
+    data: {title: 'Landing Page'}
+  },
+  { path: 'contractor/quotes',
+    component: ContractorJobsListComponent,
+    data: {title: 'Quotes'}
+  },
+  { path: 'contractor/welcome',
+    component: ContractorWelcomePageComponent,
+    data: {title: 'Welcome'}
+  },
+  { path: 'contractor/register',
+    component: ContractorRegisterComponent,
+    data: {title: 'Register'}
+  },
+  { path: 'reported-by',
+    component: ReportedByComponent,
+    data: {title: 'Reported By'}
+  },
+  { path: 'membership-level',
+    component: MembershipLevelComponent,
+    data: {title: 'Membership Level'}
+  },
+  { path: 'size', 
+    component: CompanySizeComponent,
+    data: {title: 'Size'}
+  },
+  { path: 'quote',
+    component: QuoteModalComponent,
+    data: {title: 'Quote'}
+  },
+  { path: 'timeline',
+    component: QuoteTimelineComponent,
+    data: {title: 'Timeline'}
+  },
+  { path: 'imagestack',
+    component: ImageStackComponent,
+    data: {title: 'Image Stack'}
+  },
+  { path: 'payment',
+    component: PaymentDetailsComponent,
+    data: {title: 'Payment Details'}
+  },
+  { path: 'accepted-quote',
+    component: AcceptedQuoteComponent,
+    data: {title: 'Accepted Quote'}
+  },
+  { path: 'landlord-mini',
+    component: LandlordMiniProfileComponent,
+    data: {title: 'Landlord'}
+  },
+  { path: 'inAppNav',
+    component: InAppNavComponent,
+    data: {title: 'In App Nav'}
+  },
+  { path: 'quote-grid',
+    component: QuoteGridComponent,
+    data: {title: 'Quote Grid'}
+  },
+  { path: 'job-details',
+    component: JobDetailsPageComponent,
+    data: {title: 'Job Details'}
+  },
+  { path: 'map',
+    component: MapComponent,
+    data: {title: 'Map'}
+  },
+  { path: 'maintenance',
+    component: MaintenanceRequestPageComponent,
+    data: {title: 'Maintenance Request'}
+  }
 ];
 
 @NgModule({
