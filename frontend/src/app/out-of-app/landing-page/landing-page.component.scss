@@ -9,7 +9,7 @@
 
 .initial-landing {
     background-image: url('../../../assets/property-main.jpg');
-    height: 100vh;
+    min-height: 100vh;
     // height:100%;
     background-size: cover;
     justify-content: center;
@@ -50,10 +50,13 @@ li {
 
 .icon-left {
     width:30%;
+    min-width: 100px;
 }
 
 .icon-text{
-    width: 70%
+    width: 70%;
+    min-width: 100px;
+
 }
 
 .second-landing{
@@ -62,7 +65,7 @@ align-items: center;
 
 
 .product-page{
-    height:78vh;
+    min-height:78vh;
     width: 100%;
 }
 
@@ -73,7 +76,7 @@ align-items: center;
 .orange-text {
     background-color: rgb(255,96,8);
     width:100%;
-    height:15vh;
+    min-height:15vh;
     align-items: center;
 }
 
@@ -82,7 +85,7 @@ align-items: center;
 }
 
 .third-landing {
-    height:93vh;
+    min-height:93vh;
     align-items: center;
 }
 
@@ -91,7 +94,7 @@ align-items: center;
 // }
 
 .membership-page{
-    height:78vh;
+    min-height:78vh;
     align-items: center;
 
 }

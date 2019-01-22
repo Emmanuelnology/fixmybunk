@@ -31,7 +31,7 @@ import { ContractorRegTitleComponent } from './out-of-app/contractor-reg-title/c
 import { StarComponent } from './star/star.component';
 import { QuoteTimelineComponent } from './quote-timeline/quote-timeline.component';
 import { QuoteComponent } from './quote/quote.component';
-import { ContractorLoginComponent } from './out-of-app/contractor-login/contractor-login.component';
+import { ContractorRegisterComponent } from './out-of-app/contractor-register/contractor-register.component';
 import { ModalComponent } from './modal/modal.component';
 import { JobImageComponent } from './job-image/job-image.component';
 import { QuoteModalComponent } from './quote-modal/quote-modal.component';
@@ -41,9 +41,9 @@ import { QuoteGridComponent } from './quote-grid/quote-grid.component';
 import { AcceptedQuoteComponent } from './accepted-quote/accepted-quote.component';
 import { LandlordMiniProfileComponent } from './landlord-mini-profile/landlord-mini-profile.component';
 import { JobDetailsPageComponent } from './job-details-page/job-details-page.component';
-import { MaintenanceRequestPageComponent } from './maintenance-request-page/maintenance-request-page.component';
 import { InAppNavComponent } from './in-app-nav/in-app-nav.component';
 import { MapComponent } from './map/map.component';
+import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
 
 const routes: Routes = [
   { path: 'function-demo', component: FunctionDemoComponent }, // THIS ROUTE IS FOR DEMOING ON AND PRACTICING ARCIBALDO
@@ -55,9 +55,9 @@ const routes: Routes = [
   { path: 'nav', component: LandingNavComponent},
   { path: 'landing', component: LandingPageComponent },
   { path: 'review', component: ReviewComponent },
-  { path: 'contractor/quotes', component: ContractorJobsListComponent },
+  { path: 'contractor/quotes', component: ContractorJobsListComponent},
   { path: 'contractor/welcome', component: ContractorWelcomePageComponent },
-  { path: 'contractor/login', component: ContractorLoginComponent },
+  { path: 'contractor/register', component: ContractorRegisterComponent },
   { path: 'reported-by', component: ReportedByComponent},
   { path: 'membership-level', component: MembershipLevelComponent },
   { path: 'size', component: CompanySizeComponent},
@@ -70,7 +70,6 @@ const routes: Routes = [
   { path: 'inAppNav', component: InAppNavComponent},
   { path: 'quote-grid', component: QuoteGridComponent},
   { path: 'job-details', component: JobDetailsPageComponent },
-  { path: 'maintenance-request', component: MaintenanceRequestPageComponent },
   { path: 'map', component: MapComponent }
 ];
 
@@ -101,7 +100,7 @@ const routes: Routes = [
     JobImageComponent,
     QuoteModalComponent,
     QuoteComponent,
-    ContractorLoginComponent,
+    ContractorRegisterComponent,
     JobImageComponent,
     QuoteTimelineComponent,
     ModalComponent,
@@ -111,9 +110,9 @@ const routes: Routes = [
     QuoteSubmittedModalComponent,
     LandlordMiniProfileComponent,
     JobDetailsPageComponent,
-    MaintenanceRequestPageComponent,
     InAppNavComponent,
-    MapComponent
+    MapComponent,
+    BreadcrumbsComponent
   ],
   imports: [
     BrowserModule,
