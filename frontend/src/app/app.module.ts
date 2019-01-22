@@ -99,7 +99,7 @@ const routes: Routes = [
     component: MembershipLevelComponent,
     data: {title: 'Membership Level'}
   },
-  { path: 'size', 
+  { path: 'size',
     component: CompanySizeComponent,
     data: {title: 'Size'}
   },
