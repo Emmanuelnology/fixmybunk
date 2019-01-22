@@ -13,9 +13,9 @@ export class MaintenanceRequestPageComponent implements OnInit {
 
   public showQuotes = true;
   public quoteAccepted = true;
-  
+
   public outsourcingSent = true;
-  public contractorWorkCompleted = true;
+  public contractorWorkCompleted = false;
   public quoteView = 'timeline';
 
   constructor() { }
