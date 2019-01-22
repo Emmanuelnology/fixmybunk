@@ -143,6 +143,12 @@ const routes: Routes = [
     component: ModalComponent,
     data: {title: 'Modal Page'}
   },
+  { path: '',
+    // redirectTo: '/profile',
+    // pathMatch: 'full',
+    component: ContractorComponent,
+    data: {title: 'Home'}
+  },
 ];
 
 @NgModule({
