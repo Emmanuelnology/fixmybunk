@@ -77,10 +77,21 @@
 
 input,
 textarea {
-    width: 100%;
+    width: 300px;
+    min-width: 200px;
+}
+
+textarea{
+    resize:none;
+    min-width: 95%;
+}
+
+.message{
+    background-color: yellow;
+    height: 80%;
 }
 
 .red{
     background-color:red;
-    height: 80px;
+    height: 20%;
 }
