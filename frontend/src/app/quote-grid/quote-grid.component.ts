@@ -42,6 +42,20 @@ export class QuoteGridComponent implements OnInit {
       numberOfRatings: 66,
       timePosted: 58,
       estimate: 187
+    },
+    {
+      contractor: 'Harry MacGuire',
+      rating: 4,
+      numberOfRatings: 66,
+      timePosted: 58,
+      estimate: 555
+    },
+    {
+      contractor: 'Barry MacGuire',
+      rating: 4,
+      numberOfRatings: 66,
+      timePosted: 58,
+      estimate: 666
     }
   ];
 
