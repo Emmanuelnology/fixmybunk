@@ -2,6 +2,7 @@
 @import '../../../bunk.variables.scss';
 @import '../../../arcibaldo-custom.variables.scss';
 @import '../../../scss/typography';
+@import '../../../scss/variables/breakpoints';
 
 @import '../../../bunk.theme.scss';
 @import '../../../bunk.variables.scss';
@@ -32,10 +33,9 @@ li {
     list-style-type: none;
 }
 
-img {
+.skew {
     // height:600px;
     width:30%
-
 }
 
 .contractors-say {
@@ -109,4 +109,10 @@ align-items: center;
 .border-left {
     border-left: 1px solid rgba(255,255,255, 0.5);
 
+}
+
+@include breakpoint-custom($min: 0px, $max: 700px) {
+    .skew {
+      display:none;
+    }
 }
