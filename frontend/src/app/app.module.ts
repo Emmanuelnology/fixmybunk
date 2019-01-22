@@ -138,7 +138,11 @@ const routes: Routes = [
   { path: 'maintenance',
     component: MaintenanceRequestPageComponent,
     data: {title: 'Maintenance Request'}
-  }
+  },
+  { path: 'modal',
+    component: ModalComponent,
+    data: {title: 'Modal Page'}
+  },
 ];
 
 @NgModule({
