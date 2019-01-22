@@ -28,6 +28,10 @@ export class JobDetailService {
         id: 4,
         url: 'http://www.policestateusa.com/wp-content/uploads/2014/06/Kari-Edwards-damage-8.jpg'
         },
+      {
+        id: 5,
+        url: 'https://www.saporedicina.com/english/wp-content/uploads/2014/03/brokendoor.jpg'
+      },
     ];
   }
 }

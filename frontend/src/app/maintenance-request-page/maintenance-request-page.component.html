@@ -1,19 +1,37 @@
 <app-in-app-nav>
-    <div class="p-all_2">
-        <app-job-detail [role]="user.role"></app-job-detail>
-        <app-reported-by *ngIf="user.role === 'landlord'"></app-reported-by>
-        <div class="rc">
-            <h3 class="mt_5 w_90">Current quotes</h3>
-            <div class="w_95 rc jc_fe ml_2 mt_4">
-                <i class="fas fa-th-large mr_2 icon" (click)="setQuoteView('timeline')"></i>
-                <i class="fas fa-list-ul icon" (click)="setQuoteView('list')"></i>
+    <div class="p-all_2 text w_100 page-wrap rc_c ai_jc">
+        <div>
+            <div>
+                <button class="btn btn_raised btn_orange">Outsource Maintenance</button>
+                <button class="btn btn_raised btn_orange">View contractor directory</button>
+                <button class="btn btn_raised btn_orange">Cancel outsourcing</button>
+                <button class="btn btn_raised btn_orange">Mark as completed</button>
+            </div>
+            <div>
+                <button class="btn btn_raised btn_orange">Add as done</button>
+                <button class="btn btn_raised btn_orange">Mark as done</button>
+                <button class="btn btn_raised btn_orange">Update your quote</button>
             </div>
         </div>
-        <div *ngIf="quoteView === 'timeline'">
-            <app-quote-timeline [role]="user.role"></app-quote-timeline>
+        <app-job-detail [role]="user.role"></app-job-detail>
+        <app-reported-by *ngIf="user.role === 'landlord'"></app-reported-by>
+        <div *ngIf="showQuotes && quoteAccepted != true">
+            <div class="rc">
+                <h3 class="mt_5 w_90">Current quotes</h3>
+                <div *ngIf="user.role === 'landlord'" class="w_95 rc jc_fe ml_2 mt_4">
+                    <i class="fas fa-th-large mr_2 icon" (click)="setQuoteView('timeline')"></i>
+                    <i class="fas fa-list-ul icon" (click)="setQuoteView('list')"></i>
+                </div>
+            </div>
+            <div *ngIf="quoteView === 'timeline'">
+                <app-quote-timeline [role]="user.role"></app-quote-timeline>
+            </div>
+            <div *ngIf="quoteView === 'list'">
+                <app-quote-grid></app-quote-grid>
+            </div>
         </div>
-        <div *ngIf="quoteView === 'list'">
-            <app-quote-grid></app-quote-grid>
+        <div *ngIf="quoteAccepted" class="mt_4">
+            <app-accepted-quote></app-accepted-quote>
         </div>
     </div>
 </app-in-app-nav>
