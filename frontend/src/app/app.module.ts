@@ -45,6 +45,7 @@ import { MapComponent } from './map/map.component';
 import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
 import { MaintenanceRequestPageComponent } from './maintenance-request-page/maintenance-request-page.component';
 
+
 const routes: Routes = [
   { path: 'function-demo', component: FunctionDemoComponent }, // THIS ROUTE IS FOR DEMOING ON AND PRACTICING ARCIBALDO
   { path: 'job-detail', component:  JobDetailComponent },
@@ -204,7 +205,8 @@ const routes: Routes = [
     InAppNavComponent,
     MapComponent,
     BreadcrumbsComponent,
-    MaintenanceRequestPageComponent
+    MaintenanceRequestPageComponent,
+
   ],
   imports: [
     BrowserModule,
