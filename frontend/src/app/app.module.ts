@@ -55,7 +55,6 @@ const routes: Routes = [
   { path: 'feedback', component: FeedbackSectionComponent },
   { path: 'nav', component: LandingNavComponent},
   { path: 'landing', component: LandingPageComponent },
-  { path: 'review', component: ReviewComponent },
   { path: 'contractor/quotes', component: ContractorJobsListComponent},
   { path: 'contractor/welcome', component: ContractorWelcomePageComponent },
   { path: 'contractor/register', component: ContractorRegisterComponent },
