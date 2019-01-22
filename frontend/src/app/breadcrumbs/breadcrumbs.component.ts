@@ -23,7 +23,8 @@ export class BreadcrumbsComponent implements OnInit {
 
   ngOnInit() {
     const currentUrl = this.activatedRoute.outlet;
-    this.breadcrumbs.push({label: 'Current Page', url: currentUrl, last: true});
+    const title = this.activatedRoute.routeConfig.data.title;
+    this.breadcrumbs.push({label: title, url: currentUrl, last: true});
   }
 
 }
