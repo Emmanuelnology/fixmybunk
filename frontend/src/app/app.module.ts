@@ -44,6 +44,7 @@ import { JobDetailsPageComponent } from './job-details-page/job-details-page.com
 import { InAppNavComponent } from './in-app-nav/in-app-nav.component';
 import { MapComponent } from './map/map.component';
 import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
+import { MaintenanceRequestPageComponent } from './maintenance-request-page/maintenance-request-page.component';
 
 const routes: Routes = [
   { path: 'function-demo', component: FunctionDemoComponent }, // THIS ROUTE IS FOR DEMOING ON AND PRACTICING ARCIBALDO
@@ -70,7 +71,8 @@ const routes: Routes = [
   { path: 'inAppNav', component: InAppNavComponent},
   { path: 'quote-grid', component: QuoteGridComponent},
   { path: 'job-details', component: JobDetailsPageComponent },
-  { path: 'map', component: MapComponent }
+  { path: 'map', component: MapComponent },
+  { path: 'maintenance', component: MaintenanceRequestPageComponent }
 ];
 
 @NgModule({
@@ -112,7 +114,8 @@ const routes: Routes = [
     JobDetailsPageComponent,
     InAppNavComponent,
     MapComponent,
-    BreadcrumbsComponent
+    BreadcrumbsComponent,
+    MaintenanceRequestPageComponent
   ],
   imports: [
     BrowserModule,
