@@ -34,7 +34,7 @@ li {
 }
 
 .skew {
-    // height:600px;
+    display: none;
     width:30%
 }
 
@@ -49,23 +49,26 @@ li {
 }
 
 .icon-left {
-    width:30%;
+    width:100%;
     min-width: 100px;
+    text-align: center;
 }
 
 .icon-text{
     width: 70%;
     min-width: 100px;
+    text-align: justify;
 
 }
 
 .second-landing{
-align-items: center;
+  align-items: center;
+  // min-height:78vh;
 }
 
 
 .product-page{
-    min-height:78vh;
+
     width: 100%;
 }
 
@@ -114,8 +117,11 @@ align-items: center;
 
 }
 
-@include breakpoint-custom($min: 0px, $max: 700px) {
+@include breakpoint-custom($min: 700px, $max: 100000px) {
     .skew {
-      display:none;
+      display:block;
+    }
+    .product-page {
+          height:78vh;
     }
 }
