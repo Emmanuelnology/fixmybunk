@@ -41,8 +41,8 @@ import { QuoteGridComponent } from './quote-grid/quote-grid.component';
 import { AcceptedQuoteComponent } from './accepted-quote/accepted-quote.component';
 import { LandlordMiniProfileComponent } from './landlord-mini-profile/landlord-mini-profile.component';
 import { JobDetailsPageComponent } from './job-details-page/job-details-page.component';
-import { MaintenanceRequestPageComponent } from './maintenance-request-page/maintenance-request-page.component';
 import { InAppNavComponent } from './in-app-nav/in-app-nav.component';
+import { MapComponent } from './map/map.component';
 
 const routes: Routes = [
   { path: 'function-demo', component: FunctionDemoComponent }, // THIS ROUTE IS FOR DEMOING ON AND PRACTICING ARCIBALDO
@@ -54,7 +54,7 @@ const routes: Routes = [
   { path: 'nav', component: LandingNavComponent},
   { path: 'landing', component: LandingPageComponent },
   { path: 'review', component: ReviewComponent },
-  { path: 'contractor/quotes', component: ContractorJobsListComponent },
+  { path: 'contractor/quotes', component: ContractorJobsListComponent},
   { path: 'contractor/welcome', component: ContractorWelcomePageComponent },
   { path: 'contractor/register', component: ContractorRegisterComponent },
   { path: 'reported-by', component: ReportedByComponent},
@@ -69,7 +69,7 @@ const routes: Routes = [
   { path: 'inAppNav', component: InAppNavComponent},
   { path: 'quote-grid', component: QuoteGridComponent},
   { path: 'job-details', component: JobDetailsPageComponent },
-  { path: 'maintenance-request', component: MaintenanceRequestPageComponent }
+  { path: 'map', component: MapComponent }
 ];
 
 @NgModule({
@@ -109,8 +109,8 @@ const routes: Routes = [
     QuoteSubmittedModalComponent,
     LandlordMiniProfileComponent,
     JobDetailsPageComponent,
-    MaintenanceRequestPageComponent,
-    InAppNavComponent
+    InAppNavComponent,
+    MapComponent
   ],
   imports: [
     BrowserModule,

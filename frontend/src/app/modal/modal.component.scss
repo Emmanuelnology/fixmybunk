@@ -1,11 +1,11 @@
-// .blocker {
-//     position: fixed;
-//     top:0;
-//     bottom:0;
-//     left: 0;
-//     right:0;
-//     background-color:rgba(0,0,0,0.5);
-// }
+.blocker {
+    position: fixed;
+    top:0;
+    bottom:0;
+    left: 0;
+    right:0;
+    background-color:rgba(0,0,0,0.5);
+}
 
 // .content {
 //     background-color:red;
@@ -29,12 +29,53 @@
 }
 
 .modal {
-    background-color: rgb(255, 0, 255);
+    background-color: white;
     z-index: 1;
     width: 500px;
     height: 300px;
+    position: relative;
+}
+
+.modal .closeButton {
+    position: absolute;
+    right:0;
+    top:0;
 }
 
 .hidden {
     display: none;
+}
+
+.closeButton {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+}
+
+.header {
+    background-color: black;
+    margin-top: -20px;
+}
+
+.header h1 {
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.header p {
+    color: gray;
+    text-align: center;
+}
+
+input,
+textarea {
+    background-color: gray;
+    width: 50%;
+}
+
+.submit {
+    background-color: orange;
+    color: white;
+    border-radius: 50%;
 }
