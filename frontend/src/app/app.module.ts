@@ -47,10 +47,6 @@ import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
 import { MaintenanceRequestPageComponent } from './maintenance-request-page/maintenance-request-page.component';
 
 const routes: Routes = [
-  { path: 'function-demo',
-    component: FunctionDemoComponent,
-    data: {title: 'Function Demo'}
-  }, // THIS ROUTE IS FOR DEMOING ON AND PRACTICING ARCIBALDO
   { path: 'job-detail',
     component:  JobDetailComponent,
     data: {title: 'Job Detail'}
@@ -110,10 +106,6 @@ const routes: Routes = [
   { path: 'timeline',
     component: QuoteTimelineComponent,
     data: {title: 'Timeline'}
-  },
-  { path: 'imagestack',
-    component: ImageStackComponent,
-    data: {title: 'Image Stack'}
   },
   { path: 'payment',
     component: PaymentDetailsComponent,

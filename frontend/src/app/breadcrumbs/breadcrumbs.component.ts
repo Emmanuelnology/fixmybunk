@@ -16,7 +16,7 @@ export class BreadcrumbsComponent implements OnInit {
 
   breadcrumbs: IBreadcrumb[] = [
     {label: 'Home', url: '/'},
-    {label: 'Previous Page', url: '/function-demo'}
+    {label: 'Previous Page', url: '/'}
   ];
 
   constructor(private activatedRoute: ActivatedRoute) { }
