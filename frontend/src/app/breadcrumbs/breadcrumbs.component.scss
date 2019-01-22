@@ -1,10 +1,13 @@
 @import '../../scss/variables/colour-palettes';
 
 span {
-  margin: 0 3px;
   color: $colour-grey_2;
 }
 
 .active {
   color: black;
+}
+
+.tiny-m-horizontal {
+  margin: 0 4px;
 }
