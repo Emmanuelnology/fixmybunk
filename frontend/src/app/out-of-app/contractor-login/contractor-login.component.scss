@@ -1,66 +1,67 @@
-// @import '../../../../src/scss/variables/breakpoints';
+@import '../../../../src/scss/variables/breakpoints';
 
-.one {
-    background-color: red;
-}
+// .one {
+//     // background-color: red;
+// }
 
 .twoone {
     // display: flex;
     align-items: center;
-    background-color: orangered;
+    // background-color: orangered;
+    min-width: 185px;
 }
 
 .twotwo {
-    // min-width: 320px;
     align-items: center;
-    background-color: orange;
+    // background-color: orange;
+    min-width: 365px;
 }
 
 .three {
     align-items: center;
-    background-color: yellow;
+    // background-color: yellow;
 }
 
 
 
 
-h1 {
-    text-align: center;
-}
 
 .centre-text {
     text-align: center;
 }
 
 input{
-    border: none;
-    width: 140px;
+    width: 136px;
 }
 
 .small-select {
-    width: 160px; //input width + 20px
+    width: 156px; //input width + 20px
 }
 
 .large-select {
-    width: 340px; //small-select width x2 then + 20px
+    width: 332px; //small-select width x2 then + 20px
 }
 
-// select {
-//     border: none;
-//     padding: 10px;
-// }
-
-button, .image-text {
-    width: 185px;
+input, select {
+    border: none;
 }
 
-// //break point (min screen 900px)
-// @include breakpoint-custom($min: 600px, $max: 700px) {
-//     .twotwo {
-//         width: 80%;
-//         background-color: red;
-//     }
-// }
+button, .privacy-policy {
+    width: 175px;
+}
+
+//break point (min screen 900px)
+@include breakpoint-custom($min: 1300px, $max: 1000000px) {
+    input {
+        width: 250px;
+    }
+    .small-select {
+        width: 270px;
+    }
+    .large-select {
+        width: 560px;
+    }
+}
 
 // @include breakpoint-custom($min: 0px, $max: 550px) {
 //     .twotwo {
