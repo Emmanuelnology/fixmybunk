@@ -32,6 +32,10 @@ export class JobDetailService {
         id: 5,
         url: 'https://www.saporedicina.com/english/wp-content/uploads/2014/03/brokendoor.jpg'
       },
+      // {
+      //   id: 6,
+      //   url: 'http://www.dubairepairs.org/wp-content/uploads/2016/06/Broken-door-repairs-in-Dubai-1.jpg'
+      // },
     ];
   }
 }

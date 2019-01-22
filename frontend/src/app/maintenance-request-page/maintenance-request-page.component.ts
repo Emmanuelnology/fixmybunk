@@ -13,7 +13,7 @@ export class MaintenanceRequestPageComponent implements OnInit {
 
   public showQuotes = true;
   public quoteView = 'timeline';
-  public quoteAccepted = false;
+  public quoteAccepted = true;
 
   constructor() { }
 

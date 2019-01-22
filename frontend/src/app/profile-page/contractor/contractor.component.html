@@ -1,20 +1,21 @@
 <app-in-app-nav>
     <app-modal></app-modal>
     <div class="m-all_1">
-        <div class="rc jc_sb m-horizontal_1">
-            <div (click)="openModal()">
+        <div class="rc jc_sb ai_c m-horizontal_1">
+            <!-- <div (click)="openModal()">
                 Breadcrumbs
-            </div>
+            </div> -->
+            <app-breadcrumbs></app-breadcrumbs>
             <div class="text text_3">
                 <button class="btn_orange">See public view</button>
             </div>
         </div>
         <div class="m-all_1">
             <div class="rc ai-c flex_wrap">
-                <div>
+                <div class="mr_2">
                     <app-avatar-icon size="139"></app-avatar-icon>
                 </div>
-                <div class="ml_2">
+                <div>
                     <div class="m-vertical_1 rc ai_baseline title_1 capitalize">
                         {{name}}
                         <span class="text text_3 rc ai_c">
