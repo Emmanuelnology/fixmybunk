@@ -8,18 +8,17 @@ import { Component, OnInit } from '@angular/core';
 export class MaintenanceRequestPageComponent implements OnInit {
 
   public user = {
-    role: 'contractor'
+    role: 'landlord'
   };
 
   public showQuotes = true;
-  public quoteView = 'timeline';
   public quoteAccepted = true;
+  
+  public outsourcingSent = true;
+  public contractorWorkCompleted = true;
+  public quoteView = 'timeline';
 
   constructor() { }
-
-  // showHideQuotes() {
-  //   this.showQuotes = !this.showQuotes;
-  // }
 
   setQuoteView(view) {
     this.quoteView = view;

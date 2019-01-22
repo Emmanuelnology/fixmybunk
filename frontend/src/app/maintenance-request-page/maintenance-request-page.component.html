@@ -1,13 +1,13 @@
 <app-in-app-nav>
     <div class="p-all_2 text w_100 page-wrap rc_c ai_jc">
         <div>
-            <div>
-                <button class="btn btn_raised btn_orange">Outsource Maintenance</button>
-                <button class="btn btn_raised btn_orange">View contractor directory</button>
-                <button class="btn btn_raised btn_orange">Cancel outsourcing</button>
-                <button class="btn btn_raised btn_orange">Mark as completed</button>
+            <div *ngIf="user.role === 'landlord'">
+                <button *ngIf="outsourcingSent === false && contractorWorkCompleted === false" class="btn btn_raised btn_orange">Outsource Maintenance</button>
+                <button *ngIf="outsourcingSent && contractorWorkCompleted === false" class="btn btn_raised btn_orange">Cancel outsourcing</button>
+                <button *ngIf="contractorWorkCompleted === false" class="btn btn_raised btn_orange">View contractor directory</button>
+                <button *ngIf="contractorWorkCompleted" class="btn btn_raised btn_orange">Mark as completed</button>
             </div>
-            <div>
+            <div *ngIf="user.role === 'contractor'">
                 <button class="btn btn_raised btn_orange">Add as done</button>
                 <button class="btn btn_raised btn_orange">Mark as done</button>
                 <button class="btn btn_raised btn_orange">Update your quote</button>
