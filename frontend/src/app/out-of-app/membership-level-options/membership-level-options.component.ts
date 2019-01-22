@@ -12,12 +12,10 @@ export class MembershipLevelOptionsComponent implements OnInit {
 
     pageOption;
 
-
-    selectedOption =
-    [
+    selectedOption = [
       {
-        title: 'SILVER',
-        prices: '15',
+        title: '',
+        prices: '',
         isHidden: true
       }
     ];
@@ -44,26 +42,23 @@ export class MembershipLevelOptionsComponent implements OnInit {
   constructor(
     private router: Router
     ) {
-      console.log('constructor');
+      // console.log('constructor');
       if (this.router.url === '/payment') {
-        this.pageOption = this.pageOption;
+        this.pageOption = this.selectedOption;
+        return;
       } else {
         this.pageOption = this.options;
       }
-    console.log(this.pageOption);
+    // console.log(this.pageOption[0]);
   }
 
   updatePaymentOption(option) {
-      console.log('update clicked');
-    const pagesOption = [
-      {
+      console.log('update clicked' + option.title);
+      return this.selectedOption = [{
         title: option.title,
         prices: option.prices,
-        isHidden: true
-      }
-    ];
-
-    // return this.pageOption = pagesOption;
+        isHidden: false
+      }]
 
   }
 
