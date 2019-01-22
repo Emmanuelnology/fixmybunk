@@ -31,15 +31,16 @@
 .modal {
     background-color: white;
     z-index: 1;
-    width: 500px;
-    height: 300px;
     position: relative;
+    min-width: 200px;
+
 }
 
 .modal .closeButton {
     position: absolute;
     right:0;
     top:0;
+    
 }
 
 .hidden {
@@ -54,13 +55,19 @@
 
 .header {
     background-color: black;
-    margin-top: -20px;
+    // margin-top: -20px;
+}
+.modal-title{
+    font-size: 2em!important;
 }
 
-.header h1 {
+.header{
     color: white;
     text-align: center;
-    padding-top: 20px;
+}
+
+.sub-heading {
+    color:grey;
 }
 
 .header p {
@@ -70,12 +77,10 @@
 
 input,
 textarea {
-    background-color: gray;
-    width: 50%;
+    width: 100%;
 }
 
-.submit {
-    background-color: orange;
-    color: white;
-    border-radius: 50%;
+.red{
+    background-color:red;
+    height: 80px;
 }

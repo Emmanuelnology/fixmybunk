@@ -34,7 +34,6 @@ import { QuoteComponent } from './quote/quote.component';
 import { ContractorLoginComponent } from './out-of-app/contractor-login/contractor-login.component';
 import { ModalComponent } from './modal/modal.component';
 import { JobImageComponent } from './job-image/job-image.component';
-import { QuoteModalComponent } from './quote-modal/quote-modal.component';
 import { QuoteSubmittedModalComponent } from './quote-submitted-modal/quote-submitted-modal.component';
 import { PaymentDetailsComponent } from './out-of-app/payment-details/payment-details.component';
 import { QuoteGridComponent } from './quote-grid/quote-grid.component';
@@ -61,7 +60,6 @@ const routes: Routes = [
   { path: 'reported-by', component: ReportedByComponent},
   { path: 'membership-level', component: MembershipLevelComponent },
   { path: 'size', component: CompanySizeComponent},
-  { path: 'quote', component: QuoteModalComponent},
   { path: 'timeline', component: QuoteTimelineComponent},
   { path: 'imagestack', component: ImageStackComponent },
   { path: 'payment', component: PaymentDetailsComponent },
@@ -71,7 +69,7 @@ const routes: Routes = [
   { path: 'quote-grid', component: QuoteGridComponent},
   { path: 'job-details', component: JobDetailsPageComponent },
   { path: 'maintenance-request', component: MaintenanceRequestPageComponent },
-  { path: 'map', component: MapComponent }
+  { path: 'map', component: MapComponent },
 ];
 
 @NgModule({
@@ -99,7 +97,6 @@ const routes: Routes = [
     ContractorRegTitleComponent,
     StarComponent,
     JobImageComponent,
-    QuoteModalComponent,
     QuoteComponent,
     ContractorLoginComponent,
     JobImageComponent,
