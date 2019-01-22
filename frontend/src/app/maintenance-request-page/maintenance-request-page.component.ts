@@ -12,7 +12,8 @@ export class MaintenanceRequestPageComponent implements OnInit {
   };
 
   public showQuotes = true;
-  public quoteAccepted = true;
+  public quoteSent = true;
+  public quoteAccepted = false;
 
   public outsourcingSent = true;
   public contractorWorkCompleted = false;
