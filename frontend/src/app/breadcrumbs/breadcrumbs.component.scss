@@ -1,6 +1,7 @@
 @import '../../scss/variables/colour-palettes';
 
-span {
+.link {
+  text-decoration: none;
   color: $colour-grey_2;
 }
 
@@ -8,6 +9,7 @@ span {
   color: black;
 }
 
-.tiny-m-horizontal {
+span {
   margin: 0 4px;
+  color: $colour-grey_2;
 }
