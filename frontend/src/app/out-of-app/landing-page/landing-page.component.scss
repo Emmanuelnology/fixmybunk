@@ -2,6 +2,7 @@
 @import '../../../bunk.variables.scss';
 @import '../../../arcibaldo-custom.variables.scss';
 @import '../../../scss/typography';
+@import '../../../scss/variables/breakpoints';
 
 @import '../../../bunk.theme.scss';
 @import '../../../bunk.variables.scss';
@@ -32,10 +33,9 @@ li {
     list-style-type: none;
 }
 
-img {
-    // height:600px;
+.skew {
+    display: none;
     width:30%
-
 }
 
 .contractors-say {
@@ -49,23 +49,26 @@ img {
 }
 
 .icon-left {
-    width:30%;
+    width:100%;
     min-width: 100px;
+    text-align: center;
 }
 
 .icon-text{
     width: 70%;
     min-width: 100px;
+    text-align: justify;
 
 }
 
 .second-landing{
-align-items: center;
+  align-items: center;
+  // min-height:78vh;
 }
 
 
 .product-page{
-    min-height:78vh;
+
     width: 100%;
 }
 
@@ -112,4 +115,13 @@ align-items: center;
 .border-left {
     border-left: 1px solid rgba(255,255,255, 0.5);
 
+}
+
+@include breakpoint-custom($min: 700px, $max: 100000px) {
+    .skew {
+      display:block;
+    }
+    .product-page {
+          height:78vh;
+    }
 }

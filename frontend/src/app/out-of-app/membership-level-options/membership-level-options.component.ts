@@ -14,8 +14,8 @@ export class MembershipLevelOptionsComponent implements OnInit {
 
     selectedOption = [
       {
-        title: '',
-        prices: '',
+        title: 'SILVER',
+        prices: '15',
         isHidden: true
       }
     ];
