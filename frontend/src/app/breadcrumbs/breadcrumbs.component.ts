@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 interface IBreadcrumb {
   label: string;
+  url?: string;
   last?: boolean;
 }
 
@@ -13,14 +15,16 @@ interface IBreadcrumb {
 export class BreadcrumbsComponent implements OnInit {
 
   breadcrumbs: IBreadcrumb[] = [
-    {label: 'Home'},
-    {label: 'Previous Page'},
-    {label: 'Current Page', last: true}
+    {label: 'Home', url: '/'},
+    {label: 'Previous Page', url: '/'}
   ];
 
-  constructor() { }
+  constructor(private activatedRoute: ActivatedRoute) { }
 
   ngOnInit() {
+    const currentUrl = this.activatedRoute.outlet;
+    const title = this.activatedRoute.routeConfig.data.title;
+    this.breadcrumbs.push({label: title, url: currentUrl, last: true});
   }
 
 }
