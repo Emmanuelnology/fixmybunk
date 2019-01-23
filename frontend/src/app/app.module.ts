@@ -47,25 +47,19 @@ import { MaintenanceRequestPageComponent } from './maintenance-request-page/main
 
 
 const routes: Routes = [
-  { path: 'job-detail',
-    component:  JobDetailComponent,
-    data: {title: 'Job Detail'}
-  },
-  { path: 'job-image',
-    component:  JobImageComponent,
-    data: {title: 'Job Image'}
-  },
   { path: 'profile',
     component: ContractorComponent,
-    data: {title: 'Profile'}
-  },
-  { path: 'review',
-    component: ReviewComponent,
-    data: {title: 'Review'}
-  },
-  { path: 'feedback',
-    component: FeedbackSectionComponent,
-    data: {title: 'Feedback'}
+    data: {title: 'Profile'},
+    children: [
+      { path: 'review',
+        component: ReviewComponent,
+        data: {title: 'Review'}
+      },
+      { path: 'feedback',
+        component: FeedbackSectionComponent,
+        data: {title: 'Feedback'}
+      }
+    ]
   },
   { path: 'nav',
     component: LandingNavComponent,
@@ -91,7 +85,7 @@ const routes: Routes = [
     component: ReportedByComponent,
     data: {title: 'Reported By'}
   },
-  { path: 'membership-level',
+  { path: 'contractor/membership-level',
     component: MembershipLevelComponent,
     data: {title: 'Membership Level'}
   },
@@ -103,7 +97,7 @@ const routes: Routes = [
     component: QuoteTimelineComponent,
     data: {title: 'Timeline'}
   },
-  { path: 'payment',
+  { path: 'contractor/payment',
     component: PaymentDetailsComponent,
     data: {title: 'Payment Details'}
   },
@@ -131,18 +125,12 @@ const routes: Routes = [
     component: MapComponent,
     data: {title: 'Map'}
   },
-  { path: 'maintenance',
+  { path: 'maintenance-request',
     component: MaintenanceRequestPageComponent,
     data: {title: 'Maintenance Request'}
   },
-  { path: 'modal',
-    component: ModalComponent,
-    data: {title: 'Modal Page'}
-  },
   { path: '',
-    // redirectTo: '/profile',
-    // pathMatch: 'full',
-    component: ContractorComponent,
+    component: FunctionDemoComponent,
     data: {title: 'Home'}
   },
 ];
