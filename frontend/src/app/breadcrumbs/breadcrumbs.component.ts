@@ -20,11 +20,12 @@ export class BreadcrumbsComponent implements OnInit {
 
   ngOnInit() {
     const path = this.activatedRoute.pathFromRoot;
+    let currentUrl = '';
     for (let i = 0; i  < path.length; i++) {
-      const currentURL = path[i].routeConfig ? path[i].routeConfig.path : '';
+      currentUrl = path[i].routeConfig ? currentUrl + '/' + path[i].routeConfig.path : currentUrl + '/';
       const loopTitle = path[i].routeConfig ? path[i].routeConfig.data.title : 'Home';
-      if (i === 0 || currentURL !== '') {
-        this.breadcrumbs.push({label: loopTitle, url: currentURL});
+      if (i === 0 || currentUrl !== '') {
+        this.breadcrumbs.push({label: loopTitle, url: currentUrl});
       }
     }
     this.breadcrumbs[this.breadcrumbs.length - 1].last = true;
