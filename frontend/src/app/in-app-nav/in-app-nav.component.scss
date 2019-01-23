@@ -53,7 +53,15 @@ i {
   .dm {
     display: flex;
   }
+
+  .hidden {
+    display: none;
+  }
   
+  .visable {
+    display: flex;
+  }
+
   .fa-bars {
     margin: auto 0;
     padding: 10px;
