@@ -23,16 +23,18 @@ export class BreadcrumbsComponent implements OnInit {
 
   ngOnInit() {
     // this.path = this.activatedRoute.root;
-    // this.url = this.activatedRoute.pathFromRoot[1].snapshot.url;
+    // this.url = this.activatedRoute.pathFromRoot[1].routeConfig.path;
     // this.title = this.activatedRoute.pathFromRoot[0].snapshot.data.title;
     const path = this.activatedRoute.pathFromRoot;
     for (let i = 0; i  < path.length; i++) {
       const currentURL = path[i].routeConfig ? path[i].routeConfig.path : '';
       // const currentUrl = path[i].snapshot.url;
       const loopTitle = path[i].routeConfig ? path[i].routeConfig.data.title : 'Home';
-      this.breadcrumbs.push({label: loopTitle, url: currentURL});
+      if (!(i !== 0 && currentURL === '')) {
+        this.breadcrumbs.push({label: loopTitle, url: currentURL});
+      }
     }
-    this.breadcrumbs[path.length - 1].last = true;
+    this.breadcrumbs[this.breadcrumbs.length - 1].last = true;
       // const title = this.activatedRoute.routeConfig.data.title;
       // const currentUrl = this.router.url;
       // this.breadcrumbs.push({label: title, url: currentUrl, last: true});
