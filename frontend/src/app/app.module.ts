@@ -47,7 +47,7 @@ import { MaintenanceRequestPageComponent } from './maintenance-request-page/main
 
 
 const routes: Routes = [
-  { path: 'maintenance/profile',
+  { path: 'profile',
     component: ContractorComponent,
     data: {title: 'Profile'}
   },
