@@ -6,30 +6,52 @@
   </div>
 </div> -->
 
-  <!-- content goes here -->
+<!-- content goes here -->
 
-  <div class="blocker {{showModal ? '':'hidden'}}" (click)="cancel()" >
-    </div>
+<div class="blocker {{showModal ? '':'hidden'}}" (click)="cancel()" >
+</div>
 <div class="modalContainer {{showModal ? '':'hidden'}}" id="modalSelector">
   
-  <div class="modal">
-    <div class="header">
-        <button class="closeButton" (click)="save()">X</button>
-      <h1>Add A Quote</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, aliquid blanditiis temporibus maxime dolore natus qui corrupti minus iste eius delectus hic atque, voluptatibus quo officia! Nulla eum cum optio!</p>
-    </div>
-    <div class="body">
-      <form>
-        <input />
-        <input />  
-        <textarea></textarea>  
-      </form>
-      <button class="submit">SUBMIT</button>
+  <div class="modal w_50 h_70">
+    <button class="closeButton" (click)="save()">X</button>
+    
+    <div class="header h_40 cc flex_wrap jc_c ai_c">
+      <div class="modal-title title_1">Add A Quote</div>
+      <div class="sub-heading text text_2 w_80">Lorem ipsum dolor sit amet, consectetur 
+        adipisicing elit. Veritatis, aliquid blanditiis temporibus maxime
+        dolore natus qui corrupti minus iste eius delectus hic atque!</div>
+      </div>
+      
+      <div class="bottom">
+        <form class="w_100">
+          
+          <div class= "p-vertical_2 rc flex_wrap jc_c ai_c">
+            <div class="w_50 flex_wrap jc_c rc">
+              <input
+              class="w_90 p-all_1 bg_light text text-tiny"
+              placeholder="CS Gas Fitter">
+            </div>
+            <div class="w_50 flex_wrap jc_c rc">
+              <input
+              class="w_90 p-vertical_1 bg_light text text-tiny"
+              placeholder="Amount"> 
+            </div> 
+          </div>
+
+        <div class="message cc flex_wrap jc_c ai_c">
+          <textarea
+          placeholder="Opitional Message for the Landlord"
+          class=" p-all_1 w_95 bg_light text text-tiny"
+          rows="8"></textarea>
+          <button class="btn_orange mt_1">SUBMIT</button>
+        </div>
+
+        </form>
         
-
-    </div>
-
-
+      </div>
+      
+      
       <ng-content></ng-content>
+    </div>
   </div>
-</div>
+  

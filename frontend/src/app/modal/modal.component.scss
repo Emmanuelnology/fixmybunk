@@ -31,15 +31,16 @@
 .modal {
     background-color: white;
     z-index: 1;
-    width: 500px;
-    height: 300px;
     position: relative;
+    min-width: 200px;
+
 }
 
 .modal .closeButton {
     position: absolute;
     right:0;
     top:0;
+    
 }
 
 .hidden {
@@ -54,13 +55,19 @@
 
 .header {
     background-color: black;
-    margin-top: -20px;
+    // margin-top: -20px;
+}
+.modal-title{
+    font-size: 2em!important;
 }
 
-.header h1 {
+.header{
     color: white;
     text-align: center;
-    padding-top: 20px;
+}
+
+.sub-heading {
+    color:grey;
 }
 
 .header p {
@@ -68,14 +75,18 @@
     text-align: center;
 }
 
-input,
-textarea {
-    background-color: gray;
-    width: 50%;
+input {
+    border:none;
+    // width: 300px;
+    // min-width: 200px;
 }
 
-.submit {
-    background-color: orange;
-    color: white;
-    border-radius: 50%;
+.m-all_1{
+    border: 2px black solid;
+}
+
+textarea{
+    border:none;
+    resize:none;
+    // min-width: 95%;
 }

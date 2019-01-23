@@ -34,7 +34,6 @@ import { QuoteComponent } from './quote/quote.component';
 import { ContractorRegisterComponent } from './out-of-app/contractor-register/contractor-register.component';
 import { ModalComponent } from './modal/modal.component';
 import { JobImageComponent } from './job-image/job-image.component';
-import { QuoteModalComponent } from './quote-modal/quote-modal.component';
 import { QuoteSubmittedModalComponent } from './quote-submitted-modal/quote-submitted-modal.component';
 import { PaymentDetailsComponent } from './out-of-app/payment-details/payment-details.component';
 import { QuoteGridComponent } from './quote-grid/quote-grid.component';
@@ -45,6 +44,7 @@ import { InAppNavComponent } from './in-app-nav/in-app-nav.component';
 import { MapComponent } from './map/map.component';
 import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
 import { MaintenanceRequestPageComponent } from './maintenance-request-page/maintenance-request-page.component';
+
 
 const routes: Routes = [
   { path: 'job-detail',
@@ -99,10 +99,6 @@ const routes: Routes = [
     component: CompanySizeComponent,
     data: {title: 'Size'}
   },
-  { path: 'quote',
-    component: QuoteModalComponent,
-    data: {title: 'Quote'}
-  },
   { path: 'timeline',
     component: QuoteTimelineComponent,
     data: {title: 'Timeline'}
@@ -143,6 +139,12 @@ const routes: Routes = [
     component: ModalComponent,
     data: {title: 'Modal Page'}
   },
+  { path: '',
+    // redirectTo: '/profile',
+    // pathMatch: 'full',
+    component: ContractorComponent,
+    data: {title: 'Home'}
+  },
 ];
 
 @NgModule({
@@ -170,7 +172,6 @@ const routes: Routes = [
     ContractorRegTitleComponent,
     StarComponent,
     JobImageComponent,
-    QuoteModalComponent,
     QuoteComponent,
     ContractorRegisterComponent,
     JobImageComponent,
@@ -185,7 +186,8 @@ const routes: Routes = [
     InAppNavComponent,
     MapComponent,
     BreadcrumbsComponent,
-    MaintenanceRequestPageComponent
+    MaintenanceRequestPageComponent,
+
   ],
   imports: [
     BrowserModule,

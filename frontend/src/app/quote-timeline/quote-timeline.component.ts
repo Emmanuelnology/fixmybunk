@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { QuoteSubmittedModalComponent } from '../quote-submitted-modal/quote-submitted-modal.component';
 
 @Component({
   selector: 'app-quote-timeline',
@@ -43,10 +44,32 @@ export class QuoteTimelineComponent implements OnInit {
       numberOfRatings: 66,
       timePosted: 58,
       estimate: 187
+    },
+    {
+      contractor: 'Harry MacGuire',
+      rating: 4,
+      numberOfRatings: 66,
+      timePosted: 58,
+      estimate: 555
+    },
+    {
+      contractor: 'Barry MacGuire',
+      rating: 4,
+      numberOfRatings: 66,
+      timePosted: 58,
+      estimate: 666
     }
   ];
 
-  constructor() { }
+  mostRecentQuotes = this.quotes.slice(0, 5);
+
+  constructor() {
+    // this.getMostRecentQuotes();
+  }
+
+  // getMostRecentQuotes() {
+  //   return this.quotes.slice(0, 5);
+  // }
 
   ngOnInit() {
   }
