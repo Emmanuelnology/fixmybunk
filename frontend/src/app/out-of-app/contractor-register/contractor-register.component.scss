@@ -1,26 +1,12 @@
 @import '../../../../src/scss/variables/breakpoints';
 
-// .one {
-//     // background-color: red;
-// }
-
 .display-photo-div {
-    // align-items: center;
     min-width: 185px;
 }
 
 .input-div {
-    // align-items: center;
     min-width: 365px;
 }
-
-// .submit-div {
-//     align-items: center;
-// }
-
-// .centre-text {
-//     text-align: center;
-// }
 
 input{
     width: 136px;
@@ -42,7 +28,10 @@ button, .privacy-policy {
     width: 175px;
 }
 
-//break point (min screen 900px)
+.centre-text {
+    text-align: center;
+}
+
 @include breakpoint-custom($min: 1300px, $max: 1000000px) {
     input {
         width: 250px;
