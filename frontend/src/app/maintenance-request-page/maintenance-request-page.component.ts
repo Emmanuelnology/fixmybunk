@@ -23,8 +23,6 @@ export class MaintenanceRequestPageComponent implements OnInit {
 
   setQuoteView(view) {
     this.quoteView = view;
-    console.log(view);
-    console.log(this.quoteView);
   }
 
   ngOnInit() {

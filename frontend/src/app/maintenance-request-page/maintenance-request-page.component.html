@@ -20,8 +20,8 @@
             <div class="rc">
                 <h3 class="mt_5 w_90">Current quotes</h3>
                 <div *ngIf="user.role === 'landlord'" class="w_95 rc jc_fe ml_2 mt_4">
-                    <i class="fas fa-th-large mr_2 icon" (click)="setQuoteView('timeline')"></i>
-                    <i class="fas fa-list-ul icon" (click)="setQuoteView('list')"></i>
+                    <i class="fas fa-th-large mr_2" [ngClass]="quoteView === 'timeline' ? 'icon-active' : 'icon'" (click)="setQuoteView('timeline')"></i>
+                    <i class="fas fa-list-ul icon" [ngClass]="quoteView === 'list' ? 'icon-active' : 'icon'" (click)="setQuoteView('list')"></i>
                 </div>
             </div>
             <div *ngIf="quoteView === 'timeline'">
