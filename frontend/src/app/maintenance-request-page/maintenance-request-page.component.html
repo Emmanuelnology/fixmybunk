@@ -9,9 +9,9 @@
                 <button *ngIf="contractorWorkCompleted" class="btn btn_raised btn_orange">Mark as completed</button>
             </div>
             <div *ngIf="user.role === 'contractor'">
-                <button *ngIf="quoteSent === false && quoteAccepted === false" class="btn btn_raised btn_orange mr_2">Add a quote</button>
-                <button *ngIf="quoteSent === true && quoteAccepted === false" class="btn btn_raised btn_orange mr_2">Update your quote</button>
-                <button *ngIf="quoteAccepted === true" class="btn btn_raised btn_orange mr_2">Mark as done</button>
+                <button *ngIf="quoteSent === false && quoteAccepted === false" class="btn btn_raised btn_orange mr_13">Add a quote</button>
+                <button *ngIf="quoteSent === true && quoteAccepted === false" class="btn btn_raised btn_orange mr_13">Update your quote</button>
+                <button *ngIf="quoteAccepted === true" class="btn btn_raised btn_orange mr_13">Mark as done</button>
             </div>
         </div>
         <app-job-detail [role]="user.role"></app-job-detail>
