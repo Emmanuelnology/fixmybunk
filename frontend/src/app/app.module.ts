@@ -47,15 +47,7 @@ import { MaintenanceRequestPageComponent } from './maintenance-request-page/main
 
 
 const routes: Routes = [
-  { path: 'job-detail',
-    component:  JobDetailComponent,
-    data: {title: 'Job Detail'}
-  },
-  { path: 'job-image',
-    component:  JobImageComponent,
-    data: {title: 'Job Image'}
-  },
-  { path: 'profile',
+  { path: 'maintenance/profile',
     component: ContractorComponent,
     data: {title: 'Profile'}
   },
