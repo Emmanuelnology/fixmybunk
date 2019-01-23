@@ -142,7 +142,7 @@ const routes: Routes = [
   { path: '',
     // redirectTo: '/profile',
     // pathMatch: 'full',
-    component: ContractorComponent,
+    component: FunctionDemoComponent,
     data: {title: 'Home'}
   },
 ];
