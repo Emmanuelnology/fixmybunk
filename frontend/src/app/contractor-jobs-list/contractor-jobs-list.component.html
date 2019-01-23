@@ -25,14 +25,8 @@
 					<td>{{job.Location}}</td>
 					<td>{{job.Date}}</td>
 					<td>{{job.Job_Type}}</td>
-					<td>
-						<!-- <button [ngClass]="job.Completed ? 'completed' : job.Quoted ? 'incompleteQuoted' :'incompleteUnquoted'" class="btn btn-raised" >
-							<p *ngIf="job.Completed">Completed</p>
-							<p *ngIf="!job.Completed && job.Quoted">Quoted</p>
-							<p *ngIf="!job.Completed && !job.Quoted">Quote</p>
-						</button> --> 
-						
-						<button button [ngClass]="job.Completed ? 'completed' : job.Quoted ? 'incompleteQuoted' :'incompleteUnquoted'" class="btn btn-raised" *ngIf="job.Completed"> Completed</button>
+					<td>					
+						<button button [ngClass]="job.Completed ? 'completed' : job.Quoted ? 'incompleteQuoted' :'incompleteUnquoted'" class="btn btn-raised" *ngIf="job.Completed" (click)="openSmallModal()"> Completed</button>
 						<button button [ngClass]="job.Completed ? 'completed' : job.Quoted ? 'incompleteQuoted' :'incompleteUnquoted'" class="btn btn-raised" *ngIf="!job.Completed && job.Quoted"> Quoted</button>
 						<button button [ngClass]="job.Completed ? 'completed' : job.Quoted ? 'incompleteQuoted' :'incompleteUnquoted'" class="btn btn-raised" *ngIf="!job.Completed && !job.Quoted" (click)="openModal()"> QUOTE</button>
 					</td>
@@ -71,23 +65,18 @@
 						<td>{{job.Job_Type}}</td>
 						<td>
 							<button [ngClass]="job.Completed ? 'completed' : job.Quoted ? 'incompleteQuoted' :'incompleteUnquoted'" class="btn btn-raised">
-								<p *ngIf="job.Completed">Completed</p>
+								<p *ngIf="job.Completed" (click)="openSmallModal()">Completed</p>
 								<p *ngIf="!job.Completed && job.Quoted">Quoted</p>
 								<p *ngIf="!job.Completed && !job.Quoted" (click)="openModal()">Quote</p>
 							</button>
-							
-							<!-- <button *ngIf="something for first button "> Completed</button>
-								<button *ngIf="something for second button "> Quoted</button>
-								<button *ngIf="something for third button " (click)="toggleModal()"> Quote</button> -->
 							</td>
 							<td>£{{job.Latest_Quote}}
 								
 							</td>
 							
 						</tr>
-						<tr  >
+						<tr>
 							<td></td>
-							<!-- <td  ></td> -->
 							<td>
 								<p id="pp{{count}}" style="display: none; padding-left: 40px; margin: 0">
 									<i class="fas fa-ellipsis-v"></i>
@@ -103,6 +92,5 @@
 	</div>
 	<app-modal>
 	</app-modal>
-
 </app-in-app-nav>
 
