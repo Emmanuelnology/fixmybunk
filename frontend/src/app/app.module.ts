@@ -61,17 +61,13 @@ const routes: Routes = [
       }
     ]
   },
-  { path: 'nav',
-    component: LandingNavComponent,
-    data: {title: 'Landing Nav'}
-  },
   { path: 'landing',
     component: LandingPageComponent,
     data: {title: 'Landing Page'}
   },
   { path: 'contractor/quotes',
     component: ContractorJobsListComponent,
-    data: {title: 'Quotes'}
+    data: {title: 'Jobs List'}
   },
   { path: 'contractor/welcome',
     component: ContractorWelcomePageComponent,
