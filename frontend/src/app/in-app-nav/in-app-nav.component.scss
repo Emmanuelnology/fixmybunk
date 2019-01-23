@@ -4,6 +4,10 @@ i {
   font-size: 2em;
 }
 
+.i{
+  font-size: 0.75em;
+}
+
 .logo {
   width: 8rem;
   height: auto;
@@ -42,20 +46,24 @@ padding: 5%,
   }
 }
 
-@include breakpoint-custom($min:768px, $max: 1200px) {
-  .w_5 {
-    width: 8%;
-  }
+.dm {
+  display: none;
 }
 
-@include breakpoint-custom($min:501px, $max: 767px) {
-  .w_5 {
-    width: 15%;
-  }
+@include breakpoint-custom($min:0px, $max: 767px) {
+.dm {
+  display: flex;
 }
 
-@include breakpoint-custom($min:320px, $max: 500px) {
-  .w_5 {
-    width: 20%;
-  }
+.fa-bars {
+  // color: black;
+  margin: auto 0;
+  padding: 10px;
 }
+
+.dw {
+  display: none;
+}
+}
+
+
