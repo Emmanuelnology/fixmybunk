@@ -75,12 +75,18 @@
     text-align: center;
 }
 
-input,
-textarea {
-    width: 100%;
+input {
+    border:none;
+    // width: 300px;
+    // min-width: 200px;
 }
 
-.red{
-    background-color:red;
-    height: 80px;
+.m-all_1{
+    border: 2px black solid;
+}
+
+textarea{
+    border:none;
+    resize:none;
+    // min-width: 95%;
 }
