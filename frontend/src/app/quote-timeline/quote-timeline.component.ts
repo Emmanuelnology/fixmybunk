@@ -49,14 +49,14 @@ export class QuoteTimelineComponent implements OnInit {
       contractor: 'Harry MacGuire',
       rating: 4,
       numberOfRatings: 66,
-      timePosted: 58,
+      timePosted: 122,
       estimate: 555
     },
     {
       contractor: 'Barry MacGuire',
       rating: 4,
       numberOfRatings: 66,
-      timePosted: 58,
+      timePosted: 134,
       estimate: 666
     }
   ];
@@ -64,12 +64,7 @@ export class QuoteTimelineComponent implements OnInit {
   mostRecentQuotes = this.quotes.slice(0, 5);
 
   constructor() {
-    // this.getMostRecentQuotes();
   }
-
-  // getMostRecentQuotes() {
-  //   return this.quotes.slice(0, 5);
-  // }
 
   ngOnInit() {
   }
