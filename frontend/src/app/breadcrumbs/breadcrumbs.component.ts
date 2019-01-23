@@ -23,7 +23,7 @@ export class BreadcrumbsComponent implements OnInit {
 
   ngOnInit() {
     // this.path = this.activatedRoute.root;
-    // this.url = this.activatedRoute.pathFromRoot[1].routeConfig.path;
+    this.url = this.activatedRoute.pathFromRoot[1].routeConfig.path;
     // this.title = this.activatedRoute.pathFromRoot[0].snapshot.data.title;
     const path = this.activatedRoute.pathFromRoot;
     for (let i = 0; i  < path.length; i++) {
