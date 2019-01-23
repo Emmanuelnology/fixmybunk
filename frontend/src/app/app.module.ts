@@ -49,15 +49,17 @@ import { MaintenanceRequestPageComponent } from './maintenance-request-page/main
 const routes: Routes = [
   { path: 'profile',
     component: ContractorComponent,
-    data: {title: 'Profile'}
-  },
-  { path: 'review',
-    component: ReviewComponent,
-    data: {title: 'Review'}
-  },
-  { path: 'feedback',
-    component: FeedbackSectionComponent,
-    data: {title: 'Feedback'}
+    data: {title: 'Profile'},
+    children: [
+      { path: 'review',
+        component: ReviewComponent,
+        data: {title: 'Review'}
+      },
+      { path: 'feedback',
+        component: FeedbackSectionComponent,
+        data: {title: 'Feedback'}
+      }
+    ]
   },
   { path: 'nav',
     component: LandingNavComponent,
