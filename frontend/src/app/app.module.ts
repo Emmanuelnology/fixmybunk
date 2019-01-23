@@ -62,8 +62,7 @@ const routes: Routes = [
     ]
   },
   { path: 'nav',
-    component: LandingNavComponent,
-    data: {title: 'Landing Nav'}
+    component: LandingNavComponent
   },
   { path: 'landing',
     component: LandingPageComponent,
@@ -71,7 +70,7 @@ const routes: Routes = [
   },
   { path: 'contractor/quotes',
     component: ContractorJobsListComponent,
-    data: {title: 'Quotes'}
+    data: {title: 'Jobs List'}
   },
   { path: 'contractor/welcome',
     component: ContractorWelcomePageComponent,
@@ -82,48 +81,37 @@ const routes: Routes = [
     data: {title: 'Register'}
   },
   { path: 'reported-by',
-    component: ReportedByComponent,
-    data: {title: 'Reported By'}
+    component: ReportedByComponent
   },
   { path: 'contractor/membership-level',
-    component: MembershipLevelComponent,
-    data: {title: 'Membership Level'}
+    component: MembershipLevelComponent
   },
   { path: 'size',
-    component: CompanySizeComponent,
-    data: {title: 'Size'}
+    component: CompanySizeComponent
   },
   { path: 'timeline',
-    component: QuoteTimelineComponent,
-    data: {title: 'Timeline'}
+    component: QuoteTimelineComponent
   },
   { path: 'contractor/payment',
-    component: PaymentDetailsComponent,
-    data: {title: 'Payment Details'}
+    component: PaymentDetailsComponent
   },
   { path: 'accepted-quote',
-    component: AcceptedQuoteComponent,
-    data: {title: 'Accepted Quote'}
+    component: AcceptedQuoteComponent
   },
   { path: 'landlord-mini',
-    component: LandlordMiniProfileComponent,
-    data: {title: 'Landlord'}
+    component: LandlordMiniProfileComponent
   },
   { path: 'inAppNav',
-    component: InAppNavComponent,
-    data: {title: 'In App Nav'}
+    component: InAppNavComponent
   },
   { path: 'quote-grid',
-    component: QuoteGridComponent,
-    data: {title: 'Quote Grid'}
+    component: QuoteGridComponent
   },
   { path: 'job-details',
-    component: JobDetailsPageComponent,
-    data: {title: 'Job Details'}
+    component: JobDetailsPageComponent
   },
   { path: 'map',
-    component: MapComponent,
-    data: {title: 'Map'}
+    component: MapComponent
   },
   { path: 'maintenance-request',
     component: MaintenanceRequestPageComponent,
