@@ -75,23 +75,18 @@
     text-align: center;
 }
 
-input,
-textarea {
-    width: 300px;
-    min-width: 200px;
+input {
+    border:none;
+    // width: 300px;
+    // min-width: 200px;
+}
+
+.m-all_1{
+    border: 2px black solid;
 }
 
 textarea{
+    border:none;
     resize:none;
-    min-width: 95%;
-}
-
-.message{
-    background-color: yellow;
-    height: 80%;
-}
-
-.red{
-    background-color:red;
-    height: 20%;
+    // min-width: 95%;
 }
