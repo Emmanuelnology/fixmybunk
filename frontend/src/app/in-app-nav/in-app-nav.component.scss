@@ -4,7 +4,7 @@ i {
   font-size: 2em;
 }
 
-.i{
+.i {
   font-size: 0.75em;
 }
 
@@ -24,8 +24,7 @@ i {
 }
 
 .side {
-  border-top: 1px solid $colour-grey_0;
-  min-height: 100%;
+  min-width: 80px;
 }
 
 .top {
@@ -34,12 +33,12 @@ i {
 }
 
 .navicon {
-
+  
   &:hover,
   &:active {
     background-color: $colour-grey_3;
     cursor: pointer;
-
+    
     p {
       text-decoration: underline;
     }
@@ -51,19 +50,19 @@ i {
 }
 
 @include breakpoint-custom($min:0px, $max: 767px) {
-.dm {
-  display: flex;
-}
-
-.fa-bars {
-  // color: black;
-  margin: auto 0;
-  padding: 10px;
-}
-
-.dw {
-  display: none;
-}
+  .dm {
+    display: flex;
+  }
+  
+  .fa-bars {
+    margin: auto 0;
+    padding: 10px;
+    padding-left: 30px;
+  }
+  
+  .dw {
+    display: none;
+  }
 }
 
 
