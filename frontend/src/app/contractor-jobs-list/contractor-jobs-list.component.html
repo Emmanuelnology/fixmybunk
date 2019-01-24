@@ -35,42 +35,6 @@
 				</tr>
 			</table>
 		</div>
-		
-		<!-- TINY SCREENS -->
-		<div id="table_tablet_and_smaller">
-			<table>
-				<div class="table_rows_small_screens">
-					<tr>
-						<td><p>NAME<i class="fas fa-arrows-alt-v"></i></p></td>
-						<td><p>LOCATION<i class="fas fa-search"></i></p></td>
-						<td><p>DATE</p></td>
-					</tr>
-					<tr>
-						<td><p>JOB TYPE<i class="fas fa-search"></i></p></td>
-						<td><p>STATUS</p></td>
-						<td><p>LATEST QUOTES</p></td>
-					</tr>
-				</div>
-				<div *ngFor="let job of jobsList; let count = index" id="{{count}}" (mouseover)="changeColourRow(count)" (mouseout)="changeColourRowBack(count)" class="table_rows_small_screens">
-					<tr>
-						<td class="name">
-							<app-avatar-icon size="20"></app-avatar-icon>
-							{{job.Name}}
-						</td>
-						<td>{{job.Location}}</td>
-						<td>{{job.Date}}</td>
-						<td>{{job.Job_Type}}</td>
-						<td>					
-							<button button [ngClass]="job.Completed ? 'completed' : job.Quoted ? 'incompleteQuoted' :'incompleteUnquoted'" class="btn btn-raised" *ngIf="job.Completed" (click)="openSmallModal()"> Completed</button>
-							<button button [ngClass]="job.Completed ? 'completed' : job.Quoted ? 'incompleteQuoted' :'incompleteUnquoted'" class="btn btn-raised" *ngIf="!job.Completed && job.Quoted"> Quoted</button>
-							<button button [ngClass]="job.Completed ? 'completed' : job.Quoted ? 'incompleteQuoted' :'incompleteUnquoted'" class="btn btn-raised" *ngIf="!job.Completed && !job.Quoted" (click)="openModal()"> QUOTE</button>
-						</td>
-						<td>£{{job.Latest_Quote}}
-							<p id="p{{count}}" style="display: none; float: right; margin: 0"><i class="fas fa-ellipsis-v"></i></p>
-						</td>
-					</tr>
-				</table>
-			</div>
 			
 			<!-- TINY SCREENS -->
 			<div id="table_tablet_and_smaller">
@@ -119,7 +83,6 @@
 							</td>
 							<td></td>
 						</tr>
-						
 					</div>
 				</table>
 			</div>

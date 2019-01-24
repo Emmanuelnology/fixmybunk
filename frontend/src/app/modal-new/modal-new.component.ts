@@ -12,7 +12,7 @@ export class ModalNewComponent implements OnInit {
   big = false;
   small = false;
   constructor() {
-    if (this.size === 'big') {
+    if (this.sizey === 'big') {
       this.big = true;
     } else {
       this.small = true;
