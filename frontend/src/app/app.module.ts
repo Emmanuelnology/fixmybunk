@@ -44,6 +44,7 @@ import { InAppNavComponent } from './in-app-nav/in-app-nav.component';
 import { MapComponent } from './map/map.component';
 import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
 import { MaintenanceRequestPageComponent } from './maintenance-request-page/maintenance-request-page.component';
+import { ModalNewComponent } from './modal-new/modal-new.component';
 
 
 const routes: Routes = [
@@ -206,6 +207,7 @@ const routes: Routes = [
     MapComponent,
     BreadcrumbsComponent,
     MaintenanceRequestPageComponent,
+    ModalNewComponent,
 
   ],
   imports: [
