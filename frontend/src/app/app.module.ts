@@ -48,6 +48,8 @@ import { ContractorParentComponent } from './contractor-parent/contractor-parent
 import { ModalNewComponent } from './modal-new/modal-new.component';
 import { DirectoryComponent } from './directory/directory.component';
 import { DirectoryParentComponent } from './directory-parent/directory-parent.component';
+import { ContractorQuoteIdComponent } from './contractor-quote-id/contractor-quote-id.component';
+import { LandordMaintenanceRequestComponent } from './landord-maintenance-request/landord-maintenance-request.component';
 
 
 const routes: Routes = [
@@ -70,7 +72,7 @@ const routes: Routes = [
     data: {title: 'Jobs List'},
     children: [
       { path: 'id',
-        component: MaintenanceRequestPageComponent,
+        component: ContractorQuoteIdComponent,
         data: {title: 'Broken Boiler'}
       },
       { path: '',
@@ -80,7 +82,7 @@ const routes: Routes = [
     ]
   },
   { path: 'maintenance-request',
-    component: MaintenanceRequestPageComponent,
+    component: LandordMaintenanceRequestComponent,
     data: {title: 'Maintenance Request'}
   },
   { path: 'landing',
@@ -181,6 +183,8 @@ const routes: Routes = [
     ModalNewComponent,
     DirectoryComponent,
     DirectoryParentComponent,
+    ContractorQuoteIdComponent,
+    LandordMaintenanceRequestComponent,
 
   ],
   imports: [
