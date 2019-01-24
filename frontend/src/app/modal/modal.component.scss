@@ -44,8 +44,11 @@
 
 .fa-times{
     color:white;
-}
+} 
 
+.fa-times:hover{
+    cursor: pointer;
+}
 
 .hidden {
     display: none;
