@@ -43,7 +43,7 @@ export class MembershipLevelOptionsComponent implements OnInit {
     private router: Router
     ) {
       // console.log('constructor');
-      if (this.router.url === '/payment') {
+      if (this.router.url === '/contractor/payment') {
         this.pageOption = this.selectedOption;
         return;
       } else {

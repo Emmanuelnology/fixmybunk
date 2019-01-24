@@ -25,6 +25,10 @@ $base-space-value: 10px;
   background: $colour-grey_2;
 }
 
+.bg_blue {
+  background-color: $colour-blue_3;
+}
+
 //BUTTON STYLES//
 
 // button orange created
@@ -35,6 +39,7 @@ $base-space-value: 10px;
   height: 20px;
   border-radius: 20px;
   text-transform: uppercase;
+  cursor: pointer;
   @extend .text-tiny;
   @extend .p-horizontal_2;
 

@@ -4,53 +4,73 @@ i {
   font-size: 2em;
 }
 
+.i {
+  font-size: 0.75em;
+}
+
+.logo {
+  width: 8rem;
+  height: auto;
+}
+
 .container {
   height: 100vh;
   max-width: 100vw;
 }
 
 .content {
-max-width: 100vw;
-padding: 5%,
+  padding: 4%;
+  padding-right: 0;
 }
 
 .side {
-  border-top: 1px solid $colour-grey_0;
   min-width: 80px;
-  min-height: 100%;
 }
 
 .top {
   z-index: 10;
+  height: 48px;
 }
 
 .navicon {
-
+  
   &:hover,
   &:active {
     background-color: $colour-grey_3;
     cursor: pointer;
-
+    
     p {
       text-decoration: underline;
     }
   }
 }
 
-@include breakpoint-custom($min:768px, $max: 1200px) {
-  .w_5 {
-    width: 8%;
+.dm {
+  display: none;
+}
+
+@include breakpoint-custom($min:0px, $max: 767px) {
+  .dm {
+    display: flex;
+  }
+
+  .hidden {
+    display: none;
+  }
+  
+  .visable {
+    display: flex;
+  }
+
+  .fa-bars {
+    margin: auto 0;
+    padding: 10px;
+    padding-left: 30px;
+  }
+  
+  .dw {
+    display: none;
   }
 }
 
-@include breakpoint-custom($min:501px, $max: 767px) {
-  .w_5 {
-    width: 15%;
-  }
-}
 
-@include breakpoint-custom($min:320px, $max: 500px) {
-  .w_5 {
-    width: 20%;
-  }
-}

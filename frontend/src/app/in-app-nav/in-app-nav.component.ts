@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InAppNavComponent implements OnInit {
 
+  toggleClass = true;
+
   constructor() { }
 
   ngOnInit() {

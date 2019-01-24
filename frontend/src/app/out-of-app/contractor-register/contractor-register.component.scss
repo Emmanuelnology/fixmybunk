@@ -1,33 +1,11 @@
 @import '../../../../src/scss/variables/breakpoints';
 
-// .one {
-//     // background-color: red;
-// }
-
-.twoone {
-    // display: flex;
-    align-items: center;
-    // background-color: orangered;
+.display-photo-div {
     min-width: 185px;
 }
 
-.twotwo {
-    align-items: center;
-    // background-color: orange;
+.input-div {
     min-width: 365px;
-}
-
-.three {
-    align-items: center;
-    // background-color: yellow;
-}
-
-
-
-
-
-.centre-text {
-    text-align: center;
 }
 
 input{
@@ -50,7 +28,10 @@ button, .privacy-policy {
     width: 175px;
 }
 
-//break point (min screen 900px)
+.centre-text {
+    text-align: center;
+}
+
 @include breakpoint-custom($min: 1300px, $max: 1000000px) {
     input {
         width: 250px;
@@ -62,20 +43,3 @@ button, .privacy-policy {
         width: 560px;
     }
 }
-
-// @include breakpoint-custom($min: 0px, $max: 550px) {
-//     .twotwo {
-//         width: 100%;
-//     }
-
-//     .large-select {
-//         width: 200px; //same as small-select
-//     }
-
-//     input {
-//         margin-left: 0;
-//         margin-right: 0;
-//     }
-// }
-
-
