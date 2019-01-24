@@ -36,12 +36,16 @@
 
 }
 
-.modal .closeButton {
+.modal .fas {
     position: absolute;
     right:0;
-    top:0;
-    
+    top:0;   
 }
+
+.fa-times{
+    color:white;
+}
+
 
 .hidden {
     display: none;
