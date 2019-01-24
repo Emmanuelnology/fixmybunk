@@ -5,7 +5,7 @@
             <div *ngIf="user.role === 'landlord'">
                 <button *ngIf="outsourcingSent === false && contractorWorkCompleted === false" class="btn btn_raised btn_orange mr_2">Outsource Maintenance</button>
                 <button *ngIf="outsourcingSent && contractorWorkCompleted === false" class="btn btn_raised btn_orange mr_2">Cancel outsourcing</button>
-                <button *ngIf="contractorWorkCompleted === false" class="btn btn_raised btn_orange mr_2">View contractor directory</button>
+                <button *ngIf="contractorWorkCompleted === false" class="btn btn_raised btn_orange mr_2" routerLink="/directory">View contractor directory</button>
                 <button *ngIf="contractorWorkCompleted" class="btn btn_raised btn_orange">Mark as completed</button>
             </div>
             <div *ngIf="user.role === 'contractor'">
