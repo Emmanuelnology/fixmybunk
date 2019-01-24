@@ -26,12 +26,8 @@
   color: $colour-grey_0;
 }
 
-@include breakpoint-custom($min: 0px, $max: 565px) {
-
-  //hides text
-  .none {
-    display: none;
-  }
+.logo {
+  height: 1.5rem;
 }
 
 @include breakpoint-custom($min: 0px, $max: 680px) {
@@ -42,6 +38,16 @@
     width: 100%;
     flex-direction: column;
     justify-content: space-evenly;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .display {
+    display: flex;
+    flex-direction: column;
+    width: 90px
   }
 
 }
