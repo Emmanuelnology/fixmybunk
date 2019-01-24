@@ -97,41 +97,14 @@ const routes: Routes = [
     component: ContractorRegisterComponent,
     data: {title: 'Register'}
   },
-  { path: 'nav',
-    component: LandingNavComponent
-  },
-  { path: 'reported-by',
-    component: ReportedByComponent
-  },
   { path: 'contractor/membership-level',
     component: MembershipLevelComponent
-  },
-  { path: 'size',
-    component: CompanySizeComponent
-  },
-  { path: 'timeline',
-    component: QuoteTimelineComponent
   },
   { path: 'contractor/payment',
     component: PaymentDetailsComponent
   },
-  { path: 'accepted-quote',
-    component: AcceptedQuoteComponent
-  },
-  { path: 'landlord-mini',
-    component: LandlordMiniProfileComponent
-  },
-  { path: 'inAppNav',
-    component: InAppNavComponent
-  },
   { path: 'quote-grid',
     component: QuoteGridComponent
-  },
-  { path: 'job-details',
-    component: JobDetailsPageComponent
-  },
-  { path: 'map',
-    component: MapComponent
   },
   { path: '',
     component: FunctionDemoComponent,
