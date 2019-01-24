@@ -30,15 +30,7 @@
   height: 1.5rem;
 }
 
-@include breakpoint-custom($min: 0px, $max: 680px) {
-
-  //moves icon and text from next to eachother to icon above text 
-  .fd-c {
-    margin: auto 0;
-    width: 100%;
-    flex-direction: column;
-    justify-content: space-evenly;
-  }
+@include breakpoint-custom($min: 0px, $max: 768px) {
 
   .hide {
     display: none;
@@ -57,10 +49,10 @@
     display: none;
   }
 
-  .h_40 {
-    max-width: 180px;
-    width:auto;
-  }
+  // .h_40 {
+  //   max-width: 180px;
+  //   width:auto;
+  // }
 
   .w-navbar {
     z-index: 10;
