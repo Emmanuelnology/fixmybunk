@@ -45,6 +45,7 @@ import { MapComponent } from './map/map.component';
 import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
 import { MaintenanceRequestPageComponent } from './maintenance-request-page/maintenance-request-page.component';
 import { ContractorParentComponent } from './contractor-parent/contractor-parent.component';
+import { ModalNewComponent } from './modal-new/modal-new.component';
 
 
 const routes: Routes = [
@@ -179,6 +180,7 @@ const routes: Routes = [
     BreadcrumbsComponent,
     MaintenanceRequestPageComponent,
     ContractorParentComponent,
+    ModalNewComponent,
 
   ],
   imports: [
