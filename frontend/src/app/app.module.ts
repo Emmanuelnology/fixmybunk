@@ -46,20 +46,24 @@ import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
 import { MaintenanceRequestPageComponent } from './maintenance-request-page/maintenance-request-page.component';
 import { ContractorParentComponent } from './contractor-parent/contractor-parent.component';
 import { ModalNewComponent } from './modal-new/modal-new.component';
+import { DirectoryComponent } from './directory/directory.component';
+import { DirectoryParentComponent } from './directory-parent/directory-parent.component';
+import { ContractorQuoteIdComponent } from './contractor-quote-id/contractor-quote-id.component';
+import { LandordMaintenanceRequestComponent } from './landord-maintenance-request/landord-maintenance-request.component';
 
 
 const routes: Routes = [
-  { path: 'profile',
-    component: ContractorComponent,
-    data: {title: 'Profile'},
+  { path: 'directory',
+    component: DirectoryParentComponent,
+    data: {title: 'Contractor Directory'},
     children: [
-      { path: 'review',
-        component: ReviewComponent,
-        data: {title: 'Review'}
+      { path: 'contractor/id',
+        component: ContractorComponent,
+        data: {title: 'CS Gas Fitting'}
       },
-      { path: 'feedback',
-        component: FeedbackSectionComponent,
-        data: {title: 'Feedback'}
+      { path: '',
+        component: DirectoryComponent,
+        data: {title: ''},
       }
     ]
   },
@@ -68,7 +72,7 @@ const routes: Routes = [
     data: {title: 'Jobs List'},
     children: [
       { path: 'id',
-        component: MaintenanceRequestPageComponent,
+        component: ContractorQuoteIdComponent,
         data: {title: 'Broken Boiler'}
       },
       { path: '',
@@ -77,12 +81,9 @@ const routes: Routes = [
       }
     ]
   },
-  // { path: 'contractor/quotes',
-  //   component: ContractorJobsListComponent,
-  //   data: {title: 'Jobs List'}
-  // },
-  { path: 'nav',
-    component: LandingNavComponent
+  { path: 'maintenance-request',
+    component: LandordMaintenanceRequestComponent,
+    data: {title: 'Maintenance Request'}
   },
   { path: 'landing',
     component: LandingPageComponent,
@@ -92,49 +93,21 @@ const routes: Routes = [
     component: ContractorWelcomePageComponent,
     data: {title: 'Welcome'}
   },
-  { path: 'contractor/register',
+  { path: 'register/contractor',
     component: ContractorRegisterComponent,
     data: {title: 'Register'}
-  },
-  { path: 'reported-by',
-    component: ReportedByComponent
   },
   { path: 'contractor/membership-level',
     component: MembershipLevelComponent
   },
-  { path: 'size',
-    component: CompanySizeComponent
-  },
-  { path: 'timeline',
-    component: QuoteTimelineComponent
-  },
   { path: 'contractor/payment',
     component: PaymentDetailsComponent
-  },
-  { path: 'accepted-quote',
-    component: AcceptedQuoteComponent
-  },
-  { path: 'landlord-mini',
-    component: LandlordMiniProfileComponent
-  },
-  { path: 'inAppNav',
-    component: InAppNavComponent
   },
   { path: 'quote-grid',
     component: QuoteGridComponent
   },
-  { path: 'job-details',
-    component: JobDetailsPageComponent
-  },
-  { path: 'map',
-    component: MapComponent
-  },
-  { path: 'maintenance-request',
-    component: MaintenanceRequestPageComponent,
-    data: {title: 'Maintenance Request'}
-  },
   { path: '',
-    component: FunctionDemoComponent,
+    component: LandingPageComponent,
     data: {title: 'Home'}
   },
 ];
@@ -181,6 +154,10 @@ const routes: Routes = [
     MaintenanceRequestPageComponent,
     ContractorParentComponent,
     ModalNewComponent,
+    DirectoryComponent,
+    DirectoryParentComponent,
+    ContractorQuoteIdComponent,
+    LandordMaintenanceRequestComponent,
 
   ],
   imports: [

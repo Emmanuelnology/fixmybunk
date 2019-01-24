@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-maintenance-request-page',
@@ -6,9 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./maintenance-request-page.component.scss']
 })
 export class MaintenanceRequestPageComponent implements OnInit {
+  @Input() role: string;
 
   public user = {
-    role: 'landlord'
+    role: ''
   };
 
   public showQuotes = true;
@@ -26,6 +27,7 @@ export class MaintenanceRequestPageComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.user.role = this.role;
   }
 
 }
