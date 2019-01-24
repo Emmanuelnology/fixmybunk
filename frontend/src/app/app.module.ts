@@ -79,8 +79,9 @@ const routes: Routes = [
       }
     ]
   },
-  { path: 'nav',
-    component: LandingNavComponent
+  { path: 'maintenance-request',
+    component: MaintenanceRequestPageComponent,
+    data: {title: 'Maintenance Request'}
   },
   { path: 'landing',
     component: LandingPageComponent,
@@ -93,6 +94,9 @@ const routes: Routes = [
   { path: 'contractor/register',
     component: ContractorRegisterComponent,
     data: {title: 'Register'}
+  },
+  { path: 'nav',
+    component: LandingNavComponent
   },
   { path: 'reported-by',
     component: ReportedByComponent
@@ -126,10 +130,6 @@ const routes: Routes = [
   },
   { path: 'map',
     component: MapComponent
-  },
-  { path: 'maintenance-request',
-    component: MaintenanceRequestPageComponent,
-    data: {title: 'Maintenance Request'}
   },
   { path: '',
     component: FunctionDemoComponent,
