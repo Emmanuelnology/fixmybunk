@@ -93,7 +93,7 @@ const routes: Routes = [
     component: ContractorWelcomePageComponent,
     data: {title: 'Welcome'}
   },
-  { path: 'contractor/register',
+  { path: 'register/contractor',
     component: ContractorRegisterComponent,
     data: {title: 'Register'}
   },
@@ -107,7 +107,7 @@ const routes: Routes = [
     component: QuoteGridComponent
   },
   { path: '',
-    component: FunctionDemoComponent,
+    component: LandingPageComponent,
     data: {title: 'Home'}
   },
 ];
