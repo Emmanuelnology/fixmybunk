@@ -51,17 +51,7 @@ import { ModalNewComponent } from './modal-new/modal-new.component';
 const routes: Routes = [
   { path: 'profile',
     component: ContractorComponent,
-    data: {title: 'Profile'},
-    children: [
-      { path: 'review',
-        component: ReviewComponent,
-        data: {title: 'Review'}
-      },
-      { path: 'feedback',
-        component: FeedbackSectionComponent,
-        data: {title: 'Feedback'}
-      }
-    ]
+    data: {title: 'Profile'}
   },
   { path: 'contractor/quotes',
     component: ContractorParentComponent,
@@ -77,10 +67,6 @@ const routes: Routes = [
       }
     ]
   },
-  // { path: 'contractor/quotes',
-  //   component: ContractorJobsListComponent,
-  //   data: {title: 'Jobs List'}
-  // },
   { path: 'nav',
     component: LandingNavComponent
   },
