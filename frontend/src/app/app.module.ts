@@ -51,10 +51,6 @@ import { DirectoryParentComponent } from './directory-parent/directory-parent.co
 
 
 const routes: Routes = [
-  // { path: 'directory/contractor/id',
-  //   component: ContractorComponent,
-  //   data: {title: 'Contractor'}
-  // },
   { path: 'directory',
     component: DirectoryParentComponent,
     data: {title: 'Contractor Directory'},
