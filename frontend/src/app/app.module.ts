@@ -44,6 +44,7 @@ import { InAppNavComponent } from './in-app-nav/in-app-nav.component';
 import { MapComponent } from './map/map.component';
 import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
 import { MaintenanceRequestPageComponent } from './maintenance-request-page/maintenance-request-page.component';
+import { ContractorParentComponent } from './contractor-parent/contractor-parent.component';
 
 
 const routes: Routes = [
@@ -61,16 +62,30 @@ const routes: Routes = [
       }
     ]
   },
+  { path: 'contractor/quotes',
+    component: ContractorParentComponent,
+    data: {title: 'Jobs List'},
+    children: [
+      { path: 'id',
+        component: MaintenanceRequestPageComponent,
+        data: {title: 'Broken Boiler'}
+      },
+      { path: '',
+        component: ContractorJobsListComponent,
+        data: {title: ''},
+      }
+    ]
+  },
+  // { path: 'contractor/quotes',
+  //   component: ContractorJobsListComponent,
+  //   data: {title: 'Jobs List'}
+  // },
   { path: 'nav',
     component: LandingNavComponent
   },
   { path: 'landing',
     component: LandingPageComponent,
     data: {title: 'Landing Page'}
-  },
-  { path: 'contractor/quotes',
-    component: ContractorJobsListComponent,
-    data: {title: 'Jobs List'}
   },
   { path: 'contractor/welcome',
     component: ContractorWelcomePageComponent,
@@ -163,6 +178,7 @@ const routes: Routes = [
     MapComponent,
     BreadcrumbsComponent,
     MaintenanceRequestPageComponent,
+    ContractorParentComponent,
 
   ],
   imports: [

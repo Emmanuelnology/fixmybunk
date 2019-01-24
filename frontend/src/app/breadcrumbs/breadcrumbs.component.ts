@@ -24,7 +24,7 @@ export class BreadcrumbsComponent implements OnInit {
     for (let i = 0; i  < path.length; i++) {
       currentUrl = path[i].routeConfig ? currentUrl + '/' + path[i].routeConfig.path : currentUrl + '/';
       const loopTitle = path[i].routeConfig ? path[i].routeConfig.data.title : 'Home';
-      if (i === 0 || currentUrl !== '') {
+      if ((i === 0 || currentUrl !== '') && loopTitle !== '') {
         this.breadcrumbs.push({label: loopTitle, url: currentUrl});
       }
     }
