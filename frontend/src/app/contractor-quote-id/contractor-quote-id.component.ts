@@ -9,6 +9,14 @@ export class ContractorQuoteIdComponent implements OnInit {
 
   constructor() { }
 
+  public showQuotes = true;
+  public quoteSent = true;
+  public quoteAccepted = false;
+
+  public outsourcingSent = true;
+  public contractorWorkCompleted = false;
+  public quoteView = 'timeline';
+
   ngOnInit() {
   }
 
