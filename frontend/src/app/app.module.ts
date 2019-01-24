@@ -46,12 +46,28 @@ import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
 import { MaintenanceRequestPageComponent } from './maintenance-request-page/maintenance-request-page.component';
 import { ContractorParentComponent } from './contractor-parent/contractor-parent.component';
 import { ModalNewComponent } from './modal-new/modal-new.component';
+import { DirectoryComponent } from './directory/directory.component';
+import { DirectoryParentComponent } from './directory-parent/directory-parent.component';
 
 
 const routes: Routes = [
-  { path: 'profile',
-    component: ContractorComponent,
-    data: {title: 'Profile'}
+  // { path: 'directory/contractor/id',
+  //   component: ContractorComponent,
+  //   data: {title: 'Contractor'}
+  // },
+  { path: 'directory',
+    component: DirectoryParentComponent,
+    data: {title: 'Contractor Directory'},
+    children: [
+      { path: 'contractor/id',
+        component: ContractorComponent,
+        data: {title: 'CS Gas Fitting'}
+      },
+      { path: '',
+        component: DirectoryComponent,
+        data: {title: ''},
+      }
+    ]
   },
   { path: 'contractor/quotes',
     component: ContractorParentComponent,
@@ -167,6 +183,8 @@ const routes: Routes = [
     MaintenanceRequestPageComponent,
     ContractorParentComponent,
     ModalNewComponent,
+    DirectoryComponent,
+    DirectoryParentComponent,
 
   ],
   imports: [
