@@ -15,7 +15,7 @@
 				
 				<!-- BIG SCREENS -->
 				<tr *ngFor="let job of jobsList; let count = index" id="{{count}}" (mouseover)="changeColourRow(count)" (mouseout)="changeColourRowBack(count)">
-					<td style="align-items:flex-start" class="name">
+					<td class="rn name ai_c">
 						<app-avatar-icon size="20"></app-avatar-icon>
 						{{job.Name}}
 					</td>
