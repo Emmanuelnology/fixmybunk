@@ -11,11 +11,13 @@ export class MaintenanceRequestPageComponent implements OnInit {
     role: 'landlord'
   };
 
-  public showQuotes = true;
+  public quoteState = "none";
+
+  public showQuotes = false;
   public quoteSent = true;
   public quoteAccepted = false;
 
-  public outsourcingSent = true;
+  public outsourcingSent = false;
   public contractorWorkCompleted = false;
   public quoteView = 'timeline';
 

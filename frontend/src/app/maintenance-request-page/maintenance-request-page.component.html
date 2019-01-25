@@ -16,7 +16,7 @@
         </div>
         <app-job-detail [role]="user.role"></app-job-detail>
         <app-reported-by *ngIf="user.role === 'landlord'"></app-reported-by>
-        <div *ngIf="showQuotes && quoteAccepted != true">
+        <div *ngIf="quoteState === 'received'">
             <div class="rc">
                 <h3 class="mt_5 w_90">Current quotes</h3>
                 <div *ngIf="user.role === 'landlord'" class="w_95 rc jc_fe ml_2 mt_4">
@@ -31,7 +31,7 @@
                 <app-quote-grid></app-quote-grid>
             </div>
         </div>
-        <div *ngIf="quoteAccepted" class="mt_4">
+        <div *ngIf="quoteState === 'accepted'" class="mt_4">
             <app-accepted-quote></app-accepted-quote>
         </div>
     </div>
