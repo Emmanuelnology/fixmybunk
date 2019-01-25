@@ -1,12 +1,3 @@
-<!-- <div *ngIf="showModal">
-  <div class="blocker" (click)="close()" >
-  </div>
-  <div class="content">
-    Content
-  </div>
-</div> -->
-
-<!-- content goes here -->
 
 <div class="blocker {{showModal ? '':'hidden'}}" (click)="cancel()" >
 </div>
@@ -28,24 +19,24 @@
           <div class= "p-vertical_2 rc flex_wrap jc_c ai_c">
             <div class="w_50 flex_wrap jc_c rc">
               <input
-              class="w_90 p-all_1 bg_light text text-tiny"
+              class="w_80 p-all_1 bg_light text text-tiny"
               placeholder="CS Gas Fitter">
             </div>
             <div class="w_50 flex_wrap jc_c rc">
               <input
-              class="w_90 p-all_1 p-vertical_1 bg_light text text-tiny"
+              class="w_80 p-all_1 p-vertical_1 bg_light text text-tiny"
               placeholder="Amount"> 
             </div> 
           </div>
-
-        <div class="message cc flex_wrap jc_c ai_c">
-          <textarea
-          placeholder="Opitional Message for the Landlord"
-          class=" p-all_1 w_90 bg_light text text-tiny"
-          rows="8"></textarea>
-          <button class="btn_orange mt_1">SUBMIT</button>
-        </div>
-
+          
+          <div class="message cc flex_wrap jc_c ai_c">
+            <textarea
+            placeholder="Opitional Message for the Landlord"
+            class=" p-all_1 w_90 bg_light text text-tiny"
+            rows="8"></textarea>
+            <button class="btn_orange mt_1">SUBMIT</button>
+          </div>
+          
         </form>
         
       </div>

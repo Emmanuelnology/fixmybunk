@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, ActivatedRouteSnapshot, Router } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 
 interface IBreadcrumb {
   label: string;
@@ -16,7 +16,7 @@ export class BreadcrumbsComponent implements OnInit {
 
   breadcrumbs: IBreadcrumb[] = [];
 
-  constructor(private activatedRoute: ActivatedRoute, private router: Router) { }
+  constructor(private activatedRoute: ActivatedRoute) { }
 
   ngOnInit() {
     const path = this.activatedRoute.pathFromRoot;

@@ -12,23 +12,11 @@ export interface IQuote {
 })
 export class JobDetailComponent implements OnInit {
   @Input() role;
-  public isQuoted = true;
-  public isAccepted = true;
+  @Input() contractorQuoteState;
+
   constructor() {
   }
-  // public accept () {
-  //   if (this.isQuoted) {
-  //     const quote: IQuote = {
-  //       text: 'The LandLord has Accepted Your Quote',
-  //       price: '£280',
-  //     };
-  //   } else {
-  //     const quote: IQuote = {
-  //     text: 'You Quoted',
-  //     price: '£280',
-  //     };
-  //   }
-  // }
+
   public Quotes = [
     {
       text: 'The LandLord has Accepted Your Quote',
@@ -39,12 +27,7 @@ export class JobDetailComponent implements OnInit {
       price: '£280',
     },
   ];
-  // public getUser () {
-  //   const isLandlord = true;
-  //   // const isLandlord = false;
-  //   return isLandlord;
-  // }
+
   ngOnInit () {
-    // console.log(this.role)
   }
 }

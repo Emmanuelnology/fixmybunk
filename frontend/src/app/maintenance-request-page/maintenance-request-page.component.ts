@@ -12,13 +12,16 @@ export class MaintenanceRequestPageComponent implements OnInit {
     role: ''
   };
 
-  public showQuotes = true;
-  public quoteSent = true;
-  public quoteAccepted = false;
+  // landlordQuoteState relates to landlord page view....states are 'none', 'received' & 'accepted'
 
-  public outsourcingSent = true;
+  public outsourcingSent = false;
   public contractorWorkCompleted = false;
+  public landlordQuoteState = 'received';
   public quoteView = 'timeline';
+
+  // contractorQuoteState relates to contractor view... states are 'none', 'sent' and 'accepted'
+
+  public contractorQuoteState = 'none';
 
   constructor() { }
 

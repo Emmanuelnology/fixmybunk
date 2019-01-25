@@ -6,12 +6,12 @@
       <p class="text-tiny">24 hours ago</p>
     </div>
     <div class="rc jc_sb ai_c">
-      <div *ngIf="role === 'contractor' && isQuoted" class="quoting jc_fe">
-        <p *ngIf="isAccepted === false" class="small-quote cc">
+      <div *ngIf="role === 'contractor' && contractorQuoteState !== 'none'" class="quoting jc_fe mr_13">
+        <p *ngIf="contractorQuoteState === 'sent'" class="small-quote cc">
           You Quoted
           <span class="quote-number">£280</span>
         </p>
-        <p *ngIf="isAccepted" class="small-quote">
+        <p *ngIf="contractorQuoteState === 'accepted'" class="small-quote">
           The LandLord has Accepted Your Quote
           <span class="quote-number">£280</span>
         </p>
