@@ -84,22 +84,17 @@ const routes: Routes = [
     component: LandordMaintenanceRequestComponent,
     data: {title: 'Maintenance Request'}
   },
-  { path: 'contractor/welcome',
-    component: ContractorWelcomePageComponent,
-    data: {title: 'Welcome'}
-  },
-  { path: 'register/contractor',
-    component: ContractorRegisterComponent,
-    data: {title: 'Register'}
-  },
   { path: 'contractor/membership-level',
     component: MembershipLevelComponent
   },
-  { path: 'contractor/payment',
+  { path: 'register/contractor',
+    component: ContractorRegisterComponent
+  },
+  { path: 'register/payment',
     component: PaymentDetailsComponent
   },
-  { path: 'quote-grid',
-    component: QuoteGridComponent
+  { path: 'contractor/welcome',
+    component: ContractorWelcomePageComponent
   },
   { path: '',
     component: LandingPageComponent,
