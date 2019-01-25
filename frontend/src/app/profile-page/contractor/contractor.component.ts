@@ -1,6 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { ModalComponent } from 'src/app/modal/modal.component';
-import { Router } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-contractor',
@@ -8,10 +6,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./contractor.component.scss']
 })
 export class ContractorComponent implements OnInit {
-  @ViewChild(ModalComponent) modal;
 
-  route: string;
-  breadcrumbs;
   name = 'CS Gas Fitting';
   description = 'Gas Fitter in Bristol and Bath';
   phone = '01179 901 281';
@@ -31,7 +26,6 @@ constructor () {}
 
   ngOnInit() { }
 
-
   swapDescription = () => this.descriptionBeingEdited = !this.descriptionBeingEdited;
 
   swapPhone = () => this.phoneBeingEdited = !this.phoneBeingEdited;
@@ -39,9 +33,5 @@ constructor () {}
   swapEmailWebsite = () => this.emailWebsiteBeingEdited = !this.emailWebsiteBeingEdited;
 
   swapNumberOfStaff = () => this.numberOfStaffBeingEdited = !this.numberOfStaffBeingEdited;
-
-  openModal() {
-    this.modal.open();
-  }
 
 }
