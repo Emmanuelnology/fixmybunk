@@ -44,91 +44,65 @@ import { InAppNavComponent } from './in-app-nav/in-app-nav.component';
 import { MapComponent } from './map/map.component';
 import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
 import { MaintenanceRequestPageComponent } from './maintenance-request-page/maintenance-request-page.component';
+import { ContractorParentComponent } from './contractor-parent/contractor-parent.component';
+import { DirectoryComponent } from './directory/directory.component';
+import { DirectoryParentComponent } from './directory-parent/directory-parent.component';
+import { ContractorQuoteIdComponent } from './contractor-quote-id/contractor-quote-id.component';
+import { LandordMaintenanceRequestComponent } from './landord-maintenance-request/landord-maintenance-request.component';
 
 
 const routes: Routes = [
-  { path: 'profile',
-    component: ContractorComponent,
-    data: {title: 'Profile'}
-  },
-  { path: 'review',
-    component: ReviewComponent,
-    data: {title: 'Review'}
-  },
-  { path: 'feedback',
-    component: FeedbackSectionComponent,
-    data: {title: 'Feedback'}
-  },
-  { path: 'nav',
-    component: LandingNavComponent,
-    data: {title: 'Landing Nav'}
-  },
-  { path: 'landing',
-    component: LandingPageComponent,
-    data: {title: 'Landing Page'}
+  { path: 'directory',
+    component: DirectoryParentComponent,
+    data: {title: 'Contractor Directory'},
+    children: [
+      { path: 'contractor/id',
+        component: ContractorComponent,
+        data: {title: 'CS Gas Fitting'}
+      },
+      { path: '',
+        component: DirectoryComponent,
+        data: {title: ''},
+      }
+    ]
   },
   { path: 'contractor/quotes',
-    component: ContractorJobsListComponent,
-    data: {title: 'Quotes'}
+    component: ContractorParentComponent,
+    data: {title: 'Jobs List'},
+    children: [
+      { path: 'id',
+        component: ContractorQuoteIdComponent,
+        data: {title: 'Broken Boiler'}
+      },
+      { path: '',
+        component: ContractorJobsListComponent,
+        data: {title: ''},
+      }
+    ]
+  },
+  { path: 'maintenance-request',
+    component: LandordMaintenanceRequestComponent,
+    data: {title: 'Maintenance Request'}
   },
   { path: 'contractor/welcome',
     component: ContractorWelcomePageComponent,
     data: {title: 'Welcome'}
   },
-  { path: 'contractor/register',
+  { path: 'register/contractor',
     component: ContractorRegisterComponent,
     data: {title: 'Register'}
   },
-  { path: 'reported-by',
-    component: ReportedByComponent,
-    data: {title: 'Reported By'}
-  },
   { path: 'contractor/membership-level',
-    component: MembershipLevelComponent,
-    data: {title: 'Membership Level'}
-  },
-  { path: 'size',
-    component: CompanySizeComponent,
-    data: {title: 'Size'}
-  },
-  { path: 'timeline',
-    component: QuoteTimelineComponent,
-    data: {title: 'Timeline'}
+    component: MembershipLevelComponent
   },
   { path: 'contractor/payment',
-    component: PaymentDetailsComponent,
-    data: {title: 'Payment Details'}
-  },
-  { path: 'accepted-quote',
-    component: AcceptedQuoteComponent,
-    data: {title: 'Accepted Quote'}
-  },
-  { path: 'landlord-mini',
-    component: LandlordMiniProfileComponent,
-    data: {title: 'Landlord'}
-  },
-  { path: 'inAppNav',
-    component: InAppNavComponent,
-    data: {title: 'In App Nav'}
+    component: PaymentDetailsComponent
   },
   { path: 'quote-grid',
-    component: QuoteGridComponent,
-    data: {title: 'Quote Grid'}
-  },
-  { path: 'job-details',
-    component: JobDetailsPageComponent,
-    data: {title: 'Job Details'}
-  },
-  { path: 'map',
-    component: MapComponent,
-    data: {title: 'Map'}
-  },
-  { path: 'maintenance-request',
-    component: MaintenanceRequestPageComponent,
-    data: {title: 'Maintenance Request'}
+    component: QuoteGridComponent
   },
   { path: '',
-    component: FunctionDemoComponent,
+    component: LandingPageComponent,
     data: {title: 'Home'}
   },
 ];
@@ -173,6 +147,11 @@ const routes: Routes = [
     MapComponent,
     BreadcrumbsComponent,
     MaintenanceRequestPageComponent,
+    ContractorParentComponent,
+    DirectoryComponent,
+    DirectoryParentComponent,
+    ContractorQuoteIdComponent,
+    LandordMaintenanceRequestComponent,
 
   ],
   imports: [

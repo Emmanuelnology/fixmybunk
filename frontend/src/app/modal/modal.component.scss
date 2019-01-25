@@ -7,18 +7,6 @@
     background-color:rgba(0,0,0,0.5);
 }
 
-// .content {
-//     background-color:red;
-//     position:fixed;
-//     top:20%;
-//     bottom:20%;
-//     left: 20%;
-//     right:20%;
-//     border-radius: 10px;
-//     padding: 15px;
-//     border: 1px solid #111;
-// }
-
 .modalContainer{
     display: flex;
     justify-content: center;
@@ -36,11 +24,18 @@
 
 }
 
-.modal .closeButton {
+.modal .fas {
     position: absolute;
     right:0;
-    top:0;
-    
+    top:0;   
+}
+
+.fa-times{
+    color:white;
+} 
+
+.fa-times:hover{
+    cursor: pointer;
 }
 
 .hidden {
@@ -77,8 +72,6 @@
 
 input {
     border:none;
-    // width: 300px;
-    // min-width: 200px;
 }
 
 .m-all_1{
@@ -88,5 +81,4 @@ input {
 textarea{
     border:none;
     resize:none;
-    // min-width: 95%;
 }

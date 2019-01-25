@@ -26,22 +26,20 @@
   color: $colour-grey_0;
 }
 
-@include breakpoint-custom($min: 0px, $max: 565px) {
-
-  //hides text
-  .none {
-    display: none;
-  }
+.logo {
+  height: 1.5rem;
 }
 
-@include breakpoint-custom($min: 0px, $max: 680px) {
+@include breakpoint-custom($min: 0px, $max: 768px) {
 
-  //moves icon and text from next to eachother to icon above text 
-  .fd-c {
-    margin: auto 0;
-    width: 100%;
+  .hide {
+    display: none;
+  }
+
+  .display {
+    display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    width: 90px
   }
 
 }
@@ -50,12 +48,7 @@
   .m-navbar {
     display: none;
   }
-
-  .h_40 {
-    max-width: 180px;
-    width:auto;
-  }
-
+  
   .w-navbar {
     z-index: 10;
     display: flex !important;

@@ -1,11 +1,11 @@
-<app-in-app-nav>
+
     <div class="p-all_2 text w_100 page-wrap rc_c ai_jc">
         <div class="rc jc_sb">
             <app-breadcrumbs></app-breadcrumbs>
             <div *ngIf="user.role === 'landlord'">
                 <button *ngIf="outsourcingSent === false && contractorWorkCompleted === false" class="btn btn_raised btn_orange mr_2">Outsource Maintenance</button>
                 <button *ngIf="outsourcingSent && contractorWorkCompleted === false" class="btn btn_raised btn_orange mr_2">Cancel outsourcing</button>
-                <button *ngIf="contractorWorkCompleted === false" class="btn btn_raised btn_orange mr_2">View contractor directory</button>
+                <button *ngIf="contractorWorkCompleted === false" class="btn btn_raised btn_orange mr_2" routerLink="/directory">View contractor directory</button>
                 <button *ngIf="contractorWorkCompleted" class="btn btn_raised btn_orange">Mark as completed</button>
             </div>
             <div *ngIf="user.role === 'contractor'">
@@ -35,4 +35,3 @@
             <app-accepted-quote></app-accepted-quote>
         </div>
     </div>
-</app-in-app-nav>
