@@ -84,10 +84,6 @@ const routes: Routes = [
     component: LandordMaintenanceRequestComponent,
     data: {title: 'Maintenance Request'}
   },
-  { path: 'landing',
-    component: LandingPageComponent,
-    data: {title: 'Landing Page'}
-  },
   { path: 'contractor/welcome',
     component: ContractorWelcomePageComponent,
     data: {title: 'Welcome'}
