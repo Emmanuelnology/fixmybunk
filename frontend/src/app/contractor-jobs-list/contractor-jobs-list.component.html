@@ -4,20 +4,18 @@
 		
 		<div class="table_tablet_and_higher">
 			<table>
-				<div>
-					<tr id="header">
-						<td><p>NAME<i class="fas fa-arrows-alt-v"></i></p></td>
-						<td><p>LOCATION<i class="fas fa-search"></i></p></td>
-						<td><p>DATE</p></td>
-						<td><p>JOB TYPE<i class="fas fa-search"></i></p></td>
-						<td><p>STATUS</p></td>
-						<td><p>LATEST QUOTES</p></td>
-					</tr>
-				</div>
+				<tr id="header">
+					<td><p>NAME<i class="fas fa-arrows-alt-v"></i></p></td>
+					<td><p>LOCATION<i class="fas fa-search"></i></p></td>
+					<td><p>DATE</p></td>
+					<td><p>JOB TYPE<i class="fas fa-search"></i></p></td>
+					<td><p>STATUS</p></td>
+					<td><p>LATEST QUOTES</p></td>
+				</tr>
 				
 				<!-- BIG SCREENS -->
 				<tr *ngFor="let job of jobsList; let count = index" id="{{count}}" (mouseover)="changeColourRow(count)" (mouseout)="changeColourRowBack(count)">
-					<td style="align-items:flex-start" class="name">
+					<td class="rn name ai_c">
 						<app-avatar-icon size="20"></app-avatar-icon>
 						{{job.Name}}
 					</td>
@@ -35,59 +33,55 @@
 				</tr>
 			</table>
 		</div>
-			
-			<!-- TINY SCREENS -->
-			<div id="table_tablet_and_smaller">
-				<table>
-					<div class="table_rows_small_screens">
-						<tr>
-							<td><p>NAME<i class="fas fa-arrows-alt-v"></i></p></td>
-							<td><p>LOCATION<i class="fas fa-search"></i></p></td>
-							<td><p>DATE</p></td>
-						</tr>
-						<tr>
-							<td><p>JOB TYPE<i class="fas fa-search"></i></p></td>
-							<td><p>STATUS</p></td>
-							<td><p>LATEST QUOTES</p></td>
-						</tr>
-					</div>
-					<div *ngFor="let job of jobsList; let count = index" id="{{count}}" (mouseover)="changeColourRow(count)" (mouseout)="changeColourRowBack(count)" class="table_rows_small_screens">
-						<tr>
-							<td class="name">
-								<app-avatar-icon size="20"></app-avatar-icon>
-								<span class="mainName">{{job.Name}}</span>
-							</td>
-							<td class="locationy">{{job.Location}}</td>
-							<td>{{job.Date}}</td>
-						</tr>
-						<tr>
-							<td>{{job.Job_Type}}</td>
-							<td>
-								<button [ngClass]="job.Completed ? 'completed' : job.Quoted ? 'incompleteQuoted' :'incompleteUnquoted'" class="btn btn-raised">
-									<p *ngIf="job.Completed" (click)="openSmallModal()">Completed</p>
-									<p *ngIf="!job.Completed && job.Quoted">Quoted</p>
-									<p *ngIf="!job.Completed && !job.Quoted" (click)="openModal()">Quote</p>
-								</button>
-							</td>
-							<td>£{{job.Latest_Quote}}
-								
-							</td>
-							
-						</tr>
-						<tr>
-							<td></td>
-							<td>
-								<p id="pp{{count}}" style="display: none; padding-left: 40px; margin: 0">
-									<i class="fas fa-ellipsis-v"></i>
-								</p>
-							</td>
-							<td></td>
-						</tr>
-					</div>
-				</table>
-			</div>
+		
+		<!-- TINY SCREENS -->
+		<div id="table_tablet_and_smaller">
+			<table>
+				<div class="table_rows_small_screens">
+					<tr>
+						<td><p>NAME<i class="fas fa-arrows-alt-v"></i></p></td>
+						<td><p>LOCATION<i class="fas fa-search"></i></p></td>
+						<td><p>DATE</p></td>
+					</tr>
+					<tr>
+						<td><p>JOB TYPE<i class="fas fa-search"></i></p></td>
+						<td><p>STATUS</p></td>
+						<td><p>LATEST QUOTES</p></td>
+					</tr>
+				</div>
+				<div *ngFor="let job of jobsList; let count = index" id="{{count}}" (mouseover)="changeColourRow(count)" (mouseout)="changeColourRowBack(count)" class="table_rows_small_screens">
+					<tr>
+						<td class="name">
+							<app-avatar-icon size="20"></app-avatar-icon>
+							<span class="mainName">{{job.Name}}</span>
+						</td>
+						<td class="locationy">{{job.Location}}</td>
+						<td>{{job.Date}}</td>
+					</tr>
+					<tr>
+						<td>{{job.Job_Type}}</td>
+						<td>
+							<button [ngClass]="job.Completed ? 'completed' : job.Quoted ? 'incompleteQuoted' :'incompleteUnquoted'" class="btn btn-raised">
+								<p *ngIf="job.Completed" (click)="openSmallModal()">Completed</p>
+								<p *ngIf="!job.Completed && job.Quoted">Quoted</p>
+								<p *ngIf="!job.Completed && !job.Quoted" (click)="openModal()">Quote</p>
+							</button>
+						</td>
+						<td>£{{job.Latest_Quote}}</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>
+							<p id="pp{{count}}" style="display: none; padding-left: 40px; margin: 0">
+								<i class="fas fa-ellipsis-v"></i>
+							</p>
+						</td>
+						<td></td>
+					</tr>
+				</div>
+			</table>
 		</div>
 	</div>
-	<app-modal>
-	</app-modal>
-	<app-modal-new size="big"></app-modal-new>
+</div>
+<app-modal>
+</app-modal>
