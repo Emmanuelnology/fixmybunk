@@ -18,6 +18,17 @@
 
 h1 {
     color: white;
+    text-shadow: 0 0 5px black;
+
+}
+.sub-heading {
+    text-shadow: 0 0 5px black;
+
+}
+
+
+.subtitle_1 {
+    padding-top: 20px;
 }
 
 .text-center {
@@ -29,8 +40,18 @@ p {
     font-family:  $font-family_primary;
 }
 
+ul{
+    padding-left: 0;
+
+}
+
 li {
     list-style-type: none;
+    
+}
+
+.text-icon {
+    padding-left:0;
 }
 
 .skew {
@@ -99,7 +120,6 @@ li {
 .membership-page{
     min-height:78vh;
     align-items: center;
-
 }
 
 .footer-container {
@@ -123,5 +143,12 @@ li {
     }
     .product-page {
           height:78vh;
+    }
+    ul{
+        padding-left: 25px;
+    
+    }
+    .text-icon {
+        padding-left:20px;
     }
 }

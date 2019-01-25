@@ -21,7 +21,7 @@ export class MaintenanceRequestPageComponent implements OnInit {
 
   // contractorQuoteState relates to contractor view... states are 'none', 'sent' and 'accepted'
 
-  public contractorQuoteState = 'accepted';
+  public contractorQuoteState = 'none';
 
   constructor() { }
 
